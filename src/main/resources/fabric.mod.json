@@ -6,12 +6,15 @@
   "name": "Touhou Origins",
   "description": "Adds more origins based on Touhou Project.",
   "authors": [
-    "Maxmani",
+    "Maxmani"
+  ],
+  "contributors": [
     "blu",
     "Nebula_Toast"
   ],
   "contact": {
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "issues": "https://github.com/Maxmani/touhou-origins/issues",
+    "sources": "https://github.com/Maxmani/touhou-origins"
   },
 
   "license": "MIT",
