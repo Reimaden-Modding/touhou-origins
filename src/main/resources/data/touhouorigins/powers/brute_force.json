@@ -1,0 +1,18 @@
+{
+  "type": "apoli:modify_damage_dealt",
+  "modifier": {
+    "name": "Weapon damage penalty",
+    "operation": "multiply_total_multiplicative",
+    "value": -0.7
+  },
+  "condition": {
+    "type": "apoli:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "tag": "touhouorigins:melee_weapons"
+      }
+    }
+  }
+}

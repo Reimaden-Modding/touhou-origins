@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "touhouorigins:brawn_of_the_oni",
+    "touhouorigins:drunken_stupor",
+    "touhouorigins:heavy_drinker",
+    "touhouorigins:brute_force"
+  ],
+  "icon": "minecraft:blaze_powder",
+  "order": 5,
+  "impact": 2
+}

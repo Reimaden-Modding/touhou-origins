@@ -1,0 +1,125 @@
+{
+  "type": "apoli:multiple",
+  "flowing_water": {
+    "type": "apoli:conditioned_attribute",
+    "modifier": {
+      "name": "Flowing water movement speed reduction",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_total",
+      "value": -0.7
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:or",
+          "conditions": [
+            {
+              "type": "apoli:block_in_radius",
+              "block_condition": {
+                "type": "apoli:and",
+                "conditions": [
+                  {
+                    "type": "apoli:fluid",
+                    "fluid_condition": {
+                      "type": "apoli:still",
+                      "inverted": true
+                    }
+                  },
+                  {
+                    "type": "apoli:block",
+                    "block": "minecraft:water"
+                  }
+                ]
+              },
+              "radius": 0
+            },
+            {
+              "type": "apoli:in_rain"
+            }
+          ]
+        },
+        {
+          "type": "apoli:enchantment",
+          "enchantment": "origins:water_protection",
+          "calculation": "sum",
+          "comparison": "<",
+          "compare_to": 8
+        }
+      ]
+    }
+  },
+  "more_fire_damage": {
+    "type": "apoli:modify_damage_taken",
+    "damage_condition": {
+      "type": "apoli:fire"
+    },
+    "modifier": {
+      "name": "More fire damage",
+      "operation": "multiply_base",
+      "value": 1
+    }
+  },
+  "weak_to_gold": {
+    "type": "apoli:modify_damage_taken",
+    "damage_condition": {
+      "type": "apoli:attacker",
+      "entity_condition": {
+        "type": "apoli:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "tag": "touhouorigins:golden_tools"
+          }
+        }
+      }
+    },
+    "modifier": {
+      "name": "Weakness to gold tools",
+      "operation": "multiply_base",
+      "value": 1
+    }
+  },
+  "hurt_by_water": {
+    "type": "apoli:damage_over_time",
+    "interval": 40,
+    "damage": 1,
+    "damage_easy": 0.5,
+    "damage_source": {
+      "name": "hurt_by_water",
+      "unblockable": true,
+      "bypasses_armor": true
+    },
+    "protection_enchantment": "origins:water_protection",
+    "protection_effectiveness": 1.0,
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:in_rain"
+        },
+        {
+          "type": "apoli:block_in_radius",
+          "block_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:fluid",
+                "fluid_condition": {
+                  "type": "apoli:still",
+                  "inverted": true
+                }
+              },
+              {
+                "type": "apoli:block",
+                "block": "minecraft:water"
+              }
+            ]
+          },
+          "radius": 0
+        }
+      ]
+    }
+  }
+}

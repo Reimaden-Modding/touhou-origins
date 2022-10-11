@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#touhouorigins:melee_weapons",
+    "#c:hoes",
+    "#c:pickaxes",
+    "#c:shovels"
+  ]
+}

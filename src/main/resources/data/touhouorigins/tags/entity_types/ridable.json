@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:horse",
+    "minecraft:donkey",
+    "minecraft:llama",
+    "minecraft:trader_llama",
+    "minecraft:mule"
+  ]
+}

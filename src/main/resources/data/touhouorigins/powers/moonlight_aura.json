@@ -1,0 +1,16 @@
+{
+  "type": "apoli:toggle_night_vision",
+  "active_by_default": true,
+  "condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:exposed_to_sky"
+      },
+      {
+        "type": "apoli:daytime",
+        "inverted": true
+      }
+    ]
+  }
+}

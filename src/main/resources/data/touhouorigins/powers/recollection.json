@@ -1,0 +1,34 @@
+{
+  "type": "apoli:active_self",
+  "entity_action": {
+    "type": "apoli:raycast",
+    "distance": 20,
+    "block": false,
+    "entity": true,
+    "shape_type": "visual",
+    "fluid_handling": "none",
+    "bientity_condition": {
+      "type": "apoli:target_condition",
+      "condition": {
+        "type": "apoli:entity_type",
+        "entity_type": "minecraft:player"
+      }
+    },
+    "miss_action": {
+      "type": "apoli:delay",
+      "ticks": 1,
+      "action": {
+        "type": "apoli:change_resource",
+        "resource": "touhouorigins:recollection",
+        "change": 400,
+        "operation": "set"
+      }
+    },
+    "command_at_hit": "function touhouorigins:recollection"
+  },
+  "cooldown": 400,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+    "bar_index": 7
+  }
+}

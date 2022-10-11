@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.maxmani.touhouorigins.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PlayerHandMixin",
+    "VillagerHostilesSensorMixin",
+    "ActiveTargetGoalAccessor",
+    "ActiveTargetGoalMixin",
+    "IronGolemEntityMixin",
+    "TrackTargetGoalAccessor",
+    "SnowGolemEntityMixin",
+    "WanderingTraderEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

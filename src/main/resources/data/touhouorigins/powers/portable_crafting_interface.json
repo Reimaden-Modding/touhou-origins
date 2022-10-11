@@ -1,0 +1,9 @@
+{
+  "type": "apoli:active_self",
+  "entity_action": {
+    "type": "apoli:crafting_table"
+  },
+  "key": {
+    "key": "key.origins.secondary_active"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "touhouorigins:optical_camouflage",
+    "touhouorigins:portable_crafting_interface",
+    "touhouorigins:aquabatics",
+    "touhouorigins:kappa_out_of_water",
+    "touhouorigins:soul_snatch"
+  ],
+  "icon": "minecraft:seagrass",
+  "order": 3,
+  "impact": 1
+}

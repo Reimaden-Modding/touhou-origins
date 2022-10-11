@@ -1,0 +1,17 @@
+{
+  "type": "apoli:attribute",
+  "modifiers": [
+    {
+      "name": "Reclusive Physique movement speed penalty",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "addition",
+      "value": -0.01
+    },
+    {
+      "name": "Reclusive Physique melee damage penalty",
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "multiply_total",
+      "value": -0.15
+    }
+  ]
+}

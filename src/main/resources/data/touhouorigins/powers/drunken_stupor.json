@@ -1,0 +1,283 @@
+{
+  "type": "apoli:multiple",
+  "darkness": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Darkness attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:darkness"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "unluck": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Bad Luck attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:unluck"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "wither": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Wither attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:wither"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "poison": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Poison attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:poison"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "weakness": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Weakness attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:weakness"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "hunger": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Hunger attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:hunger"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "blindness": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Blindness attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:blindness"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "nausea": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Nausea attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:nausea"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "mining_fatigue": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Mining Fatigue attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:mining_fatigue"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "slowness": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Slowness attack bonus",
+      "operation": "add_base_early",
+      "value": 3
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:slowness"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "touhouorigins:tools"
+            }
+          },
+          "inverted": true
+        }
+      ]
+    }
+  }
+}

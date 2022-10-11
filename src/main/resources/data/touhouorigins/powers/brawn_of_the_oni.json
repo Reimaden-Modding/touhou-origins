@@ -1,0 +1,59 @@
+{
+  "type": "apoli:multiple",
+  "health_boost": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Oni health bonus",
+      "attribute": "minecraft:generic.max_health",
+      "value": 10,
+      "operation": "addition"
+    }
+  },
+  "attack_boost": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Oni attack bonus",
+      "operation": "add_base_early",
+      "value": 6
+    },
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "tag": "touhouorigins:tools"
+        }
+      },
+      "inverted": true
+    }
+  },
+  "size": {
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:execute_command",
+          "command": "scale set pehkui:height 1.10 @s"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "scale set pehkui:width 1.10 @s"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "scale persist set true @s"
+        }
+      ]
+    },
+    "entity_action_lost": {
+      "type": "apoli:execute_command",
+      "command": "scale reset @s"
+    }
+  },
+  "footstep": {
+    "type": "apugli:custom_footstep",
+    "sound": "touhouorigins:entity.oni.step"
+  }
+}

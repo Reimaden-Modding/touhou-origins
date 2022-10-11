@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "touhouorigins:regeneration",
+    "touhouorigins:fluttering_wings",
+    "touhouorigins:aspect_of_nature",
+    "touhouorigins:fodder"
+  ],
+  "icon": "minecraft:sunflower",
+  "order": 1,
+  "impact": 2
+}

@@ -1,0 +1,98 @@
+{
+  "type": "apoli:action_on_hit",
+  "bientity_action": {
+    "type": "apoli:if_else",
+    "condition": {
+      "type": "apoli:target_condition",
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:health",
+            "comparison": "<=",
+            "compare_to": 0
+          },
+          {
+            "type": "apoli:entity_group",
+            "group": "undead",
+            "inverted": true
+          }
+        ]
+      }
+    },
+    "if_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:damage",
+          "amount": 11,
+          "source": {
+            "name": "probe.player",
+            "bypasses_armor": true
+          }
+        },
+        {
+          "type": "apoli:actor_action",
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:feed",
+                "food": 6,
+                "saturation": 0.5
+              },
+              {
+                "type": "apoli:play_sound",
+                "sound": "minecraft:entity.generic.eat"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "else_action": {
+      "type": "apoli:damage",
+      "amount": 11,
+      "source": {
+        "name": "probe.player",
+        "bypasses_armor": true
+      }
+    }
+  },
+  "bientity_condition": {
+    "type": "apoli:relative_rotation",
+    "actor_rotation": "head",
+    "target_rotation": "body",
+    "comparison": ">=",
+    "compare_to": 0.4
+  },
+  "condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:power_active",
+        "power": "touhouorigins:optical_camouflage_toggle",
+        "inverted": true
+      },
+      {
+        "type": "apoli:sneaking"
+      },
+      {
+        "type": "apoli:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "tag": "touhouorigins:tools"
+          }
+        },
+        "inverted": true
+      }
+    ]
+  },
+  "cooldown": 1200,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+    "bar_index": 0
+  }
+}

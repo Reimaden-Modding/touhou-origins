@@ -1,0 +1,24 @@
+{
+  "type": "apoli:damage_over_time",
+  "interval": 20,
+  "damage": 1,
+  "damage_easy": 0.5,
+  "damage_source": {
+    "name": "sun",
+    "unblockable": true,
+    "bypasses_armor": true
+  },
+  "condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:exposed_to_sun"
+      },
+      {
+        "type": "apoli:status_effect",
+        "effect": "minecraft:fire_resistance",
+        "inverted": true
+      }
+    ]
+  }
+}

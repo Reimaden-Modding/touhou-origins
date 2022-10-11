@@ -1,0 +1,61 @@
+{
+  "entity.oni.step": {
+    "sounds": [
+      "touhouorigins:oni_step1",
+      "touhouorigins:oni_step2",
+      "touhouorigins:oni_step3",
+      "touhouorigins:oni_step4"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "entity.fairy.heal": {
+    "sounds": [
+      {
+        "name": "block/beacon/activate",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.fairy.heal"
+  },
+  "entity.fairy.fly": {
+    "sounds": [
+      {
+        "name": "note/icechime",
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.fairy.fly"
+  },
+  "entity.kappa.camouflage_activate": {
+    "sounds": [
+      {
+        "name": "mob/irongolem/throw",
+        "volume": 2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.kappa.camouflage_activate"
+  },
+  "entity.kappa.camouflage_deactivate": {
+    "sounds": [
+      {
+        "name": "mob/irongolem/throw",
+        "pitch": 0.5,
+        "volume": 2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.kappa.camouflage_deactivate"
+  },
+  "entity.kappa.dry": {
+    "sounds": [
+      {
+        "name": "item/bottle/empty1",
+        "pitch": 0.8
+      },
+      {
+        "name": "item/bottle/empty2",
+        "pitch": 0.8
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.kappa.dry"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "touhouorigins:superiority",
+    "touhouorigins:moonlight_aura",
+    "touhouorigins:vampirism",
+    "touhouorigins:scorching_sun",
+    "touhouorigins:banes_of_the_immortal"
+  ],
+  "icon": "minecraft:ghast_tear",
+  "order": 3,
+  "impact": 3
+}
