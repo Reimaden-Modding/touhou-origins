@@ -14,6 +14,24 @@
         "entity_type": "minecraft:player"
       }
     },
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "apoli:if_else",
+        "condition": {
+          "type": "origins:origin",
+          "origin": "touhouorigins:satori_closed_eye"
+        },
+        "if_action": {
+          "type": "apoli:execute_command",
+          "command": "tellraw @s {\"translate\":\"power.touhouorigins.recollection.alert_fail\",\"color\":\"#A0DA81\"}"
+        },
+        "else_action": {
+          "type": "apoli:execute_command",
+          "command": "tellraw @s {\"translate\":\"power.touhouorigins.recollection.alert\",\"color\":\"#D02020\"}"
+        }
+      }
+    },
     "miss_action": {
       "type": "apoli:delay",
       "ticks": 1,
@@ -24,7 +42,10 @@
         "operation": "set"
       }
     },
-    "command_at_hit": "function touhouorigins:recollection"
+    "command_at_hit": "function touhouorigins:recollection",
+    "command_along_ray": "particle minecraft:witch",
+    "command_step": 0.5,
+    "command_along_ray_only_on_hit": true
   },
   "cooldown": 400,
   "hud_render": {

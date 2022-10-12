@@ -64,21 +64,36 @@
   "power.touhouorigins.ostracized.description": "Among the many that disdain you, humans in particular want to avoid you. Villagers refuse to trade with you.",
   "power.touhouorigins.animal_friends.name": "Animal Friends",
   "power.touhouorigins.animal_friends.description": "Animals are the opposite, you find it a lot easier to interact and work with them. You can also pet tamed animals to heal them and yourself.",
+  "power.touhouorigins.rejection_of_nature.name": "Rejection of Nature",
+  "power.touhouorigins.rejection_of_nature.description": "The source of your powers is in your third eye. If you grow so frustrated with how you're treated, you can sew it shut using a string. The effects of this are permanent.",
 
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
   "touhouorigins.subtitles.entity.kappa.camouflage_deactivate": "Camouflage deactivates",
   "touhouorigins.subtitles.entity.kappa.dry": "Kappa dries",
+  "touhouorigins.subtitles.entity.satori.recollect": "Satori recollects",
+  "touhouorigins.subtitles.entity.satori.close_eye": "Third eye closes",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
   "death.attack.probe.player": "%1$s was probed by %2$s",
   "death.attack.probe.player.item": "%1$s was probed by %2$s using %3$s",
 
-  "touhouorigins.recollection.spawnX": "Respawn X",
-  "touhouorigins.recollection.spawnY": "Respawn Y",
-  "touhouorigins.recollection.spawnZ": "Respawn Z",
-  "touhouorigins.ostracized.villager": "The Villager refuses to trade with you",
-  "touhouorigins.ostracized.wanderingTrader": "The Wandering Trader refuses to trade with you"
+  "power.touhouorigins.recollection.player": "%1$s has the following memories...",
+  "power.touhouorigins.recollection.spawnX": "Respawn X",
+  "power.touhouorigins.recollection.spawnY": "Respawn Y",
+  "power.touhouorigins.recollection.spawnZ": "Respawn Z",
+  "power.touhouorigins.recollection.fail": "Unable to read %1$s's memories!",
+  "power.touhouorigins.recollection.alert": "You have a feeling like someone read your memories",
+  "power.touhouorigins.recollection.alert_fail": "You have a feeling like someone attempted to read your memories",
+  "power.touhouorigins.ostracized.trade": "The %1$s refuses to trade with you",
+  "power.touhouorigins.rejection_of_nature.announcement": "Your soul screams in horror as your mind starts slipping away, and is quickly replaced with total silence. There are no more thoughts.",
+
+  "touhouorigins.gui.badge.upgrade": "Upgrade path",
+
+  "advancements.touhouorigins.root.title": "Touhou Origins",
+  "advancements.touhouorigins.root.description": "Gensokyo in Minecraft",
+  "advancements.touhouorigins.close_eye.title": "Rejection of Nature",
+  "advancements.touhouorigins.close_eye.description": "Close your third eye"
 }

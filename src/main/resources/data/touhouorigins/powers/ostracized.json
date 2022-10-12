@@ -15,7 +15,7 @@
           "type": "apoli:actor_action",
           "action": {
             "type": "apoli:execute_command",
-            "command": "tellraw @s {\"translate\":\"touhouorigins.ostracized.villager\",\"color\":\"red\"}"
+            "command": "tellraw @s {\"translate\":\"power.touhouorigins.ostracized.trade\",\"with\":[{\"translate\":\"entity.minecraft.villager\"}],\"color\":\"red\"}"
           }
         }
       },
@@ -31,7 +31,7 @@
           "type": "apoli:actor_action",
           "action": {
             "type": "apoli:execute_command",
-            "command": "tellraw @s {\"translate\":\"touhouorigins.ostracized.wanderingTrader\",\"color\":\"red\"}"
+            "command": "tellraw @s {\"translate\":\"power.touhouorigins.ostracized.trade\",\"with\":[{\"translate\":\"entity.minecraft.wandering_trader\"}],\"color\":\"red\"}"
           }
         }
       }

@@ -1,0 +1,31 @@
+{
+  "parent": "touhouorigins:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "title": {
+      "translate": "advancements.touhouorigins.close_eye.title"
+    },
+    "description": {
+      "translate": "advancements.touhouorigins.close_eye.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chose_closed_eye": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "touhouorigins:satori_closed_eye"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chose_closed_eye"
+    ]
+  ]
+}

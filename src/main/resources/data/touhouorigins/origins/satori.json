@@ -9,5 +9,12 @@
   ],
   "icon": "minecraft:ender_eye",
   "order": 4,
-  "impact": 2
+  "impact": 2,
+  "upgrades": [
+    {
+      "condition": "touhouorigins:close_eye",
+      "origin": "touhouorigins:satori_closed_eye",
+      "announcement": "power.touhouorigins.rejection_of_nature.announcement"
+    }
+  ]
 }

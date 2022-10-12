@@ -15,7 +15,7 @@ public class TouhouOrigins implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Touhou Origins is initializing. Please watch warmly until it is ready.");
 
-		ModSounds.init();
-		ModPowers.init();
+		ModSounds.register();
+		ModPowers.register();
 	}
 }

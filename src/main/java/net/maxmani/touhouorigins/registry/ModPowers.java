@@ -24,7 +24,7 @@ public class ModPowers {
             .add("entities", SerializableDataType.list(SerializableDataTypes.ENTITY_TYPE)),
             data -> (type, entity) -> new ModifyBehavior(type, (PlayerEntity) entity, data.get("behavior"), data.get("entities")));
 
-    public static void init() {
+    public static void register() {
         Registry.register(ApoliRegistries.POWER_FACTORY, MODIFY_BEHAVIOR.getSerializerId(), MODIFY_BEHAVIOR);
     }
 }

@@ -57,5 +57,28 @@
       }
     ],
     "subtitle": "touhouorigins.subtitles.entity.kappa.dry"
+  },
+  "entity.satori.recollect": {
+    "sounds": [
+      "block/bell/resonate",
+      {
+        "name": "block/bell/resonate",
+        "pitch": 0.85
+      },
+      {
+        "name": "block/bell/resonate",
+        "pitch": 0.9
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.satori.recollect"
+  },
+  "entity.satori.close_eye": {
+    "sounds": [
+      {
+        "name": "mob/wither/spawn",
+        "pitch": 0.5
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.satori.close_eye"
   }
 }
