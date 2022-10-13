@@ -37,7 +37,7 @@
       "ticks": 1,
       "action": {
         "type": "apoli:change_resource",
-        "resource": "touhouorigins:recollection",
+        "resource": "*:*",
         "change": 1200,
         "operation": "set"
       }

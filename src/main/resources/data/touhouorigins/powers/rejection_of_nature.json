@@ -9,7 +9,7 @@
       "bar_index": 18,
       "condition": {
         "type": "apoli:resource",
-        "resource": "touhouorigins:rejection_of_nature_resource",
+        "resource": "*:*_resource",
         "comparison": "!=",
         "compare_to": 0
       }
@@ -38,7 +38,7 @@
     },
     "condition": {
       "type": "apoli:resource",
-      "resource": "touhouorigins:rejection_of_nature_resource",
+      "resource": "*:*_resource",
       "comparison": "==",
       "compare_to": 100
     }
@@ -48,12 +48,12 @@
     "interval": 1,
     "entity_action": {
       "type": "apoli:change_resource",
-      "resource": "touhouorigins:rejection_of_nature_resource",
+      "resource": "*:*_resource",
       "change": 1
     },
     "falling_action": {
       "type": "apoli:change_resource",
-      "resource": "touhouorigins:rejection_of_nature_resource",
+      "resource": "*:*_resource",
       "change": 0,
       "operation": "set"
     },

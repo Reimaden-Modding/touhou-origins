@@ -37,7 +37,7 @@
         },
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:fluttering_wings_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }
@@ -67,7 +67,7 @@
         },
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:fluttering_wings_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }
@@ -112,7 +112,7 @@
         },
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:fluttering_wings_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }
@@ -152,7 +152,7 @@
         },
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:fluttering_wings_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }
@@ -196,7 +196,7 @@
         },
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:fluttering_wings_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }
@@ -267,7 +267,7 @@
         },
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:fluttering_wings_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }
@@ -342,7 +342,7 @@
         },
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:fluttering_wings_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }

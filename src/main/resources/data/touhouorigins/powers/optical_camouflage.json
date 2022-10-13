@@ -10,7 +10,7 @@
     "retain_state": false,
     "condition": {
       "type": "apoli:resource",
-      "resource": "touhouorigins:optical_camouflage_resource",
+      "resource": "*:*_resource",
       "comparison": "!=",
       "compare_to": 0
     }
@@ -37,13 +37,13 @@
       "conditions": [
         {
           "type": "apoli:resource",
-          "resource": "touhouorigins:optical_camouflage_resource",
+          "resource": "*:*_resource",
           "comparison": "!=",
           "compare_to": 0
         },
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:optical_camouflage_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }
@@ -54,16 +54,16 @@
       "type": "apoli:if_else",
       "condition": {
         "type": "apoli:power_active",
-        "power": "touhouorigins:optical_camouflage_toggle"
+        "power": "*:*_toggle"
       },
       "if_action": {
         "type": "apoli:change_resource",
-        "resource": "touhouorigins:optical_camouflage_resource",
+        "resource": "*:*_resource",
         "change": -5
       },
       "else_action": {
         "type": "apoli:change_resource",
-        "resource": "touhouorigins:optical_camouflage_resource",
+        "resource": "*:*_resource",
         "change": 1
       }
     },
@@ -77,7 +77,7 @@
         {
           "condition": {
             "type": "apoli:power_active",
-            "power": "touhouorigins:optical_camouflage_toggle"
+            "power": "*:*_toggle"
           },
           "action": {
             "type": "apoli:play_sound",
@@ -90,12 +90,12 @@
             "conditions": [
               {
                 "type": "apoli:power_active",
-                "power": "touhouorigins:optical_camouflage_toggle",
+                "power": "*:*_toggle",
                 "inverted": true
               },
               {
                 "type": "apoli:resource",
-                "resource": "touhouorigins:optical_camouflage_resource",
+                "resource": "*:*_resource",
                 "comparison": "!=",
                 "compare_to": 0
               }

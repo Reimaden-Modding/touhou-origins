@@ -71,7 +71,7 @@
     "conditions": [
       {
         "type": "apoli:power_active",
-        "power": "touhouorigins:optical_camouflage_toggle",
+        "power": "*:optical_camouflage_toggle",
         "inverted": true
       },
       {
