@@ -7,12 +7,12 @@ import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.List;
 
-public class ModifyBehavior extends Power {
+public class ModifyBehaviorPower extends Power {
 
     List<EntityType<?>> affectedEntities;
     EntityBehavior desiredBehavior;
 
-    public ModifyBehavior(PowerType<?> type, PlayerEntity player, EntityBehavior desiredBehavior, List<EntityType<?>> affectedEntities) {
+    public ModifyBehaviorPower(PowerType<?> type, PlayerEntity player, EntityBehavior desiredBehavior, List<EntityType<?>> affectedEntities) {
         super(type, player);
         this.affectedEntities = affectedEntities;
         this.desiredBehavior = desiredBehavior;

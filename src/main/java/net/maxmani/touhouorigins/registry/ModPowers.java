@@ -9,8 +9,8 @@ import io.github.apace100.calio.data.SerializableData;
 import io.github.apace100.calio.data.SerializableDataType;
 import io.github.apace100.calio.data.SerializableDataTypes;
 import net.maxmani.touhouorigins.TouhouOrigins;
-import net.maxmani.touhouorigins.power.ModifyBehavior;
-import net.maxmani.touhouorigins.power.ModifyBehavior.EntityBehavior;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -22,7 +22,7 @@ public class ModPowers {
     public static final PowerFactory<Power> MODIFY_BEHAVIOR = new PowerFactory<>(new Identifier(TouhouOrigins.MOD_ID, "modify_behavior"), new SerializableData()
             .add("behavior", SerializableDataType.enumValue(EntityBehavior.class))
             .add("entities", SerializableDataType.list(SerializableDataTypes.ENTITY_TYPE)),
-            data -> (type, entity) -> new ModifyBehavior(type, (PlayerEntity) entity, data.get("behavior"), data.get("entities")));
+            data -> (type, entity) -> new ModifyBehaviorPower(type, (PlayerEntity) entity, data.get("behavior"), data.get("entities")));
 
     public static void register() {
         Registry.register(ApoliRegistries.POWER_FACTORY, MODIFY_BEHAVIOR.getSerializerId(), MODIFY_BEHAVIOR);

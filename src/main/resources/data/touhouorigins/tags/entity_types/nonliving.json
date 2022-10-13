@@ -4,6 +4,10 @@
     {
       "id": "dummmmmmy:target_dummy",
       "required": false
+    },
+    {
+      "id": "strawdummy:strawdummy",
+      "required": false
     }
   ]
 }

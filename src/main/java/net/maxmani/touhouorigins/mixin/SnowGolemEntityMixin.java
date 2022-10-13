@@ -1,8 +1,8 @@
 package net.maxmani.touhouorigins.mixin;
 
 import io.github.apace100.apoli.component.PowerHolderComponent;
-import net.maxmani.touhouorigins.power.ModifyBehavior;
-import net.maxmani.touhouorigins.power.ModifyBehavior.EntityBehavior;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Shearable;
 import net.minecraft.entity.ai.RangedAttackMob;
@@ -29,7 +29,7 @@ public abstract class SnowGolemEntityMixin extends GolemEntity implements Sheara
     public void initPlayerZombieGoals(CallbackInfo info) {
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, 10, true, false, (entity) -> {
             if(entity instanceof PlayerEntity player) {
-                List<ModifyBehavior> powers = PowerHolderComponent.getPowers(player, ModifyBehavior.class);
+                List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(player, ModifyBehaviorPower.class);
                 powers.removeIf((power) -> !power.checkEntity(this.getType()));
 
                 if (!powers.isEmpty()) {

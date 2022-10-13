@@ -1,8 +1,8 @@
 package net.maxmani.touhouorigins.mixin;
 
 import io.github.apace100.apoli.component.PowerHolderComponent;
-import net.maxmani.touhouorigins.power.ModifyBehavior;
-import net.maxmani.touhouorigins.power.ModifyBehavior.EntityBehavior;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import net.minecraft.entity.ai.goal.Goal;
@@ -30,7 +30,7 @@ public abstract class IronGolemEntityMixin extends GolemEntity implements Angera
         Goal newGoal = new ActiveTargetGoal<>(this, PlayerEntity.class, 10, true, false, (entity) -> {
             if(entity != null) {
 
-                List<ModifyBehavior> powers = PowerHolderComponent.getPowers(entity, ModifyBehavior.class);
+                List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(entity, ModifyBehaviorPower.class);
                 powers.removeIf((power) -> !power.checkEntity(EntityType.IRON_GOLEM));
 
                 boolean zombified = false;

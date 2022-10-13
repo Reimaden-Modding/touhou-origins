@@ -1,8 +1,8 @@
 package net.maxmani.touhouorigins.mixin;
 
 import io.github.apace100.apoli.component.PowerHolderComponent;
-import net.maxmani.touhouorigins.power.ModifyBehavior;
-import net.maxmani.touhouorigins.power.ModifyBehavior.EntityBehavior;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
 import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,7 +18,7 @@ public class ActiveTargetGoalMixin {
     public void blockZombieTarget(CallbackInfo info) {
         ActiveTargetGoal target = (ActiveTargetGoal) (Object) this;
 
-        List<ModifyBehavior> powers = PowerHolderComponent.getPowers(((ActiveTargetGoalAccessor) target).targetEntity(), ModifyBehavior.class);
+        List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(((ActiveTargetGoalAccessor) target).targetEntity(), ModifyBehaviorPower.class);
         powers.removeIf((power) -> !power.checkEntity(((TrackTargetGoalAccessor) target).getMob().getType()));
 
         if (!powers.isEmpty()) {

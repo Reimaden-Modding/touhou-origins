@@ -11,7 +11,10 @@
     "IronGolemEntityMixin",
     "TrackTargetGoalAccessor",
     "SnowGolemEntityMixin",
-    "WanderingTraderEntityMixin"
+    "WanderingTraderEntityMixin",
+    "EndermanEntityMixin",
+    "PiglinBrainMixin",
+    "PiglinBruteBrainMixin"
   ],
   "client": [
   ],

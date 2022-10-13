@@ -1,8 +1,8 @@
 package net.maxmani.touhouorigins.mixin;
 
 import io.github.apace100.apoli.component.PowerHolderComponent;
-import net.maxmani.touhouorigins.power.ModifyBehavior;
-import net.maxmani.touhouorigins.power.ModifyBehavior.EntityBehavior;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
+import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.FleeEntityGoal;
 import net.minecraft.entity.passive.MerchantEntity;
@@ -27,7 +27,7 @@ public abstract class WanderingTraderEntityMixin extends MerchantEntity {
     public void initPlayerZombieGoals(CallbackInfo info) {
         this.goalSelector.add(1, new FleeEntityGoal<>(this, PlayerEntity.class, 8.0f, 0.5, 0.5, (entity) -> {
             if(entity instanceof PlayerEntity player) {
-                List<ModifyBehavior> powers = PowerHolderComponent.getPowers(player, ModifyBehavior.class);
+                List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(player, ModifyBehaviorPower.class);
                 powers.removeIf((power) -> !power.checkEntity(this.getType()));
 
                 if (!powers.isEmpty()) {
