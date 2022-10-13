@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "dummmmmmy:target_dummy"
+    {
+      "id": "dummmmmmy:target_dummy",
+      "required": false
+    }
   ]
 }
