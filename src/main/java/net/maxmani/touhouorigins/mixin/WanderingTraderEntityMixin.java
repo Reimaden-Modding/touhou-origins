@@ -28,6 +28,7 @@ public abstract class WanderingTraderEntityMixin extends MerchantEntity {
         this.goalSelector.add(1, new FleeEntityGoal<>(this, PlayerEntity.class, 8.0f, 0.5, 0.5, (entity) -> {
             if(entity instanceof PlayerEntity player) {
                 List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(player, ModifyBehaviorPower.class);
+                powers.removeIf((power) -> !power.checkEntity(this));
 
                 if (!powers.isEmpty()) {
                     EntityBehavior behavior = powers.get(0).getDesiredBehavior();

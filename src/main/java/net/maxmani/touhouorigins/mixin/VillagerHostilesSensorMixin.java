@@ -16,37 +16,38 @@ import java.util.List;
 @Mixin(VillagerHostilesSensor.class)
 public class VillagerHostilesSensorMixin {
 
-    @Inject(at = @At(value = "HEAD"), method = "isHostile", cancellable = true)
-    public void markZombiePlayerAsHostile(final LivingEntity entity, CallbackInfoReturnable<Boolean> info) {
+    @Inject(method = "isHostile", at = @At("HEAD"), cancellable = true)
+    private void markZombiePlayerAsHostile(LivingEntity entity, CallbackInfoReturnable<Boolean> cir) {
         List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(entity, ModifyBehaviorPower.class);
 
         if (!powers.isEmpty()) {
             EntityBehavior behavior = powers.get(0).getDesiredBehavior();
             if(behavior == EntityBehavior.HOSTILE) {
-                info.setReturnValue(true);
+                cir.setReturnValue(true);
             }
         }
     }
 
     @Inject(at = @At(value = "HEAD"), method = "isCloseEnoughForDanger", cancellable = true)
-    public void zombiePlayerIsCloseEnoughForDanger(LivingEntity entity, LivingEntity hostile, CallbackInfoReturnable<Boolean> info) {
+    private void zombiePlayerIsCloseEnoughForDanger(LivingEntity entity, LivingEntity hostile, CallbackInfoReturnable<Boolean> cir) {
         if(hostile instanceof PlayerEntity player) {
             List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(player, ModifyBehaviorPower.class);
+            powers.removeIf((power) -> !power.checkEntity(entity));
 
             if (!powers.isEmpty() && !player.isCreative()) {
                 EntityBehavior behavior = powers.get(0).getDesiredBehavior();
                 if(behavior == EntityBehavior.HOSTILE) {
                     float distanceRequired = 8.0f;
                     if(hostile.squaredDistanceTo(entity) <= (double)(distanceRequired * distanceRequired)) {
-                        info.setReturnValue(true);
+                        cir.setReturnValue(true);
                     } else {
-                        info.setReturnValue(false);
+                        cir.setReturnValue(false);
                     }
                 } else {
-                    info.setReturnValue(false);
+                    cir.setReturnValue(false);
                 }
             } else {
-                info.setReturnValue(false);
+                cir.setReturnValue(false);
             }
         }
     }

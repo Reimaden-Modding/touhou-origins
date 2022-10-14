@@ -30,6 +30,7 @@ public abstract class SnowGolemEntityMixin extends GolemEntity implements Sheara
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, 10, true, false, (entity) -> {
             if(entity instanceof PlayerEntity player) {
                 List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(player, ModifyBehaviorPower.class);
+                powers.removeIf((power) -> !power.checkEntity(this));
 
                 if (!powers.isEmpty()) {
                     EntityBehavior behavior = powers.get(0).getDesiredBehavior();
