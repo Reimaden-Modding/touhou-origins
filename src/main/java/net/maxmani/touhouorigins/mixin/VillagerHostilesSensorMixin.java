@@ -3,7 +3,6 @@ package net.maxmani.touhouorigins.mixin;
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
 import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.brain.sensor.VillagerHostilesSensor;
 import net.minecraft.entity.player.PlayerEntity;
@@ -20,7 +19,6 @@ public class VillagerHostilesSensorMixin {
     @Inject(at = @At(value = "HEAD"), method = "isHostile", cancellable = true)
     public void markZombiePlayerAsHostile(final LivingEntity entity, CallbackInfoReturnable<Boolean> info) {
         List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(entity, ModifyBehaviorPower.class);
-        powers.removeIf((power) -> !power.checkEntity(EntityType.VILLAGER));
 
         if (!powers.isEmpty()) {
             EntityBehavior behavior = powers.get(0).getDesiredBehavior();
@@ -34,7 +32,6 @@ public class VillagerHostilesSensorMixin {
     public void zombiePlayerIsCloseEnoughForDanger(LivingEntity entity, LivingEntity hostile, CallbackInfoReturnable<Boolean> info) {
         if(hostile instanceof PlayerEntity player) {
             List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(player, ModifyBehaviorPower.class);
-            powers.removeIf((power) -> !power.checkEntity(EntityType.VILLAGER));
 
             if (!powers.isEmpty() && !player.isCreative()) {
                 EntityBehavior behavior = powers.get(0).getDesiredBehavior();

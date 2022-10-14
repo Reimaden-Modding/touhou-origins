@@ -19,7 +19,7 @@ public class ActiveTargetGoalMixin {
         ActiveTargetGoal target = (ActiveTargetGoal) (Object) this;
 
         List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(((ActiveTargetGoalAccessor) target).targetEntity(), ModifyBehaviorPower.class);
-        powers.removeIf((power) -> !power.checkEntity(((TrackTargetGoalAccessor) target).getMob().getType()));
+        powers.removeIf((power) -> !power.checkEntity(((TrackTargetGoalAccessor) target).getMob()));
 
         if (!powers.isEmpty()) {
             EntityBehavior behavior = powers.get(0).getDesiredBehavior();

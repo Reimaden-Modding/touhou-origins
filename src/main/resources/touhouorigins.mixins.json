@@ -14,7 +14,8 @@
     "WanderingTraderEntityMixin",
     "EndermanEntityMixin",
     "PiglinBrainMixin",
-    "PiglinBruteBrainMixin"
+    "PiglinBruteBrainMixin",
+    "WardenEntityMixin"
   ],
   "client": [
   ],

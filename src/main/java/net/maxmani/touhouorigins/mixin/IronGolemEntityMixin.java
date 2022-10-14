@@ -31,7 +31,6 @@ public abstract class IronGolemEntityMixin extends GolemEntity implements Angera
             if(entity != null) {
 
                 List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(entity, ModifyBehaviorPower.class);
-                powers.removeIf((power) -> !power.checkEntity(EntityType.IRON_GOLEM));
 
                 boolean zombified = false;
 
