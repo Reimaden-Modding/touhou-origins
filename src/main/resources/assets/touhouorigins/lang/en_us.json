@@ -17,7 +17,7 @@
   "origin.touhouorigins.oni.description": "These ogre-like youkai possess incredible strength and power. They love to drink, feast, and compete with humans.",
 
   "power.touhouorigins.brawn_of_the_oni.name": "Brawn of the Oni",
-  "power.touhouorigins.brawn_of_the_oni.description": "You're built much bigger, tougher, and full-hearted than your average youkai. Increased height, health, and natural strength makes you one formidable and fearsome opponent.",
+  "power.touhouorigins.brawn_of_the_oni.description": "Increased height, health, and natural strength makes you one formidable and fearsome opponent.",
   "power.touhouorigins.drunken_stupor.name": "Drunken Stupor",
   "power.touhouorigins.drunken_stupor.description": "For every negative status effect active on you, gain 3 melee damage.",
   "power.touhouorigins.heavy_drinker.name": "Heavy Drinker",
@@ -53,19 +53,32 @@
 
   "origin.touhouorigins.satori.name": "Satori",
   "origin.touhouorigins.satori.description": "Satori are a type of mountain-dwelling youkai in Japanese folklore. They are famous for being the youkai that are able to read human thoughts.",
+  "origin.touhouorigins.satori.announcement": "Your soul screams in horror as your mind starts slipping away, and is quickly replaced with total silence. There are no more thoughts.",
 
   "power.touhouorigins.mind_reading.name": "Mind Reading",
   "power.touhouorigins.mind_reading.description": "Satori are capable of reading others' minds, enabling you to sense their presence and intent quite easily.",
   "power.touhouorigins.recollection.name": "Recollection",
   "power.touhouorigins.recollection.description": "You can bring forth and tap into people's memories, revealing certain aspects of them.",
   "power.touhouorigins.reclusive_physique.name": "Reclusive Physique",
-  "power.touhouorigins.reclusive_physique.description": "Satori are typically shunned and disliked among most groups, resulting in you spending most of your time away from others and cooped up. You move slower than most people and deal 15% less melee damage.",
+  "power.touhouorigins.reclusive_physique.description": "You move slower than most people and deal 15% less melee damage.",
   "power.touhouorigins.ostracized.name": "Ostracized",
-  "power.touhouorigins.ostracized.description": "Among the many that disdain you, humans in particular want to avoid you. Villagers refuse to trade with you.",
+  "power.touhouorigins.ostracized.description": "Villagers refuse to trade with you.",
   "power.touhouorigins.animal_friends.name": "Animal Friends",
-  "power.touhouorigins.animal_friends.description": "Animals are the opposite, you find it a lot easier to interact and work with them. You can also pet tamed animals to heal them and yourself.",
+  "power.touhouorigins.animal_friends.description": "You find it a lot easier to interact and work with animals. You can also pet your tamed animals to heal them and yourself.",
   "power.touhouorigins.rejection_of_nature.name": "Rejection of Nature",
   "power.touhouorigins.rejection_of_nature.description": "The source of your powers is in your third eye. If you grow so frustrated with how you're treated, you can sew it shut using a string. The effects of this are permanent.",
+
+  "origin.touhouorigins.satori_closed_eye.name": "Satori",
+  "origin.touhouorigins.satori_closed_eye.description": "If a satori closes their third eye, they will be unable to read others' minds and their consciousness is sealed away.",
+
+  "power.touhouorigins.unconscious_manipulation.name": "Unconscious Manipulation",
+  "power.touhouorigins.unconscious_manipulation.description": "You have the power to manipulate the unconscious mind. You're able to appear invisible and silent to others at will.",
+  "power.touhouorigins.paranoia.name": "Paranoia",
+  "power.touhouorigins.paranoia.description": "You are able to make others near you hear things.",
+  "power.touhouorigins.presence_of_no_merit.name": "Presence of No Merit",
+  "power.touhouorigins.presence_of_no_merit.description": "All mobs are totally unaware of your presence around them, making every hostile mob neutral towards you.",
+  "power.touhouorigins.distracted_state_of_mind.name": "Distracted State of Mind",
+  "power.touhouorigins.distracted_state_of_mind.description": "Most of your actions are controlled by your unconscious mind, leaving you unable to perform complex, dexterous tasks. You are unable to use bows, crossbows, and shields.",
 
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
@@ -88,7 +101,6 @@
   "power.touhouorigins.recollection.alert": "You have a feeling like someone read your memories",
   "power.touhouorigins.recollection.alert_fail": "You have a feeling like someone attempted to read your memories",
   "power.touhouorigins.ostracized.trade": "The %1$s refuses to trade with you",
-  "power.touhouorigins.rejection_of_nature.announcement": "Your soul screams in horror as your mind starts slipping away, and is quickly replaced with total silence. There are no more thoughts.",
 
   "touhouorigins.gui.badge.upgrade": "Upgrade path",
 

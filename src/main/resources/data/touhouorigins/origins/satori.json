@@ -14,7 +14,7 @@
     {
       "condition": "touhouorigins:close_eye",
       "origin": "touhouorigins:satori_closed_eye",
-      "announcement": "power.touhouorigins.rejection_of_nature.announcement"
+      "announcement": "origin.touhouorigins.satori.announcement"
     }
   ]
 }

@@ -1,5 +1,10 @@
 {
   "powers": [
+    "touhouorigins:unconscious_manipulation",
+    "touhouorigins:paranoia",
+    "touhouorigins:presence_of_no_merit",
+    "touhouorigins:reclusive_physique",
+    "touhouorigins:distracted_state_of_mind"
   ],
   "icon": "minecraft:heart_of_the_sea",
   "order": 4,

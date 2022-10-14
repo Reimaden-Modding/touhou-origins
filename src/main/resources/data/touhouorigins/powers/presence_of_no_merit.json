@@ -1,0 +1,8 @@
+{
+  "type": "touhouorigins:modify_behavior",
+  "behavior": "neutral",
+  "mob_condition": {
+    "type": "apoli:in_tag",
+    "tag": "touhouorigins:hostile"
+  }
+}
