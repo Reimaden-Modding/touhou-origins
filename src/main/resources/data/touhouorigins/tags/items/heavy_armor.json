@@ -1,0 +1,85 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:golden_boots",
+    "minecraft:golden_leggings",
+    "minecraft:golden_chestplate",
+    "minecraft:golden_helmet",
+    "minecraft:iron_boots",
+    "minecraft:iron_leggings",
+    "minecraft:iron_chestplate",
+    "minecraft:iron_helmet",
+    "minecraft:diamond_boots",
+    "minecraft:diamond_leggings",
+    "minecraft:diamond_chestplate",
+    "minecraft:diamond_helmet",
+    "minecraft:netherite_boots",
+    "minecraft:netherite_leggings",
+    "minecraft:netherite_chestplate",
+    "minecraft:netherite_helmet",
+    {
+      "id": "advancednetherite:netherite_iron_helmet",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_iron_chestplate",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_iron_leggings",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_iron_boots",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_helmet",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_chestplate",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_leggings",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_boots",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_emerald_helmet",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_emerald_chestplate",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_emerald_leggings",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_emerald_boots",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_diamond_helmet",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_diamond_chestplate",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_diamond_leggings",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_diamond_boots",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "apoli:multiple",
+  "health": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Flight-Friendly Body health penalty",
+      "attribute": "minecraft:generic.max_health",
+      "value": -6,
+      "operation": "addition"
+    }
+  },
+  "restrict_armor": {
+    "type": "apoli:restrict_armor",
+    "head": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "tag": "touhouorigins:heavy_armor"
+      }
+    },
+    "chest": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "tag": "touhouorigins:heavy_armor"
+      }
+    },
+    "legs": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "tag": "touhouorigins:heavy_armor"
+      }
+    },
+    "feet": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "tag": "touhouorigins:heavy_armor"
+      }
+    }
+  }
+}

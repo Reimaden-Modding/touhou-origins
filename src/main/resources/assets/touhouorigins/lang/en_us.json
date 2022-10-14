@@ -80,6 +80,20 @@
   "power.touhouorigins.distracted_state_of_mind.name": "Distracted State of Mind",
   "power.touhouorigins.distracted_state_of_mind.description": "Most of your actions are controlled by your unconscious mind, leaving you unable to perform complex, dexterous tasks. You are unable to use bows, crossbows, and shields.",
 
+  "origin.touhouorigins.crow_tengu.name": "Crow Tengu",
+  "origin.touhouorigins.crow_tengu.description": "A tengu is a form of youkai common in Japanese mythology. The crow tengu are similar to anthropomorphic crows with a humanoid body structure.",
+
+  "power.touhouorigins.gust_of_wind.name": "Gust of Wind",
+  "power.touhouorigins.gust_of_wind.description": "Unleash the power of the wind to launch yourself in the direction you are looking.",
+  "power.touhouorigins.youkai_of_the_sky.name": "Youkai of the Sky",
+  "power.touhouorigins.youkai_of_the_sky.description": "The crow tengu are masters of the sky and flight. You have elytra wings without needing to equip any.",
+  "power.touhouorigins.tengu_speed.name": "Tengu's Speed",
+  "power.touhouorigins.tengu_speed.description": "As a tengu, you are naturally faster than a regular person.",
+  "power.touhouorigins.flight_friendly_body.name": "Flight-Friendly Body",
+  "power.touhouorigins.flight_friendly_body.description": "You have lighter bones and a slender build, and so have 3 less hearts of health and cannot wear heavy armor.",
+  "power.touhouorigins.reporting_above_clouds.name": "Reporting Above Clouds",
+  "power.touhouorigins.reporting_above_clouds.description": "It's in your nature to explore the world and write down all the strange happenings all around, you have no time to tussle with others and hunt. All of your damage is cut in half.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
@@ -87,6 +101,7 @@
   "touhouorigins.subtitles.entity.kappa.dry": "Kappa dries",
   "touhouorigins.subtitles.entity.satori.recollect": "Satori recollects",
   "touhouorigins.subtitles.entity.satori.close_eye": "Third eye closes",
+  "touhouorigins.subtitles.entity.generic.gust": "Wind rushes",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",

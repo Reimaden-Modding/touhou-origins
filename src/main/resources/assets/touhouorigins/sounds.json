@@ -80,5 +80,15 @@
       }
     ],
     "subtitle": "touhouorigins.subtitles.entity.satori.close_eye"
+  },
+  "entity.generic.gust": {
+    "sounds": [
+      {
+        "name": "mob/wither/shoot",
+        "pitch": 0.8,
+        "volume": 2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.generic.gust"
   }
 }

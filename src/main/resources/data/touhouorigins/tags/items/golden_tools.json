@@ -5,6 +5,26 @@
     "minecraft:golden_axe",
     "minecraft:golden_pickaxe",
     "minecraft:golden_shovel",
-    "minecraft:golden_hoe"
+    "minecraft:golden_hoe",
+    {
+      "id": "advancednetherite:netherite_gold_axe",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_hoe",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_pickaxe",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_shovel",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_sword",
+      "required": false
+    }
   ]
 }
