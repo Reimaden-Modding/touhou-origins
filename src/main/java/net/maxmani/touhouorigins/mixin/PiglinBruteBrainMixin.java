@@ -8,9 +8,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.brain.MemoryModuleType;
 import net.minecraft.entity.mob.AbstractPiglinEntity;
 import net.minecraft.entity.mob.PiglinBruteBrain;
+import net.minecraft.entity.mob.PiglinBruteEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
@@ -28,12 +30,25 @@ public class PiglinBruteBrainMixin {
 
                 if (!powers.isEmpty()) {
                     EntityBehavior behavior = powers.get(0).getDesiredBehavior();
-                    if(behavior == EntityBehavior.NEUTRAL) {
+                    if(behavior == EntityBehavior.NEUTRAL || behavior == EntityBehavior.PASSIVE) {
                         cir.setReturnValue(Optional.empty());
                     }
                 }
                 return false;
             });
+        }
+    }
+
+    @Inject(method = "tryRevenge", at = @At("HEAD"), cancellable = true)
+    private static void lobotomizePiglin(PiglinBruteEntity piglinBrute, LivingEntity target, CallbackInfo ci) {
+        List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(target, ModifyBehaviorPower.class);
+        powers.removeIf((power) -> !power.checkEntity(EntityType.PIGLIN_BRUTE));
+
+        if (!powers.isEmpty()) {
+            EntityBehavior behavior = powers.get(0).getDesiredBehavior();
+            if(behavior == EntityBehavior.PASSIVE) {
+                ci.cancel();
+            }
         }
     }
 }

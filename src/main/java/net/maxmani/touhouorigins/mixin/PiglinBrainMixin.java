@@ -5,6 +5,7 @@ import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
 import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.AbstractPiglinEntity;
 import net.minecraft.entity.mob.PiglinBrain;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
@@ -25,7 +26,7 @@ public class PiglinBrainMixin {
 
         if (!powers.isEmpty()) {
             EntityBehavior behavior = powers.get(0).getDesiredBehavior();
-            if(behavior == EntityBehavior.NEUTRAL) {
+            if(behavior == EntityBehavior.NEUTRAL || behavior == EntityBehavior.PASSIVE) {
                 cir.setReturnValue(true);
             }
         }
@@ -38,7 +39,20 @@ public class PiglinBrainMixin {
 
         if (!powers.isEmpty()) {
             EntityBehavior behavior = powers.get(0).getDesiredBehavior();
-            if(behavior == EntityBehavior.NEUTRAL) {
+            if(behavior == EntityBehavior.NEUTRAL || behavior == EntityBehavior.PASSIVE) {
+                ci.cancel();
+            }
+        }
+    }
+
+    @Inject(method = "tryRevenge", at = @At("HEAD"), cancellable = true)
+    private static void lobotomizePiglin(AbstractPiglinEntity piglin, LivingEntity target, CallbackInfo ci) {
+        List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(target, ModifyBehaviorPower.class);
+        powers.removeIf((power) -> !power.checkEntity(EntityType.PIGLIN));
+
+        if (!powers.isEmpty()) {
+            EntityBehavior behavior = powers.get(0).getDesiredBehavior();
+            if(behavior == EntityBehavior.PASSIVE) {
                 ci.cancel();
             }
         }
