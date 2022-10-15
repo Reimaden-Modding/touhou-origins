@@ -19,16 +19,16 @@ import java.util.List;
 @Mixin(WanderingTraderEntity.class)
 public abstract class WanderingTraderEntityMixin extends MerchantEntity {
 
-    WanderingTraderEntityMixin(EntityType<? extends MerchantEntity> entityType, World world) {
+    protected WanderingTraderEntityMixin(EntityType<? extends MerchantEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    @Inject(at = @At(value = "RETURN"), method = "initGoals")
+    @Inject(method = "initGoals", at = @At(value = "RETURN"))
     public void initPlayerZombieGoals(CallbackInfo info) {
         this.goalSelector.add(1, new FleeEntityGoal<>(this, PlayerEntity.class, 8.0f, 0.5, 0.5, (entity) -> {
             if(entity instanceof PlayerEntity player) {
                 List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(player, ModifyBehaviorPower.class);
-                powers.removeIf((power) -> !power.checkEntity(this));
+                powers.removeIf((power) -> !power.checkEntity(EntityType.WANDERING_TRADER));
 
                 if (!powers.isEmpty()) {
                     EntityBehavior behavior = powers.get(0).getDesiredBehavior();

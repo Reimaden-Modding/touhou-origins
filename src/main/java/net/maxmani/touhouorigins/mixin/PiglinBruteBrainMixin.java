@@ -3,6 +3,7 @@ package net.maxmani.touhouorigins.mixin;
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
 import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.brain.MemoryModuleType;
 import net.minecraft.entity.mob.AbstractPiglinEntity;
@@ -23,6 +24,7 @@ public class PiglinBruteBrainMixin {
         if (cir.getReturnValue().isPresent()) {
             piglin.getBrain().getOptionalMemory(memoryModuleType).filter(entity -> {
                 List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(entity, ModifyBehaviorPower.class);
+                powers.removeIf((power) -> !power.checkEntity(EntityType.PIGLIN_BRUTE));
 
                 if (!powers.isEmpty()) {
                     EntityBehavior behavior = powers.get(0).getDesiredBehavior();

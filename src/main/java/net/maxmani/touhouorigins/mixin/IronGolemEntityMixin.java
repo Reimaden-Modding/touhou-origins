@@ -21,17 +21,17 @@ import java.util.List;
 @Mixin(IronGolemEntity.class)
 public abstract class IronGolemEntityMixin extends GolemEntity implements Angerable {
 
-    IronGolemEntityMixin(EntityType<? extends GolemEntity> entityType, World world) {
+    protected IronGolemEntityMixin(EntityType<? extends GolemEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    @Redirect(at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/ai/goal/GoalSelector;add(ILnet/minecraft/entity/ai/goal/Goal;)V", ordinal = 9), method = "initGoals")
+    @Redirect(method = "initGoals", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/ai/goal/GoalSelector;add(ILnet/minecraft/entity/ai/goal/Goal;)V", ordinal = 9))
     public void overrideFollowTargetGoalForZombies(GoalSelector goalSelector, int priority, Goal goal) {
         Goal newGoal = new ActiveTargetGoal<>(this, PlayerEntity.class, 10, true, false, (entity) -> {
             if(entity != null) {
 
                 List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(entity, ModifyBehaviorPower.class);
-                powers.removeIf((power) -> !power.checkEntity(this));
+                powers.removeIf((power) -> !power.checkEntity(EntityType.IRON_GOLEM));
 
                 boolean zombified = false;
 

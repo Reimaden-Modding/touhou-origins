@@ -14,12 +14,12 @@ import java.util.List;
 @Mixin(ActiveTargetGoal.class)
 public class ActiveTargetGoalMixin {
 
-    @Inject(at = @At(value = "HEAD"), method = "start", cancellable = true)
+    @Inject(method = "start", at = @At("HEAD"), cancellable = true)
     public void blockZombieTarget(CallbackInfo info) {
         ActiveTargetGoal target = (ActiveTargetGoal) (Object) this;
 
         List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(((ActiveTargetGoalAccessor) target).targetEntity(), ModifyBehaviorPower.class);
-        powers.removeIf((power) -> !power.checkEntity(((TrackTargetGoalAccessor) target).getMob()));
+        powers.removeIf((power) -> !power.checkEntity(((TrackTargetGoalAccessor) target).getMob().getType()));
 
         if (!powers.isEmpty()) {
             EntityBehavior behavior = powers.get(0).getDesiredBehavior();
