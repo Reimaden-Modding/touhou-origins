@@ -1,0 +1,39 @@
+{
+  "type": "apoli:multiple",
+  "damage_and_speed": {
+    "type": "apoli:attribute",
+    "modifiers": {
+      "name": "Mountainous Blades attack speed penalty",
+      "attribute": "minecraft:generic.attack_speed",
+      "operation": "multiply_total",
+      "value": -0.3
+    }
+  },
+  "attack_range": {
+    "type": "apoli:conditioned_attribute",
+    "modifiers": [
+      {
+        "name": "Extra Reach block reach",
+        "attribute": "reach-entity-attributes:reach",
+        "operation": "addition",
+        "value": 1
+      },
+      {
+        "name": "Extra Reach entity reach",
+        "attribute": "reach-entity-attributes:attack_range",
+        "operation": "addition",
+        "value": 1
+      }
+    ],
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "tag": "c:swords"
+        }
+      }
+    }
+  }
+}

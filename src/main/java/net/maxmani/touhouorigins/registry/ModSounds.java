@@ -15,6 +15,7 @@ public class ModSounds {
     public static final SoundEvent ENTITY_SATORI_RECOLLECT = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.satori.recollect"));
     public static final SoundEvent ENTITY_SATORI_CLOSE_EYE = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.satori.close_eye"));
     public static final SoundEvent ENTITY_GENERIC_GUST = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.generic.gust"));
+    public static final SoundEvent ENTITY_WOLF_TENGU_GROWL = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.wolf_tengu.growl"));
 
     public static void register() {
         Registry.register(Registry.SOUND_EVENT, ENTITY_ONI_STEP.getId(), ENTITY_ONI_STEP);
@@ -26,5 +27,6 @@ public class ModSounds {
         Registry.register(Registry.SOUND_EVENT, ENTITY_SATORI_RECOLLECT.getId(), ENTITY_SATORI_RECOLLECT);
         Registry.register(Registry.SOUND_EVENT, ENTITY_SATORI_CLOSE_EYE.getId(), ENTITY_SATORI_CLOSE_EYE);
         Registry.register(Registry.SOUND_EVENT, ENTITY_GENERIC_GUST.getId(), ENTITY_GENERIC_GUST);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_WOLF_TENGU_GROWL.getId(), ENTITY_WOLF_TENGU_GROWL);
     }
 }

@@ -20,6 +20,7 @@ import java.util.Collections;
 public class ModPowers {
 
     public static final PowerType<Power> ZOMBIE_ARMS = new PowerTypeReference<>(new Identifier(TouhouOrigins.MOD_ID, "zombie_arms"));
+    public static final PowerType<Power> NO_PROJECTILE_DIVERGENCE = new PowerTypeReference<>(new Identifier(TouhouOrigins.MOD_ID, "clumsy_archer"));
 
     public static final PowerFactory<Power> MODIFY_BEHAVIOR = new PowerFactory<>(new Identifier(TouhouOrigins.MOD_ID, "modify_behavior"), new SerializableData()
             .add("behavior", SerializableDataType.enumValue(EntityBehavior.class))

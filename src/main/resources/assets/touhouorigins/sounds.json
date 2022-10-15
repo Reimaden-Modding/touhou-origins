@@ -90,5 +90,14 @@
       }
     ],
     "subtitle": "touhouorigins.subtitles.entity.generic.gust"
+  },
+  "entity.wolf_tengu.growl": {
+    "sounds": [
+      "touhouorigins:growl1",
+      "touhouorigins:growl2",
+      "touhouorigins:growl3",
+      "touhouorigins:growl4"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.wolf_tengu.growl"
   }
 }

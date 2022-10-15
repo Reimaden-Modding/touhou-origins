@@ -94,6 +94,18 @@
   "power.touhouorigins.reporting_above_clouds.name": "Reporting Above Clouds",
   "power.touhouorigins.reporting_above_clouds.description": "It's in your nature to explore the world and write down all the strange happenings all around, you have no time to tussle with others and hunt. All of your damage is cut in half.",
 
+  "origin.touhouorigins.wolf_tengu.name": "Wolf Tengu",
+  "origin.touhouorigins.wolf_tengu.description": "White Wolf Tengu are the \"mountain's defense force\", responsible for keeping out intruders. They're known as avid players of shogi.",
+
+  "power.touhouorigins.warrior_spirit.name": "Warrior's Spirit",
+  "power.touhouorigins.warrior_spirit.description": "Unleash your warrior instincts to gain a massive strength boost for a short period of time.",
+  "power.touhouorigins.mountainous_blades.name": "Mountainous Blades",
+  "power.touhouorigins.mountainous_blades.description": "All swords swing a little slower, but your reach when using them is increased.",
+  "power.touhouorigins.clumsy_archer.name": "Clumsy Archer",
+  "power.touhouorigins.clumsy_archer.description": "You are less accurate with a bow.",
+  "power.touhouorigins.big_appetite.name": "Big Appetite",
+  "power.touhouorigins.big_appetite.description": "You require more food to sate your warrior body.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
@@ -102,6 +114,7 @@
   "touhouorigins.subtitles.entity.satori.recollect": "Satori recollects",
   "touhouorigins.subtitles.entity.satori.close_eye": "Third eye closes",
   "touhouorigins.subtitles.entity.generic.gust": "Wind rushes",
+  "touhouorigins.subtitles.entity.wolf_tengu.growl": "Wolf Tengu growls",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",

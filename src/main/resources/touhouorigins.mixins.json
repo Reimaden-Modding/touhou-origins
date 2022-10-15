@@ -16,7 +16,8 @@
     "PiglinBrainMixin",
     "PiglinBruteBrainMixin",
     "WardenEntityMixin",
-    "MobEntityMixin"
+    "MobEntityMixin",
+    "ProjectileEntityMixin"
   ],
   "client": [
   ],
