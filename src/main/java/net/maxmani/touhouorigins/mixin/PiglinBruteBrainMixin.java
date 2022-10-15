@@ -40,7 +40,7 @@ public class PiglinBruteBrainMixin {
     }
 
     @Inject(method = "tryRevenge", at = @At("HEAD"), cancellable = true)
-    private static void lobotomizePiglin(PiglinBruteEntity piglinBrute, LivingEntity target, CallbackInfo ci) {
+    private static void lobotomizePiglinBrute(PiglinBruteEntity piglinBrute, LivingEntity target, CallbackInfo ci) {
         List<ModifyBehaviorPower> powers = PowerHolderComponent.getPowers(target, ModifyBehaviorPower.class);
         powers.removeIf((power) -> !power.checkEntity(EntityType.PIGLIN_BRUTE));
 
