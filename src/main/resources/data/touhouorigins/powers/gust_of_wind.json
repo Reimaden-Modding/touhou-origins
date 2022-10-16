@@ -22,7 +22,8 @@
       },
       {
         "type": "apoli:play_sound",
-        "sound": "touhouorigins:entity.generic.gust"
+        "sound": "touhouorigins:entity.generic.gust",
+        "volume": 2
       }
     ]
   },

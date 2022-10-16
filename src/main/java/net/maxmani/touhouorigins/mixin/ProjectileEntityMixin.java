@@ -12,7 +12,7 @@ public class ProjectileEntityMixin {
 
     @ModifyVariable(method = "setVelocity(Lnet/minecraft/entity/Entity;FFFFF)V", at = @At("HEAD"), ordinal = 4, argsOnly = true)
     private float modifyDivergence(float oldDivergence, Entity user) {
-        if(ModPowers.NO_PROJECTILE_DIVERGENCE.isActive(user)) {
+        if(ModPowers.CLUMSY_ARCHER.isActive(user)) {
             return 10F;
         }
         return oldDivergence;

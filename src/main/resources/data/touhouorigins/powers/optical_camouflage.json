@@ -26,7 +26,8 @@
     "start_value": 150,
     "min_action": {
       "type": "apoli:play_sound",
-      "sound": "touhouorigins:entity.kappa.camouflage_deactivate"
+      "sound": "touhouorigins:entity.kappa.camouflage_deactivate",
+      "volume": 2
     }
   },
   "main": {
@@ -81,7 +82,8 @@
           },
           "action": {
             "type": "apoli:play_sound",
-            "sound": "touhouorigins:entity.kappa.camouflage_deactivate"
+            "sound": "touhouorigins:entity.kappa.camouflage_deactivate",
+            "volume": 2
           }
         },
         {
@@ -103,7 +105,8 @@
           },
           "action": {
             "type": "apoli:play_sound",
-            "sound": "touhouorigins:entity.kappa.camouflage_activate"
+            "sound": "touhouorigins:entity.kappa.camouflage_activate",
+            "volume": 2
           }
         }
       ]

@@ -106,6 +106,20 @@
   "power.touhouorigins.big_appetite.name": "Big Appetite",
   "power.touhouorigins.big_appetite.description": "You require more food to sate your warrior body.",
 
+  "origin.touhouorigins.ghost.name": "Ghost",
+  "origin.touhouorigins.ghost.description": "Ghosts are the souls of humans who have remained in the physical world. Although they are souls, they have a body temperature and are fully corporeal.",
+
+  "power.touhouorigins.hardened_soul.name": "Hardened Soul",
+  "power.touhouorigins.hardened_soul.description": "Your ghost form grants you immunity to poison and nausea.",
+  "power.touhouorigins.fading_body.name": "Fading Body",
+  "power.touhouorigins.fading_body.description": "While your ethereal body is more fragile (5 less hearts) than that of a mortal person, you regenerate health very quickly.",
+  "power.touhouorigins.apparition_appetite.name": "Apparition's Appetite",
+  "power.touhouorigins.apparition_appetite.description": "You do not require food to stay alive.",
+  "power.touhouorigins.futile_concoctions.name": "Futile Concoctions",
+  "power.touhouorigins.futile_concoctions.description": "You are unable to drink potions.",
+  "power.touhouorigins.withering_soul.name": "Withering Soul",
+  "power.touhouorigins.withering_soul.description": "Standing on soul sand or soul soil will slowly wither away your spirit, unless wearing boots enchanted with soul speed.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",

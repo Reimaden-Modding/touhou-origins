@@ -1,0 +1,8 @@
+{
+  "type": "apoli:modify_exhaustion",
+  "modifier": {
+    "name": "Removed exhaustion",
+    "operation": "multiply_total",
+    "value": -1
+  }
+}

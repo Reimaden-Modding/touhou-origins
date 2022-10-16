@@ -29,8 +29,7 @@
   "entity.kappa.camouflage_activate": {
     "sounds": [
       {
-        "name": "mob/irongolem/throw",
-        "volume": 2
+        "name": "mob/irongolem/throw"
       }
     ],
     "subtitle": "touhouorigins.subtitles.entity.kappa.camouflage_activate"
@@ -39,8 +38,7 @@
     "sounds": [
       {
         "name": "mob/irongolem/throw",
-        "pitch": 0.5,
-        "volume": 2
+        "pitch": 0.5
       }
     ],
     "subtitle": "touhouorigins.subtitles.entity.kappa.camouflage_deactivate"
@@ -85,8 +83,7 @@
     "sounds": [
       {
         "name": "mob/wither/shoot",
-        "pitch": 0.8,
-        "volume": 2
+        "pitch": 0.8
       }
     ],
     "subtitle": "touhouorigins.subtitles.entity.generic.gust"
@@ -99,5 +96,35 @@
       "touhouorigins:growl4"
     ],
     "subtitle": "touhouorigins.subtitles.entity.wolf_tengu.growl"
+  },
+  "entity.ghost.hurt": {
+    "sounds": [
+      {
+        "name": "mob/guardian/guardian_hit1",
+        "pitch": 2
+      },
+      {
+        "name": "mob/guardian/guardian_hit2",
+        "pitch": 2
+      },
+      {
+        "name": "mob/guardian/guardian_hit3",
+        "pitch": 2
+      },
+      {
+        "name": "mob/guardian/guardian_hit4",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "subtitles.entity.player.hurt"
+  },
+  "entity.ghost.death": {
+    "sounds": [
+      {
+        "name": "mob/guardian/guardian_death",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "subtitles.entity.player.death"
   }
 }
