@@ -120,6 +120,14 @@
   "power.touhouorigins.withering_soul.name": "Withering Soul",
   "power.touhouorigins.withering_soul.description": "Standing on soul sand or soul soil will slowly wither away your spirit, unless wearing boots enchanted with soul speed.",
 
+  "origin.touhouorigins.celestial.name": "Celestial",
+  "origin.touhouorigins.celestial.description": "Celestials are former humans, a type of hermit that live in Heaven. Celestials can be divided in two classes: those who gained immortality and ascended to Heaven, and those who attained enlightenment and entered Nirvana after death.",
+
+  "power.touhouorigins.divine_luck.name": "Divine Luck",
+  "power.touhouorigins.divine_luck.description": "No matter where you go, fortune smiles upon you. Increased luck attribute.",
+  "power.touhouorigins.lavish_lifestyle.name": "Lavish Lifestyle",
+  "power.touhouorigins.lavish_lifestyle.description": "You refuse to eat food that is not crafted but are much more fulfilled from craftable food.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",

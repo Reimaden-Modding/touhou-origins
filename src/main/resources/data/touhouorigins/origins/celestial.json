@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "touhouorigins:divine_luck",
+    "touhouorigins:lavish_lifestyle",
+    "touhouorigins:more_hunger_points"
+  ],
+  "icon": "minecraft:enchanted_golden_apple",
+  "order": 6,
+  "impact": 1
+}

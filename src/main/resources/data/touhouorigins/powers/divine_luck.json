@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "modifier": {
+    "name": "Divine Luck luck bonus",
+    "attribute": "minecraft:generic.luck",
+    "operation": "addition",
+    "value": 10
+  }
+}
