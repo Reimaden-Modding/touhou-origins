@@ -9,5 +9,6 @@
   "icon": "minecraft:heart_of_the_sea",
   "order": 4,
   "impact": 3,
-  "unchoosable": true
+  "unchoosable": true,
+  "name": "origin.touhouorigins.satori.name"
 }

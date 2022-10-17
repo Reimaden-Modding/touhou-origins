@@ -18,6 +18,10 @@ public class ModSounds {
     public static final SoundEvent ENTITY_WOLF_TENGU_GROWL = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.wolf_tengu.growl"));
     public static final SoundEvent ENTITY_GHOST_HURT = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.ghost.hurt"));
     public static final SoundEvent ENTITY_GHOST_DEATH = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.ghost.death"));
+    public static final SoundEvent ENTITY_CELESTIAL_EVOLVE = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.celestial.evolve"));
+    public static final SoundEvent ENTITY_CELESTIAL_DIVINITY_RESTORE = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.celestial.divinity_restore"));
+    public static final SoundEvent ENTITY_CELESTIAL_DIVINITY_DEPLETE = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.celestial.divinity_deplete"));
+    public static final SoundEvent ENTITY_CELESTIAL_PREVENT_DEATH = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.celestial.prevent_death"));
 
     public static void register() {
         Registry.register(Registry.SOUND_EVENT, ENTITY_ONI_STEP.getId(), ENTITY_ONI_STEP);
@@ -32,5 +36,9 @@ public class ModSounds {
         Registry.register(Registry.SOUND_EVENT, ENTITY_WOLF_TENGU_GROWL.getId(), ENTITY_WOLF_TENGU_GROWL);
         Registry.register(Registry.SOUND_EVENT, ENTITY_GHOST_HURT.getId(), ENTITY_GHOST_HURT);
         Registry.register(Registry.SOUND_EVENT, ENTITY_GHOST_DEATH.getId(), ENTITY_GHOST_DEATH);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_CELESTIAL_EVOLVE.getId(), ENTITY_CELESTIAL_EVOLVE);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_CELESTIAL_DIVINITY_RESTORE.getId(), ENTITY_CELESTIAL_DIVINITY_RESTORE);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_CELESTIAL_DIVINITY_DEPLETE.getId(), ENTITY_CELESTIAL_DIVINITY_DEPLETE);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_CELESTIAL_PREVENT_DEATH.getId(), ENTITY_CELESTIAL_PREVENT_DEATH);
     }
 }

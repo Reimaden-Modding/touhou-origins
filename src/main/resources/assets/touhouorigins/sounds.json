@@ -126,5 +126,35 @@
       }
     ],
     "subtitle": "subtitles.entity.player.death"
+  },
+  "entity.celestial.evolve": {
+    "sounds": [
+      {
+        "name": "item/totem/use_totem",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.celestial.evolve"
+  },
+  "entity.celestial.divinity_restore": {
+    "sounds": [
+      {
+        "name": "mob/illusion_illager/prepare_blind",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.celestial.divinity_restore"
+  },
+  "entity.celestial.divinity_deplete": {
+    "sounds": [
+      "block/beacon/deactivate"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.celestial.divinity_deplete"
+  },
+  "entity.celestial.prevent_death": {
+    "sounds": [
+      "random/anvil_land"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.celestial.prevent_death"
   }
 }

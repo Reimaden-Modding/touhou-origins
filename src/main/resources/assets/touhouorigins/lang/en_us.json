@@ -53,7 +53,7 @@
 
   "origin.touhouorigins.satori.name": "Satori",
   "origin.touhouorigins.satori.description": "Satori are a type of mountain-dwelling youkai in Japanese folklore. They are famous for being the youkai that are able to read human thoughts.",
-  "origin.touhouorigins.satori.announcement": "Your soul screams in horror as your mind starts slipping away, and is quickly replaced with total silence. There are no more thoughts.",
+  "origin.touhouorigins.satori.announcement": "Your soul screams in horror as your mind starts slipping away, and is quickly replaced with total silence",
 
   "power.touhouorigins.mind_reading.name": "Mind Reading",
   "power.touhouorigins.mind_reading.description": "Satori are capable of reading others' minds, enabling you to sense their presence and intent quite easily.",
@@ -68,7 +68,6 @@
   "power.touhouorigins.rejection_of_nature.name": "Rejection of Nature",
   "power.touhouorigins.rejection_of_nature.description": "The source of your powers is in your third eye. If you grow so frustrated with how you're treated, you can sew it shut using a string. The effects of this are permanent.",
 
-  "origin.touhouorigins.satori_closed_eye.name": "Satori",
   "origin.touhouorigins.satori_closed_eye.description": "If a satori closes their third eye, they will be unable to read others' minds and their consciousness is sealed away.",
 
   "power.touhouorigins.unconscious_manipulation.name": "Unconscious Manipulation",
@@ -86,7 +85,7 @@
   "power.touhouorigins.gust_of_wind.name": "Gust of Wind",
   "power.touhouorigins.gust_of_wind.description": "Unleash the power of the wind to launch yourself in the direction you are looking.",
   "power.touhouorigins.youkai_of_the_sky.name": "Youkai of the Sky",
-  "power.touhouorigins.youkai_of_the_sky.description": "The crow tengu are masters of the sky and flight. You have elytra wings without needing to equip any.",
+  "power.touhouorigins.youkai_of_the_sky.description": "The crow tengu are masters of the sky and flight. You have Elytra wings without needing to equip any.",
   "power.touhouorigins.tengu_speed.name": "Tengu's Speed",
   "power.touhouorigins.tengu_speed.description": "As a tengu, you are naturally faster than a regular person.",
   "power.touhouorigins.flight_friendly_body.name": "Flight-Friendly Body",
@@ -122,11 +121,23 @@
 
   "origin.touhouorigins.celestial.name": "Celestial",
   "origin.touhouorigins.celestial.description": "Celestials are former humans, a type of hermit that live in Heaven. Celestials can be divided in two classes: those who gained immortality and ascended to Heaven, and those who attained enlightenment and entered Nirvana after death.",
+  "origin.touhouorigins.celestial.announcementEnlightened": "You are now enlightened",
+  "origin.touhouorigins.celestial.announcementImmortal": "You are now immortal",
 
   "power.touhouorigins.divine_luck.name": "Divine Luck",
   "power.touhouorigins.divine_luck.description": "No matter where you go, fortune smiles upon you. Increased luck attribute.",
   "power.touhouorigins.lavish_lifestyle.name": "Lavish Lifestyle",
   "power.touhouorigins.lavish_lifestyle.description": "You refuse to eat food that is not crafted but are much more fulfilled from craftable food.",
+  "power.touhouorigins.path_to_enlightenment.name": "Path to Enlightenment",
+  "power.touhouorigins.path_to_enlightenment.description": "(Chosen with Elytra) The path to enlightenment results in inner peace and reaching Nirvana after death. By choosing this path you secure yourself the ability to return to earth after death. Although physically weaker, you no longer drop items on death, are much more attuned with gathering materials, and no longer need to eat.",
+  "power.touhouorigins.path_to_immortality.name": "Path to Immortality",
+  "power.touhouorigins.path_to_immortality.description": "(Chosen with Totem of Undying) The path to immortality results in a body hardened to survive and totally free from the shackles of age. Along with physical capabilities being raised, you now have a Divinity bar. As long as you have Divinity, you are unable to die. Divinity passively goes down as you run around, gather materials, and deal damage. The only way to replenish your Divinity is with golden apples.",
+
+  "power.touhouorigins.enlightened.name": "Enlightened",
+  "power.touhouorigins.enlightened.description": "Although physically weaker, you no longer drop items on death, are much more attuned with gathering materials, and no longer need to eat.",
+
+  "power.touhouorigins.immortal.name": "Immortal",
+  "power.touhouorigins.immortal.description": "Along with physical capabilities being raised, you now have a Divinity bar. As long as you have Divinity, you are unable to die. Divinity passively goes down as you run around, gather materials, and deal damage. The only way to replenish your Divinity is with golden apples.",
 
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
@@ -137,6 +148,10 @@
   "touhouorigins.subtitles.entity.satori.close_eye": "Third eye closes",
   "touhouorigins.subtitles.entity.generic.gust": "Wind rushes",
   "touhouorigins.subtitles.entity.wolf_tengu.growl": "Wolf Tengu growls",
+  "touhouorigins.subtitles.entity.celestial.evolve": "Celestial evolves",
+  "touhouorigins.subtitles.entity.celestial.divinity_restore": "Divinity restores",
+  "touhouorigins.subtitles.entity.celestial.divinity_deplete": "Divinity depletes",
+  "touhouorigins.subtitles.entity.celestial.prevent_death": "Celestial refuses to die",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
@@ -157,5 +172,9 @@
   "advancements.touhouorigins.root.title": "Touhou Origins",
   "advancements.touhouorigins.root.description": "Welcome to Gensokyo",
   "advancements.touhouorigins.close_eye.title": "Rejection of Nature",
-  "advancements.touhouorigins.close_eye.description": "Close your third eye"
+  "advancements.touhouorigins.close_eye.description": "Close your third eye",
+  "advancements.touhouorigins.enlightened.title": "Enlightened",
+  "advancements.touhouorigins.enlightened.description": "As a Celestial, attain enlightenment",
+  "advancements.touhouorigins.immortal.title": "Immortal",
+  "advancements.touhouorigins.immortal.description": "As a Celestial, attain immortality"
 }

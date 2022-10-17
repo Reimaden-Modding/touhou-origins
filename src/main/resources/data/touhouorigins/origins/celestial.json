@@ -2,9 +2,23 @@
   "powers": [
     "touhouorigins:divine_luck",
     "touhouorigins:lavish_lifestyle",
-    "touhouorigins:more_hunger_points"
+    "touhouorigins:more_hunger_points",
+    "touhouorigins:path_to_enlightenment",
+    "touhouorigins:path_to_immortality"
   ],
   "icon": "minecraft:enchanted_golden_apple",
   "order": 6,
-  "impact": 1
+  "impact": 1,
+  "upgrades": [
+    {
+      "condition": "touhouorigins:enlightened",
+      "origin": "touhouorigins:celestial_enlightened",
+      "announcement": "origin.touhouorigins.celestial.announcementEnlightened"
+    },
+    {
+      "condition": "touhouorigins:immortal",
+      "origin": "touhouorigins:celestial_immortal",
+      "announcement": "origin.touhouorigins.celestial.announcementImmortal"
+    }
+  ]
 }

@@ -1,0 +1,31 @@
+{
+  "parent": "touhouorigins:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:elytra"
+    },
+    "title": {
+      "translate": "advancements.touhouorigins.enlightened.title"
+    },
+    "description": {
+      "translate": "advancements.touhouorigins.enlightened.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chose_celestial_enlightened": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "touhouorigins:celestial_enlightened"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chose_celestial_enlightened"
+    ]
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "type": "apoli:multiple",
+  "keep_inventory": {
+    "type": "apoli:keep_inventory"
+  },
+  "melee_damage": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Enlightened melee damage penalty",
+      "operation": "multiply_total",
+      "value": -0.33
+    }
+  },
+  "ranged_damage": {
+    "type": "apoli:modify_projectile_damage",
+    "modifier": {
+      "name": "Enlightened ranged damage penalty",
+      "operation": "multiply_total",
+      "value": -0.33
+    }
+  },
+  "no_eat": {
+    "type": "apoli:modify_exhaustion",
+    "modifier": {
+      "name": "Stop exhaustion before starving",
+      "operation": "multiply_base",
+      "value": -1
+    },
+    "condition": {
+      "type": "apoli:food_level",
+      "comparison": "<=",
+      "compare_to": 7
+    }
+  },
+  "hunger_immunity": {
+    "type": "apoli:effect_immunity",
+    "effect": "minecraft:hunger"
+  },
+  "no_starving": {
+    "type": "apoli:invulnerability",
+    "damage_condition": {
+      "type": "apoli:name",
+      "name": "starve"
+    }
+  },
+  "faster_mining": {
+    "type": "apoli:modify_break_speed",
+    "modifier": {
+      "name": "Enlightened mining speed bonus",
+      "operation": "multiply_base",
+      "value": 0.5
+    },
+    "condition": {
+      "type": "apoli:using_effective_tool"
+    }
+  },
+  "more_ores": {
+    "type": "apoli:replace_loot_table",
+    "replace": {
+      "([a-z|0-9|\\-|_])*:blocks\/([a-z|0-9|\\-|_])*_ore": "touhouorigins:double_loot"
+    }
+  }
+}

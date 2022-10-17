@@ -21,6 +21,7 @@ public class ModPowers {
 
     public static final PowerType<Power> ZOMBIE_ARMS = new PowerTypeReference<>(new Identifier(TouhouOrigins.MOD_ID, "zombie_arms"));
     public static final PowerType<Power> CLUMSY_ARCHER = new PowerTypeReference<>(new Identifier(TouhouOrigins.MOD_ID, "clumsy_archer"));
+    public static final PowerType<Power> NO_MINING_EXHAUSTION = new PowerTypeReference<>(new Identifier(TouhouOrigins.MOD_ID, "no_mining_exhaustion"));
 
     public static final PowerFactory<Power> MODIFY_BEHAVIOR = new PowerFactory<>(new Identifier(TouhouOrigins.MOD_ID, "modify_behavior"), new SerializableData()
             .add("behavior", SerializableDataType.enumValue(EntityBehavior.class))

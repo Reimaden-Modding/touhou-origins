@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "touhouorigins:divine_luck",
+    "touhouorigins:lavish_lifestyle",
+    "touhouorigins:more_hunger_points",
+    "touhouorigins:enlightened",
+    "touhouorigins:no_mining_exhaustion"
+  ],
+  "icon": "minecraft:elytra",
+  "order": 6,
+  "impact": 3,
+  "unchoosable": true,
+  "name": "origin.touhouorigins.celestial.name",
+  "description": "origin.touhouorigins.celestial.description"
+}

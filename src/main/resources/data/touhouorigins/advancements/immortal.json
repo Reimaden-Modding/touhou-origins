@@ -1,0 +1,31 @@
+{
+  "parent": "touhouorigins:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "title": {
+      "translate": "advancements.touhouorigins.immortal.title"
+    },
+    "description": {
+      "translate": "advancements.touhouorigins.immortal.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chose_celestial_immortal": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "touhouorigins:celestial_immortal"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chose_celestial_immortal"
+    ]
+  ]
+}
