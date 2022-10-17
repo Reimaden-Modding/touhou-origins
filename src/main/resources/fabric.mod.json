@@ -17,7 +17,7 @@
     "sources": "https://github.com/Maxmani/touhou-origins"
   },
 
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "icon": "assets/touhouorigins/icon.png",
 
   "environment": "*",
