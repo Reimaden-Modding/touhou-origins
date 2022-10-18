@@ -27,7 +27,7 @@
           "type": "apoli:damage",
           "amount": 11,
           "source": {
-            "name": "probe.player",
+            "name": "probe",
             "bypasses_armor": true
           }
         },
@@ -54,7 +54,7 @@
       "type": "apoli:damage",
       "amount": 11,
       "source": {
-        "name": "probe.player",
+        "name": "probe",
         "bypasses_armor": true
       }
     }

@@ -151,6 +151,14 @@
   "power.touhouorigins.searing_light.name": "Searing Light",
   "power.touhouorigins.searing_light.description": "You burn in daylight if you aren't wearing a helmet or a pumpkin.",
 
+  "origin.touhouorigins.vengeful_spirit.name": "Vengeful Spirit",
+  "origin.touhouorigins.vengeful_spirit.description": "A vengeful spirit is a type of ghost created under special circumstances. They often seek revenge for unjust deeds done to them.",
+
+  "power.touhouorigins.vengeful_harvest.name": "Vengeful Harvest",
+  "power.touhouorigins.vengeful_harvest.description": "Killing a mob or another player grants you a stack. Once you have at least 5 stacks, you can activate this power to regenerate health. You can store up to 3 heals.",
+  "power.touhouorigins.searing_rage.name": "Searing Rage",
+  "power.touhouorigins.searing_rage.description": "The lower your health is, the more melee damage you deal. Opponents that strike you with melee will occasionally take fire damage",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
@@ -163,12 +171,14 @@
   "touhouorigins.subtitles.entity.celestial.evolve": "Celestial evolves",
   "touhouorigins.subtitles.entity.celestial.divinity_restore": "Divinity restores",
   "touhouorigins.subtitles.entity.celestial.divinity_deplete": "Divinity depletes",
-  "touhouorigins.subtitles.entity.celestial.prevent_death": "Celestial refuses to die",
+  "touhouorigins.subtitles.entity.vengeful_spirit.heal": "Vengeful Spirit regenerates",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
-  "death.attack.probe.player": "%1$s was probed by %2$s",
-  "death.attack.probe.player.item": "%1$s was probed by %2$s using %3$s",
+  "death.attack.probe": "%1$s was probed by %2$s",
+  "death.attack.probe.item": "%1$s was probed by %2$s using %3$s",
+  "death.attack.fireThorns": "%1$s burned their hand fighting %2$s",
+  "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s",
 
   "power.touhouorigins.recollection.player": "%1$s has the following memories...",
   "power.touhouorigins.recollection.spawnX": "Respawn X",
