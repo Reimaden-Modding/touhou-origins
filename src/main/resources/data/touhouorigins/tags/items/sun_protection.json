@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:leather_helmet",
+    "minecraft:chainmail_helmet",
+    "minecraft:iron_helmet",
+    "minecraft:golden_helmet",
+    "minecraft:diamond_helmet",
+    "minecraft:netherite_helmet",
+    "minecraft:carved_pumpkin",
+    "minecraft:turtle_helmet",
+    {
+      "id": "advancednetherite:netherite_iron_helmet",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_helmet",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_emerald_helmet",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_diamond_helmet",
+      "required": false
+    }
+  ]
+}

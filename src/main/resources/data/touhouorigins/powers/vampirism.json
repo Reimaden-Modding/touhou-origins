@@ -37,14 +37,18 @@
            {
              "type": "apoli:or",
               "conditions" : [
-               {
-                 "type": "origins:origin",
-                  "origin": "touhouorigins:ghost"
-               },
-               {
-                 "type": "origins:origin",
-                 "origin": "touhouorigins:vengeful_spirit"
-               }
+                {
+                  "type": "origins:origin",
+                   "origin": "touhouorigins:ghost"
+                },
+                {
+                   "type": "origins:origin",
+                   "origin": "touhouorigins:vengeful_spirit"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:jiang_shi"
+                }
               ]
             }
           ],
@@ -101,6 +105,10 @@
                 {
                   "type": "origins:origin",
                   "origin": "touhouorigins:vengeful_spirit"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:jiang_shi"
                 }
               ]
             }

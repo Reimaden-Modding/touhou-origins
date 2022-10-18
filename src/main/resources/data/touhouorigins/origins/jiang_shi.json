@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "touhouorigins:one_of_us",
+    "touhouorigins:life_drain",
+    "touhouorigins:pestilence",
+    "touhouorigins:searing_light",
+    "touhouorigins:zombie_arms"
+  ],
+  "icon": "minecraft:rotten_flesh",
+  "order": 2,
+  "impact": 3
+}

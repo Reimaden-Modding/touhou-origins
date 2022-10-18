@@ -139,6 +139,18 @@
   "power.touhouorigins.immortal.name": "Immortal",
   "power.touhouorigins.immortal.description": "Along with physical capabilities being raised, you now have a Divinity bar. As long as you have Divinity, you are unable to die. Divinity passively goes down as you run around, gather materials, and deal damage. The only way to replenish your Divinity is with golden apples.",
 
+  "origin.touhouorigins.jiang_shi.name": "Jiang Shi",
+  "origin.touhouorigins.jiang_shi.description": "In Chinese folklore, jiang shi are reanimated corpses that move around by hopping with their arms outstretched. They are often compared to vampires because jiang shi attempt to suck qi, life energy, from the living, though they're actually more similar to zombies.",
+
+  "power.touhouorigins.one_of_us.name": "One of Us",
+  "power.touhouorigins.one_of_us.description": "All zombies are neutral towards you. However, villagers fear you and iron golems are hostile towards you.",
+  "power.touhouorigins.life_drain.name": "Life Drain",
+  "power.touhouorigins.life_drain.description": "Whenever you deal more than one damage, you drain the life force of your enemy, healing you for half a heart.",
+  "power.touhouorigins.pestilence.name": "Pestilence",
+  "power.touhouorigins.pestilence.description": "Your undead body is immune to poison and hunger, but also immune to regeneration. Instant health and instant damage are reversed, and you're weak to smite. You are also capable of zombifying villagers.",
+  "power.touhouorigins.searing_light.name": "Searing Light",
+  "power.touhouorigins.searing_light.description": "You burn in daylight if you aren't wearing a helmet or a pumpkin.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",

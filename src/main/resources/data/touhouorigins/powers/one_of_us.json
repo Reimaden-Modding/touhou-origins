@@ -1,0 +1,22 @@
+{
+  "type": "apoli:multiple",
+  "pacify_zombies": {
+    "type": "touhouorigins:modify_behavior",
+    "behavior": "neutral",
+    "entities": [
+      "minecraft:zombie",
+      "minecraft:zombie_villager",
+      "minecraft:husk",
+      "minecraft:drowned"
+    ]
+  },
+  "anger_villagers": {
+    "type": "touhouorigins:modify_behavior",
+    "behavior": "hostile",
+    "entities": [
+      "minecraft:villager",
+      "minecraft:wandering_trader",
+      "minecraft:iron_golem"
+    ]
+  }
+}
