@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "touhouorigins:chilling_touch",
+    "touhouorigins:deadly_snow",
+    "touhouorigins:snow_woman",
+    "touhouorigins:ice_cold"
+  ],
+  "icon": "minecraft:snowball",
+  "order": 7,
+  "impact": 1
+}

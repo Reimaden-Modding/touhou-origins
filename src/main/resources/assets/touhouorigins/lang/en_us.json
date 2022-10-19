@@ -159,6 +159,18 @@
   "power.touhouorigins.searing_rage.name": "Searing Rage",
   "power.touhouorigins.searing_rage.description": "The lower your health is, the more melee damage you deal. Opponents that strike you with melee will occasionally take fire damage",
 
+  "origin.touhouorigins.yuki_onna.name": "Yuki-Onna",
+  "origin.touhouorigins.yuki_onna.description": "A yuki-onna is a spirit or a youkai associated with winter and snowstorms. It is said in some legends to be the spirit of an individual who has perished in the snow and cold.",
+
+  "power.touhouorigins.chilling_touch.name": "Chilling Touch",
+  "power.touhouorigins.chilling_touch.description": "Your attacks inflict slowness. The level of slowness increases the lower the health of the target is.",
+  "power.touhouorigins.deadly_snow.name": "Deadly Snow",
+  "power.touhouorigins.deadly_snow.description": "Snowballs you throw deal 2 damage.",
+  "power.touhouorigins.snow_woman.name": "Snow Woman",
+  "power.touhouorigins.snow_woman.description": "You regenerate health and gain a speed increase while in snowy biomes, while hot biomes slow you down. The Nether will set you ablaze unless wearing boots enchanted with frost walker.",
+  "power.touhouorigins.ice_cold.name": "Ice-Cold",
+  "power.touhouorigins.ice_cold.description": "You can craft ice from snowballs.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",

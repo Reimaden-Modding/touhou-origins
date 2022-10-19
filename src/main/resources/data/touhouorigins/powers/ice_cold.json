@@ -1,0 +1,20 @@
+{
+  "type": "apoli:recipe",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "id": "touhouorigins:ice",
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:snowball"
+      }
+    },
+    "result": {
+      "item": "minecraft:ice"
+    }
+  }
+}
