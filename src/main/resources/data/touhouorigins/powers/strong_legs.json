@@ -1,0 +1,57 @@
+{
+  "type": "apoli:multiple",
+  "jump": {
+    "type": "apoli:modify_jump",
+    "modifier": {
+      "operation": "addition",
+      "value": 0.25
+    },
+    "entity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:spawn_particles",
+          "particle": "minecraft:cloud",
+          "count": 16,
+          "speed": 0.01,
+          "spread": {
+            "x": 0.3,
+            "y": 0.3,
+            "z": 0.3
+          },
+          "offset_y": 0
+        },
+        {
+          "type": "apoli:play_sound",
+          "sound": "touhouorigins:entity.rabbit.hop"
+        }
+      ]
+    },
+    "condition": {
+      "type": "apoli:sneaking"
+    }
+  },
+  "hunger": {
+    "type": "apoli:modify_exhaustion",
+    "modifier": {
+      "name": "Slower hunger drain when running",
+      "value": -0.65,
+      "operation": "multiply_base"
+    },
+    "condition": {
+      "type": "apoli:sprinting"
+    }
+  },
+  "fall_damage": {
+    "type": "apoli:modify_damage_taken",
+    "damage_condition": {
+      "type": "apoli:name",
+      "name": "fall"
+    },
+    "modifier": {
+      "name": "Less base fall damage",
+      "operation": "multiply_base",
+      "value": -0.25
+    }
+  }
+}

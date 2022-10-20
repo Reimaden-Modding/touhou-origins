@@ -37,7 +37,7 @@
   "health": {
     "type": "apoli:attribute",
     "modifier": {
-      "name": "Fading Body health penalty",
+      "name": "Ghost health penalty",
       "attribute": "minecraft:generic.max_health",
       "operation": "addition",
       "value": -10

@@ -3,7 +3,7 @@
   "health": {
     "type": "apoli:attribute",
     "modifier": {
-      "name": "Flight-Friendly Body health penalty",
+      "name": "Crow Tengu health penalty",
       "attribute": "minecraft:generic.max_health",
       "value": -6,
       "operation": "addition"

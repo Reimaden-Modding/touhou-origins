@@ -3,7 +3,7 @@
   "health": {
     "type": "apoli:attribute",
     "modifier": {
-      "name": "Fodder health penalty",
+      "name": "Fairy health penalty",
       "attribute": "minecraft:generic.max_health",
       "operation": "addition",
       "value": -8

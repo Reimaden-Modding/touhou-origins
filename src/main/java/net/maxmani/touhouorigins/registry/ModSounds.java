@@ -28,6 +28,9 @@ public class ModSounds {
     public static final SoundEvent ENTITY_VENGEFUL_SPIRIT_DEATH = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.vengeful_spirit.death"));
     public static final SoundEvent ENTITY_HANIWA_RESIST = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.haniwa.resist"));
     public static final SoundEvent ENTITY_HANIWA_BREAK = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.haniwa.break"));
+    public static final SoundEvent ENTITY_RABBIT_HOP = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.rabbit.hop"));
+    public static final SoundEvent ENTITY_MOON_RABBIT_ACTIVATE = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.moon_rabbit.activate"));
+    public static final SoundEvent ENTITY_MOON_RABBIT_DEACTIVATE = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.moon_rabbit.deactivate"));
 
     public static void register() {
         Registry.register(Registry.SOUND_EVENT, ENTITY_ONI_STEP.getId(), ENTITY_ONI_STEP);
@@ -52,5 +55,8 @@ public class ModSounds {
         Registry.register(Registry.SOUND_EVENT, ENTITY_VENGEFUL_SPIRIT_DEATH.getId(), ENTITY_VENGEFUL_SPIRIT_DEATH);
         Registry.register(Registry.SOUND_EVENT, ENTITY_HANIWA_RESIST.getId(), ENTITY_HANIWA_RESIST);
         Registry.register(Registry.SOUND_EVENT, ENTITY_HANIWA_BREAK.getId(), ENTITY_HANIWA_BREAK);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_RABBIT_HOP.getId(), ENTITY_RABBIT_HOP);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_MOON_RABBIT_ACTIVATE.getId(), ENTITY_MOON_RABBIT_ACTIVATE);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_MOON_RABBIT_DEACTIVATE.getId(), ENTITY_MOON_RABBIT_DEACTIVATE);
     }
 }

@@ -183,6 +183,16 @@
   "power.touhouorigins.fragile_structure.name": "Fragile Structure",
   "power.touhouorigins.fragile_structure.description": "While your terracotta is sturdy, it does not take sudden impacts well. You take triple damage from kinetic sources, explosions, and pickaxes",
 
+  "origin.touhouorigins.moon_rabbit.name": "Moon Rabbit",
+  "origin.touhouorigins.moon_rabbit.description": "Tools used by the Lunarians who have fled from their previous lives in search of greener pastures. They take with them their training and skills, but always live in fear of being found out and taken back to the lunar surface.",
+
+  "power.touhouorigins.military_of_the_moon.name": "Military of the Moon",
+  "power.touhouorigins.military_of_the_moon.description": "You start with a crossbow and a handful of arrows. You can activate this power to rapidly reload your crossbow. This only works with regular arrows.",
+  "power.touhouorigins.strong_legs.name": "Strong Legs",
+  "power.touhouorigins.strong_legs.description": "You are capable of jumping higher while sneaking and running longer than a regular person. You take slightly less fall damage.",
+  "power.touhouorigins.timid_constitution.name": "Timid Constitution",
+  "power.touhouorigins.timid_constitution.description": "You're not built for combat, and have 2 less hearts of health. You also swing slower while carrying melee weapons like axes, swords, and tridents.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
@@ -196,6 +206,8 @@
   "touhouorigins.subtitles.entity.celestial.divinity_restore": "Divinity restores",
   "touhouorigins.subtitles.entity.celestial.divinity_deplete": "Divinity depletes",
   "touhouorigins.subtitles.entity.vengeful_spirit.heal": "Vengeful Spirit regenerates",
+  "touhouorigins.subtitles.entity.rabbit.hop": "Rabbit hops",
+  "touhouorigins.subtitles.entity.moon_rabbit.activate": "Moon Rabbit prepares to fire",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
