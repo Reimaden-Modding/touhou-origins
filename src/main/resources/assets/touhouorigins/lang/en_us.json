@@ -171,6 +171,18 @@
   "power.touhouorigins.ice_cold.name": "Ice-Cold",
   "power.touhouorigins.ice_cold.description": "You can craft ice from snowballs.",
 
+  "origin.touhouorigins.haniwa.name": "Haniwa",
+  "origin.touhouorigins.haniwa.description": "Expertly crafted statues in the form of long fallen warriors. Now given a fighting spirit and a will of iron, the haniwa warrior is proficient in many forms of combat while remaining durable thanks to their terracotta construction.",
+
+  "power.touhouorigins.warrior_of_an_old_age.name": "Warrior of an Old Age",
+  "power.touhouorigins.warrior_of_an_old_age.description": "You find yourself able to wield weapons with ease, increasing your attack speed.",
+  "power.touhouorigins.quick_patch_up_job.name": "Quick Patch-up Job",
+  "power.touhouorigins.quick_patch_up_job.description": "You can use clay to quickly heal yourself.",
+  "power.touhouorigins.terracotta_skin.name": "Terracotta Skin",
+  "power.touhouorigins.terracotta_skin.description": "Your body is made of hardened clay, not actual flesh. You are immune to thorns, cacti, berry bushes, fire, freezing, and take 30% less damage from all physical sources not stated in \"Fragile Structure\", but do not regenerate health naturally and are unaffected by healing effects. You also never get exhausted and have no need to eat.",
+  "power.touhouorigins.fragile_structure.name": "Fragile Structure",
+  "power.touhouorigins.fragile_structure.description": "While your terracotta is sturdy, it does not take sudden impacts well. You take triple damage from kinetic sources, explosions, and pickaxes",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",

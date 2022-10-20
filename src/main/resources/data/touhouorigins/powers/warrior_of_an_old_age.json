@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "modifier": {
+    "name": "Attack speed bonus",
+    "attribute": "minecraft:generic.attack_speed",
+    "operation": "multiply_total",
+    "value": 0.1
+  }
+}

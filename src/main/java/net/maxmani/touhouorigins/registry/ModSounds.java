@@ -26,6 +26,8 @@ public class ModSounds {
     public static final SoundEvent ENTITY_VENGEFUL_SPIRIT_HARVEST = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.vengeful_spirit.harvest"));
     public static final SoundEvent ENTITY_VENGEFUL_SPIRIT_HURT = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.vengeful_spirit.hurt"));
     public static final SoundEvent ENTITY_VENGEFUL_SPIRIT_DEATH = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.vengeful_spirit.death"));
+    public static final SoundEvent ENTITY_HANIWA_RESIST = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.haniwa.resist"));
+    public static final SoundEvent ENTITY_HANIWA_BREAK = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.haniwa.break"));
 
     public static void register() {
         Registry.register(Registry.SOUND_EVENT, ENTITY_ONI_STEP.getId(), ENTITY_ONI_STEP);
@@ -48,5 +50,7 @@ public class ModSounds {
         Registry.register(Registry.SOUND_EVENT, ENTITY_VENGEFUL_SPIRIT_HARVEST.getId(), ENTITY_VENGEFUL_SPIRIT_HARVEST);
         Registry.register(Registry.SOUND_EVENT, ENTITY_VENGEFUL_SPIRIT_HURT.getId(), ENTITY_VENGEFUL_SPIRIT_HURT);
         Registry.register(Registry.SOUND_EVENT, ENTITY_VENGEFUL_SPIRIT_DEATH.getId(), ENTITY_VENGEFUL_SPIRIT_DEATH);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_HANIWA_RESIST.getId(), ENTITY_HANIWA_RESIST);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_HANIWA_BREAK.getId(), ENTITY_HANIWA_BREAK);
     }
 }

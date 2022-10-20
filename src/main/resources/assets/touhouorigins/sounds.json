@@ -268,5 +268,30 @@
       }
     ],
     "subtitle": "subtitles.entity.player.death"
+  },
+  "entity.haniwa.resist": {
+    "sounds": [
+      {
+        "name": "random/anvil_land",
+        "pitch": 2,
+        "volume": 0.8
+      }
+    ]
+  },
+  "entity.haniwa.break": {
+    "sounds": [
+      {
+        "name": "random/glass1",
+        "pitch": 0.5
+      },
+      {
+        "name": "random/glass2",
+        "pitch": 0.5
+      },
+      {
+        "name": "random/glass3",
+        "pitch": 0.5
+      }
+    ]
   }
 }

@@ -1,0 +1,75 @@
+{
+  "type": "apoli:modify_damage_taken",
+  "damage_condition": {
+    "type": "apoli:or",
+    "conditions": [
+      {
+        "type": "apoli:name",
+        "name": "fall"
+      },
+      {
+        "type": "apoli:name",
+        "name": "flyIntoWall"
+      },
+      {
+        "type": "apoli:name",
+        "name": "anvil"
+      },
+      {
+        "type": "apoli:name",
+        "name": "fireworks"
+      },
+      {
+        "type": "apoli:name",
+        "name": "witherSkull"
+      },
+      {
+        "type": "apoli:name",
+        "name": "explosion.player"
+      },
+      {
+        "type": "apoli:name",
+        "name": "explosion"
+      },
+      {
+        "type": "apoli:name",
+        "name": "badRespawnPoint"
+      },
+      {
+        "type": "apoli:name",
+        "name": "fallingStalactite"
+      },
+      {
+        "type": "apoli:name",
+        "name": "stalagmite"
+      },
+      {
+        "type": "apoli:name",
+        "name": "sonic_boom"
+      },
+      {
+        "type": "apoli:attacker",
+        "entity_condition": {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "c:pickaxes"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "modifier": {
+    "name": "Triple damage",
+    "operation": "multiply_total",
+    "value": 2
+  },
+  "self_action": {
+    "type": "apoli:play_sound",
+    "sound": "touhouorigins:entity.haniwa.break",
+    "pitch": 0.5
+  }
+}

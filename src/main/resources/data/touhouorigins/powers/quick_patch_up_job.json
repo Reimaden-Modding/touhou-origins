@@ -1,0 +1,19 @@
+{
+  "type": "apugli:edible_item",
+  "item_condition": {
+    "type": "apoli:ingredient",
+    "ingredient": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "food_component": {
+    "hunger": 0,
+    "saturation": 0,
+    "always_edible": true,
+    "snack": true
+  },
+  "entity_action": {
+    "type": "apoli:heal",
+    "amount": 2
+  }
+}

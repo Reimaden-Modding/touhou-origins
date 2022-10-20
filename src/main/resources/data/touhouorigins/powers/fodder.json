@@ -39,7 +39,7 @@
   "exhaustion": {
     "type": "apoli:modify_exhaustion",
     "modifier": {
-      "name": "Removed exhaustion",
+      "name": "No exhaustion",
       "operation": "multiply_total_multiplicative",
       "value": -1
     }

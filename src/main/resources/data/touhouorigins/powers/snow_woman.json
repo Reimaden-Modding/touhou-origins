@@ -101,7 +101,7 @@
       },
       "else_action": {
         "type": "apoli:execute_command",
-        "command": "particle minecraft:firework ~ ~0.5 ~ 0.2 0.05 0.2 0.01 5 force"
+        "command": "particle minecraft:snowflake ~ ~0.5 ~ 0.2 0.05 0.2 0.01 5 force"
       }
     },
     "interval": 5
