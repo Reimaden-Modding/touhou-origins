@@ -31,6 +31,9 @@ public class ModSounds {
     public static final SoundEvent ENTITY_RABBIT_HOP = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.rabbit.hop"));
     public static final SoundEvent ENTITY_MOON_RABBIT_ACTIVATE = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.moon_rabbit.activate"));
     public static final SoundEvent ENTITY_MOON_RABBIT_DEACTIVATE = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.moon_rabbit.deactivate"));
+    public static final SoundEvent ENTITY_HELL_RAVEN_DECAY = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.hell_raven.decay"));
+    public static final SoundEvent ENTITY_HELL_RAVEN_ALERT = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.hell_raven.alert"));
+    public static final SoundEvent ENTITY_HELL_RAVEN_SHOOT = new SoundEvent(new Identifier(TouhouOrigins.MOD_ID,"entity.hell_raven.shoot"));
 
     public static void register() {
         Registry.register(Registry.SOUND_EVENT, ENTITY_ONI_STEP.getId(), ENTITY_ONI_STEP);
@@ -58,5 +61,8 @@ public class ModSounds {
         Registry.register(Registry.SOUND_EVENT, ENTITY_RABBIT_HOP.getId(), ENTITY_RABBIT_HOP);
         Registry.register(Registry.SOUND_EVENT, ENTITY_MOON_RABBIT_ACTIVATE.getId(), ENTITY_MOON_RABBIT_ACTIVATE);
         Registry.register(Registry.SOUND_EVENT, ENTITY_MOON_RABBIT_DEACTIVATE.getId(), ENTITY_MOON_RABBIT_DEACTIVATE);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_HELL_RAVEN_DECAY.getId(), ENTITY_HELL_RAVEN_DECAY);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_HELL_RAVEN_ALERT.getId(), ENTITY_HELL_RAVEN_ALERT);
+        Registry.register(Registry.SOUND_EVENT, ENTITY_HELL_RAVEN_SHOOT.getId(), ENTITY_HELL_RAVEN_SHOOT);
     }
 }

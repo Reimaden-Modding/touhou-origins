@@ -1,0 +1,64 @@
+{
+  "type": "apoli:multiple",
+  "spawn": {
+    "type": "apoli:modify_player_spawn",
+    "dimension": "minecraft:the_nether",
+    "dimension_distance_multiplier": 0.125
+  },
+  "fire_immunity": {
+    "type": "apoli:fire_immunity"
+  },
+  "invulnerability": {
+    "type": "apoli:invulnerability",
+    "damage_condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:name",
+          "name": "inFire"
+        },
+        {
+          "type": "apoli:name",
+          "name": "onFire"
+        },
+        {
+          "type": "apoli:name",
+          "name": "hotFloor"
+        },
+        {
+          "type": "apoli:name",
+          "name": "fireThorns"
+        }
+      ]
+    }
+  },
+  "particles": {
+    "type": "apoli:particle",
+    "particle": "minecraft:flame",
+    "frequency": 5
+  },
+  "particles_2": {
+    "type": "apoli:particle",
+    "particle": "minecraft:flame",
+    "frequency": 10
+  },
+  "lava_speed": {
+    "type": "apoli:modify_lava_speed",
+    "modifier": {
+      "operation": "addition",
+      "value": 0.4
+    }
+  },
+  "water_speed": {
+    "type": "apoli:modify_swim_speed",
+    "modifier": {
+      "operation": "multiply_base",
+      "value": -0.375
+    }
+  },
+  "lava_vision": {
+    "type": "apoli:lava_vision",
+    "s": 0,
+    "v": 15
+  }
+}

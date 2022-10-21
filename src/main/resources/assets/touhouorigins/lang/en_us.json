@@ -203,6 +203,20 @@
   "power.touhouorigins.feeble_nature.name": "Feeble Nature",
   "power.touhouorigins.feeble_nature.description": "You have 3 less hearts of health and you're slightly smaller.",
 
+  "origin.touhouorigins.hell_raven.name": "Hell Raven",
+  "origin.touhouorigins.hell_raven.description": "Hell ravens have existed in the Hell of Blazing Fires for as long as it's been burning. Unlike normal ravens, they are born from the darkness of hell. Some Hell ravens might even end up absorbing a god to gain its powers.",
+
+  "power.touhouorigins.blackened.name": "Blackened",
+  "power.touhouorigins.blackened.description": "You rapidly heal yourself while standing in fire or lava.",
+  "power.touhouorigins.born_in_flame.name": "Born in Flame",
+  "power.touhouorigins.born_in_flame.description": "As Hell is your home, you're well acclimated and live there. You spawn in the Nether, and are immune to fire and lava. You also swim faster in lava and slower in water.",
+  "power.touhouorigins.doom_design.name": "Doom Design",
+  "power.touhouorigins.doom_design.description": "Contained within you is the incredible and awesome power of the sun, empowering you with great ability at a great price. All of your attacks inflict fire damage and have a chance to explode on contact. You take more damage from all sources, except explosions, and you explode on death.",
+  "power.touhouorigins.smoldering_decay.name": "Smoldering Decay",
+  "power.touhouorigins.smoldering_decay.description": "Your abilities stem from a fission core that can be drained from too much use. Anytime you deal or take damage, fill a bit of your \"Decay Meter\". Once half full, you are extremely weakened. Your Decay meter can be drained by resting in lava.",
+  "power.touhouorigins.my_apocalypse.name": "My Apocalypse",
+  "power.touhouorigins.my_apocalypse.description": "As long as your Decay meter is not half full, you can activate your special ability and go into a total core meltdown. Firing flames in all directions and ending with a massive explosion around you. Afterwards, your Decay meter will fill itself entirely.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
@@ -218,6 +232,9 @@
   "touhouorigins.subtitles.entity.vengeful_spirit.heal": "Vengeful Spirit regenerates",
   "touhouorigins.subtitles.entity.rabbit.hop": "Rabbit hops",
   "touhouorigins.subtitles.entity.moon_rabbit.activate": "Moon Rabbit prepares to fire",
+  "touhouorigins.subtitles.entity.hell_raven.decay": "Decay fills",
+  "touhouorigins.subtitles.entity.hell_raven.alert": "Alarm blares",
+  "touhouorigins.subtitles.entity.hell_raven.shoot": "Hell Raven shoots",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
@@ -234,6 +251,7 @@
   "power.touhouorigins.recollection.alert": "You have a feeling like someone read your memories",
   "power.touhouorigins.recollection.alert_fail": "You have a feeling like someone attempted to read your memories",
   "power.touhouorigins.ostracized.trade": "The %1$s refuses to trade with you",
+  "power.touhouorigins.my_apocalypse_alert": "Total core meltdown in progress... Evacuate the area!",
 
   "touhouorigins.gui.badge.upgrade": "Upgrade path",
 

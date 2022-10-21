@@ -331,5 +331,23 @@
         "volume": 0.8
       }
     ]
+  },
+  "entity.hell_raven.decay": {
+    "sounds": [
+      "random/fizz"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.hell_raven.decay"
+  },
+  "entity.hell_raven.alert": {
+    "sounds": [
+      "touhouorigins:alert"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.hell_raven.alert"
+  },
+  "entity.hell_raven.shoot": {
+    "sounds": [
+      "mob/ghast/fireball4"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.hell_raven.shoot"
   }
 }

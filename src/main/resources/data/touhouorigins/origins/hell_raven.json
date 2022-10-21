@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "touhouorigins:blackened",
+    "touhouorigins:born_in_flame",
+    "touhouorigins:doom_design",
+    "touhouorigins:smoldering_decay",
+    "touhouorigins:my_apocalypse"
+  ],
+  "icon": "minecraft:magma_block",
+  "order": 8,
+  "impact": 3
+}

@@ -63,6 +63,10 @@
         },
         {
           "type": "apoli:name",
+          "name": "fireThorns"
+        },
+        {
+          "type": "apoli:name",
           "name": "freeze"
         },
         {

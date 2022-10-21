@@ -1,0 +1,41 @@
+{
+  "type": "apoli:action_over_time",
+  "interval": 25,
+  "entity_action": {
+    "type": "apoli:heal",
+    "amount": 1
+  },
+  "condition": {
+    "type": "apoli:or",
+    "conditions": [
+      {
+        "type": "apoli:in_block",
+        "block_condition": {
+          "type": "apoli:block",
+          "block": "minecraft:fire"
+        }
+      },
+      {
+        "type": "apoli:in_block",
+        "block_condition": {
+          "type": "apoli:block",
+          "block": "minecraft:soul_fire"
+        }
+      },
+      {
+        "type": "apoli:in_block",
+        "block_condition": {
+          "type": "apoli:block",
+          "block": "minecraft:lava"
+        }
+      },
+      {
+        "type": "apoli:in_block_anywhere",
+        "block_condition": {
+          "type": "apoli:block",
+          "block": "minecraft:lava_cauldron"
+        }
+      }
+    ]
+  }
+}
