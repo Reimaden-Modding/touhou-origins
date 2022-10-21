@@ -193,6 +193,16 @@
   "power.touhouorigins.timid_constitution.name": "Timid Constitution",
   "power.touhouorigins.timid_constitution.description": "You're not built for combat, and have 2 less hearts of health. You also swing slower while carrying melee weapons like axes, swords, and tridents.",
 
+  "origin.touhouorigins.earth_rabbit.name": "Earth Rabbit",
+  "origin.touhouorigins.earth_rabbit.description": "A rabbit can become a type of youkai after existing for a long period of time, gaining sentience and increased abilities in the process.",
+
+  "power.touhouorigins.great_fortune_crest.name": "Great Fortune Crest",
+  "power.touhouorigins.great_fortune_crest.description": "Due to your long age, you are capable of conferring good luck to others. Additionally, if you are attacked, your attacker is penalized with bad luck, increasing in intensity if you are killed.",
+  "power.touhouorigins.natural_luck.name": "Natural Luck",
+  "power.touhouorigins.natural_luck.description": "Increased luck attribute.",
+  "power.touhouorigins.feeble_nature.name": "Feeble Nature",
+  "power.touhouorigins.feeble_nature.description": "You have 3 less hearts of health and you're slightly smaller.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
