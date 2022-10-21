@@ -91,6 +91,19 @@
       ]
     }
   },
+  "elytra_tooltip": {
+    "type": "apoli:tooltip",
+    "item_condition": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "item": "minecraft:elytra"
+      }
+    },
+    "text": {
+      "translate": "power.touhouorigins.path_to_enlightenment.name",
+      "color": "light_purple"
+    }
+  },
   "badges": [
     "touhouorigins:upgrade"
   ]

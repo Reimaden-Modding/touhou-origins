@@ -91,6 +91,19 @@
       ]
     }
   },
+  "totem_tooltip": {
+    "type": "apoli:tooltip",
+    "item_condition": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "item": "minecraft:totem_of_undying"
+      }
+    },
+    "text": {
+      "translate": "power.touhouorigins.path_to_immortality.name",
+      "color": "light_purple"
+    }
+  },
   "badges": [
     "touhouorigins:upgrade"
   ]

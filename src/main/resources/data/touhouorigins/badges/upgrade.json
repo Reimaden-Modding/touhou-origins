@@ -1,9 +1,7 @@
 {
   "type": "origins:tooltip",
   "sprite": "origins:textures/gui/badge/star.png",
-  "text": [
-    {
-      "translate": "touhouorigins.gui.badge.upgrade"
-    }
-  ]
+  "text": {
+    "translate": "touhouorigins.gui.badge.upgrade"
+  }
 }
