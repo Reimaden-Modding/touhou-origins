@@ -22,7 +22,7 @@ public class PlayerHandMixin<T extends LivingEntity> {
     public void setAngles(T livingEntity, float f, float g, float h, float i, float j, CallbackInfo ci) {
         if (ModPowers.ZOMBIE_ARMS.isActive(livingEntity) && (!livingEntity.isInSwimmingPose() && (!livingEntity.isFallFlying()) && (!livingEntity.isUsingItem()))) {
             this.rightArm.pitch = rightArm.pitch * 0.05F - 1.4137167F;
-            this.leftArm.pitch = rightArm.pitch * 0.05F - 1.4137167F;
+            this.leftArm.pitch = leftArm.pitch * 0.05F - 1.4137167F;
         }
     }
 }
