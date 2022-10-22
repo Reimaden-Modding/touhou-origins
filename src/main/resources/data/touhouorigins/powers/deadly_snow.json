@@ -5,7 +5,7 @@
     "projectile": "minecraft:snowball"
   },
   "modifier": {
-    "operation": "add_base_early",
+    "operation": "addition",
     "value": 2
   }
 }

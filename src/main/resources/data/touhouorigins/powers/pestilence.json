@@ -28,6 +28,7 @@
   },
   "zombify": {
     "type": "apoli:target_action_on_hit",
+    "cooldown": 1,
     "entity_action": {
       "type": "apugli:zombify_villager"
     },

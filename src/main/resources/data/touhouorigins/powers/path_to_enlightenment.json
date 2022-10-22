@@ -39,58 +39,6 @@
       "compare_to": 100
     }
   },
-  "key": {
-    "type": "apoli:action_over_time",
-    "interval": 1,
-    "entity_action": {
-      "type": "apoli:change_resource",
-      "resource": "*:*_resource",
-      "change": 1
-    },
-    "falling_action": {
-      "type": "apoli:change_resource",
-      "resource": "*:*_resource",
-      "change": 0,
-      "operation": "set"
-    },
-    "condition": {
-      "type": "apoli:and",
-      "conditions": [
-        {
-          "type": "apugli:key_pressed",
-          "key": {
-            "key": "key.use",
-            "continuous": true
-          }
-        },
-        {
-          "type": "apoli:or",
-          "conditions": [
-            {
-              "type": "apoli:equipped_item",
-              "equipment_slot": "mainhand",
-              "item_condition": {
-                "type": "apoli:ingredient",
-                "ingredient": {
-                  "item": "minecraft:elytra"
-                }
-              }
-            },
-            {
-              "type": "apoli:equipped_item",
-              "equipment_slot": "offhand",
-              "item_condition": {
-                "type": "apoli:ingredient",
-                "ingredient": {
-                  "item": "minecraft:elytra"
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
   "elytra_tooltip": {
     "type": "apoli:tooltip",
     "item_condition": {
@@ -105,6 +53,9 @@
     }
   },
   "badges": [
-    "touhouorigins:upgrade"
+    {
+      "sprite": "origins:textures/gui/badge/star.png",
+      "text": "touhouorigins.gui.badge.upgrade"
+    }
   ]
 }

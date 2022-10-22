@@ -11,10 +11,6 @@
       "minecraft:hunger"
     ]
   },
-  "instant_immunity": {
-    "type": "apugli:instant_effect_immunity",
-    "effect": "minecraft:instant_health"
-  },
   "fire_immunity": {
     "type": "apoli:fire_immunity",
     "condition": {
@@ -28,7 +24,7 @@
     "type": "apoli:modify_exhaustion",
     "modifier": {
       "name": "No exhaustion",
-      "operation": "multiply_total_multiplicative",
+      "operation": "multiply_total",
       "value": -1
     }
   },
@@ -60,10 +56,6 @@
         {
           "type": "apoli:name",
           "name": "thorns"
-        },
-        {
-          "type": "apoli:name",
-          "name": "fireThorns"
         },
         {
           "type": "apoli:name",

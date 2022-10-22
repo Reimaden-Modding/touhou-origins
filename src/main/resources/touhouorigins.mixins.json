@@ -15,7 +15,6 @@
     "EndermanEntityMixin",
     "PiglinBrainMixin",
     "PiglinBruteBrainMixin",
-    "WardenEntityMixin",
     "MobEntityMixin",
     "ProjectileEntityMixin",
     "BlockMixin"

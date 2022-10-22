@@ -24,10 +24,6 @@
         {
           "type": "apoli:name",
           "name": "hotFloor"
-        },
-        {
-          "type": "apoli:name",
-          "name": "fireThorns"
         }
       ]
     }

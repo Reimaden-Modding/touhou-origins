@@ -61,8 +61,8 @@ dependencies {
 
 	// Origins & Apugli
 	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
-	modImplementation "net.merchantpug:apugli:${project.apugli_version}"
-	include "net.merchantpug:apugli:${project.apugli_version}"
+	modImplementation "com.github.merchantpug:apugli:${project.apugli_version}"
+	include "com.github.merchantpug:apugli:${project.apugli_version}"
 
 	// Pehkui
 	modApi("com.github.Virtuoel:Pehkui:${pehkui_version}", {

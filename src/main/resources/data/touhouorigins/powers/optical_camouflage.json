@@ -114,8 +114,5 @@
     "hud_render": {
       "should_render": false
     }
-  },
-  "badges": [
-    "origins:toggle"
-  ]
+  }
 }

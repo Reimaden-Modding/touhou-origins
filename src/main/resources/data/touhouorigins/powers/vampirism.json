@@ -2,6 +2,7 @@
   "type": "apoli:multiple",
   "buffs": {
     "type": "apoli:self_action_on_kill",
+    "cooldown": 1,
     "entity_action": {
      "type": "apoli:and",
      "actions": [
@@ -42,10 +43,6 @@
                    "origin": "touhouorigins:ghost"
                 },
                 {
-                   "type": "origins:origin",
-                   "origin": "touhouorigins:vengeful_spirit"
-                },
-                {
                   "type": "origins:origin",
                   "origin": "touhouorigins:jiang_shi"
                 }
@@ -67,6 +64,7 @@
   },
   "blood": {
     "type": "apoli:target_action_on_hit",
+    "cooldown": 1,
     "entity_action": {
       "type": "apoli:spawn_particles",
       "particle": {
@@ -101,10 +99,6 @@
                 {
                   "type": "origins:origin",
                   "origin": "touhouorigins:ghost"
-                },
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:vengeful_spirit"
                 },
                 {
                   "type": "origins:origin",

@@ -291,17 +291,5 @@
       "comparison": "!=",
       "compare_to": 120
     }
-  },
-  "prevent_sprinting": {
-    "type": "apoli:prevent_sprinting",
-    "condition": {
-      "type": "apoli:resource",
-      "resource": "*:*_timer",
-      "comparison": "!=",
-      "compare_to": 120
-    }
-  },
-  "badges": [
-    "origins:active"
-  ]
+  }
 }

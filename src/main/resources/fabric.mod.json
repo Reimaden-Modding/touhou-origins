@@ -34,9 +34,9 @@
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
-    "minecraft": "1.19.x",
+    "minecraft": "1.18.x",
     "java": ">=17",
-    "origins": ">=1.7.0",
+    "origins": ">=1.4.1",
     "pehkui": ">=3.4.2"
   }
 }

@@ -3,14 +3,13 @@
   "values": [
     "minecraft:step",
     "minecraft:swim",
-    "minecraft:elytra_glide",
+    "minecraft:elytra_free_fall",
     "minecraft:hit_ground",
     "minecraft:splash",
-    "minecraft:drink",
+    "minecraft:drinking_finish",
     "minecraft:projectile_shoot",
     "minecraft:eat",
     "minecraft:equip",
-    "minecraft:item_interact_finish",
     {
       "id": "vcinteraction:voice",
       "required": false

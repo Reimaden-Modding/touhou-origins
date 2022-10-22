@@ -62,7 +62,10 @@
   },
   "timer": {
     "type": "apoli:cooldown",
-    "cooldown": 20
+    "cooldown": 20,
+    "hud_render": {
+      "should_render": false
+    }
   },
   "timer_trigger": {
     "type": "apoli:action_on_hit",
@@ -82,6 +85,7 @@
   },
   "timer_trigger_attacked": {
     "type": "apoli:self_action_when_hit",
+    "cooldown": 1,
     "entity_action": {
       "type": "apoli:trigger_cooldown",
       "power": "*:*_timer"

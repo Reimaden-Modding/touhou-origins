@@ -53,11 +53,5 @@
     "condition": {
       "type": "apoli:using_effective_tool"
     }
-  },
-  "more_ores": {
-    "type": "apoli:replace_loot_table",
-    "replace": {
-      "([a-z|0-9|\\-|_])*:blocks\/([a-z|0-9|\\-|_])*_ore": "touhouorigins:double_loot"
-    }
   }
 }

@@ -346,8 +346,5 @@
         }
       ]
     }
-  },
-  "badges": [
-    "origins:toggle"
-  ]
+  }
 }

@@ -2,7 +2,7 @@
   "type": "apoli:modify_damage_dealt",
   "modifier": {
     "name": "Weapon damage penalty",
-    "operation": "multiply_total_multiplicative",
+    "operation": "multiply_total",
     "value": -0.7
   },
   "condition": {
