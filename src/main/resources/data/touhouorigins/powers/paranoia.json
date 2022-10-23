@@ -115,6 +115,34 @@
           "sound": "minecraft:entity.elder_guardian.curse"
         },
         "weight": 10
+      },
+      {
+        "element": {
+          "type": "apoli:play_sound",
+          "sound": "minecraft:block.sculk_shrieker.shriek"
+        },
+        "weight": 10
+      },
+      {
+        "element": {
+          "type": "apoli:play_sound",
+          "sound": "minecraft:ambient.cave"
+        },
+        "weight": 10
+      },
+      {
+        "element": {
+          "type": "apoli:play_sound",
+          "sound": "minecraft:item.trident.throw"
+        },
+        "weight": 10
+      },
+      {
+        "element": {
+          "type": "apoli:play_sound",
+          "sound": "minecraft:entity.ender_dragon.growl"
+        },
+        "weight": 10
       }
     ]
   },
