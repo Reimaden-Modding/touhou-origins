@@ -6,3 +6,5 @@ Requires:
 - [Fabric API](https://github.com/FabricMC/fabric)
 - [Pehkui](https://github.com/Virtuoel/Pehkui)
 - [Origins](https://github.com/apace100/origins-fabric)
+
+Disclaimer: This is a fan work based on Touhou Project. Touhou Project and its characters are the property of Team Shanghai Alice (ZUN).
