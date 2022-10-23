@@ -4,7 +4,8 @@
     "touhouorigins:life_drain",
     "touhouorigins:pestilence",
     "touhouorigins:searing_light",
-    "touhouorigins:zombie_arms"
+    "touhouorigins:zombie_arms",
+    "touhouorigins:damage_helmet"
   ],
   "icon": "minecraft:rotten_flesh",
   "order": 2,
