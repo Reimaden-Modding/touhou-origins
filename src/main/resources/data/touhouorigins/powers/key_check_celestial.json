@@ -1,0 +1,156 @@
+{
+  "type": "apoli:multiple",
+  "n": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 4,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "decay": {
+    "type": "apoli:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "apoli:change_resource",
+      "resource": "*:*_n",
+      "change": -1
+    },
+    "condition": {
+      "type": "apoli:resource",
+      "resource": "*:*_n",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "key": {
+    "type": "apoli:active_self",
+    "cooldown": 1,
+    "entity_action": {
+      "type": "apoli:change_resource",
+      "resource": "*:*_n",
+      "change": 2
+    },
+    "hud_render": {
+      "should_render": false
+    },
+    "key": {
+      "key": "key.use",
+      "continuous": true
+    },
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "item": "minecraft:totem_of_undying"
+            }
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "item": "minecraft:elytra"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "hold_or_release": {
+    "type": "apoli:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "apoli:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "apoli:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+              "type": "apoli:ingredient",
+              "ingredient": {
+                "item": "minecraft:elytra"
+              }
+            }
+          },
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:change_resource",
+                "resource": "*:path_to_enlightenment_resource",
+                "change": 1
+              },
+              {
+                "type": "apoli:change_resource",
+                "resource": "*:path_to_immortality_resource",
+                "change": 0,
+                "operation": "set"
+              }
+            ]
+          }
+        },
+        {
+          "condition": {
+            "type": "apoli:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+              "type": "apoli:ingredient",
+              "ingredient": {
+                "item": "minecraft:totem_of_undying"
+              }
+            }
+          },
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:change_resource",
+                "resource": "*:path_to_immortality_resource",
+                "change": 1
+              },
+              {
+                "type": "apoli:change_resource",
+                "resource": "*:path_to_enlightenment_resource",
+                "change": 0,
+                "operation": "set"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "falling_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:change_resource",
+          "resource": "*:path_to_enlightenment_resource",
+          "change": 0,
+          "operation": "set"
+        },
+        {
+          "type": "apoli:change_resource",
+          "resource": "*:path_to_immortality_resource",
+          "change": 0,
+          "operation": "set"
+        }
+      ]
+    },
+    "condition": {
+      "type": "apoli:resource",
+      "resource": "*:*_n",
+      "comparison": ">=",
+      "compare_to": 2
+    }
+  },
+  "hidden": true
+}
