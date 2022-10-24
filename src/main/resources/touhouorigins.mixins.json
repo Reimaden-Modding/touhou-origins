@@ -18,7 +18,8 @@
     "WardenEntityMixin",
     "MobEntityMixin",
     "ProjectileEntityMixin",
-    "BlockMixin"
+    "BlockMixin",
+    "LivingEntityRendererMixin"
   ],
   "client": [
   ],

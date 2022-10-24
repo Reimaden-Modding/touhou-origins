@@ -9,6 +9,7 @@ import io.github.apace100.calio.data.SerializableData;
 import io.github.apace100.calio.data.SerializableDataType;
 import io.github.apace100.calio.data.SerializableDataTypes;
 import net.maxmani.touhouorigins.TouhouOrigins;
+import net.maxmani.touhouorigins.power.FlipModelPower;
 import net.maxmani.touhouorigins.power.ModifyBehaviorPower;
 import net.maxmani.touhouorigins.power.ModifyBehaviorPower.EntityBehavior;
 import net.minecraft.entity.player.PlayerEntity;
@@ -29,7 +30,11 @@ public class ModPowers {
                     Collections.emptyList()).add("inverted", SerializableDataTypes.BOOLEAN, false),
             data -> (type, entity) -> new ModifyBehaviorPower(type, (PlayerEntity) entity, data.get("behavior"), data.get("entities"), data.getBoolean("inverted"))).allowCondition();
 
+    public static final PowerFactory<Power> FLIP_MODEL = new PowerFactory<>(new Identifier(TouhouOrigins.MOD_ID, "flip_model"), new SerializableData(),
+            data -> (type, entity) -> new FlipModelPower(type, entity)).allowCondition();
+
     public static void register() {
         Registry.register(ApoliRegistries.POWER_FACTORY, MODIFY_BEHAVIOR.getSerializerId(), MODIFY_BEHAVIOR);
+        Registry.register(ApoliRegistries.POWER_FACTORY, FLIP_MODEL.getSerializerId(), FLIP_MODEL);
     }
 }
