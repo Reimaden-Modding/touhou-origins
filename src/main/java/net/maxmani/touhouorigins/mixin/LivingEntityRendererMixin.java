@@ -4,6 +4,7 @@ import io.github.apace100.apoli.component.PowerHolderComponent;
 import net.maxmani.touhouorigins.power.FlipModelPower;
 import net.minecraft.client.render.entity.LivingEntityRenderer;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.util.Formatting;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -20,6 +21,11 @@ public class LivingEntityRendererMixin {
 
         if (!powers.isEmpty()) {
             cir.setReturnValue(true);
+        }
+
+        String string = Formatting.strip(entity.getName().getString());
+        if (!powers.isEmpty() && ("Dinnerbone".equals(string) || "Grumm".equals(string))) {
+            cir.setReturnValue(false);
         }
     }
 }
