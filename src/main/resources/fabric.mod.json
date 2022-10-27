@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Touhou Origins",
-  "description": "Adds more origins based on Touhou Project.",
+  "description": "Adds more origins to the Origins mod inspired by the Touhou Project series.",
   "authors": [
     "Maxmani"
   ],
