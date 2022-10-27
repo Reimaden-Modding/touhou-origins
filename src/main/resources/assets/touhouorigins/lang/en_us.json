@@ -7,7 +7,7 @@
   "power.touhouorigins.moonlight_aura.name": "Moonlight Aura",
   "power.touhouorigins.moonlight_aura.description": "You gain night vision when exposed to the moon.",
   "power.touhouorigins.vampirism.name": "Vampirism",
-  "power.touhouorigins.vampirism.description": "Killing living creatures heals you and provides a short strength buff.",
+  "power.touhouorigins.vampirism.description": "Killing living creatures heals you and provides a short strength boost.",
   "power.touhouorigins.scorching_sun.name": "Scorching Sun",
   "power.touhouorigins.scorching_sun.description": "Direct sunlight will slowly vaporize you unless under the effect of fire resistance.",
   "power.touhouorigins.banes_of_the_immortal.name": "Banes of the Immortal",
@@ -33,7 +33,7 @@
   "power.touhouorigins.fluttering_wings.name": "Fluttering Wings",
   "power.touhouorigins.fluttering_wings.description": "You may float around freely by holding jump, but every second of flight consumes 1 hunger point. You may not take flight while starving, as you do not have enough energy to muster it.",
   "power.touhouorigins.aspect_of_nature.name": "Aspect of Nature",
-  "power.touhouorigins.aspect_of_nature.description": "You do not require food to survive naturally, but can only eat plant-based food to retain energy for flight.",
+  "power.touhouorigins.aspect_of_nature.description": "You do not require food to survive, but can only eat plant-based food to retain energy for flight.",
   "power.touhouorigins.fodder.name": "Fodder",
   "power.touhouorigins.fodder.description": "You have 4 less hearts of health and you're 25% smaller.",
 
@@ -149,7 +149,7 @@
   "power.touhouorigins.pestilence.name": "Pestilence",
   "power.touhouorigins.pestilence.description": "Your undead body is immune to poison and hunger, but also immune to regeneration. Instant health and instant damage are reversed, and you're weak to smite. You are also capable of zombifying villagers.",
   "power.touhouorigins.searing_light.name": "Searing Light",
-  "power.touhouorigins.searing_light.description": "You burn in daylight if you aren't wearing a helmet or a pumpkin.",
+  "power.touhouorigins.searing_light.description": "You burn in daylight if you aren't wearing a helmet, a mob head, or a pumpkin.",
 
   "origin.touhouorigins.vengeful_spirit.name": "Vengeful Spirit",
   "origin.touhouorigins.vengeful_spirit.description": "A vengeful spirit is a type of ghost created under special circumstances. They often seek revenge for unjust deeds done to them.",
@@ -157,7 +157,7 @@
   "power.touhouorigins.vengeful_harvest.name": "Vengeful Harvest",
   "power.touhouorigins.vengeful_harvest.description": "Killing a mob or another player grants you a stack. Once you have at least 5 stacks, you can activate this power to regenerate health. You can store up to 3 heals.",
   "power.touhouorigins.searing_rage.name": "Searing Rage",
-  "power.touhouorigins.searing_rage.description": "The lower your health is, the more melee damage you deal. Opponents that strike you with melee will occasionally take fire damage",
+  "power.touhouorigins.searing_rage.description": "The lower your health is, the more melee damage you deal. Opponents that strike you with melee will occasionally take fire damage.",
 
   "origin.touhouorigins.yuki_onna.name": "Yuki-Onna",
   "origin.touhouorigins.yuki_onna.description": "A yuki-onna is a spirit or a youkai associated with winter and snowstorms. It is said in some legends to be the spirit of an individual who has perished in the snow and cold.",
