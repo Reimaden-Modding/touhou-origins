@@ -221,11 +221,11 @@
   "origin.touhouorigins.amanojaku.description": "The J",
 
   "power.touhouorigins.turnabout.name": "Täyskäännös",
-  "power.touhouorigins.turnabout.description": "The J",
+  "power.touhouorigins.turnabout.description": "",
   "power.touhouorigins.this_side_down.name": "Tämä puoli alaspäin",
-  "power.touhouorigins.this_side_down.description": "The J",
+  "power.touhouorigins.this_side_down.description": "",
   "power.touhouorigins.mirror_movement.name": "Peililiike",
-  "power.touhouorigins.mirror_movement.description": "The J",
+  "power.touhouorigins.mirror_movement.description": "",
 
   "touhouorigins.subtitles.entity.fairy.heal": "Keiju elpyy",
   "touhouorigins.subtitles.entity.fairy.fly": "Keiju lepattaa",
