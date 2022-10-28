@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "touhouorigins:turnabout",
+    "touhouorigins:this_side_down",
+    "touhouorigins:mirror_movement"
+  ],
+  "icon": {
+    "item": "minecraft:tipped_arrow",
+    "tag": "{Potion:\"minecraft:strength\"}"
+  },
+  "order": 1,
+  "impact": 2
+}

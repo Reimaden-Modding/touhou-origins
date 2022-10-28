@@ -7,6 +7,7 @@ import net.minecraft.util.registry.Registry;
 
 @SuppressWarnings("unused")
 public class ModSounds {
+
     public static final SoundEvent ENTITY_ONI_STEP = registerSound("entity.oni.step");
     public static final SoundEvent ENTITY_FAIRY_HEAL = registerSound("entity.fairy.heal");
     public static final SoundEvent ENTITY_FAIRY_FLY = registerSound("entity.fairy.fly");
@@ -37,6 +38,7 @@ public class ModSounds {
     public static final SoundEvent ENTITY_HELL_RAVEN_SHOOT = registerSound("entity.hell_raven.shoot");
     public static final SoundEvent ENTITY_GENERIC_FLIP = registerSound("entity.generic.flip");
     public static final SoundEvent ENTITY_AMANOJAKU_FLIP = registerSound("entity.amanojaku.flip");
+    public static final SoundEvent ENTITY_GENERIC_REVERSE = registerSound("entity.generic.reverse");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = new Identifier(TouhouOrigins.MOD_ID, name);

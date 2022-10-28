@@ -1,0 +1,24 @@
+{
+  "type": "apoli:multiple",
+  "reverse_movement": {
+    "type": "apoli:modify_velocity",
+    "axes": [
+      "x",
+      "z"
+    ],
+    "modifier": {
+      "value": -2,
+      "operation": "multiply_total_multiplicative"
+    }
+  },
+  "revoke": {
+    "type": "apoli:action_over_time",
+    "interval": 200,
+    "entity_action": {
+      "type": "apoli:revoke_power",
+      "power": "touhouorigins:reverse_entity",
+      "source": "touhouorigins:amanojaku"
+    }
+  },
+  "hidden": true
+}
