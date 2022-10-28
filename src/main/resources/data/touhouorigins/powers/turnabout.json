@@ -1,0 +1,51 @@
+{
+  "type": "apoli:active_self",
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:raycast",
+        "distance": 16,
+        "block": true,
+        "entity": true,
+        "shape_type": "outline",
+        "fluid_handling": "none",
+        "bientity_action": {
+          "type": "apoli:target_action",
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:grant_power",
+                "power": "touhouorigins:flip_entity",
+                "source": "touhouorigins:amanojaku"
+              },
+              {
+                "type": "apoli:play_sound",
+                "sound": "touhouorigins:entity.generic.flip"
+              }
+            ]
+          }
+        },
+        "bientity_condition": {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:living"
+          }
+        }
+      },
+      {
+        "type": "apoli:swing_hand"
+      }
+    ]
+  },
+  "cooldown": 20,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 16
+  },
+  "condition": {
+    "type": "apoli:sneaking",
+    "inverted": true
+  }
+}

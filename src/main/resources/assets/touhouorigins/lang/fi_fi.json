@@ -217,6 +217,16 @@
   "power.touhouorigins.my_apocalypse.name": "Maailmanloppuni",
   "power.touhouorigins.my_apocalypse.description": "Niin kauan kuin hajoamismittarisi ei ole puoliksi täynnä, voit aktivoida erikoiskykysi ja aloittaa totaalisen ytimen sulamisen. Ammut liekkejä joka suuntaan ja lopuksi ympärilläsi tapahtuu valtava räjähdys. Sen jälkeen hajoamismittarisi täyttyy kokonaan.",
 
+  "origin.touhouorigins.amanojaku.name": "Amanojaku",
+  "origin.touhouorigins.amanojaku.description": "The J",
+
+  "power.touhouorigins.turnabout.name": "Täyskäännös",
+  "power.touhouorigins.turnabout.description": "The J",
+  "power.touhouorigins.this_side_down.name": "Tämä puoli alaspäin",
+  "power.touhouorigins.this_side_down.description": "The J",
+  "power.touhouorigins.mirror_movement.name": "Peililiike",
+  "power.touhouorigins.mirror_movement.description": "The J",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Keiju elpyy",
   "touhouorigins.subtitles.entity.fairy.fly": "Keiju lepattaa",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Naamiointi aktivoituu",
@@ -235,6 +245,9 @@
   "touhouorigins.subtitles.entity.hell_raven.decay": "Hajoaminen täyttyy",
   "touhouorigins.subtitles.entity.hell_raven.alert": "Hälytys soi",
   "touhouorigins.subtitles.entity.hell_raven.shoot": "Helvetin korppi ampuu",
+  "touhouorigins.subtitles.entity.generic.flip": "Jokin kääntyy",
+  "touhouorigins.subtitles.entity.amanojaku.flip": "Amanojaku kääntyy",
+  "touhouorigins.subtitles.entity.generic.reverse": "Jokin kääntyy päinvastaiseksi",
 
   "death.attack.sun": "%1$s höyrystyi",
   "death.attack.sun.player": "%1$s höyrystyi taistellessaan pelaajaa %2$s vastaan",

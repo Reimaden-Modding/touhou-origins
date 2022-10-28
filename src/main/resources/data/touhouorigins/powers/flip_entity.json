@@ -1,0 +1,26 @@
+{
+  "type": "apoli:multiple",
+  "flip": {
+    "type": "touhouorigins:flip_model"
+  },
+  "reverse_y": {
+    "type": "apoli:modify_velocity",
+    "axes": [
+      "y"
+    ],
+    "modifier": {
+      "value": -1.01,
+      "operation": "multiply_total_multiplicative"
+    }
+  },
+  "revoke": {
+    "type": "apoli:action_over_time",
+    "interval": 200,
+    "entity_action": {
+      "type": "apoli:revoke_power",
+      "power": "touhouorigins:flip_entity",
+      "source": "touhouorigins:amanojaku"
+    }
+  },
+  "hidden": true
+}

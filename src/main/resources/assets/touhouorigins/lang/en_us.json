@@ -217,6 +217,16 @@
   "power.touhouorigins.my_apocalypse.name": "My Apocalypse",
   "power.touhouorigins.my_apocalypse.description": "As long as your Decay meter is not half full, you can activate your special ability and go into a total core meltdown. Firing flames in all directions and ending with a massive explosion around you. Afterwards, your Decay meter will fill itself entirely.",
 
+  "origin.touhouorigins.amanojaku.name": "Amanojaku",
+  "origin.touhouorigins.amanojaku.description": "The J",
+
+  "power.touhouorigins.turnabout.name": "Turnabout",
+  "power.touhouorigins.turnabout.description": "The J",
+  "power.touhouorigins.this_side_down.name": "This Side Down",
+  "power.touhouorigins.this_side_down.description": "The J",
+  "power.touhouorigins.mirror_movement.name": "Mirror Movement",
+  "power.touhouorigins.mirror_movement.description": "The J",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
@@ -235,6 +245,9 @@
   "touhouorigins.subtitles.entity.hell_raven.decay": "Decay fills",
   "touhouorigins.subtitles.entity.hell_raven.alert": "Alarm blares",
   "touhouorigins.subtitles.entity.hell_raven.shoot": "Hell Raven shoots",
+  "touhouorigins.subtitles.entity.generic.flip": "Something flips",
+  "touhouorigins.subtitles.entity.amanojaku.flip": "Amanojaku flips",
+  "touhouorigins.subtitles.entity.generic.reverse": "Something reverses",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
