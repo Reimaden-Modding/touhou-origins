@@ -25,7 +25,7 @@
     "saturation_modifier": {
       "name": "decreased_saturation_points",
       "operation": "multiply_total",
-      "value": -0.5
+      "value": -0.75
     }
   },
   "increase_food_value": {
@@ -47,12 +47,12 @@
     "food_modifier": {
       "name": "increased_food_points",
       "operation": "multiply_total",
-      "value": 0.5
+      "value": 0.75
     },
     "saturation_modifier": {
       "name": "increased_saturation_points",
       "operation": "multiply_total",
-      "value": 1
+      "value": 0.50
     },
     "prevent_effects": true
   }

@@ -239,7 +239,7 @@
   "power.touhouorigins.light_absorption.name": "Light Absorption",
   "power.touhouorigins.light_absorption.description": "You hate being exposed to the sun and heat, and subconsciously surround yourself in darkness to cool off. When exposed to direct sunlight or in the nether, you are afflicted with darkness. Others will see you as a black sphere in this state.",
   "power.touhouorigins.crude_appetite.name": "Crude Appetite",
-  "power.touhouorigins.crude_appetite.description": "You relish the taste of raw meat, it's almost as good as eating a live human! Raw meat gives 50% more hunger, while all other foods give 50% less hunger.",
+  "power.touhouorigins.crude_appetite.description": "You relish the taste of raw meat, it's almost as good as eating a live human! Eating raw meat gives 75% more hunger, while all other foods give 50% less hunger.",
   "power.touhouorigins.mysterious_seal.name": "Mysteriously Sealed",
   "power.touhouorigins.mysterious_seal.description": "An unknown seal envelops your body and soul. You have 5 less hearts of health and you're 20% smaller. Perhaps there is some way to break it?",
 
