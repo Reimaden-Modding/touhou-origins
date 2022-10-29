@@ -32,7 +32,7 @@
                 }
               },
               {
-                "type": "origins:actor_action",
+                "type": "apoli:actor_action",
                 "action": {
                   "type": "apoli:and",
                   "actions": [
@@ -41,11 +41,11 @@
                       "sound": "touhouorigins:entity.kurayami.chomp"
                     },
                     {
-                      "type": "origins:heal",
+                      "type": "apoli:heal",
                       "amount": 10
                     },
                     {
-                      "type": "origins:feed",
+                      "type": "apoli:feed",
                       "food": 20,
                       "saturation": 0.25
                     },
@@ -92,7 +92,7 @@
                 }
               },
               {
-                "type": "origins:actor_action",
+                "type": "apoli:actor_action",
                 "action": {
                   "type": "apoli:and",
                   "actions": [
@@ -111,7 +111,7 @@
                       }
                     },
                     {
-                      "type": "origins:feed",
+                      "type": "apoli:feed",
                       "food": 1,
                       "saturation": 1
                     }

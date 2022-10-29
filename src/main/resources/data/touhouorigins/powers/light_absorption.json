@@ -64,7 +64,7 @@
       "conditions": [
         {
           "type": "apoli:power_active",
-          "power": "touhouorigins:light_absorption_black_smoke"
+          "power": "*:*_black_smoke"
         },
         {
           "type": "apoli:status_effect",
@@ -100,7 +100,7 @@
     "interval": 20,
     "condition": {
       "type": "apoli:power_active",
-      "power": "touhouorigins:light_absorption_black_smoke"
+      "power": "*:*_black_smoke"
     }
     }
 }
