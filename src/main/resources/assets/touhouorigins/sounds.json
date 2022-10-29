@@ -367,5 +367,23 @@
       "touhouorigins:reverse"
     ],
     "subtitle": "touhouorigins.subtitles.entity.generic.reverse"
+  },
+  "entity.kurayami.flight": {
+    "sounds": [
+      "mob/phantom/flap3"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.kurayami.flight"
+  },
+  "entity.kurayami.darkness": {
+    "sounds": [
+      "random/fizz"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.kurayami.darkness"
+  },
+  "entity.kurayami.chomp": {
+    "sounds": [
+      "mob/dolphin/eat1"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.kurayami.chomp"
   }
 }

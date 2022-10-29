@@ -1,0 +1,36 @@
+{
+  "type": "apoli:multiple",
+  "health": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Kurayami health penalty",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -10
+    }
+  },
+  "size": {
+    "type": "apoli:action_on_callback",
+    "entity_action_chosen": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:execute_command",
+          "command": "scale set pehkui:height 0.80 @s"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "scale set pehkui:width 0.80 @s"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "scale persist set true @s"
+        }
+      ]
+    },
+    "entity_action_lost": {
+      "type": "apoli:execute_command",
+      "command": "scale reset @s"
+    }
+  }
+}

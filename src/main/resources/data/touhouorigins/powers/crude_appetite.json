@@ -1,0 +1,59 @@
+{
+  "type": "apoli:multiple",
+  "decrease_food_value": {
+    "type": "apoli:modify_food",
+    "item_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:food"
+        },
+        {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "tag": "touhouorigins:raw_meat"
+          },
+          "inverted": true
+        }
+      ]
+    },
+    "food_modifier": {
+      "name": "decreased_food_points",
+      "operation": "multiply_total",
+      "value": -0.5
+    },
+    "saturation_modifier": {
+      "name": "decreased_saturation_points",
+      "operation": "multiply_total",
+      "value": -0.75
+    }
+  },
+  "increase_food_value": {
+    "type": "apoli:modify_food",
+    "item_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:food"
+        },
+        {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "tag": "touhouorigins:raw_meat"
+          }
+        }
+      ]
+    },
+    "food_modifier": {
+      "name": "increased_food_points",
+      "operation": "multiply_total",
+      "value": 0.75
+    },
+    "saturation_modifier": {
+      "name": "increased_saturation_points",
+      "operation": "multiply_total",
+      "value": 0.50
+    },
+    "prevent_effects": true
+  }
+}
