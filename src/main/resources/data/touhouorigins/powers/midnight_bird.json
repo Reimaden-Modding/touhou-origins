@@ -1,22 +1,18 @@
 {
   "type": "apoli:multiple",
-  "resource":
-  {
+  "resource": {
     "type": "apoli:resource",
     "min": 0,
     "max": 2
   },
-  "toggle":
-  {
+  "toggle": {
     "type": "apoli:active_self",
-    "entity_action":
-    {
+    "entity_action": {
       "type": "apoli:if_else_list",
       "actions":
       [
         {
-          "condition":
-          {
+          "condition": {
             "type": "apoli:and",
             "conditions":
             [
@@ -28,8 +24,7 @@
               }
             ]
           },
-          "action":
-          {
+          "action": {
             "type": "apoli:and",
             "actions":
             [
@@ -43,8 +38,7 @@
           }
         },
         {
-          "condition":
-          {
+          "condition": {
             "type": "apoli:and",
             "conditions":
             [
@@ -56,8 +50,7 @@
               }
             ]
           },
-          "action":
-          {
+          "action": {
             "type": "apoli:and",
             "actions":
             [
@@ -66,6 +59,7 @@
                 "resource": "*:*_resource",
                 "operation": "set",
                 "change": 1
+              },
               {
                 "type": "apoli:trigger_cooldown",
                 "power": "*:*_splat_warmup"
@@ -74,15 +68,13 @@
           }
         },
         {
-          "condition":
-          {
+          "condition": {
             "type": "apoli:resource",
             "resource": "*:*_resource",
             "comparison": "==",
             "compare_to": 2
           },
-          "action":
-          {
+          "action": {
             "type": "apoli:execute_command",
             "command": "tellraw @s {\"translate\":\"power.touhouorigins.midnight_bird_cooldown\"}"
           }
@@ -90,11 +82,9 @@
       ]
     }
   },
-  "propel_forward":
-  {
+  "propel_forward": {
     "type": "apoli:action_over_time",
-    "entity_action":
-    {
+    "entity_action": {
       "type": "apoli:and",
       "actions":
       [
@@ -111,8 +101,7 @@
       ]
     },
     "interval": 2,
-    "condition":
-    {
+    "condition": {
       "type": "apoli:and",
       "conditions":
       [
@@ -129,33 +118,28 @@
       ]
     }
   },
-  "cancel_gravity":
-  {
+  "cancel_gravity": {
     "type": "apoli:modify_falling",
     "velocity": 0,
     "take_fall_damage": false,
-    "condition":
-    {
+    "condition": {
       "type": "apoli:resource",
       "resource": "*:*_resource",
       "comparison": "==",
       "compare_to": 1
     }
   },
-  "splat":
-  {
+  "splat": {
     "type": "apoli:damage_over_time",
     "interval": 20,
     "onset_delay": 1,
     "damage": 1,
-    "damage_source":
-    {
+    "damage_source": {
       "name": "flyIntoWall",
       "unblockable": true,
       "bypasses_armor": true
     },
-    "condition":
-    {
+    "condition": {
       "type": "apoli:and",
       "conditions":
       [
@@ -192,16 +176,13 @@
       ]
     }
   },
-  "splat_warmup":
-  {
+  "splat_warmup": {
     "type": "apoli:cooldown",
     "cooldown": 20
   },
-  "toggle_splat":
-  {
+  "toggle_splat": {
     "type": "apoli:action_when_damage_taken",
-    "entity_action":
-    {
+    "entity_action": {
       "type": "apoli:and",
       "actions":
       [
@@ -217,19 +198,16 @@
         }
       ]
     },
-    "condition":
-    {
+    "condition": {
       "type": "apoli:resource",
       "resource": "*:*_resource",
       "comparison": "==",
       "compare_to": 1
     }
   },
-  "splat_recover":
-  {
-    "type": "origins:action_over_time",
-    "entity_action":
-    {
+  "splat_recover": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
       "type": "apoli:change_resource",
       "resource": "*:*_resource",
       "operation": "set",
@@ -248,8 +226,7 @@
       ]
     }
   },
-  "splat_recover_timer":
-  {
+  "splat_recover_timer": {
     "type": "apoli:cooldown",
     "cooldown": 60,
     "hud_render": {
@@ -258,16 +235,13 @@
       "bar_index": 23
     }
   },
-  "flight_sound":
-  {
+  "flight_sound": {
     "type": "apoli:active_self",
-    "entity_action":
-    {
+    "entity_action": {
       "type": "apoli:play_sound",
       "sound": "touhouorigins:entity.kurayami.flight"
     },
-    "condition":
-    {
+    "condition": {
       "type": "apoli:and",
       "conditions":
       [
@@ -280,7 +254,7 @@
       ]
     }
   },
-  "flight_reset_death":{
+  "flight_reset_death": {
     "type": "apoli:action_on_callback",
     "entity_action_respawned": {
       "type": "apoli:and",
@@ -291,6 +265,7 @@
           "operation": "set",
           "change": 0
         },
+        {
           "type": "apoli:change_resource",
           "resource": "*:*_splat_recover_timer",
           "operation": "set",
