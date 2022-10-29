@@ -1,0 +1,147 @@
+{
+  "type": "apoli:multiple",
+  "hit": {
+    "type": "apoli:action_on_hit",
+    "bientity_action": {
+      "type": "apoli:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:target_condition",
+                "condition": {
+                  "type": "apoli:relative_health",
+                  "comparison": "<=",
+                  "compare_to": 0
+                }
+              }
+            ]
+          },
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:damage",
+                "amount": 4,
+                "source": {
+                  "name": "chomp",
+                  "bypasses_armor": true,
+                  "unblockable": true
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:play_sound",
+                      "sound": "touhouorigins:entity.kurayami.chomp"
+                    },
+                    {
+                      "type": "origins:heal",
+                      "amount": 10
+                    },
+                    {
+                      "type": "origins:feed",
+                      "food": 20,
+                      "saturation": 0.25
+                    },
+                    {
+                      "type": "apoli:apply_effect",
+                      "effect": {
+                        "effect": "minecraft:absorption",
+                        "duration": 300,
+                        "amplifier": 1,
+                        "show_particles": false,
+                        "show_icon": false
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:target_condition",
+                "condition": {
+                  "type": "apoli:relative_health",
+                  "comparison": ">",
+                  "compare_to": 0
+                }
+              }
+            ]
+          },
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:damage",
+                "amount": 4,
+                "source": {
+                  "name": "chomp",
+                  "bypasses_armor": true,
+                  "unblockable": true
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:play_sound",
+                      "sound": "touhouorigins:entity.kurayami.chomp"
+                    },
+                    {
+                      "type": "apoli:apply_effect",
+                      "effect": {
+                        "effect": "minecraft:absorption",
+                        "duration": 300,
+                        "amplifier": 1,
+                        "show_particles": false,
+                        "show_icon": false
+                      }
+                    },
+                    {
+                      "type": "origins:feed",
+                      "food": 1,
+                      "saturation": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:empty"
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "apoli:both",
+      "condition": {
+        "type": "apoli:status_effect",
+        "effect": "minecraft:blindness"
+      }
+    },
+    "cooldown": 100
+  }
+}

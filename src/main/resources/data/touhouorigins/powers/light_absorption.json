@@ -1,0 +1,106 @@
+{
+  "type": "apoli:multiple",
+  "give_origin_tag": {
+    "type": "apoli:action_on_callback",
+    "entity_action_gained": {
+      "type": "apoli:execute_command",
+      "command": "tag @s add kurayami_origin"
+    },
+    "entity_action_lost": {
+      "type": "apoli:execute_command",
+      "command": "tag @s remove kurayami_origin"
+    }
+  },
+  "black_smoke_self": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:execute_command",
+      "command": "particle minecraft:dust 0 0 0 1 ~ ~0.5 ~ .5 .1 .5 0.2 5 force @e[tag=kurayami_origin,type=minecraft:player]"
+    },
+    "condition": {
+      "type": "apoli:invisible"
+    },
+    "interval": 1
+  },
+  "black_smoke": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:execute_command",
+      "command": "particle minecraft:dust 0 0 0 1 ~ ~ ~ .5 .8 .5 0.2 250 force @e[tag=!kurayami_origin,type=minecraft:player]"
+    },
+    "interval": 1,
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:time_of_day",
+              "comparison": "<=",
+              "compare_to": 12200
+            },
+            {
+              "type": "apoli:dimension",
+              "dimension": "minecraft:overworld"
+            },
+            {
+              "type": "apoli:exposed_to_sky"
+            }
+          ]
+        },
+        {
+          "type": "apoli:dimension",
+          "dimension": "minecraft:the_nether"
+        }
+      ]
+    }
+  },
+  "invisibility": {
+    "type": "apoli:invisibility",
+    "render_armor": false,
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:power_active",
+          "power": "touhouorigins:light_absorption_black_smoke"
+        },
+        {
+          "type": "apoli:status_effect",
+          "effect": "minecraft:blindness"
+        }
+      ]
+    }
+    },
+  "darkness_self": {
+    "type": "apoli:action_over_time",
+    "rising_action": {
+      "type": "apoli:apply_effect",
+      "effect": {
+        "effect": "minecraft:darkness",
+        "duration": 400,
+        "show_particles": false,
+        "show_icon": false
+      }
+    },
+    "entity_action": {
+      "type": "apoli:apply_effect",
+      "effect": {
+        "effect": "minecraft:darkness",
+        "duration": 400,
+        "show_particles": false,
+        "show_icon": false
+      }
+    },
+    "falling_action": {
+      "type": "apoli:execute_command",
+      "command": "effect clear @s minecraft:darkness"
+      },
+    "interval": 20,
+    "condition": {
+      "type": "apoli:power_active",
+      "power": "touhouorigins:light_absorption_black_smoke"
+    }
+    }
+}

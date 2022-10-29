@@ -227,6 +227,22 @@
   "power.touhouorigins.mirror_movement.name": "Mirror Movement",
   "power.touhouorigins.mirror_movement.description": "",
 
+  "origin.touhouorigins.kurayami.name": "Kurayami",
+  "origin.touhouorigins.kurayami.description": "Kurayami are a category of wicked youkai capable of manipulating darkness. Although they are known to devour humans, most kurayami and susceptible to their own powers and are too simple minded to commit such acts. It's thought that these youkai were once very strong creatures whose true powers vanished long ago.",
+
+  "power.touhouorigins.midnight_bird.name": "Midnight Bird",
+  "power.touhouorigins.midnight_bird.description": "You have the ability to soar like a bird but will fall if hurt. You can float in position by holding shift.",
+  "power.touhouorigins.is_that_so.name": "So Nanoka?~",
+  "power.touhouorigins.is_that_so.description": "Every 30 seconds, you can spend some hunger to release a cloud of darkness that will extinguish and blind everyone nearby for 5 seconds including yourself.",
+  "power.touhouorigins.chomp.name": "Chomp!",
+  "power.touhouorigins.chomp.description": "You can chomp on any mob or player under the effects of \"So Nanoka?~\" by attacking with your bare fists. Chomped victims will directly lose 2 full hearts of health and you will be given 4 absorption hearts. If the victim is killed, your hunger and health will also be completely restored.",
+  "power.touhouorigins.light_absorption.name": "Light Absorption",
+  "power.touhouorigins.light_absorption.description": "You hate being exposed to the sun and heat, and subconsciously surround yourself in darkness to cool off. When exposed to direct sunlight or in the nether, you are afflicted with darkness. Others will see you as a black sphere in this state.",
+  "power.touhouorigins.crude_appetite.name": "Crude Appetite",
+  "power.touhouorigins.crude_appetite.description": "You relish the taste of raw meat, it's almost as good as eating a live human! Raw meat gives 50% more hunger, while all other foods give 50% less hunger.",
+  "power.touhouorigins.mysterious_seal.name": "Mysteriously Sealed",
+  "power.touhouorigins.mysterious_seal.description": "An unknown seal envelops your body and soul. You have 5 less hearts of health and you're 20% smaller. Perhaps there is some way to break it?",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
@@ -248,6 +264,9 @@
   "touhouorigins.subtitles.entity.generic.flip": "Something flips",
   "touhouorigins.subtitles.entity.amanojaku.flip": "Amanojaku flips",
   "touhouorigins.subtitles.entity.generic.reverse": "Something reverses",
+  "touhouorigins.subtitles.entity.kurayami.flight": "Kurayami whooshes",
+  "touhouorigins.subtitles.entity.kurayami.darkness": "Darkness gathers",
+  "touhouorigins.subtitles.entity.kurayami.chomp": "Kurayami chomps",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
@@ -255,6 +274,8 @@
   "death.attack.probe.item": "%1$s was probed by %2$s using %3$s",
   "death.attack.fireThorns": "%1$s burned their hand fighting %2$s",
   "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s",
+  "death.attack.chomp": "%1$s was devoured",
+  "death.attack.chomp.player": "%1$s was devoured by %2$s",
 
   "power.touhouorigins.recollection.player": "%1$s has the following memories...",
   "power.touhouorigins.recollection.spawnX": "Respawn X",
@@ -265,6 +286,7 @@
   "power.touhouorigins.recollection.alert_fail": "You have a feeling like someone attempted to read your memories",
   "power.touhouorigins.ostracized.trade": "The %1$s refuses to trade with you",
   "power.touhouorigins.my_apocalypse_alert": "Total core meltdown in progress... Evacuate the area!",
+  "power.touhouorigins.midnight_bird_cooldown": "You are still recovering from being hurt!",
 
   "touhouorigins.gui.badge.upgrade": "Upgrade path",
 
