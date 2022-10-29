@@ -26,7 +26,7 @@
                 "type": "apoli:damage",
                 "amount": 4,
                 "source": {
-                  "name": "chomp",
+                  "name": "chomp.player",
                   "bypasses_armor": true,
                   "unblockable": true
                 }

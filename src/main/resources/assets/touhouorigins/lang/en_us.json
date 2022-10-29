@@ -274,8 +274,8 @@
   "death.attack.probe.item": "%1$s was probed by %2$s using %3$s",
   "death.attack.fireThorns": "%1$s burned their hand fighting %2$s",
   "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s",
-  "death.attack.chomp": "%1$s was devoured",
-  "death.attack.chomp.player": "%1$s was devoured by %2$s",
+  "death.attack.chomp": "%1$s was devoured by %2$s",
+  "death.attack.chomp.item": "%1$s was devoured by %2$s using %3$s",
 
   "power.touhouorigins.recollection.player": "%1$s has the following memories...",
   "power.touhouorigins.recollection.spawnX": "Respawn X",

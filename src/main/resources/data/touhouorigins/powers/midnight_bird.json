@@ -66,6 +66,9 @@
                 "resource": "*:*_resource",
                 "operation": "set",
                 "change": 1
+              {
+                "type": "apoli:trigger_cooldown",
+                "power": "*:*_splat_warmup"
               }
             ]
           }
@@ -179,9 +182,20 @@
               "offset_z": -0.1
             }
           ]
+        },
+        {
+          "type": "apoli:resource",
+          "resource": "*:*_splat_warmup",
+          "comparison": "==",
+          "compare_to": 0
         }
       ]
     }
+  },
+  "splat_warmup":
+  {
+    "type": "apoli:cooldown",
+    "cooldown": 20
   },
   "toggle_splat":
   {
@@ -230,11 +244,6 @@
           "resource": "*:*_splat_recover_timer",
           "comparison": "==",
           "compare_to": 1
-        },
-        {
-          "type": "origins:relative_health",
-          "comparison": "<=",
-          "compare_to": 0
         }
       ]
     }
@@ -269,6 +278,25 @@
           "compare_to": 1
         }
       ]
+    }
+  },
+  "flight_reset_death":{
+    "type": "apoli:action_on_callback",
+    "entity_action_respawned": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:change_resource",
+          "resource": "*:*_resource",
+          "operation": "set",
+          "change": 0
+        },
+          "type": "apoli:change_resource",
+          "resource": "*:*_splat_recover_timer",
+          "operation": "set",
+          "change": 60
+        }
+        ]
     }
   },
   "badges":
