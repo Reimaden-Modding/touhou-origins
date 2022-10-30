@@ -288,14 +288,5 @@
   "power.touhouorigins.my_apocalypse_alert": "Total core meltdown in progress... Evacuate the area!",
   "power.touhouorigins.midnight_bird_cooldown": "You are still recovering from being hurt!",
 
-  "touhouorigins.gui.badge.upgrade": "Upgrade path",
-
-  "advancements.touhouorigins.root.title": "Touhou Origins",
-  "advancements.touhouorigins.root.description": "Welcome to Gensokyo",
-  "advancements.touhouorigins.close_eye.title": "Rejection of Nature",
-  "advancements.touhouorigins.close_eye.description": "Close your third eye",
-  "advancements.touhouorigins.enlightened.title": "Enlightened",
-  "advancements.touhouorigins.enlightened.description": "As a Celestial, attain enlightenment",
-  "advancements.touhouorigins.immortal.title": "Immortal",
-  "advancements.touhouorigins.immortal.description": "As a Celestial, attain immortality"
+  "touhouorigins.gui.badge.upgrade": "Upgrade path"
 }

@@ -253,14 +253,5 @@
   "power.touhouorigins.ostracized.trade": "这个 %1$s 拒绝与你交易",
   "power.touhouorigins.my_apocalypse_alert": "堆芯熔毁中... 疏散该地区的人员!",
 
-  "touhouorigins.gui.badge.upgrade": "Upgrade path",
-
-  "advancements.touhouorigins.root.title": "东方—起源addon，雾之湖铁路汉化",
-  "advancements.touhouorigins.root.description": "欢迎来到地灵殿",
-  "advancements.touhouorigins.close_eye.title": "拒绝自然",
-  "advancements.touhouorigins.close_eye.description": "闭上你的第三只眼",
-  "advancements.touhouorigins.enlightened.title": "仙人",
-  "advancements.touhouorigins.enlightened.description": "成为仙人，获得启迪",
-  "advancements.touhouorigins.immortal.title": "不死者",
-  "advancements.touhouorigins.immortal.description": "仙人，不老不死！"
+  "touhouorigins.gui.badge.upgrade": "Upgrade path"
 }

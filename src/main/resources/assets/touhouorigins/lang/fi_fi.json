@@ -266,14 +266,5 @@
   "power.touhouorigins.ostracized.trade": "%1$s kieltäytyy vaihtamasta kanssasi",
   "power.touhouorigins.my_apocalypse_alert": "Totaalinen ytimen sulaminen käynnissä... Evakuoikaa alue!",
 
-  "touhouorigins.gui.badge.upgrade": "Päivityspolku",
-
-  "advancements.touhouorigins.root.title": "Touhou Origins",
-  "advancements.touhouorigins.root.description": "Tervetuloa Kensokyröön",
-  "advancements.touhouorigins.close_eye.title": "Luonteensa hylkääminen",
-  "advancements.touhouorigins.close_eye.description": "Sulje kolmas silmäsi",
-  "advancements.touhouorigins.enlightened.title": "Valaistunut",
-  "advancements.touhouorigins.enlightened.description": "Taivaallisena, saavuta valaistuminen",
-  "advancements.touhouorigins.immortal.title": "Kuolematon",
-  "advancements.touhouorigins.immortal.description": "Taivaallisena, saavuta kuolemattomuus"
+  "touhouorigins.gui.badge.upgrade": "Päivityspolku"
 }
