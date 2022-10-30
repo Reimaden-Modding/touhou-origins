@@ -18,12 +18,12 @@
       ]
     },
     "food_modifier": {
-      "name": "decreased_food_points",
+      "name": "Crude Appetite food penalty",
       "operation": "multiply_total",
       "value": -0.5
     },
     "saturation_modifier": {
-      "name": "decreased_saturation_points",
+      "name": "Crude Appetite saturation penalty",
       "operation": "multiply_total",
       "value": -0.75
     }
@@ -45,12 +45,12 @@
       ]
     },
     "food_modifier": {
-      "name": "increased_food_points",
+      "name": "Crude Appetite food bonus",
       "operation": "multiply_total",
       "value": 0.75
     },
     "saturation_modifier": {
-      "name": "increased_saturation_points",
+      "name": "Crude Appetite saturation bonus",
       "operation": "multiply_total",
       "value": 0.50
     },

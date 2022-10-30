@@ -76,7 +76,7 @@
           },
           "action": {
             "type": "apoli:execute_command",
-            "command": "tellraw @s {\"translate\":\"power.touhouorigins.midnight_bird_cooldown\"}"
+            "command": "title @s actionbar {\"translate\":\"power.touhouorigins.midnight_bird_cooldown\"}"
           }
         }
       ]

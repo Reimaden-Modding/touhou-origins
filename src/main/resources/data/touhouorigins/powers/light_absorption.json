@@ -2,7 +2,7 @@
   "type": "apoli:multiple",
   "give_origin_tag": {
     "type": "apoli:action_on_callback",
-    "entity_action_gained": {
+    "entity_action_added": {
       "type": "apoli:execute_command",
       "command": "tag @s add kurayami_origin"
     },
@@ -72,7 +72,7 @@
         }
       ]
     }
-    },
+  },
   "darkness_self": {
     "type": "apoli:action_over_time",
     "rising_action": {
@@ -102,5 +102,5 @@
       "type": "apoli:power_active",
       "power": "*:*_black_smoke"
     }
-    }
+  }
 }
