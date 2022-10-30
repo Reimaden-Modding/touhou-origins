@@ -1,69 +1,66 @@
 {
-  "type": "apoli:multiple",
-  "blindness_activate": {
-    "type": "apoli:active_self",
-    "key": {
-      "key": "key.origins.secondary_active"
-    },
-    "entity_action": {
-      "type": "apoli:and",
-      "actions": [
-        {
-          "type": "apoli:area_of_effect",
-          "radius": 8,
-          "include_target": true,
-          "bientity_action": {
-            "type": "apoli:target_action",
-            "action": {
-              "type": "apoli:and",
-              "actions":
-              [
-                {
-                  "type": "apoli:apply_effect",
-                  "effect": {
-                    "effect": "minecraft:blindness",
-                    "duration": 100,
-                    "show_particles": false,
-                    "show_icon": true
-                  }
-                },
-                {
-                  "type": "apoli:extinguish"
+  "type": "apoli:active_self",
+  "key": {
+    "key": "key.origins.secondary_active"
+  },
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:area_of_effect",
+        "radius": 8,
+        "include_target": true,
+        "bientity_action": {
+          "type": "apoli:target_action",
+          "action": {
+            "type": "apoli:and",
+            "actions":
+            [
+              {
+                "type": "apoli:apply_effect",
+                "effect": {
+                  "effect": "minecraft:blindness",
+                  "duration": 100,
+                  "show_particles": false,
+                  "show_icon": true
                 }
-              ]
-            }
-          }
-        },
-        {
-          "type": "apoli:exhaust",
-          "amount": 15
-        },
-        {
-          "type": "apoli:play_sound",
-          "sound": "touhouorigins:entity.kurayami.darkness"
-        },
-        {
-          "type": "apoli:execute_command",
-          "command": "fill ~-8 ~-1 ~-8 ~8 ~1 ~8 minecraft:air replace minecraft:fire",
-          "condition": {
-            "type": "apoli:block_in_radius",
-            "block_condition": {
-              "type": "apoli:block",
-              "block": "minecraft:fire"
-            },
-            "radius": 8,
-            "shape": "cube",
-            "comparison": ">=",
-            "compare_to": 1
+              },
+              {
+                "type": "apoli:extinguish"
+              }
+            ]
           }
         }
-      ]
-    },
-    "cooldown": 600,
-    "hud_render": {
-      "should_render": true,
-      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
-      "bar_index": 18
-    }
+      },
+      {
+        "type": "apoli:exhaust",
+        "amount": 15
+      },
+      {
+        "type": "apoli:play_sound",
+        "sound": "touhouorigins:entity.kurayami.darkness"
+      },
+      {
+        "type": "apoli:execute_command",
+        "command": "fill ~-8 ~-1 ~-8 ~8 ~1 ~8 minecraft:air replace minecraft:fire",
+        "condition": {
+          "type": "apoli:block_in_radius",
+          "block_condition": {
+            "type": "apoli:block",
+            "block": "minecraft:fire"
+          },
+          "radius": 8,
+          "shape": "cube",
+          "comparison": ">=",
+          "compare_to": 1
+        }
+      }
+    ]
+  },
+  "cooldown": 600,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 18
   }
 }
