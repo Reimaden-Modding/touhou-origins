@@ -95,6 +95,15 @@
           "z": 1
         },
         {
+          "type": "apoli:apply_effect",
+          "effect": {
+            "effect": "minecraft:levitation",
+            "duration": 2,
+            "show_particles": false,
+            "show_icon": false
+          }
+        },
+        {
           "type": "apoli:exhaust",
           "amount": 0.2
         }
@@ -148,6 +157,10 @@
           "resource": "*:*_resource",
           "comparison": "==",
           "compare_to": 1
+        },
+        {
+          "type": "apoli:sneaking",
+          "inverted": true
         },
         {
           "type": "apoli:or",
