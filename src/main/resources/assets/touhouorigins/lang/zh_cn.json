@@ -217,6 +217,32 @@
   "power.touhouorigins.my_apocalypse.name": "地底的人造太阳",
   "power.touhouorigins.my_apocalypse.description": "只要你的衰变计没有达到百分之五十，你就可以启动你的特殊能力，进入地底太阳状态。向所有方向发射火焰，并以你周围的巨大爆炸结束。之后，你的衰变计将完全填满。",
 
+  "origin.touhouorigins.amanojaku.name": "鬼邪天",
+  "origin.touhouorigins.amanojaku.description": "天邪鬼是一种叛逆的妖怪，它们是叛逆与混乱的象征",
+
+  "power.touhouorigins.turnabout.name": "天下翻覆",
+  "power.touhouorigins.turnabout.description": "",
+  "power.touhouorigins.this_side_down.name": "此面向下",
+  "power.touhouorigins.this_side_down.description": "",
+  "power.touhouorigins.mirror_movement.name": "镜像移动",
+  "power.touhouorigins.mirror_movement.description": "",
+
+  "origin.touhouorigins.kurayami.name": "宵暗妖怪",
+  "origin.touhouorigins.kurayami.description": "宵暗妖怪能够操纵黑暗。虽然它们会吃人，但它们很容易受到它们自己力量的影响，而且是笨蛋，不会做出这样的行为。据说它曾经非常强大，但那种力量已经消失了很久。",
+
+  "power.touhouorigins.midnight_bird.name": "夜雀（我才不是小碎骨）",
+  "power.touhouorigins.midnight_bird.description": "你有能力像鸟一样翱翔，但如果受伤就会跌落。你可以通过潜行漂浮在原地",
+  "power.touhouorigins.is_that_so.name": "是——这样的吗?",
+  "power.touhouorigins.is_that_so.description": "每隔30秒，你可以消耗饥饿值来操纵黑暗，这团黑暗会使附近的所有人获得5秒失明状态，包括你自己。",
+  "power.touhouorigins.chomp.name": "让我尝尝!",
+  "power.touhouorigins.chomp.description": "你可以在启用 \"是——这样的吗~?\"的情况下空手吃任何怪物或玩家。 受害者将会失去两颗心的血量同时你将被给予四心的伤害吸收. 如果被攻击者死亡，你的血量和饱食度将完全恢复.",
+  "power.touhouorigins.light_absorption.name": "厌光",
+  "power.touhouorigins.light_absorption.description": "你讨厌阳光和热量，会用黑暗包裹自己。当你处于阳光下或下界，你会被黑暗所包裹。其他玩家只会看到一个黑球。",
+  "power.touhouorigins.crude_appetite.name": "原始欲望",
+  "power.touhouorigins.crude_appetite.description": "你喜爱生肉的味道，像是吃人一样！生肉会额外回复75%的饥饿值，其他食物回复的饥饿值减少50%。",
+  "power.touhouorigins.mysterious_seal.name": "神秘封印",
+  "power.touhouorigins.mysterious_seal.description": "一个神秘的符咒封印着你的身体和灵魂。你的血量条少五颗心，体型变小20% 。也许有办法解除封印？",
+  
   "touhouorigins.subtitles.entity.fairy.heal": "妖精重生",
   "touhouorigins.subtitles.entity.fairy.fly": "妖精飞起来",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "光学迷彩启动",
@@ -235,6 +261,12 @@
   "touhouorigins.subtitles.entity.hell_raven.decay": "裂变值已满",
   "touhouorigins.subtitles.entity.hell_raven.alert": "警铃大作",
   "touhouorigins.subtitles.entity.hell_raven.shoot": "地狱鸦射击",
+  "touhouorigins.subtitles.entity.generic.flip": "有什么东西在逆转",
+  "touhouorigins.subtitles.entity.amanojaku.flip": "逆转的天邪鬼",
+  "touhouorigins.subtitles.entity.generic.reverse": "有东西逆转了",
+  "touhouorigins.subtitles.entity.kurayami.flight": "宵暗妖怪来了",
+  "touhouorigins.subtitles.entity.kurayami.darkness": "黑暗在聚集",
+  "touhouorigins.subtitles.entity.kurayami.chomp": "妖怪要吃人了！",
 
   "death.attack.sun": "%1$s 被蒸发了",
   "death.attack.sun.player": "%1$s 在 %2$s 的战斗中被蒸发了",
@@ -242,6 +274,8 @@
   "death.attack.probe.item": "%1$s 被 %2$s 使用 %3$ 探测到了",
   "death.attack.fireThorns": "%1$s 在于 %2$s 战斗时伤到了手",
   "death.attack.fireThorns.item": "%1$s 在 %3$s 与 %2$s 被伤到了手",
+  "death.attack.chomp": "%1$s 被 %2$s 吃掉了",
+  "death.attack.chomp.item": "%1$s被 %2$s 用 %3$s 吃掉了",
 
   "power.touhouorigins.recollection.player": "%1$s 拥有可被阅读的回忆...",
   "power.touhouorigins.recollection.spawnX": "Respawn X",
@@ -252,6 +286,7 @@
   "power.touhouorigins.recollection.alert_fail": "你有一种感觉，好像有人试图读取你的记忆",
   "power.touhouorigins.ostracized.trade": "这个 %1$s 拒绝与你交易",
   "power.touhouorigins.my_apocalypse_alert": "堆芯熔毁中... 疏散该地区的人员!",
+  "power.touhouorigins.midnight_bird_cooldown": "你仍在从受伤中恢复!",
 
   "touhouorigins.gui.badge.upgrade": "Upgrade path"
 }
