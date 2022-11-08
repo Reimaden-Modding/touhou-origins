@@ -243,6 +243,18 @@
   "power.touhouorigins.mysterious_seal.name": "Mysteriously Sealed",
   "power.touhouorigins.mysterious_seal.description": "An unknown seal envelops your body and soul. You have 5 less hearts of health and you're 20% smaller. Perhaps there is some way to break it?",
 
+  "origin.touhouorigins.tsukumogami.name": "Tsukumogami",
+  "origin.touhouorigins.tsukumogami.description": "Tsukumogami desc **** ",
+
+  "power.touhouorigins.choose_your_tool.name": "You Tool",
+  "power.touhouorigins.choose_your_tool.description": "You are a tool, literally, at least you don't have to look like one. After choosing this origin, you will be prompted to choose the object you inhabit. This object will have a special ability associated to it, is bound to you, and cannot break. You must carry it at all times.",
+  "power.touhouorigins.boo.name": "Boo!",
+  "power.touhouorigins.boo.description": "You love surprising others, you could just do it all day! Every minute, you can become completely invisible. Any action or movement done while under the effect will do something **** .",
+  "power.touhouorigins.artisan_of_animacy.name": "Artisan of Animacy",
+  "power.touhouorigins.artisan_of_animacy.description": "You are devoted to your craft and can imbue otherwise mundane objects with phantasmic characteristics, making them more powerful at the expense of being more alive. Using a smithing table while sneaking will give your held item a random applicable enchantment along with curse of the vanishing.",
+  "power.touhouorigins.little_smithy.name": "Little Smithy",
+  "power.touhouorigins.little_smithy.description": "Tools and smithing go hand to hand, and a smith you are. You have knowledge to craft various items that are normally uncraftable.",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Camouflage activates",
@@ -297,5 +309,39 @@
   "advancements.touhouorigins.enlightened.title": "Enlightened",
   "advancements.touhouorigins.enlightened.description": "As a Celestial, attain enlightenment",
   "advancements.touhouorigins.immortal.title": "Immortal",
-  "advancements.touhouorigins.immortal.description": "As a Celestial, attain immortality"
+  "advancements.touhouorigins.immortal.description": "As a Celestial, attain immortality",
+
+  "layer.touhouorigins.tsukumogami_tool.name": "Tsukumogami",
+  "layer.touhouorigins.tsukumogami_tool.missing_origin.name": "Unknown",
+  "layer.touhouorigins.tsukumogami_tool.missing_origin.description": "You have not identified yourself yet.",
+
+  "origin.touhouorigins.chochin.name": "Chōchin",
+  "origin.touhouorigins.chochin.description": "Your spirit's manifestation is a lantern, shining ever so brightly.",
+
+  "power.touhouorigins.tsukumogami_chochin.name": "A Light in the Darkness",
+  "power.touhouorigins.tsukumogami_chochin.description": "You are afflicted with glowing, allowing others nearby to see you through walls. You are also immune to blinding effects. Your Chōchin must be held in your hand for these powers to take effect.",
+
+  "origin.touhouorigins.fukuro.name": "Fukuro",
+  "origin.touhouorigins.fukuro.description": "Your spirit's manifestation is a bag, **** ",
+
+  "power.touhouorigins.tsukumogami_fukuro.name": "Big Bag",
+  "power.touhouorigins.tsukumogami_fukuro.description": "You have a secondary inventory. Your Fukuro must either be held in your hand or equipped onto your head to access its inventory. If you are not wearing any helmet, your Fukuru will automatically equip when using your ability key.",
+
+  "origin.touhouorigins.exfukuro.name": "EX Fukuro",
+  "origin.touhouorigins.exfukuro.description": "Fukuru upgrade path **** ",
+
+  "power.touhouorigins.tsukumogami_exfukuro.name": "Gap Bag",
+  "power.touhouorigins.tsukumogami_exfukuro.description": "Instead of having a small internal inventory space, you instead access your ender chest.",
+
+  "origin.touhouorigins.karakasa.name": "Karakasa",
+  "origin.touhouorigins.karakasa.description": "You are an umbrella, graceful, yet powerful.",
+
+  "power.touhouorigins.tsukumogami_karakasa.name": "Graceful Little Parasol",
+  "power.touhouorigins.tsukumogami_karakasa.description": "When held, you are granted slow falling, and are given increased knockback damage.",
+
+  "origin.touhouorigins.menreiki.name": "Menreiki",
+  "origin.touhouorigins.menreiki.description": "You are a collective of masks.",
+
+  "power.touhouorigins.tsukumogami_menreiki.name": "All is You",
+  "power.touhouorigins.tsukumogami_menreiki.description": "When equipped, you can cycle between three states of emotion: **** Fuku no kami(dropper mask, humor, laughter). Kitsune: (observer mask) Anyone you directly look at can be tracked through walls. Uba(dispenser mask, pathos, melancholy)."
 }

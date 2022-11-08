@@ -19,7 +19,11 @@
     "MobEntityMixin",
     "ProjectileEntityMixin",
     "BlockMixin",
-    "LivingEntityRendererMixin"
+    "LivingEntityRendererMixin",
+    "SlotMixin",
+    "ShulkerBoxSlotMixin",
+    "ServerPlayerEntityMixin",
+    "ClientPlayerEntityMixin"
   ],
   "client": [
   ],

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:carrot_on_a_stick",
+    "minecraft:warped_fungus_on_a_stick",
+    "minecraft:shears",
+    "minecraft:shield",
+    "minecraft:elytra",
+    "minecraft:flint_and_steel",
+    "minecraft:compass"
+  ]
+}

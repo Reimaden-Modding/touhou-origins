@@ -1,0 +1,28 @@
+{
+  "allow_random": true,
+  "order": 1,
+  "origins": [
+    {
+      "condition": {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "origins:origin",
+            "origin": "touhouorigins:tsukumogami",
+            "layer": "origins:origin"
+          },
+          {
+            "type": "apoli:entity_type",
+            "entity_type": "minecraft:player"
+          }
+      ]
+          },
+      "origins": [
+        "touhouorigins:chochin",
+        "touhouorigins:fukuro",
+        "touhouorigins:karakasa",
+        "touhouorigins:menreiki"
+      ]
+    }
+  ]
+}

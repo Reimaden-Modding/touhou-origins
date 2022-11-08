@@ -1,0 +1,201 @@
+{
+  "type": "apoli:multiple",
+  "soulbind_callback": {
+    "type": "apoli:action_on_callback",
+    "entity_action_chosen": {
+      "type": "apoli:execute_command",
+      "command": "give @s end_rod{Unbreakable:1,display:{Name:'{\"text\":\"Chōchin\"}',Lore:['{\"text\":\"Lore\"}']},tsukumogami_bound:1} 1"
+    },
+    "entity_action_lost": {
+      "type": "apoli:execute_command",
+      "command": "clear @s end_rod{Unbreakable:1,display:{Name:'{\"text\":\"Chōchin\"}',Lore:['{\"text\":\"Lore\"}']},tsukumogami_bound:1}"
+    },
+    "entity_action_respawned": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:execute_command",
+          "command": "clear @s end_rod{Unbreakable:1,display:{Name:'{\"text\":\"Chōchin\"}',Lore:['{\"text\":\"Lore\"}']},tsukumogami_bound:1}"
+        },
+        {
+          "type": "apoli:delay",
+          "ticks": 1,
+          "action": {
+            "type": "apoli:execute_command",
+            "command": "give @s end_rod{Unbreakable:1,display:{Name:'{\"text\":\"Chōchin\"}',Lore:['{\"text\":\"Lore\"}']},tsukumogami_bound:1} 1"
+          }
+        }
+      ]
+    }
+  },
+  "glowing_self": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:glowing",
+            "duration": 100,
+            "show_particles": false
+          }
+        }
+      ]
+    },
+    "rising_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:glowing",
+            "duration": 100,
+            "show_particles": false
+          }
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "blindness_immunity": {
+    "type": "origins:effect_immunity",
+    "effects": [
+      "minecraft:blindness",
+      "minecraft:darkness"
+    ],
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "prevent_placing": {
+    "type": "apoli:prevent_block_use",
+    "comment_": " move over to class handling for better interaction **** ",
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
