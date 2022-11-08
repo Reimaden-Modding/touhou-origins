@@ -20,7 +20,15 @@
     "touhouorigins:moon_rabbit",
     "touhouorigins:earth_rabbit",
     "touhouorigins:hell_raven",
-    "touhouorigins:amanojaku",
+    {
+      "condition": {
+        "type": "apoli:constant",
+        "value": false
+      },
+      "origins": [
+        "touhouorigins:amanojaku"
+      ]
+    },
     "touhouorigins:kurayami",
     "touhouorigins:tsukumogami"
   ]

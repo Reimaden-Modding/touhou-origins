@@ -76,7 +76,7 @@
           },
           "action": {
             "type": "apoli:execute_command",
-            "command": "tellraw @s {\"translate\":\"power.touhouorigins.midnight_bird_cooldown\"}"
+            "command": "title @s actionbar {\"translate\":\"power.touhouorigins.midnight_bird_cooldown\"}"
           }
         }
       ]
@@ -93,6 +93,15 @@
           "space": "local",
           "set": true,
           "z": 1
+        },
+        {
+          "type": "apoli:apply_effect",
+          "effect": {
+            "effect": "minecraft:levitation",
+            "duration": 2,
+            "show_particles": false,
+            "show_icon": false
+          }
         },
         {
           "type": "apoli:exhaust",
@@ -148,6 +157,10 @@
           "resource": "*:*_resource",
           "comparison": "==",
           "compare_to": 1
+        },
+        {
+          "type": "apoli:sneaking",
+          "inverted": true
         },
         {
           "type": "apoli:or",

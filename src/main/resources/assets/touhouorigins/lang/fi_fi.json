@@ -227,6 +227,22 @@
   "power.touhouorigins.mirror_movement.name": "Peililiike",
   "power.touhouorigins.mirror_movement.description": "",
 
+  "origin.touhouorigins.kurayami.name": "Kurayami",
+  "origin.touhouorigins.kurayami.description": "Kurayamit ovat pahoja youkaita, jotka kykenevät hallitsemaan pimeyttä. Vaikka niiden tunnetaankin syövän ihmisiä, useimmat kurayamit ovat alttiita omille voimilleen ja liian yksinkertaisia tehdäkseen moisia tekoja. Uskotaan, että nämä youkai olivat aikoinaan hyvin vahvoja olentoja, joiden todelliset voimat katosivat kauan sitten.",
+
+  "power.touhouorigins.midnight_bird.name": "Keskiyön lintu",
+  "power.touhouorigins.midnight_bird.description": "Sinulla on kyky liidellä kuin lintu, mutta putoat, jos loukkaannut. Voit leijua paikallaan hiipimällä.",
+  "power.touhouorigins.is_that_so.name": "So Nanoka~?",
+  "power.touhouorigins.is_that_so.description": "Joka 30. sekunti voit kuluttaa muutaman nälkäpisteen vapauttaaksesi pimeyspilven, joka sammuttaa ja sokeuttaa kaikki lähistöllä olevat 5 sekunniksi, mukaan lukien itsesi.",
+  "power.touhouorigins.chomp.name": "Haukkaus!",
+  "power.touhouorigins.chomp.description": "Voit purra ketä tahansa \"So Nanoka~?\"-vaikutuksen alaisena olevaa olentoa tai pelaajaa iskemällä paljain käsin. Pureskellut uhrit menettävät 2 sydäntä elinvoimaa ja sinä saat 4 imeytymissydäntä. Jos uhri kuolee, myös nälkäpisteesi ja elinvoimasi palautuvat täysin.",
+  "power.touhouorigins.light_absorption.name": "Valoabsorptio",
+  "power.touhouorigins.light_absorption.description": "Inhoat aurinkoa ja kuumuutta, ja viilentyäksesi ympäröit itsesi alitajuisesti pimeydellä. Kun altistut suoralle auringonvalolle tai olet Netherissä, pimeys valtaa sinut. Muut näkevät sinut tässä tilassa mustana pallona.",
+  "power.touhouorigins.crude_appetite.name": "Raaka ruokahalu",
+  "power.touhouorigins.crude_appetite.description": "Nautit raa'an lihan mausta, se on melkein yhtä hyvää kuin elävän ihmisen syöminen! Raakalihan syöminen antaa 75% enemmän nälkäpisteitä, kun taas kaikki muut ruoat antavat 50% vähemmän.",
+  "power.touhouorigins.mysterious_seal.name": "Salaperäisesti sinetöity",
+  "power.touhouorigins.mysterious_seal.description": "Tuntematon sinetti ympäröi kehoasi ja sieluasi. Sinulla on 5 sydäntä vähemmän elinvoimaa ja olet 20% pienempi. Ehkä on olemassa jokin keino murtaa se?",
+
   "touhouorigins.subtitles.entity.fairy.heal": "Keiju elpyy",
   "touhouorigins.subtitles.entity.fairy.fly": "Keiju lepattaa",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "Naamiointi aktivoituu",
@@ -248,6 +264,9 @@
   "touhouorigins.subtitles.entity.generic.flip": "Jokin kääntyy",
   "touhouorigins.subtitles.entity.amanojaku.flip": "Amanojaku kääntyy",
   "touhouorigins.subtitles.entity.generic.reverse": "Jokin kääntyy päinvastaiseksi",
+  "touhouorigins.subtitles.entity.kurayami.flight": "Kurayami humahtaa",
+  "touhouorigins.subtitles.entity.kurayami.darkness": "Pimeys kerääntyy",
+  "touhouorigins.subtitles.entity.kurayami.chomp": "Kurayami puree",
 
   "death.attack.sun": "%1$s höyrystyi",
   "death.attack.sun.player": "%1$s höyrystyi taistellessaan pelaajaa %2$s vastaan",
@@ -255,6 +274,8 @@
   "death.attack.probe.item": "%1$s tutkittiin pelaajan %2$s toimesta käyttämällä %3$s",
   "death.attack.fireThorns": "%1$s poltti kätensä taistellessaan pelaajaa %2$s vastaan",
   "death.attack.fireThorns.item": "%1$s poltti kätensä taistellessaan %3$s käyttävää pelaajaa %2$s vastaan",
+  "death.attack.chomp": "%2$s söi %1$s",
+  "death.attack.chomp.item": "%2$s söi %1$s käyttäessään %3$s",
 
   "power.touhouorigins.recollection.player": "%1$s omistaa seuraavat muistot...",
   "power.touhouorigins.recollection.spawnX": "Uudelleensyntymis X",
@@ -265,15 +286,7 @@
   "power.touhouorigins.recollection.alert_fail": "Sinulla on tunne kuin joku olisi yrittänyt lukea muistojasi",
   "power.touhouorigins.ostracized.trade": "%1$s kieltäytyy vaihtamasta kanssasi",
   "power.touhouorigins.my_apocalypse_alert": "Totaalinen ytimen sulaminen käynnissä... Evakuoikaa alue!",
+  "power.touhouorigins.midnight_bird_cooldown": "Toivut yhä loukkaantumisestasi!",
 
-  "touhouorigins.gui.badge.upgrade": "Päivityspolku",
-
-  "advancements.touhouorigins.root.title": "Touhou Origins",
-  "advancements.touhouorigins.root.description": "Tervetuloa Kensokyröön",
-  "advancements.touhouorigins.close_eye.title": "Luonteensa hylkääminen",
-  "advancements.touhouorigins.close_eye.description": "Sulje kolmas silmäsi",
-  "advancements.touhouorigins.enlightened.title": "Valaistunut",
-  "advancements.touhouorigins.enlightened.description": "Taivaallisena, saavuta valaistuminen",
-  "advancements.touhouorigins.immortal.title": "Kuolematon",
-  "advancements.touhouorigins.immortal.description": "Taivaallisena, saavuta kuolemattomuus"
+  "touhouorigins.gui.badge.upgrade": "Päivityspolku"
 }
