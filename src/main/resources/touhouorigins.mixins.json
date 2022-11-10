@@ -4,20 +4,20 @@
   "package": "net.maxmani.touhouorigins.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "PlayerHandMixin",
-    "VillagerHostilesSensorMixin",
     "ActiveTargetGoalAccessor",
     "ActiveTargetGoalMixin",
-    "IronGolemEntityMixin",
-    "TrackTargetGoalAccessor",
-    "SnowGolemEntityMixin",
-    "WanderingTraderEntityMixin",
+    "BlockMixin",
     "EndermanEntityMixin",
+    "IronGolemEntityMixin",
+    "MobEntityMixin",
     "PiglinBrainMixin",
     "PiglinBruteBrainMixin",
-    "MobEntityMixin",
+    "PlayerHandMixin",
     "ProjectileEntityMixin",
-    "BlockMixin"
+    "SnowGolemEntityMixin",
+    "TrackTargetGoalAccessor",
+    "VillagerHostilesSensorMixin",
+    "WanderingTraderEntityMixin"
   ],
   "client": [
   ],
