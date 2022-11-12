@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "touhouorigins:tsukumogami_fukuro",
+    "touhouorigins:tsukumogami_fukuro_ex",
+    "touhouorigins:key_check_fukuro"
+  ],
+  "icon": "minecraft:chest",
+  "order": 2,
+  "impact": 1,
+  "upgrades": [
+    {
+      "condition": "touhouorigins:gap_bag",
+      "origin": "touhouorigins:tsukumogami_fukuro_ex",
+      "announcement": "origin.touhouorigins.tsukumogami_fukuro.announcement"
+    }
+  ]
+}

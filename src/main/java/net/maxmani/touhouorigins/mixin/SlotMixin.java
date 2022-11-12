@@ -14,9 +14,9 @@ public class SlotMixin {
 
     @Inject(method = "canInsert", at = @At("HEAD"), cancellable = true)
     private void preventInsert(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
-        if (stack.hasNbt()) {
+        if (stack.hasNbt()) { //prevents NBT tagged items from being inserted into (almost) any inventory GUI that isn't the player's inventory
             NbtCompound nbt = stack.getNbt();
-            if ((nbt.contains("tsukumogami_bound") && nbt.getBoolean("tsukumogami_bound"))) {
+            if (nbt.contains("tsukumogami_bound")) {
                 if (!(((Slot) (Object) this).inventory instanceof PlayerInventory)) {
                     cir.cancel();
                 }

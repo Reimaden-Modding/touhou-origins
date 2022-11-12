@@ -385,5 +385,86 @@
       "mob/dolphin/eat1"
     ],
     "subtitle": "touhouorigins.subtitles.entity.kurayami.chomp"
+  },
+  "entity.fukuro.gap_upgrade": {
+    "sounds": [
+      {
+        "name": "block/end_portal/endportal",
+        "pitch": 0.5
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.fukuro.gap_upgrade"
+  },
+  "entity.fukuro.bag_open": {
+    "sounds": [
+      {
+        "name": "block/chest/open",
+        "pitch": 1.2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.fukuro.bag_open"
+  },
+  "entity.exfukuro.bag_open": {
+    "sounds": [
+      {
+        "name": "block/enderchest/open",
+        "pitch": 1.2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.exfukuro.bag_open"
+  },
+  "entity.karakasa.escape": {
+    "sounds": [
+      {
+        "name": "mob/phantom/flap3",
+        "pitch": 1.2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.karakasa.escape"
+  },
+  "entity.menreiki.swap": {
+    "sounds": [
+      {
+        "name": "item/armor/equip_leather1"
+      },
+      {
+        "name": "item/armor/equip_leather2"
+      },
+      {
+        "name": "item/armor/equip_leather3"
+      },
+      {
+        "name": "item/armor/equip_leather4"
+      },
+      {
+        "name": "item/armor/equip_leather5"
+      },
+      {
+        "name": "item/armor/equip_leather6"
+      }
+
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.menreiki.swap"
+  },
+  "entity.menreiki.thorns": {
+    "sounds": [
+      {
+        "name": "enchant/thorns/hit1",
+        "pitch": 1.2
+      },
+      {
+        "name": "enchant/thorns/hit2",
+        "pitch": 1.2
+      },
+      {
+        "name": "enchant/thorns/hit3",
+        "pitch": 1.2
+      },
+      {
+        "name": "enchant/thorns/hit4",
+        "pitch": 1.2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.menreiki.thorns"
   }
 }

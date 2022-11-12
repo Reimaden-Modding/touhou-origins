@@ -24,9 +24,9 @@ public abstract class ClientPlayerEntityMixin extends PlayerEntity {
     @Inject(method = "dropSelectedItem", at = @At("HEAD"), cancellable = true)
     private void preventItemDrop(boolean entireStack, CallbackInfoReturnable<Boolean> cir) {
         ItemStack stack = getMainHandStack();
-        if (stack.hasNbt()) {
+        if (stack.hasNbt()) { //prevents NBT tagged items from being dropped via drop key
             NbtCompound nbt = stack.getNbt();
-            if ((nbt.contains("tsukumogami_bound") && nbt.getBoolean("tsukumogami_bound"))) {
+            if (nbt.contains("tsukumogami_bound")) {
                 cir.cancel();
             }
         }

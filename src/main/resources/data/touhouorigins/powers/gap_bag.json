@@ -3,23 +3,41 @@
   "item_ownership": {
     "type": "apoli:action_on_callback",
     "entity_action_gained": {
-      "type": "apoli:execute_command",
-      "command": "give @s chest{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1} 1"
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:execute_command",
+          "command": "give @s ender_chest{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_ex_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1} 1"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @s add exfukuro_origin"
+        }
+      ]
     },
     "entity_action_lost": {
-      "type": "apoli:execute_command",
-      "command": "clear @s chest{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
-    },
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:execute_command",
+          "command": "clear @s ender_chest{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_ex_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @s remove exfukuro_origin"
+        }
+          ]
+        },
     "entity_action_respawned": {
       "type": "apoli:and",
       "actions": [
         {
           "type": "apoli:execute_command",
-          "command": "clear @s chest{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1} 1"
+          "command": "clear @s ender_chest{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_ex_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
         },
         {
           "type": "apoli:execute_command",
-          "command": "give @s chest{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1} 1"
+          "command": "give @s ender_chest{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_ex_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
         }
       ]
     }
@@ -28,7 +46,7 @@
     "type": "apoli:action_when_damage_taken",
     "entity_action": {
       "type": "apoli:execute_command",
-      "command": "kill @e[type=item,sort=nearest,nbt={Item:{id:\"minecraft:chest\",tag:{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}}}]"
+      "command": "kill @e[type=item,sort=nearest,nbt={Item:{id:\"minecraft:ender_chest\",tag:{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_fukuro_ex_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}}}]"
     },
     "condition": {
       "type": "apoli:health",
@@ -37,11 +55,20 @@
     },
     "cooldown": 1
   },
-  "extra_inventory": {
-    "type": "apoli:inventory",
-    "title": "item.touhouorigins.tsukumogami_fukuro_name",
-    "container_type": "dropper",
-    "drop_on_death": false,
+  "ender_inventory": {
+    "type": "apoli:active_self",
+    "entity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:ender_chest"
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "touhouorigins:entity.exfukuro.bag_open"
+        }
+      ]
+    },
     "condition": {
       "type": "apoli:or",
       "conditions": [
@@ -54,7 +81,7 @@
               {
                 "type": "apoli:ingredient",
                 "ingredient": {
-                  "item": "minecraft:chest"
+                  "item": "minecraft:ender_chest"
                 }
               },
               {
@@ -73,7 +100,7 @@
               {
                 "type": "apoli:ingredient",
                 "ingredient": {
-                  "item": "minecraft:chest"
+                  "item": "minecraft:ender_chest"
                 }
               },
               {
@@ -92,7 +119,7 @@
               {
                 "type": "apoli:ingredient",
                 "ingredient": {
-                  "item": "minecraft:chest"
+                  "item": "minecraft:ender_chest"
                 }
               },
               {
@@ -105,12 +132,13 @@
       ]
     }
   },
-  "inventory_sound": {
-    "type": "apoli:active_self",
+  "ender_particle": {
+    "type": "apoli:action_over_time",
     "entity_action": {
-      "type": "origins:play_sound",
-      "sound": "touhouorigins:entity.fukuro.bag_open"
+      "type": "apoli:execute_command",
+      "command": "particle minecraft:portal ~ ~1.5 ~ .5 0 .5 1 1 normal @e[!tag=exfukuro_origin,type=minecraft:player]"
     },
+    "interval": 1,
     "condition": {
       "type": "apoli:or",
       "conditions": [
@@ -123,7 +151,7 @@
               {
                 "type": "apoli:ingredient",
                 "ingredient": {
-                  "item": "minecraft:chest"
+                  "item": "minecraft:ender_chest"
                 }
               },
               {
@@ -142,7 +170,7 @@
               {
                 "type": "apoli:ingredient",
                 "ingredient": {
-                  "item": "minecraft:chest"
+                  "item": "minecraft:ender_chest"
                 }
               },
               {
@@ -161,7 +189,7 @@
               {
                 "type": "apoli:ingredient",
                 "ingredient": {
-                  "item": "minecraft:chest"
+                  "item": "minecraft:ender_chest"
                 }
               },
               {

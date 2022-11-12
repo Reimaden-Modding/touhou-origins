@@ -1,32 +1,41 @@
 {
   "type": "apoli:multiple",
-  "soulbind_callback": {
+  "item_ownership": {
     "type": "apoli:action_on_callback",
-    "entity_action_chosen": {
+    "entity_action_gained": {
       "type": "apoli:execute_command",
-      "command": "give @s end_rod{Unbreakable:1,display:{Name:'{\"text\":\"Chōchin\"}',Lore:['{\"text\":\"Lore\"}']},tsukumogami_bound:1} 1"
+      "command": "give @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1} 1"
     },
     "entity_action_lost": {
       "type": "apoli:execute_command",
-      "command": "clear @s end_rod{Unbreakable:1,display:{Name:'{\"text\":\"Chōchin\"}',Lore:['{\"text\":\"Lore\"}']},tsukumogami_bound:1}"
+      "command": "clear @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1}"
     },
     "entity_action_respawned": {
       "type": "apoli:and",
       "actions": [
         {
           "type": "apoli:execute_command",
-          "command": "clear @s end_rod{Unbreakable:1,display:{Name:'{\"text\":\"Chōchin\"}',Lore:['{\"text\":\"Lore\"}']},tsukumogami_bound:1}"
+          "command": "clear @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1} 1"
         },
         {
-          "type": "apoli:delay",
-          "ticks": 1,
-          "action": {
-            "type": "apoli:execute_command",
-            "command": "give @s end_rod{Unbreakable:1,display:{Name:'{\"text\":\"Chōchin\"}',Lore:['{\"text\":\"Lore\"}']},tsukumogami_bound:1} 1"
-          }
+          "type": "apoli:execute_command",
+          "command": "give @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1} 1"
         }
       ]
     }
+  },
+  "clear_on_death": {
+    "type": "apoli:action_when_damage_taken",
+    "entity_action": {
+      "type": "apoli:execute_command",
+      "command": "kill @e[type=item,sort=nearest,nbt={Item:{id:\"minecraft:end_rod\",tag:{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1}}}]"
+    },
+    "condition": {
+      "type": "apoli:health",
+      "comparison": "<=",
+      "compare_to": 0
+    },
+    "cooldown": 1
   },
   "glowing_self": {
     "type": "apoli:action_over_time",
@@ -35,11 +44,18 @@
       "actions": [
         {
           "type": "origins:apply_effect",
-          "effect": {
-            "effect": "minecraft:glowing",
-            "duration": 100,
-            "show_particles": false
-          }
+          "effects": [
+            {
+              "effect": "minecraft:glowing",
+              "duration": 400,
+              "show_particles": false
+            },
+            {
+              "effect": "minecraft:night_vision",
+              "duration": 400,
+              "show_particles": false
+            }
+          ]
         }
       ]
     },
@@ -48,11 +64,34 @@
       "actions": [
         {
           "type": "origins:apply_effect",
-          "effect": {
-            "effect": "minecraft:glowing",
-            "duration": 100,
-            "show_particles": false
-          }
+          "effects": [
+            {
+              "effect": "minecraft:glowing",
+              "duration": 400,
+              "show_particles": false
+            },
+            {
+              "effect": "minecraft:night_vision",
+              "duration": 400,
+              "show_particles": false
+            }
+          ]
+        }
+      ]
+    },
+    "falling_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "origins:clear_effect",
+          "effects": [
+            {
+              "effect": "minecraft:glowing"
+            },
+            {
+              "effect": "minecraft:night_vision"
+            }
+          ]
         }
       ]
     },
@@ -151,9 +190,13 @@
       ]
     }
   },
-  "prevent_placing": {
-    "type": "apoli:prevent_block_use",
-    "comment_": " move over to class handling for better interaction **** ",
+  "held_particle": {
+    "type": "origins:particle",
+    "particle":  {
+      "type": "minecraft:end_rod",
+      "params": "~ ~2 ~ 0.3 0.3 0.3 0 1"
+    },
+    "frequency": 2,
     "condition": {
       "type": "apoli:or",
       "conditions": [

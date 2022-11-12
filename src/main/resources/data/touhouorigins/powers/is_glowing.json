@@ -1,0 +1,24 @@
+{
+  "type": "apoli:multiple",
+  "cooldown": {
+    "type": "apoli:cooldown",
+    "cooldown": 12000
+  },
+
+
+  "revoke": {
+    "type": "apoli:action_over_time",
+    "rising_action": {
+      "type": "apoli:revoke_power",
+      "power": "touhouorigins:is_glowing",
+      "source": "touhouorigins:tsukumogami_menreiki"
+    },
+    "condition": {
+      "type": "apoli:resource",
+      "resource": "*:*_cooldown",
+      "comparison": "==",
+      "compare_to": 0
+}
+  },
+  "hidden": true
+}

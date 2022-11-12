@@ -42,6 +42,12 @@ public class ModSounds {
     public static final SoundEvent ENTITY_KURAYAMI_FLIGHT = registerSound("entity.kurayami.flight");
     public static final SoundEvent ENTITY_KURAYAMI_DARKNESS = registerSound("entity.kurayami.darkness");
     public static final SoundEvent ENTITY_KURAYAMI_CHOMP = registerSound("entity.kurayami.chomp");
+    public static final SoundEvent ENTITY_FUKURO_GAP_UPGRADE = registerSound("entity.fukuro.gap_upgrade");
+    public static final SoundEvent ENTITY_FUKURO_BAG_OPEN = registerSound("entity.fukuro.bag_open");
+    public static final SoundEvent ENTITY_EXFUKURO_BAG_OPEN = registerSound("entity.exfukuro.bag_open");
+    public static final SoundEvent ENTITY_KARAKASA_ESCAPE = registerSound("entity.karakasa.escape");
+    public static final SoundEvent ENTITY_MENREIKI_SWAP = registerSound("entity.menreiki.swap");
+    public static final SoundEvent ENTITY_MENREIKI_THORNS = registerSound("entity.menreiki.thorns");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = new Identifier(TouhouOrigins.MOD_ID, name);

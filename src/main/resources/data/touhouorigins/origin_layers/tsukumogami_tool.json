@@ -15,13 +15,14 @@
             "type": "apoli:entity_type",
             "entity_type": "minecraft:player"
           }
-      ]
-          },
+        ]
+      },
       "origins": [
-        "touhouorigins:chochin",
-        "touhouorigins:fukuro",
-        "touhouorigins:karakasa",
-        "touhouorigins:menreiki"
+        "touhouorigins:tsukumogami_chochin",
+        "touhouorigins:tsukumogami_fukuro",
+        "touhouorigins:tsukumogami_fukuro_ex",
+        "touhouorigins:tsukumogami_karakasa",
+        "touhouorigins:tsukumogami_menreiki"
       ]
     }
   ]
