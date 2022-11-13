@@ -5,17 +5,45 @@
     "actions": [
       {
         "condition": {
-          "type": "apoli:and",
-          "conditions": [
-            {
-              "type": "apoli:target_condition",
-              "condition": {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
                 "type": "apoli:relative_health",
                 "comparison": "<=",
                 "compare_to": 0
+              },
+              {
+                "type": "apoli:in_tag",
+                "tag": "touhouorigins:meatless",
+                "inverted": true
+              },
+              {
+                "type": "apoli:and",
+                "conditions": [
+                  {
+                    "type": "apoli:entity_type",
+                    "entity_type": "minecraft:player"
+                  },
+                  {
+                    "type": "apoli:or",
+                    "conditions" : [
+                      {
+                        "type": "origins:origin",
+                        "origin": "touhouorigins:ghost"
+                      },
+                      {
+                        "type": "origins:origin",
+                        "origin": "touhouorigins:vengeful_spirit"
+                      }
+                    ]
+                  }
+                ],
+                "inverted": true
               }
-            }
-          ]
+            ]
+          }
         },
         "action": {
           "type": "apoli:and",
@@ -70,9 +98,42 @@
             {
               "type": "apoli:target_condition",
               "condition": {
-                "type": "apoli:relative_health",
-                "comparison": ">",
-                "compare_to": 0
+                "type": "apoli:and",
+                "conditions": [
+                  {
+                    "type": "apoli:relative_health",
+                    "comparison": ">",
+                    "compare_to": 0
+                  },
+                  {
+                    "type": "apoli:in_tag",
+                    "tag": "touhouorigins:meatless",
+                    "inverted": true
+                  },
+                  {
+                    "type": "apoli:and",
+                    "conditions": [
+                      {
+                        "type": "apoli:entity_type",
+                        "entity_type": "minecraft:player"
+                      },
+                      {
+                        "type": "apoli:or",
+                        "conditions" : [
+                          {
+                            "type": "origins:origin",
+                            "origin": "touhouorigins:ghost"
+                          },
+                          {
+                            "type": "origins:origin",
+                            "origin": "touhouorigins:vengeful_spirit"
+                          }
+                        ]
+                      }
+                    ],
+                    "inverted": true
+                  }
+                ]
               }
             }
           ]

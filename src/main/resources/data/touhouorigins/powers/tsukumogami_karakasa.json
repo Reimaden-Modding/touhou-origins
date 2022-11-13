@@ -126,7 +126,7 @@
                 "space": "local_horizontal"
               },
               {
-                "type": "origins:play_sound",
+                "type": "apoli:play_sound",
                 "sound": "touhouorigins:entity.karakasa.escape"
               }
             ]

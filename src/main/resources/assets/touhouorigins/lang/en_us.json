@@ -235,7 +235,7 @@
   "power.touhouorigins.is_that_so.name": "So Nanoka~?",
   "power.touhouorigins.is_that_so.description": "Every 30 seconds, you can spend some hunger points to release a cloud of darkness that will extinguish and blind everyone nearby for 5 seconds including yourself.",
   "power.touhouorigins.chomp.name": "Chomp!",
-  "power.touhouorigins.chomp.description": "You can chomp on any mob or player under the effects of \"So Nanoka~?\" by attacking with your bare fists. Chomped victims will directly lose 2 hearts of health and you will be given 4 absorption hearts. If the victim is killed, your hunger points and health will also be completely restored.",
+  "power.touhouorigins.chomp.description": "You can chomp on any fleshy mob or player under the effects of \"So Nanoka~?\" by attacking with your bare fists. If they are a valid target, chomped victims will directly lose 2 hearts of health and you will be given 4 absorption hearts. If the victim is killed, your hunger points and health will also be completely restored.",
   "power.touhouorigins.light_absorption.name": "Light Absorption",
   "power.touhouorigins.light_absorption.description": "You hate being exposed to the sun and heat, and subconsciously surround yourself in darkness to cool off. When exposed to direct sunlight or in the Nether, you are afflicted with darkness. Others will see you as a black sphere in this state.",
   "power.touhouorigins.crude_appetite.name": "Crude Appetite",

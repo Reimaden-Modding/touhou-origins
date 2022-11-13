@@ -108,7 +108,7 @@
   "inventory_sound": {
     "type": "apoli:active_self",
     "entity_action": {
-      "type": "origins:play_sound",
+      "type": "apoli:play_sound",
       "sound": "touhouorigins:entity.fukuro.bag_open"
     },
     "condition": {

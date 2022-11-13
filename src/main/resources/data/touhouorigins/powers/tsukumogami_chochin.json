@@ -43,7 +43,7 @@
       "type": "apoli:and",
       "actions": [
         {
-          "type": "origins:apply_effect",
+          "type": "apoli:apply_effect",
           "effects": [
             {
               "effect": "minecraft:glowing",
@@ -63,7 +63,7 @@
       "type": "apoli:and",
       "actions": [
         {
-          "type": "origins:apply_effect",
+          "type": "apoli:apply_effect",
           "effects": [
             {
               "effect": "minecraft:glowing",
@@ -83,7 +83,7 @@
       "type": "apoli:and",
       "actions": [
         {
-          "type": "origins:clear_effect",
+          "type": "apoli:clear_effect",
           "effects": [
             {
               "effect": "minecraft:glowing"
@@ -141,7 +141,7 @@
     }
   },
   "blindness_immunity": {
-    "type": "origins:effect_immunity",
+    "type": "apoli:effect_immunity",
     "effects": [
       "minecraft:blindness",
       "minecraft:darkness"
@@ -191,7 +191,7 @@
     }
   },
   "held_particle": {
-    "type": "origins:particle",
+    "type": "apoli:particle",
     "particle":  {
       "type": "minecraft:end_rod",
       "params": "~ ~2 ~ 0.3 0.3 0.3 0 1"

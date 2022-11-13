@@ -186,7 +186,7 @@
                 "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_kitsune\",\"color\":\"gold\",\"bold\":true,\"italic\":true}"
               },
               {
-                "type": "origins:play_sound",
+                "type": "apoli:play_sound",
                 "sound": "touhouorigins:entity.menreiki.swap"
               }
             ]
@@ -224,7 +224,7 @@
                 "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_fuku_no_kami\",\"color\":\"dark_green\",\"bold\":true,\"italic\":true}"
               },
               {
-                "type": "origins:play_sound",
+                "type": "apoli:play_sound",
                 "sound": "touhouorigins:entity.menreiki.swap"
               }
             ]
@@ -262,7 +262,7 @@
                 "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_Uba\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":true}"
               },
               {
-                "type": "origins:play_sound",
+                "type": "apoli:play_sound",
                 "sound": "touhouorigins:entity.menreiki.swap"
               }
             ]
@@ -312,7 +312,7 @@
                 "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_kitsune\",\"color\":\"gold\",\"bold\":true,\"italic\":true}"
               },
               {
-                "type": "origins:play_sound",
+                "type": "apoli:play_sound",
                 "sound": "touhouorigins:entity.menreiki.swap"
               }
             ]
@@ -350,7 +350,7 @@
                 "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_fuku_no_kami\",\"color\":\"dark_green\",\"bold\":true,\"italic\":true}"
               },
               {
-                "type": "origins:play_sound",
+                "type": "apoli:play_sound",
                 "sound": "touhouorigins:entity.menreiki.swap"
               }
             ]
@@ -388,7 +388,7 @@
                 "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_Uba\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":true}"
               },
               {
-                "type": "origins:play_sound",
+                "type": "apoli:play_sound",
                 "sound": "touhouorigins:entity.menreiki.swap"
               }
             ]
@@ -425,7 +425,7 @@
     },
     "entity_action": {
       "type": "apoli:raycast",
-      "distance": 100,
+      "distance": 256,
       "fluid_handling": "none",
       "bientity_condition": {
         "type": "apoli:target_condition",
@@ -507,7 +507,7 @@
     "type": "apoli:action_over_time",
     "rising_action": {
       "type": "apoli:area_of_effect",
-      "radius": 100,
+      "radius": 256,
       "bientity_action": {
         "type": "apoli:target_action",
         "action": {
@@ -649,7 +649,7 @@
       "type": "apoli:and",
       "actions": [
         {
-          "type": "origins:play_sound",
+          "type": "apoli:play_sound",
           "sound": "touhouorigins:entity.menreiki.thorns"
         },
         {

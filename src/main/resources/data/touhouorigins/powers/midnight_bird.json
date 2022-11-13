@@ -118,6 +118,30 @@
       ]
     }
   },
+  "reset_splat_on_sneak": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+          "type": "apoli:change_resource",
+          "resource": "*:*_splat_warmup",
+          "change": 10
+    },
+    "interval": 1,
+    "condition": {
+      "type": "apoli:and",
+      "conditions":
+      [
+        {
+          "type": "apoli:sneaking"
+        },
+        {
+          "type": "apoli:resource",
+          "resource": "*:*_resource",
+          "comparison": "==",
+          "compare_to": 1
+        }
+      ]
+    }
+  },
   "cancel_gravity": {
     "type": "apoli:modify_falling",
     "velocity": 0,
@@ -179,13 +203,13 @@
             {
               "type": "apoli:block_collision",
               "offset_x": 0.1,
-              "offset_y": 0.2,
+              "offset_y": 0.1,
               "offset_z": 0.1
             },
             {
               "type": "apoli:block_collision",
               "offset_x": -0.1,
-              "offset_y": 0.2,
+              "offset_y": -0.1,
               "offset_z": -0.1
             }
           ]
@@ -201,7 +225,7 @@
   },
   "splat_warmup": {
     "type": "apoli:cooldown",
-    "cooldown": 20
+    "cooldown": 10
   },
   "toggle_splat": {
     "type": "apoli:action_when_damage_taken",
@@ -220,12 +244,6 @@
           "power": "*:*_splat_recover_timer"
         }
       ]
-    },
-    "condition": {
-      "type": "apoli:resource",
-      "resource": "*:*_resource",
-      "comparison": "==",
-      "compare_to": 1
     }
   },
   "splat_recover": {

@@ -64,7 +64,7 @@
           "type": "apoli:ender_chest"
         },
         {
-          "type": "origins:play_sound",
+          "type": "apoli:play_sound",
           "sound": "touhouorigins:entity.exfukuro.bag_open"
         }
       ]
@@ -136,7 +136,7 @@
     "type": "apoli:action_over_time",
     "entity_action": {
       "type": "apoli:execute_command",
-      "command": "particle minecraft:portal ~ ~1.5 ~ .5 0 .5 1 1 normal @e[!tag=exfukuro_origin,type=minecraft:player]"
+      "command": "particle minecraft:portal ~ ~1.5 ~ .5 0 .5 1 1 normal @e[tag=!exfukuro_origin,type=minecraft:player]"
     },
     "interval": 1,
     "condition": {

@@ -13,13 +13,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ServerPlayNetworkHandlerMixin  {
 
     @Shadow public ServerPlayerEntity player;
-    @Shadow private boolean floating;
     @Shadow private int floatingTicks;
 
     @Inject(method = "tick", at = @At("HEAD"))
     public void noFlightKick(CallbackInfo ci) {
-        if (ModPowers.CAN_FLY.isActive(player)) {
-            this.floating = false;
+        if (ModPowers.CAN_FLY.isActive(player) && this.floatingTicks >= 60) { //there is probably a better way, but this works
             this.floatingTicks = 0;
         }
     }
