@@ -121,9 +121,9 @@
   "reset_splat_on_sneak": {
     "type": "apoli:action_over_time",
     "entity_action": {
-          "type": "apoli:change_resource",
-          "resource": "*:*_splat_warmup",
-          "change": 10
+      "type": "apoli:change_resource",
+      "resource": "*:*_splat_warmup",
+      "change": 10
     },
     "interval": 1,
     "condition": {
@@ -312,7 +312,7 @@
           "operation": "set",
           "change": 60
         }
-        ]
+      ]
     }
   },
   "badges":

@@ -26,8 +26,8 @@
           "type": "apoli:execute_command",
           "command": "tag @s remove exfukuro_origin"
         }
-          ]
-        },
+      ]
+    },
     "entity_action_respawned": {
       "type": "apoli:and",
       "actions": [

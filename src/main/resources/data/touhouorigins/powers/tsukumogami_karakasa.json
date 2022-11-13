@@ -115,22 +115,22 @@
   "knockback_bonus": {
     "type": "apoli:action_on_hit",
     "bientity_action": {
-          "type": "apoli:actor_action",
-          "action": {
-            "type": "apoli:and",
-            "actions": [
-              {
-                "type": "apoli:add_velocity",
-                "y": 2,
-                "z": -2,
-                "space": "local_horizontal"
-              },
-              {
-                "type": "apoli:play_sound",
-                "sound": "touhouorigins:entity.karakasa.escape"
-              }
-            ]
+      "type": "apoli:actor_action",
+      "action": {
+        "type": "apoli:and",
+        "actions": [
+          {
+            "type": "apoli:add_velocity",
+            "y": 2.5,
+            "z": -2,
+            "space": "local_horizontal"
+          },
+          {
+            "type": "apoli:play_sound",
+            "sound": "touhouorigins:entity.karakasa.escape"
           }
+        ]
+      }
     },
     "bientity_condition": {
       "type": "apoli:actor_condition",

@@ -44,6 +44,13 @@
     }
   },
   "badges": [
-    "touhouorigins:upgrade"
+    "touhouorigins:upgrade",
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": {
+        "translate": "origin.touhouorigins.tsukumogami_fukuro.info"
+      }
+    }
   ]
 }

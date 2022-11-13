@@ -244,7 +244,7 @@
   "power.touhouorigins.mysterious_seal.description": "An unknown seal envelops your body and soul. You have 5 less hearts of health and you're 20% smaller. Perhaps there is some way to break it?",
 
   "origin.touhouorigins.tsukumogami.name": "Tsukumogami",
-  "origin.touhouorigins.tsukumogami.description": "Tsukumogami are sentient spirits of abandoned tools or objects that animate to take vengeance on those who have mistreated and neglected them. Most tsukumogami are known to be spiteful of humans, though their actual dangerousness depends on how they were used and treated before being abandoned.",
+  "origin.touhouorigins.tsukumogami.description": "Tsukumogami are sentient spirits of abandoned tools or objects that animate to take vengeance on those who have mistreated and neglected them. Most tsukumogami are known to be spiteful towards humans, though their true dangerousness typically depends on how they were used and treated before being abandoned.",
 
   "power.touhouorigins.choose_your_tool.name": "You Tool",
   "power.touhouorigins.choose_your_tool.description": "You are a tool, literally, at least you don't have to look like one. After choosing this origin, you will be prompted to choose the object you inhabit. This object will have a special ability associated to it, is bound to you, and cannot break. You must carry it at all times.",
@@ -340,6 +340,7 @@
 
   "power.touhouorigins.tsukumogami_fukuro_ex.name": "Pushing Boundaries",
   "power.touhouorigins.tsukumogami_fukuro_ex.description": "Others are impressed with your practicality, but what if you could store even more? If desired, you can use an eye of ender to manipulate your fukuro. If done, you will lose access to your secondary inventory, and instead will be able to interact with your ender chest storage at any time. This effect cannot be reversed.",
+  "origin.touhouorigins.tsukumogami_fukuro.info": "Hold your primary ability key with an eye of ender in your hands to activate this path.",
 
   "origin.touhouorigins.tsukumogami_fukuro_ex.name": "EX-Fukuro",
   "origin.touhouorigins.tsukumogami_fukuro_ex.description": "Imbued with a strange power, your Fukuro now is a gateway to a strange dimension, allowing you to store many more items inside of it.",
@@ -348,13 +349,13 @@
   "power.touhouorigins.gap_bag.description": "When held or equipped onto your head, you can access your ender chest at any time.",
 
   "origin.touhouorigins.tsukumogami_karakasa.name": "Karakasa",
-  "origin.touhouorigins.tsukumogami_karakasa.description": "You are a small umbrella, nimble and fleeting.",
+  "origin.touhouorigins.tsukumogami_karakasa.description": "Your spirit's manifestation is a small umbrella, nimble and fleeting.",
 
   "power.touhouorigins.tsukumogami_karakasa.name": "Graceful Little Parasol",
   "power.touhouorigins.tsukumogami_karakasa.description": "When held, you are granted slow falling. Attacking other mobs with your Karakasa will launch you into the air, allowing for quick escapes.",
 
   "origin.touhouorigins.tsukumogami_menreiki.name": "Menreiki",
-  "origin.touhouorigins.tsukumogami_menreiki.description": "You are a collective of masks, burning with emotion.",
+  "origin.touhouorigins.tsukumogami_menreiki.description": "Your spirit manifests itself as a collective of masks, burning with emotion.",
 
   "power.touhouorigins.tsukumogami_menreiki.name": "A Hopeful Masquerade",
   "power.touhouorigins.tsukumogami_menreiki.description": "When equipped onto your head, you can cycle between three states of emotion:\nKitsune:\nAnyone you directly look at will glow, allowing you to keep track of their position through terrain.\nFuku no kami:\nPositive status effects inflicted onto you will last longer, while neutral and negative effects will disappear more quickly.\nUba:\nWhen attacked, you will reflect some of the damage back towards your attacker, similar to having thorns."
