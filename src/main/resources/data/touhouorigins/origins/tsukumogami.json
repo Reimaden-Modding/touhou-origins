@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "touhouorigins:choose_your_tool",
+    "touhouorigins:artisan_of_animacy",
+    "touhouorigins:little_smithy"
+  ],
+  "icon": "minecraft:smithing_table",
+  "order": 7,
+  "impact": 1
+}

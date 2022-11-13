@@ -1,0 +1,209 @@
+{
+  "type": "apoli:multiple",
+  "manual_modify_shears": {
+    "type": "apoli:action_on_block_use",
+    "held_item_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_efficiency"
+        },
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_unbreaking"
+        },
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_vanishing_curse"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "apoli:play_sound",
+      "sound": "minecraft:block.smithing_table.use"
+    },
+    "block_condition": {
+      "type": "apoli:block",
+      "block": "minecraft:smithing_table"
+    },
+    "item_condition": {
+      "type": "apoli:and",
+      "conditions":
+      [
+        {
+          "type": "apoli:ingredient",
+          "ingredient": [
+            {
+              "item": "minecraft:shears"
+            }
+          ]
+        },
+        {
+          "type": "apoli:nbt",
+          "nbt": "{Enchantments:[{}]}",
+          "inverted": true
+        }
+      ]
+    },
+    "condition": {
+      "type": "apoli:sneaking"
+    }
+  },
+  "manual_modify_unbreaking": {
+    "type": "apoli:action_on_block_use",
+    "held_item_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_unbreaking"
+        },
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_vanishing_curse"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "apoli:play_sound",
+      "sound": "minecraft:block.smithing_table.use"
+    },
+    "block_condition": {
+      "type": "apoli:block",
+      "block": "minecraft:smithing_table"
+    },
+    "item_condition": {
+      "type": "apoli:and",
+      "conditions":
+      [
+        {
+          "type": "apoli:ingredient",
+          "ingredient": [
+            {
+              "tag": "touhouorigins:enchantable_from_anvil"
+            }
+          ]
+        },
+        {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "item": "minecraft:compass"
+          },
+          "inverted": true
+        },
+        {
+          "type": "apoli:nbt",
+          "nbt": "{Enchantments:[{}]}",
+          "inverted": true
+        }
+      ]
+    },
+    "condition": {
+      "type": "apoli:sneaking"
+    },
+    "action_result": "fail"
+  },
+  "modify_tools_medium": {
+    "type": "apoli:action_on_block_use",
+    "held_item_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_random_medium"
+        },
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_vanishing_curse"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "apoli:play_sound",
+      "sound": "minecraft:block.smithing_table.use"
+    },
+    "block_condition": {
+      "type": "apoli:block",
+      "block": "minecraft:smithing_table"
+    },
+    "item_condition": {
+      "type": "apoli:and",
+      "conditions":
+      [
+        {
+          "type": "apoli:ingredient",
+          "ingredient": [
+            {
+              "item": "minecraft:fishing_rod"
+            }
+          ]
+        },
+        {
+          "type": "apoli:nbt",
+          "nbt": "{Enchantments:[{}]}",
+          "inverted": true
+        }
+      ]
+    },
+    "condition": {
+      "type": "apoli:sneaking"
+    }
+  },
+  "modify_tools_low": {
+    "type": "apoli:action_on_block_use",
+    "held_item_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_random_low"
+        },
+        {
+          "type": "apoli:modify",
+          "modifier": "touhouorigins:enchant_vanishing_curse"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "apoli:play_sound",
+      "sound": "minecraft:block.smithing_table.use"
+    },
+    "block_condition": {
+      "type": "apoli:block",
+      "block": "minecraft:smithing_table"
+    },
+    "item_condition": {
+      "type": "apoli:and",
+      "conditions":
+      [
+        {
+          "type": "apoli:ingredient",
+          "ingredient": [
+            {
+              "tag": "touhouorigins:enchantable_from_enchanting_table"
+            },
+            {
+              "item": "minecraft:compass"
+            }
+          ]
+        },
+        {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "item": "minecraft:book"
+          },
+          "inverted": true
+        },
+        {
+          "type": "apoli:nbt",
+          "nbt": "{Enchantments:[{}]}",
+          "inverted": true
+        }
+      ]
+    },
+    "condition": {
+      "type": "apoli:sneaking"
+    }
+  }
+}

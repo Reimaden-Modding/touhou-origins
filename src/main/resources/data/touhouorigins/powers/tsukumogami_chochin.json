@@ -1,0 +1,244 @@
+{
+  "type": "apoli:multiple",
+  "item_ownership": {
+    "type": "apoli:action_on_callback",
+    "entity_action_gained": {
+      "type": "apoli:execute_command",
+      "command": "give @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1} 1"
+    },
+    "entity_action_lost": {
+      "type": "apoli:execute_command",
+      "command": "clear @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1}"
+    },
+    "entity_action_respawned": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:execute_command",
+          "command": "clear @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1} 1"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "give @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1} 1"
+        }
+      ]
+    }
+  },
+  "clear_on_death": {
+    "type": "apoli:action_when_damage_taken",
+    "entity_action": {
+      "type": "apoli:execute_command",
+      "command": "kill @e[type=item,sort=nearest,nbt={Item:{id:\"minecraft:end_rod\",tag:{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1}}}]"
+    },
+    "condition": {
+      "type": "apoli:health",
+      "comparison": "<=",
+      "compare_to": 0
+    },
+    "cooldown": 1
+  },
+  "glowing_self": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:apply_effect",
+          "effects": [
+            {
+              "effect": "minecraft:glowing",
+              "duration": 400,
+              "show_particles": false
+            },
+            {
+              "effect": "minecraft:night_vision",
+              "duration": 400,
+              "show_particles": false
+            }
+          ]
+        }
+      ]
+    },
+    "rising_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:apply_effect",
+          "effects": [
+            {
+              "effect": "minecraft:glowing",
+              "duration": 400,
+              "show_particles": false
+            },
+            {
+              "effect": "minecraft:night_vision",
+              "duration": 400,
+              "show_particles": false
+            }
+          ]
+        }
+      ]
+    },
+    "falling_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:clear_effect",
+          "effects": [
+            {
+              "effect": "minecraft:glowing"
+            },
+            {
+              "effect": "minecraft:night_vision"
+            }
+          ]
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "blindness_immunity": {
+    "type": "apoli:effect_immunity",
+    "effects": [
+      "minecraft:blindness",
+      "minecraft:darkness"
+    ],
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "held_particle": {
+    "type": "apoli:particle",
+    "particle":  {
+      "type": "minecraft:end_rod",
+      "params": "~ ~2 ~ 0.3 0.3 0.3 0 1"
+    },
+    "frequency": 2,
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:end_rod"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{tsukumogami_bound:1}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -235,13 +235,23 @@
   "power.touhouorigins.is_that_so.name": "So Nanoka~?",
   "power.touhouorigins.is_that_so.description": "Every 30 seconds, you can spend some hunger points to release a cloud of darkness that will extinguish and blind everyone nearby for 5 seconds including yourself.",
   "power.touhouorigins.chomp.name": "Chomp!",
-  "power.touhouorigins.chomp.description": "You can chomp on any mob or player under the effects of \"So Nanoka~?\" by attacking with your bare fists. Chomped victims will directly lose 2 hearts of health and you will be given 4 absorption hearts. If the victim is killed, your hunger points and health will also be completely restored.",
+  "power.touhouorigins.chomp.description": "You can chomp on any fleshy mob or player under the effects of \"So Nanoka~?\" by attacking with your bare fists. If they are a valid target, chomped victims will directly lose 2 hearts of health and you will be given 4 absorption hearts. If the victim is killed, your hunger points and health will also be completely restored.",
   "power.touhouorigins.light_absorption.name": "Light Absorption",
   "power.touhouorigins.light_absorption.description": "You hate being exposed to the sun and heat, and subconsciously surround yourself in darkness to cool off. When exposed to direct sunlight or in the Nether, you are afflicted with darkness. Others will see you as a black sphere in this state.",
   "power.touhouorigins.crude_appetite.name": "Crude Appetite",
   "power.touhouorigins.crude_appetite.description": "You relish the taste of raw meat, it's almost as good as eating a live human! Eating raw meat gives 75% more hunger points, while all other foods give 50% less.",
   "power.touhouorigins.mysterious_seal.name": "Mysteriously Sealed",
   "power.touhouorigins.mysterious_seal.description": "An unknown seal envelops your body and soul. You have 5 less hearts of health and you're 20% smaller. Perhaps there is some way to break it?",
+
+  "origin.touhouorigins.tsukumogami.name": "Tsukumogami",
+  "origin.touhouorigins.tsukumogami.description": "Tsukumogami are sentient spirits of abandoned tools or objects that animate to take vengeance on those who have mistreated and neglected them. Most tsukumogami are known to be spiteful towards humans, though their true dangerousness typically depends on how they were used and treated before being abandoned.",
+
+  "power.touhouorigins.choose_your_tool.name": "You Tool",
+  "power.touhouorigins.choose_your_tool.description": "You are a tool, literally, at least you don't have to look like one. After choosing this origin, you will be prompted to choose the object you inhabit. This object will have a special ability associated to it, is bound to you, and cannot break. You must carry it at all times.",
+  "power.touhouorigins.artisan_of_animacy.name": "Artisan of Animacy",
+  "power.touhouorigins.artisan_of_animacy.description": "You are devoted to your craft and can imbue otherwise mundane objects with phantasmic characteristics, making them more powerful at the expense of being more alive. Using a smithing table while sneaking will give your held item a random applicable enchantment along with curse of the vanishing.",
+  "power.touhouorigins.little_smithy.name": "Little Smithy",
+  "power.touhouorigins.little_smithy.description": "Tools and smithing go hand to hand, and a smith you are. You have knowledge to craft various items that are normally uncraftable.",
 
   "touhouorigins.subtitles.entity.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.entity.fairy.fly": "Fairy flutters",
@@ -267,6 +277,12 @@
   "touhouorigins.subtitles.entity.kurayami.flight": "Kurayami whooshes",
   "touhouorigins.subtitles.entity.kurayami.darkness": "Darkness gathers",
   "touhouorigins.subtitles.entity.kurayami.chomp": "Kurayami chomps",
+  "touhouorigins.subtitles.entity.fukuro.gap_upgrade": "Pouch tears",
+  "touhouorigins.subtitles.entity.fukuro.bag_open": "Pouch opens",
+  "touhouorigins.subtitles.entity.exfukuro.bag_open": "Gap opens",
+  "touhouorigins.subtitles.entity.karakasa.escape": "Karakasa whooshes",
+  "touhouorigins.subtitles.entity.menreiki.swap": "Swaps mask",
+  "touhouorigins.subtitles.entity.menreiki.thorns": "Damage reflects",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
@@ -287,6 +303,60 @@
   "power.touhouorigins.ostracized.trade": "The %1$s refuses to trade with you",
   "power.touhouorigins.my_apocalypse_alert": "Total core meltdown in progress... Evacuate the area!",
   "power.touhouorigins.midnight_bird_cooldown": "You are still recovering from being hurt!",
+  "power.touhouorigins.menreiki_kitsune": "Kitsune",
+  "power.touhouorigins.menreiki_fuku_no_kami": "Fuku no kami",
+  "power.touhouorigins.menreiki_uba": "Uba",
 
-  "touhouorigins.gui.badge.upgrade": "Upgrade path"
+
+  "item.touhouorigins.tsukumogami_chochin_name": "Chōchin",
+  "item.touhouorigins.tsukumogami_fukuro_name": "Fukuro",
+  "item.touhouorigins.tsukumogami_fukuro_ex_name": "EX-Fukuro",
+  "item.touhouorigins.tsukumogami_karakasa_name": "Karakasa",
+  "item.touhouorigins.tsukumogami_menreiki_kitsune_name": "Kitsune mask",
+  "item.touhouorigins.tsukumogami_menreiki_fuku_no_kami_name": "Fuku no kami mask",
+  "item.touhouorigins.tsukumogami_menreiki_uba_name": "Uba mask",
+  "item.touhouorigins.tsukumogami_bound_one": "This item is a part of your being,",
+  "item.touhouorigins.tsukumogami_bound_two": "you cannot drop it or store it",
+  "item.touhouorigins.tsukumogami_bound_three": "in any external inventories.",
+
+  "touhouorigins.gui.badge.upgrade": "Upgrade path",
+
+  "layer.touhouorigins.tsukumogami_tool.name": "Tsukumogami",
+  "layer.touhouorigins.tsukumogami_tool.missing_origin.name": "Unknown",
+  "layer.touhouorigins.tsukumogami_tool.missing_origin.description": "You have not identified yourself yet.",
+
+  "origin.touhouorigins.tsukumogami_chochin.name": "Chōchin",
+  "origin.touhouorigins.tsukumogami_chochin.description": "Your spirit's manifestation is a lantern, shining ever so brightly.",
+
+  "power.touhouorigins.tsukumogami_chochin.name": "A Light in the Darkness",
+  "power.touhouorigins.tsukumogami_chochin.description": "When held, you are afflicted with night vision and glowing, allowing others nearby to see you through walls. You are also immune to blinding effects.",
+
+  "origin.touhouorigins.tsukumogami_fukuro.name": "Fukuro",
+  "origin.touhouorigins.tsukumogami_fukuro.description": "Your spirit's manifestation is a fairly unremarkable pouch. At least it's practical.",
+  "origin.touhouorigins.tsukumogami_fukuro.announcement": "You stare into the void, and a part of your soul tears open as thousands of eyes stare back. You felt everything, and then nothing.",
+
+  "power.touhouorigins.tsukumogami_fukuro.name": "Little Treasures",
+  "power.touhouorigins.tsukumogami_fukuro.description": "When held or equipped onto your head, you have access to a secondary inventory containing nine slots. This inventory is bound to your soul and does not drop on death.",
+
+  "power.touhouorigins.tsukumogami_fukuro_ex.name": "Pushing Boundaries",
+  "power.touhouorigins.tsukumogami_fukuro_ex.description": "Others are impressed with your practicality, but what if you could store even more? If desired, you can use an eye of ender to manipulate your fukuro. If done, you will lose access to your secondary inventory, and instead will be able to interact with your ender chest storage at any time. This effect cannot be reversed.",
+  "origin.touhouorigins.tsukumogami_fukuro.info": "Hold your primary ability key with an eye of ender in your hands to activate this path.",
+
+  "origin.touhouorigins.tsukumogami_fukuro_ex.name": "EX-Fukuro",
+  "origin.touhouorigins.tsukumogami_fukuro_ex.description": "Imbued with a strange power, your Fukuro now is a gateway to a strange dimension, allowing you to store many more items inside of it.",
+
+  "power.touhouorigins.gap_bag.name": "Gap Bag",
+  "power.touhouorigins.gap_bag.description": "When held or equipped onto your head, you can access your ender chest at any time.",
+
+  "origin.touhouorigins.tsukumogami_karakasa.name": "Karakasa",
+  "origin.touhouorigins.tsukumogami_karakasa.description": "Your spirit's manifestation is a small umbrella, nimble and fleeting.",
+
+  "power.touhouorigins.tsukumogami_karakasa.name": "Graceful Little Parasol",
+  "power.touhouorigins.tsukumogami_karakasa.description": "When held, you are granted slow falling. Attacking other mobs with your Karakasa will launch you into the air, allowing for quick escapes.",
+
+  "origin.touhouorigins.tsukumogami_menreiki.name": "Menreiki",
+  "origin.touhouorigins.tsukumogami_menreiki.description": "Your spirit manifests itself as a collective of masks, burning with emotion.",
+
+  "power.touhouorigins.tsukumogami_menreiki.name": "A Hopeful Masquerade",
+  "power.touhouorigins.tsukumogami_menreiki.description": "When equipped onto your head, you can cycle between three states of emotion:\nKitsune:\nAnyone you directly look at will glow, allowing you to keep track of their position through terrain.\nFuku no kami:\nPositive status effects inflicted onto you will last longer, while neutral and negative effects will disappear more quickly.\nUba:\nWhen attacked, you will reflect some of the damage back towards your attacker, similar to having thorns."
 }

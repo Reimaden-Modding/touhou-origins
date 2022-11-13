@@ -1,0 +1,6 @@
+{
+  "function": "minecraft:enchant_randomly",
+  "enchantments": [
+    "vanishing_curse"
+  ]
+}
