@@ -19,7 +19,7 @@
         },
         {
           "type": "apoli:execute_command",
-          "command": "clear @s dispenser{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_Uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
+          "command": "clear @s dispenser{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
         }
       ]
     },
@@ -36,7 +36,7 @@
         },
         {
           "type": "apoli:execute_command",
-          "command": "clear @s dispenser{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_Uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
+          "command": "clear @s dispenser{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
         },
         {
           "type": "apoli:execute_command",
@@ -66,7 +66,7 @@
         },
         {
           "type": "apoli:execute_command",
-          "command": "kill @e[type=item,sort=nearest,nbt={Item:{id:\"minecraft:dispenser\",tag:{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_Uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}}}]"
+          "command": "kill @e[type=item,sort=nearest,nbt={Item:{id:\"minecraft:dispenser\",tag:{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}}}]"
         }
       ]
     },
@@ -255,11 +255,11 @@
             "actions": [
               {
                 "type": "apoli:execute_command",
-                "command": "item replace entity @s armor.head with dispenser{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_Uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
+                "command": "item replace entity @s armor.head with dispenser{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
               },
               {
                 "type": "apoli:execute_command",
-                "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_Uba\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":true}"
+                "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_uba\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":true}"
               },
               {
                 "type": "apoli:play_sound",
@@ -381,11 +381,11 @@
             "actions": [
               {
                 "type": "apoli:execute_command",
-                "command": "item replace entity @s armor.head with dispenser{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_Uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
+                "command": "item replace entity @s armor.head with dispenser{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_menreiki_uba_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1,head_slottable:1}"
               },
               {
                 "type": "apoli:execute_command",
-                "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_Uba\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":true}"
+                "command": "title @s actionbar {\"translate\":\"power.touhouorigins.menreiki_uba\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":true}"
               },
               {
                 "type": "apoli:play_sound",
