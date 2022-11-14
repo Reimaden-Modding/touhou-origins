@@ -296,7 +296,7 @@
     }
   },
   "flight_reset_death": {
-    "type": "apoli:action_on_callback",
+    "type": "origins:action_on_callback",
     "entity_action_respawned": {
       "type": "apoli:and",
       "actions": [
