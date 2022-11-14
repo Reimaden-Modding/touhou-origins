@@ -1,7 +1,7 @@
 {
   "type": "apoli:multiple",
   "item_ownership": {
-    "type": "apoli:action_on_callback",
+    "type": "origins:action_on_callback",
     "entity_action_gained": {
       "type": "apoli:execute_command",
       "command": "give @s end_rod{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_chochin_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1} 1"

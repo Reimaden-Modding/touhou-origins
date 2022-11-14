@@ -1,7 +1,7 @@
 {
   "type": "apoli:multiple",
   "give_origin_tag": {
-    "type": "apoli:action_on_callback",
+    "type": "origins:action_on_callback",
     "entity_action_added": {
       "type": "apoli:execute_command",
       "command": "tag @s add kurayami_origin"
