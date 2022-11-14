@@ -298,21 +298,25 @@
   "flight_reset_death": {
     "type": "origins:action_on_callback",
     "entity_action_respawned": {
-      "type": "apoli:and",
-      "actions": [
-        {
-          "type": "apoli:change_resource",
-          "resource": "*:*_resource",
-          "operation": "set",
-          "change": 0
-        },
-        {
-          "type": "apoli:change_resource",
-          "resource": "*:*_splat_recover_timer",
-          "operation": "set",
-          "change": 60
-        }
-      ]
+      "type": "apoli:delay",
+      "ticks": 1,
+      "action": {
+        "type": "apoli:and",
+        "actions": [
+          {
+            "type": "apoli:change_resource",
+            "resource": "*:*_resource",
+            "operation": "set",
+            "change": 0
+          },
+          {
+            "type": "apoli:change_resource",
+            "resource": "*:*_splat_recover_timer",
+            "operation": "set",
+            "change": 60
+          }
+        ]
+      }
     }
   },
   "badges":
