@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "touhouorigins:nullified_seal",
+    "touhouorigins:darkness_sword",
+    "touhouorigins:power_of_darkness",
+    "touhouorigins:saint_in_darkness"
+  ],
+  "icon": "minecraft:sculk_vein",
+  "order": 8,
+  "impact": 2,
+  "unchoosable": true
+}

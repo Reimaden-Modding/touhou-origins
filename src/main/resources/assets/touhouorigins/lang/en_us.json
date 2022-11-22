@@ -241,7 +241,22 @@
   "power.touhouorigins.crude_appetite.name": "Crude Appetite",
   "power.touhouorigins.crude_appetite.description": "You relish the taste of raw meat, it's almost as good as eating a live human! Eating raw meat gives 75% more hunger points, while all other foods give 50% less.",
   "power.touhouorigins.mysterious_seal.name": "Mysteriously Sealed",
-  "power.touhouorigins.mysterious_seal.description": "An unknown seal envelops your body and soul. You have 5 less hearts of health and you're 20% smaller. Perhaps there is some way to break it?",
+  "power.touhouorigins.mysterious_seal.description": "An unknown seal envelops your body and soul. You have 5 less hearts of health, are 20% smaller, and are weak to fire-based damage. Perhaps there is some way to disrupt it?",
+
+  "origin.touhouorigins.kurayami_ex.name": "EX-Kurayami",
+  "origin.touhouorigins.kurayami_ex.description": "The mysterious seal placed onto you is overloaded, temporarily breaking your attunement to it. You are now much more powerful, but have an insatiable bloodlust!",
+  "origin.touhouorigins.kurayami_ex.announcement_active": "You feel an insatiable hunger that overpowers your seal's influence on you. Strength. Despair. Power. This is your true form!",
+  "origin.touhouorigins.kurayami_ex.announcement_inactive": "The seal regains its control over you. You feel weak and confused, unable to recall your recent events. \"What happened again?\"",
+  "origin.touhouorigins.kurayami_ex.announcement_time_limit": "The seal's power begins to strengthen its influence on you. You can no longer extend your time limit in this form!",
+
+  "power.touhouorigins.nullified_seal.name": "I'm... Hungry...",
+  "power.touhouorigins.nullified_seal.description": "This origin upgrade will expire after 10 minutes or if you die. Killing players that are glowing orange can extend this timer up to a maximum of 60 minutes. Once it expires, you will revert back to your original form in a weakened state.",
+  "power.touhouorigins.darkness_sword.name": "Do You Like, My Sword~?",
+  "power.touhouorigins.darkness_sword.description": "Every 30 seconds, swinging a melee weapon at a mob or player that is out of attack range will teleport you to them, dealing some damage and blinding them.",
+  "power.touhouorigins.power_of_darkness.name": "Fate and Destruction",
+  "power.touhouorigins.power_of_darkness.description": "Attacking another mob or player with any melee weapon has a very small chance to instantly kill them. Weapons with higher enchantibility are more likely to trigger this effect.",
+  "power.touhouorigins.saint_in_darkness.name": "Saint in Darkness",
+  "power.touhouorigins.saint_in_darkness.description": "You retain all abilities of your original origin's powers, and are no longer affected by the negative effects of those powers.",
 
   "origin.touhouorigins.tsukumogami.name": "Tsukumogami",
   "origin.touhouorigins.tsukumogami.description": "Tsukumogami are sentient spirits of abandoned tools or objects that animate to take vengeance on those who have mistreated and neglected them. Most tsukumogami are known to be spiteful towards humans, though their true dangerousness typically depends on how they were used and treated before being abandoned.",
@@ -292,6 +307,8 @@
   "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s",
   "death.attack.chomp": "%1$s was devoured by %2$s",
   "death.attack.chomp.item": "%1$s was devoured by %2$s using %3$s",
+  "death.attack.erase": "%1$s was erased from this world",
+  "death.attack.erase.player": "%1$s was erased from this world by %2$s",
 
   "power.touhouorigins.recollection.player": "%1$s has the following memories...",
   "power.touhouorigins.recollection.spawnX": "Respawn X",
@@ -306,7 +323,6 @@
   "power.touhouorigins.menreiki_kitsune": "Kitsune",
   "power.touhouorigins.menreiki_fuku_no_kami": "Fuku no kami",
   "power.touhouorigins.menreiki_uba": "Uba",
-
 
   "item.touhouorigins.tsukumogami_chochin_name": "Chōchin",
   "item.touhouorigins.tsukumogami_fukuro_name": "Fukuro",
@@ -340,7 +356,7 @@
 
   "power.touhouorigins.tsukumogami_fukuro_ex.name": "Pushing Boundaries",
   "power.touhouorigins.tsukumogami_fukuro_ex.description": "Others are impressed with your practicality, but what if you could store even more? If desired, you can use an eye of ender to manipulate your fukuro. If done, you will lose access to your secondary inventory, and instead will be able to interact with your ender chest storage at any time. This effect cannot be reversed.",
-  "origin.touhouorigins.tsukumogami_fukuro.info": "Hold your primary ability key with an eye of ender in your hands to activate this path.",
+  "origin.touhouorigins.tsukumogami_fukuro.info": "Press and hold your primary ability key with an eye of ender in your hands to activate this upgrade path.",
 
   "origin.touhouorigins.tsukumogami_fukuro_ex.name": "EX-Fukuro",
   "origin.touhouorigins.tsukumogami_fukuro_ex.description": "Imbued with a strange power, your Fukuro now is a gateway to a strange dimension, allowing you to store many more items inside of it.",
