@@ -48,6 +48,10 @@
                 {
                   "type": "origins:origin",
                   "origin": "touhouorigins:jiang_shi"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:tsukumogami"
                 }
               ]
             }
@@ -109,6 +113,10 @@
                 {
                   "type": "origins:origin",
                   "origin": "touhouorigins:jiang_shi"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:tsukumogami"
                 }
               ]
             }

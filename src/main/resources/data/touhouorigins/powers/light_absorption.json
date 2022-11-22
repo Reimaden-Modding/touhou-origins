@@ -41,8 +41,9 @@
               "compare_to": 12200
             },
             {
-              "type": "apoli:dimension",
-              "dimension": "minecraft:overworld"
+              "type": "touhouorigins:moon_phase",
+              "comparison": ">=",
+              "compare_to": 0
             },
             {
               "type": "apoli:exposed_to_sky"
@@ -79,7 +80,7 @@
       "type": "apoli:apply_effect",
       "effect": {
         "effect": "minecraft:darkness",
-        "duration": 400,
+        "duration": 100,
         "show_particles": false,
         "show_icon": false
       }
@@ -88,7 +89,7 @@
       "type": "apoli:apply_effect",
       "effect": {
         "effect": "minecraft:darkness",
-        "duration": 400,
+        "duration": 100,
         "show_particles": false,
         "show_icon": false
       }
@@ -96,7 +97,7 @@
     "falling_action": {
       "type": "apoli:execute_command",
       "command": "effect clear @s minecraft:darkness"
-      },
+    },
     "interval": 20,
     "condition": {
       "type": "apoli:power_active",

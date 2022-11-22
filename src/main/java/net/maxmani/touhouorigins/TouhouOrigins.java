@@ -1,6 +1,7 @@
 package net.maxmani.touhouorigins;
 
 import net.fabricmc.api.ModInitializer;
+import net.maxmani.touhouorigins.registry.ModConditions;
 import net.maxmani.touhouorigins.registry.ModPowers;
 import net.maxmani.touhouorigins.registry.ModSounds;
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class TouhouOrigins implements ModInitializer {
 
 		ModSounds.register();
 		ModPowers.register();
+		ModConditions.register();
 	}
 }

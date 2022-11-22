@@ -32,5 +32,161 @@
       "type": "apoli:execute_command",
       "command": "scale reset @s"
     }
+  },
+  "fire_weakness": {
+    "type": "apoli:modify_damage_taken",
+    "damage_condition": {
+      "type": "apoli:name",
+      "name": "onFire"
+    },
+    "modifier": {
+      "name": "Weak to Burning",
+      "operation": "multiply_base",
+      "value": 1
+    }
+  },
+  "disrupt_seal": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:status_effect",
+                "effect": "minecraft:fire_resistance",
+                "inverted": true
+              },
+              {
+                "type": "apoli:enchantment",
+                "enchantment": "minecraft:fire_protection",
+                "calculation": "sum",
+                "comparison": "<=",
+                "compare_to": 4
+              },
+              {
+                "type": "apoli:enchantment",
+                "enchantment": "minecraft:fire_protection",
+                "calculation": "sum",
+                "comparison": ">=",
+                "compare_to": 1
+              }
+            ]
+          },
+          "action": {
+            "type": "apoli:chance",
+            "chance": 0.000823,
+            "action": {
+              "type": "apoli:execute_command",
+              "command": "origin set @s origins:origin touhouorigins:kurayami_ex"
+            }
+          }
+        },
+        {
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:status_effect",
+                "effect": "minecraft:fire_resistance",
+                "inverted": true
+              },
+              {
+                "type": "apoli:enchantment",
+                "enchantment": "minecraft:fire_protection",
+                "calculation": "sum",
+                "comparison": "<=",
+                "compare_to": 8
+              },
+              {
+                "type": "apoli:enchantment",
+                "enchantment": "minecraft:fire_protection",
+                "calculation": "sum",
+                "comparison": ">=",
+                "compare_to": 5
+              }
+            ]
+          },
+          "action": {
+            "type": "apoli:chance",
+            "chance": 0.0012345,
+            "action": {
+              "type": "apoli:execute_command",
+              "command": "origin set @s origins:origin touhouorigins:kurayami_ex"
+            }
+          }
+        },
+        {
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:status_effect",
+                "effect": "minecraft:fire_resistance",
+                "inverted": true
+              },
+              {
+                "type": "apoli:enchantment",
+                "enchantment": "minecraft:fire_protection",
+                "calculation": "sum",
+                "comparison": ">=",
+                "compare_to": 9
+              }
+            ]
+          },
+          "action": {
+            "type": "apoli:chance",
+            "chance": 0.002469,
+            "action": {
+              "type": "apoli:execute_command",
+              "command": "origin set @s origins:origin touhouorigins:kurayami_ex"
+            }
+          }
+        },
+        {
+          "condition": {
+            "type": "apoli:status_effect",
+            "effect": "minecraft:fire_resistance"
+          },
+          "action": {
+            "type": "apoli:chance",
+            "chance": 0.002469,
+            "action": {
+              "type": "apoli:execute_command",
+              "command": "origin set @s origins:origin touhouorigins:kurayami_ex"
+            }
+          }
+        }
+      ]
+    },
+    "interval": 1200,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:or",
+          "conditions": [
+            {
+              "type": "touhouorigins:moon_phase",
+              "comparison": "<=",
+              "compare_to": 2
+            },
+            {
+              "type": "touhouorigins:moon_phase",
+              "comparison": ">=",
+              "compare_to": 6
+            }
+          ]
+        },
+        {
+          "type": "apoli:time_of_day",
+          "comparison": "<=",
+          "compare_to": 12200,
+          "inverted": true
+        }
+      ]
+    }
   }
 }
