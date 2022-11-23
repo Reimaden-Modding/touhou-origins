@@ -66,7 +66,7 @@
   "power.touhouorigins.animal_friends.name": "动物之友",
   "power.touhouorigins.animal_friends.description": "动物变得更加容易驯服，你可以通过抚摸治疗它们和自己.",
   "power.touhouorigins.rejection_of_nature.name": "逆天而行",
-  "power.touhouorigins.rejection_of_nature.description": "你的力量之源在你的觉之瞳里。如果你对自己的待遇感到不爽，你可以闭上第三只眼。这样做的效果是永久性的.",
+  "power.touhouorigins.rejection_of_nature.description": "你的力量之源在你的觉之瞳里。如果你对自己的待遇感到不爽，你可以缝上第三只眼。这样做的效果是永久性的.",
 
   "origin.touhouorigins.satori_closed_eye.description": "如果一个觉闭上了觉之瞳，他们将无法读懂别人的思想，并进入无意识状态.",
 
@@ -230,10 +230,10 @@
   "origin.touhouorigins.kurayami.name": "宵暗妖怪",
   "origin.touhouorigins.kurayami.description": "宵暗妖怪能够操纵黑暗。虽然它们会吃人，但它们很容易受到它们自己力量的影响，而且是笨蛋，不会做出这样的行为。据说它曾经非常强大，但那种力量已经消失了很久。",
 
-  "power.touhouorigins.midnight_bird.name": "子夜之鸟",
+  "power.touhouorigins.midnight_bird.name": "夜雀（我才不是小碎骨）",
   "power.touhouorigins.midnight_bird.description": "你有能力像鸟一样翱翔，但如果受伤就会跌落。你可以通过潜行漂浮在原地",
   "power.touhouorigins.is_that_so.name": "是——这样的吗?",
-  "power.touhouorigins.is_that_so.description": "每隔30秒，你可以消耗饥饿值来操纵黑暗，这团黑暗会使附近的光源暂时失效并所有人获得5秒失明状态，包括你自己。",
+  "power.touhouorigins.is_that_so.description": "每隔30秒，你可以消耗饥饿值来操纵黑暗，这团黑暗会使附近的所有人获得5秒失明状态，包括你自己。",
   "power.touhouorigins.chomp.name": "让我尝尝!",
   "power.touhouorigins.chomp.description": "你可以在启用 \"是——这样的吗~?\"的情况下空手吃任何怪物或玩家。 受害者将会失去两颗心的血量同时你将被给予四心的伤害吸收. 如果被攻击者死亡，你的血量和饱食度将完全恢复.",
   "power.touhouorigins.light_absorption.name": "厌光",
