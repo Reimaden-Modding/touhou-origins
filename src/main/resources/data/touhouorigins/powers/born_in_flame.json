@@ -39,10 +39,12 @@
     "frequency": 10
   },
   "lava_speed": {
-    "type": "apoli:modify_lava_speed",
+    "type": "apoli:attribute",
     "modifier": {
-      "operation": "addition",
-      "value": 0.4
+      "name": "Increased Lava Speed",
+      "attribute": "additionalentityattributes:lava_speed",
+      "value": 0.4,
+      "operation": "addition"
     }
   },
   "water_speed": {
@@ -56,5 +58,12 @@
     "type": "apoli:lava_vision",
     "s": 0,
     "v": 15
+  },
+  "lava_swimming": {
+    "type": "apoli:swimming",
+    "condition": {
+      "type": "apoli:submerged_in",
+      "fluid": "minecraft:lava"
+    }
   }
 }
