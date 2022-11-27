@@ -243,6 +243,31 @@
   "power.touhouorigins.mysterious_seal.name": "神秘封印",
   "power.touhouorigins.mysterious_seal.description": "一个神秘的符咒封印着你的身体和灵魂。你的血量条少五颗心，体型变小20% 。也许有办法解除封印？",
   
+  "origin.touhouorigins.kurayami_ex.name": "EX-露米娅",
+  "origin.touhouorigins.kurayami_ex.description": "你身上的符咒过载了，暂时打破了平衡。你现在更强大了，但是你有无尽的嗜血欲望！",
+  "origin.touhouorigins.kurayami_ex.announcement_active": "你感到无比的饥饿，这打破了符咒对你的封印。强壮，绝望，力量。这才是你的真实形态！",
+  "origin.touhouorigins.kurayami_ex.announcement_inactive": "封印重新压制住了你的力量，你感到虚弱和困惑，不知道最近发生了什么. \"又发生了什么?\"",
+  "origin.touhouorigins.kurayami_ex.announcement_time_limit": "符咒的力量对你的影响变强了。你不能再在这个状态下保持更长时间了！",
+
+  "power.touhouorigins.nullified_seal.name": "我……好饿……",
+  "power.touhouorigins.nullified_seal.description": "此起源将在10分钟后结束，或在你死亡后立即结束。杀死发橙光的角色可以延长最多60分钟。一旦状态结束，你将在一个虚弱的状态下恢复到你的原始形态。",
+  "power.touhouorigins.darkness_sword.name": "你喜欢我的剑吗?",
+  "power.touhouorigins.darkness_sword.description": "每30秒，使用近战武器攻击攻击距离之外的怪物或玩家会将你传送到他们身边，造成一些伤害并使他们失明。",
+  "power.touhouorigins.power_of_darkness.name": "命运与毁灭",
+  "power.touhouorigins.power_of_darkness.description": "用任何近战武器攻击怪物或玩家都有很小的几率立即杀死他们. 带有高级附魔的武器有更高可能性触发此效果.",
+  "power.touhouorigins.saint_in_darkness.name": "黑暗中的圣人",
+  "power.touhouorigins.saint_in_darkness.description": "你保留了你此前起源的所有能力，且不再受到这些力量的负面影响。",
+
+  "origin.touhouorigins.tsukumogami.name": "付丧神",
+  "origin.touhouorigins.tsukumogami.description": "付丧神由被遗弃的工具或物体所化，它们会对那些虐待和忽视它们的人进行报复。大多数付丧神都对人类怀有恶意，尽管它们的危险性实际取决于被遗弃前的使用方式。",
+
+  "power.touhouorigins.choose_your_tool.name": "你是工具",
+  "power.touhouorigins.choose_your_tool.description": "从字面上讲，你是一个工具，即使看起来不像。选择此起源后，将提示您选择您的本体。此本体将具有特殊的属性，与您绑定，并且无法抛弃。你必须随时携带它。",
+  "power.touhouorigins.artisan_of_animacy.name": "匠人精神",
+  "power.touhouorigins.artisan_of_animacy.description": "你致力于你的手艺，可以给平凡的物体注入附魔，让它们变得更强大，代价是牺牲活力。在潜行时使用锻造台会给你副手的物品一个伴随消失诅咒的随机附魔。",
+  "power.touhouorigins.little_smithy.name": "小小铁匠",
+  "power.touhouorigins.little_smithy.description": "工具和铁匠是共生的，你就是铁匠。你有能力制作各种通常无法制作的物品。",
+
   "touhouorigins.subtitles.entity.fairy.heal": "妖精重生",
   "touhouorigins.subtitles.entity.fairy.fly": "妖精飞起来",
   "touhouorigins.subtitles.entity.kappa.camouflage_activate": "光学迷彩启动",
@@ -267,6 +292,12 @@
   "touhouorigins.subtitles.entity.kurayami.flight": "宵暗妖怪来了",
   "touhouorigins.subtitles.entity.kurayami.darkness": "黑暗在聚集",
   "touhouorigins.subtitles.entity.kurayami.chomp": "妖怪要吃人了！",
+  "touhouorigins.subtitles.entity.fukuro.gap_upgrade": "袋子裂开",
+  "touhouorigins.subtitles.entity.fukuro.bag_open": "袋子打开",
+  "touhouorigins.subtitles.entity.exfukuro.bag_open": "隙间开启",
+  "touhouorigins.subtitles.entity.karakasa.escape": "唐伞妖怪来了！",
+  "touhouorigins.subtitles.entity.menreiki.swap": "切换面具",
+  "touhouorigins.subtitles.entity.menreiki.thorns": "伤害反弹",
 
   "death.attack.sun": "%1$s 被蒸发了",
   "death.attack.sun.player": "%1$s 在 %2$s 的战斗中被蒸发了",
@@ -276,17 +307,72 @@
   "death.attack.fireThorns.item": "%1$s 在 %3$s 与 %2$s 被伤到了手",
   "death.attack.chomp": "%1$s 被 %2$s 吃掉了",
   "death.attack.chomp.item": "%1$s被 %2$s 用 %3$s 吃掉了",
+  "death.attack.erase": "%1$s 被从世界上抹除了",
+  "death.attack.erase.player": "%1$s 被 %2$s 从世界上抹除了",
 
   "power.touhouorigins.recollection.player": "%1$s 拥有可被阅读的回忆...",
-  "power.touhouorigins.recollection.spawnX": "Respawn X",
-  "power.touhouorigins.recollection.spawnY": "Respawn Y",
-  "power.touhouorigins.recollection.spawnZ": "Respawn Z",
+  "power.touhouorigins.recollection.spawnX": "重生点 X",
+  "power.touhouorigins.recollection.spawnY": "重生点 Y",
+  "power.touhouorigins.recollection.spawnZ": "重生点 Z",
   "power.touhouorigins.recollection.fail": "无法阅读 %1$s 的回忆!",
   "power.touhouorigins.recollection.alert": "你感觉有人在阅读你的回忆",
   "power.touhouorigins.recollection.alert_fail": "你有一种感觉，好像有人试图读取你的记忆",
   "power.touhouorigins.ostracized.trade": "这个 %1$s 拒绝与你交易",
   "power.touhouorigins.my_apocalypse_alert": "堆芯熔毁中... 疏散该地区的人员!",
   "power.touhouorigins.midnight_bird_cooldown": "你仍在从受伤中恢复!",
+  "power.touhouorigins.menreiki_kitsune": "狐面具",
+  "power.touhouorigins.menreiki_fuku_no_kami": "福之神",
+  "power.touhouorigins.menreiki_uba": "般若面具",
 
-  "touhouorigins.gui.badge.upgrade": "Upgrade path"
+  "item.touhouorigins.tsukumogami_chochin_name": "提灯小僧",
+  "item.touhouorigins.tsukumogami_fukuro_name": "袋妖怪",
+  "item.touhouorigins.tsukumogami_fukuro_ex_name": "EX-袋妖怪",
+  "item.touhouorigins.tsukumogami_karakasa_name": "唐伞小僧",
+  "item.touhouorigins.tsukumogami_menreiki_kitsune_name": "狐面具",
+  "item.touhouorigins.tsukumogami_menreiki_fuku_no_kami_name": "福神面具",
+  "item.touhouorigins.tsukumogami_menreiki_uba_name": "蝉丸面具",
+  "item.touhouorigins.tsukumogami_bound_one": "这个东西成为了你的一部分,",
+  "item.touhouorigins.tsukumogami_bound_two": "你不能丢掉或存储它",
+  "item.touhouorigins.tsukumogami_bound_three": "在任何外部物品栏中.",
+
+  "touhouorigins.gui.badge.upgrade": "升级分支",
+
+  "layer.touhouorigins.tsukumogami_tool.name": "付丧神",
+  "layer.touhouorigins.tsukumogami_tool.missing_origin.name": "未知",
+  "layer.touhouorigins.tsukumogami_tool.missing_origin.description": "你还不知道你是什么.",
+
+  "origin.touhouorigins.tsukumogami_chochin.name": "提灯小僧",
+  "origin.touhouorigins.tsukumogami_chochin.description": "你的本体是一盏提灯，一盏长明灯",
+
+  "power.touhouorigins.tsukumogami_chochin.name": "黑暗中的光",
+  "power.touhouorigins.tsukumogami_chochin.description": "当你提灯的时候，你会获得夜视和发光的效果，这会让周围的人透过墙壁看到你。你对失明效果免疫。",
+
+  "origin.touhouorigins.tsukumogami_fukuro.name": "袋妖怪",
+  "origin.touhouorigins.tsukumogami_fukuro.description": "你的本体只是个不起眼的小袋子，至少很实用。",
+  "origin.touhouorigins.tsukumogami_fukuro.announcement": "你凝视着虚空，你灵魂的一部分裂开，成千上万的眼睛凝视着你。你感觉到了一切，然后什么都没有了。",
+
+  "power.touhouorigins.tsukumogami_fukuro.name": "小小的宝藏",
+  "power.touhouorigins.tsukumogami_fukuro.description": "当本体在手中或装备在你的头上时，你可以进入一个有九个格子的存储空间。这个空间与你的灵魂紧密相连，死亡不掉落。",
+
+  "power.touhouorigins.tsukumogami_fukuro_ex.name": "打破边界",
+  "power.touhouorigins.tsukumogami_fukuro_ex.description": "你的实用能力令他人印象深刻，但是如果你可以存储更多呢？如果需要的话，你可以用末影之眼来影响你的能力。如果这样做，你将不再能访问额外空间，而是将能够在任何时候开启末影箱空间。此操作不可逆。",
+  "origin.touhouorigins.tsukumogami_fukuro.info": "将末影之眼拿在主手中并按住使用键以选择此路径",
+
+  "origin.touhouorigins.tsukumogami_fukuro_ex.name": "EX-袋妖怪",
+  "origin.touhouorigins.tsukumogami_fukuro_ex.description": "你被赋予了一种奇怪的力量，你的袋子现在是一个通往奇怪维度的大门，允许你在里面储存更多的物品。",
+
+  "power.touhouorigins.gap_bag.name": "隙间袋子",
+  "power.touhouorigins.gap_bag.description": "当本体拿在手中或装备在头部, 你可以随时访问你的末影箱.",
+
+  "origin.touhouorigins.tsukumogami_karakasa.name": "唐伞小僧",
+  "origin.touhouorigins.tsukumogami_karakasa.description": "你的本体是一把小伞，小巧而轻便",
+
+  "power.touhouorigins.tsukumogami_karakasa.name": "优雅的唐伞",
+  "power.touhouorigins.tsukumogami_karakasa.description": "本体放在手中时，你获得缓降效果。用你的本体攻击怪物会把你发射到空中，方便你快速逃跑。",
+
+  "origin.touhouorigins.tsukumogami_menreiki.name": "面灵气",
+  "origin.touhouorigins.tsukumogami_menreiki.description": "你的本体是一群燃烧着情感的面具。",
+
+  "power.touhouorigins.tsukumogami_menreiki.name": "希望的化妆舞会",
+  "power.touhouorigins.tsukumogami_menreiki.description": "当本体装备在头上时，你可以在三种情感中切换:\n狐面具:\n被你直视的任何角色将减速, 使你可以在复杂的地形中持续跟踪他们.\n幸运之面:\n你身上的正面效果会持续更长时间，你身上的中性和负面效果更快消失.\n般若面具:\n当受到攻击时，你会将一些伤害反射回攻击者身上，类似于荆棘效果。"
 }
