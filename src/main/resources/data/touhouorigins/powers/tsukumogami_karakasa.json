@@ -19,7 +19,7 @@
         },
         {
           "type": "apoli:execute_command",
-          "command": "give @s @s fern{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_karakasa_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1}"
+          "command": "give @s fern{display:{Name:'{\"translate\":\"item.touhouorigins.tsukumogami_karakasa_name\"}',Lore:['{\"translate\":\"item.touhouorigins.tsukumogami_bound_one\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_two\"}','{\"translate\":\"item.touhouorigins.tsukumogami_bound_three\"}']},tsukumogami_bound:1}"
         }
       ]
     }
