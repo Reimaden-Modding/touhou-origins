@@ -60,5 +60,12 @@
     "type": "apoli:lava_vision",
     "s": 0,
     "v": 15
+  },
+  "lava_swimming": {
+    "type": "apoli:swimming",
+    "condition": {
+      "type": "apoli:submerged_in",
+      "fluid": "minecraft:lava"
+    }
   }
 }
