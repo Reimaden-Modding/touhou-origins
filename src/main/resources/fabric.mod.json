@@ -25,7 +25,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.maxmani.touhouorigins.TouhouOrigins"
+      "net.reimaden.touhouorigins.TouhouOrigins"
     ]
   },
   "mixins": [
@@ -35,9 +35,9 @@
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
-    "minecraft": "1.19.x",
+    "minecraft": "1.19.3",
     "java": ">=17",
-    "origins": ">=1.7.0",
+    "origins": ">=1.8.0",
     "pehkui": ">=3.4.2"
   }
 }
