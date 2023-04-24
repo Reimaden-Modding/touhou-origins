@@ -10,6 +10,10 @@ archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+remapJar {
+	archiveAppendix.set("${project.minecraft_version}")
+}
+
 repositories {
 	maven {
 		name = "Ladysnake Libs"
@@ -88,6 +92,10 @@ java {
 	// if it is present.
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
+}
+
+remapSourcesJar {
+	archiveAppendix.set("${project.minecraft_version}")
 }
 
 jar {
