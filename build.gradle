@@ -60,7 +60,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Origins & Apugli
-	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+	modImplementation "com.github.MerchantPug:origins-fabric:${project.origins_version}"
 	modImplementation "net.merchantpug:apugli:${project.apugli_version}"
 	include "net.merchantpug:apugli:${project.apugli_version}"
 
