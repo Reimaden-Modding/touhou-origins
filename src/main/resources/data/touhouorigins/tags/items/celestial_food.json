@@ -207,6 +207,10 @@
     {
       "id": "farmersdelight:cake_slice",
       "required": false
+    },
+    {
+      "id": "arcadiandream:heavenly_peach",
+      "required": false
     }
   ]
 }

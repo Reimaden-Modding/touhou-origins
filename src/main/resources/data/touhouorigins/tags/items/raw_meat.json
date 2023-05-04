@@ -39,6 +39,10 @@
     {
       "id": "farmersdelight:minced_beef",
       "required": false
+    },
+    {
+      "id": "arcadiandream:lamprey",
+      "required": false
     }
   ]
 }

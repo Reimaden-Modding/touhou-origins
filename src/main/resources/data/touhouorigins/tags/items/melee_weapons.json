@@ -3,6 +3,10 @@
   "values": [
     "#c:axes",
     "#c:spears",
-    "#c:swords"
+    "#c:swords",
+    {
+      "id": "#c:hammers",
+      "required": false
+    }
   ]
 }

@@ -80,6 +80,22 @@
     {
       "id": "advancednetherite:netherite_diamond_boots",
       "required": false
+    },
+    {
+      "id": "arcadiandream:makaite_helmet",
+      "required": false
+    },
+    {
+      "id": "arcadiandream:makaite_chestplate",
+      "required": false
+    },
+    {
+      "id": "arcadiandream:makaite_leggings",
+      "required": false
+    },
+    {
+      "id": "arcadiandream:makaite_boots",
+      "required": false
     }
   ]
 }
