@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
-    "arcadiandream:lamprey",
-    "arcadiandream:cooked_lamprey"
+    {
+      "id": "arcadiandream:lamprey",
+      "required": false
+    },
+    {
+      "id": "arcadiandream:cooked_lamprey",
+      "required": false
+    }
   ]
 }

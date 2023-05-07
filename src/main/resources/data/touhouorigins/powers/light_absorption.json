@@ -51,8 +51,30 @@
           ]
         },
         {
-          "type": "apoli:dimension",
-          "dimension": "minecraft:the_nether"
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:dimension",
+              "dimension": "minecraft:the_nether"
+            },
+            {
+              "type": "apoli:or",
+              "conditions": [
+                {
+                  "type": "apoli:status_effect",
+                  "effect": "minecraft:fire_resistance"
+                },
+                {
+                  "type": "apoli:enchantment",
+                  "enchantment": "minecraft:fire_protection",
+                  "calculation": "sum",
+                  "comparison": ">=",
+                  "compare_to": 1
+                }
+              ],
+              "inverted": true
+            }
+          ]
         }
       ]
     }
