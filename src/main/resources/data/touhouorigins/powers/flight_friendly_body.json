@@ -13,26 +13,30 @@
     "type": "apoli:restrict_armor",
     "head": {
       "type": "apoli:ingredient",
+      "inverted": true,
       "ingredient": {
-        "tag": "touhouorigins:heavy_armor"
+        "tag": "touhouorigins:light_armor"
       }
     },
     "chest": {
       "type": "apoli:ingredient",
+      "inverted": true,
       "ingredient": {
-        "tag": "touhouorigins:heavy_armor"
+        "tag": "touhouorigins:light_armor"
       }
     },
     "legs": {
       "type": "apoli:ingredient",
+      "inverted": true,
       "ingredient": {
-        "tag": "touhouorigins:heavy_armor"
+        "tag": "touhouorigins:light_armor"
       }
     },
     "feet": {
       "type": "apoli:ingredient",
+      "inverted": true,
       "ingredient": {
-        "tag": "touhouorigins:heavy_armor"
+        "tag": "touhouorigins:light_armor"
       }
     }
   }

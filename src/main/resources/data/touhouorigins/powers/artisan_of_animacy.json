@@ -1,209 +1,472 @@
 {
   "type": "apoli:multiple",
-  "manual_modify_shears": {
-    "type": "apoli:action_on_block_use",
-    "held_item_action": {
-      "type": "apoli:and",
-      "actions": [
-        {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_efficiency"
-        },
-        {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_unbreaking"
-        },
-        {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_vanishing_curse"
-        }
-      ]
-    },
-    "entity_action": {
-      "type": "apoli:play_sound",
-      "sound": "minecraft:block.smithing_table.use"
-    },
-    "block_condition": {
-      "type": "apoli:block",
-      "block": "minecraft:smithing_table"
-    },
-    "item_condition": {
-      "type": "apoli:and",
-      "conditions":
-      [
-        {
-          "type": "apoli:ingredient",
-          "ingredient": [
-            {
-              "item": "minecraft:shears"
-            }
-          ]
-        },
-        {
-          "type": "apoli:nbt",
-          "nbt": "{Enchantments:[{}]}",
-          "inverted": true
-        }
-      ]
-    },
-    "condition": {
-      "type": "apoli:sneaking"
+  "smithing_book": {
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+      "type": "apoli:execute_command",
+      "command": "give @s written_book{pages:['[\"\",{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_one\",\"bold\":true,\"underlined\":true},{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_two\",\"color\":\"reset\"}]','[\"\",{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_three\",\"bold\":true,\"underlined\":true},{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_four\",\"color\":\"reset\"}]','[\"\",{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_three\",\"bold\":true,\"underlined\":true},{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_five\",\"color\":\"reset\"}]'],title:\"\",author:\"\",display:{Name:'{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_title\"}',},generation:3}"
     }
   },
-  "manual_modify_unbreaking": {
+  "craft_smithing_book": {
     "type": "apoli:action_on_block_use",
-    "held_item_action": {
-      "type": "apoli:and",
-      "actions": [
-        {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_unbreaking"
-        },
-        {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_vanishing_curse"
-        }
-      ]
-    },
-    "entity_action": {
-      "type": "apoli:play_sound",
-      "sound": "minecraft:block.smithing_table.use"
-    },
     "block_condition": {
       "type": "apoli:block",
       "block": "minecraft:smithing_table"
     },
-    "item_condition": {
-      "type": "apoli:and",
-      "conditions":
-      [
-        {
-          "type": "apoli:ingredient",
-          "ingredient": [
-            {
-              "tag": "touhouorigins:enchantable_from_anvil"
-            }
-          ]
-        },
-        {
-          "type": "apoli:ingredient",
-          "ingredient": {
-            "item": "minecraft:compass"
-          },
-          "inverted": true
-        },
-        {
-          "type": "apoli:nbt",
-          "nbt": "{Enchantments:[{}]}",
-          "inverted": true
-        }
-      ]
-    },
     "condition": {
-      "type": "apoli:sneaking"
-    },
-    "action_result": "fail"
-  },
-  "modify_tools_medium": {
-    "type": "apoli:action_on_block_use",
-    "held_item_action": {
       "type": "apoli:and",
-      "actions": [
+      "conditions": [
         {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_random_medium"
+          "type": "apoli:sneaking"
         },
         {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_vanishing_curse"
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:book"
+                }
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{Enchantments:[{}]}",
+                "inverted": true
+              }
+            ]
+          }
         }
       ]
     },
     "entity_action": {
-      "type": "apoli:play_sound",
-      "sound": "minecraft:block.smithing_table.use"
-    },
-    "block_condition": {
-      "type": "apoli:block",
-      "block": "minecraft:smithing_table"
-    },
-    "item_condition": {
       "type": "apoli:and",
-      "conditions":
-      [
+      "actions": [
         {
-          "type": "apoli:ingredient",
-          "ingredient": [
-            {
-              "item": "minecraft:fishing_rod"
-            }
-          ]
+          "type": "apoli:modify_inventory",
+          "slot": "weapon.mainhand",
+          "item_action": {
+            "type": "apoli:consume",
+            "amount": 1
+          }
         },
         {
-          "type": "apoli:nbt",
-          "nbt": "{Enchantments:[{}]}",
-          "inverted": true
+          "type": "apoli:execute_command",
+          "command": "give @s written_book{pages:['[\"\",{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_one\",\"bold\":true,\"underlined\":true},{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_two\",\"color\":\"reset\"}]','[\"\",{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_three\",\"bold\":true,\"underlined\":true},{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_four\",\"color\":\"reset\"}]','[\"\",{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_three\",\"bold\":true,\"underlined\":true},{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_text_five\",\"color\":\"reset\"}]'],title:\"\",author:\"\",display:{Name:'{\"translate\":\"item.touhouorigins.artisan_of_animacy_book_title\"}',},generation:3}"
+        },
+        {
+          "type": "apoli:play_sound",
+          "sound": "minecraft:block.smithing_table.use"
         }
       ]
-    },
-    "condition": {
-      "type": "apoli:sneaking"
     }
   },
-  "modify_tools_low": {
+  "enchant_tools_random": {
     "type": "apoli:action_on_block_use",
-    "held_item_action": {
-      "type": "apoli:and",
-      "actions": [
-        {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_random_low"
-        },
-        {
-          "type": "apoli:modify",
-          "modifier": "touhouorigins:enchant_vanishing_curse"
-        }
-      ]
-    },
-    "entity_action": {
-      "type": "apoli:play_sound",
-      "sound": "minecraft:block.smithing_table.use"
-    },
     "block_condition": {
       "type": "apoli:block",
       "block": "minecraft:smithing_table"
     },
-    "item_condition": {
+    "condition": {
       "type": "apoli:and",
-      "conditions":
-      [
+      "conditions": [
         {
-          "type": "apoli:ingredient",
-          "ingredient": [
+          "type": "apoli:sneaking"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": [
+                  {
+                    "tag": "touhouorigins:enchantable_from_enchanting_table"
+                  },
+                  {
+                    "item": "minecraft:compass"
+                  }
+                ]
+              },
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:book"
+                },
+                "inverted": true
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{Enchantments:[{}]}",
+                "inverted": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": [
+                  {
+                    "item": "minecraft:feather"
+                  },
+                  {
+                    "item": "minecraft:coal"
+                  },
+                  {
+                    "item": "minecraft:glow_ink_sac"
+                  },
+                  {
+                    "item": "minecraft:quartz"
+                  },
+                  {
+                    "item": "minecraft:phantom_membrane"
+                  },
+                  {
+                    "item": "minecraft:amethyst_shard"
+                  }
+                ]
+              },
+              {
+                "type": "origins:amount",
+                "comparison": ">=",
+                "compare_to": 4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:if_else_list",
+          "actions": [
             {
-              "tag": "touhouorigins:enchantable_from_enchanting_table"
+              "condition": {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                  "type": "apoli:ingredient",
+                  "ingredient": [
+                    {
+                      "item": "minecraft:feather"
+                    },
+                    {
+                      "item": "minecraft:coal"
+                    }
+                  ]
+                }
+              },
+              "action": {
+                "type": "apoli:modify_inventory",
+                "slot": "weapon.mainhand",
+                "item_action": {
+                  "type": "apoli:modify",
+                  "modifier": "touhouorigins:enchant_random_low"
+                }
+              }
             },
             {
-              "item": "minecraft:compass"
+              "condition": {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                  "type": "apoli:ingredient",
+                  "ingredient": [
+                    {
+                      "item": "minecraft:glow_ink_sac"
+                    },
+                    {
+                      "item": "minecraft:quartz"
+                    }
+                  ]
+                }
+              },
+              "action": {
+                "type": "apoli:modify_inventory",
+                "slot": "weapon.mainhand",
+                "item_action": {
+                  "type": "apoli:modify",
+                  "modifier": "touhouorigins:enchant_random_medium"
+                }
+              }
+            },
+            {
+              "condition": {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                  "type": "apoli:ingredient",
+                  "ingredient": [
+                    {
+                      "item": "minecraft:phantom_membrane"
+                    },
+                    {
+                      "item": "minecraft:amethyst_shard"
+                    }
+                  ]
+                }
+              },
+              "action": {
+                "type": "apoli:modify_inventory",
+                "slot": "weapon.mainhand",
+                "item_action": {
+                  "type": "apoli:modify",
+                  "modifier": "touhouorigins:enchant_random_high"
+                }
+              }
             }
           ]
         },
         {
-          "type": "apoli:ingredient",
-          "ingredient": {
-            "item": "minecraft:book"
-          },
-          "inverted": true
+          "type": "apoli:play_sound",
+          "sound": "minecraft:block.smithing_table.use"
         },
         {
-          "type": "apoli:nbt",
-          "nbt": "{Enchantments:[{}]}",
-          "inverted": true
+          "type": "apoli:modify_inventory",
+          "slot": "weapon.offhand",
+          "item_action": {
+            "type": "apoli:consume",
+            "amount": 4
+          }
+        },
+        {
+          "type": "apoli:modify_inventory",
+          "slot": "weapon.mainhand",
+          "item_action": {
+            "type": "apoli:modify",
+            "modifier": "touhouorigins:enchant_vanishing_curse"
+          }
+        }
+      ]
+    }
+  },
+  "manual_enchanting": {
+    "type": "apoli:action_on_block_use",
+    "block_condition": {
+      "type": "apoli:block",
+      "block": "minecraft:smithing_table"
+    },
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:sneaking"
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient":
+                [
+                  {
+                    "tag": "touhouorigins:enchantable_from_anvil"
+                  },
+                  {
+                    "item": "minecraft:leather_horse_armor"
+                  },
+                  {
+                    "item": "minecraft:iron_horse_armor"
+                  },
+                  {
+                    "item": "minecraft:golden_horse_armor"
+                  },
+                  {
+                    "item": "minecraft:diamond_horse_armor"
+                  }
+                ]
+              },
+              {
+                "type": "apoli:nbt",
+                "nbt": "{Enchantments:[{}]}",
+                "inverted": true
+              },
+              {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                  "item": "minecraft:compass"
+                },
+                "inverted": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:ingredient",
+                "ingredient": [
+                  {
+                    "item": "minecraft:feather"
+                  },
+                  {
+                    "item": "minecraft:coal"
+                  },
+                  {
+                    "item": "minecraft:glow_ink_sac"
+                  },
+                  {
+                    "item": "minecraft:quartz"
+                  },
+                  {
+                    "item": "minecraft:phantom_membrane"
+                  },
+                  {
+                    "item": "minecraft:amethyst_shard"
+                  }
+                ]
+              },
+              {
+                "type": "origins:amount",
+                "comparison": ">=",
+                "compare_to": 4
+              }
+            ]
+          }
         }
       ]
     },
-    "condition": {
-      "type": "apoli:sneaking"
+    "entity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:if_else_list",
+          "actions": [
+            {
+              "condition": {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                  "type": "apoli:ingredient",
+                  "ingredient": [
+                    {
+                      "item": "minecraft:shears"
+                    }
+                  ]
+                }
+              },
+              "action": {
+                "type": "apoli:modify_inventory",
+                "slot": "weapon.mainhand",
+                "item_action": {
+                  "type": "apoli:modify",
+                  "modifier": "touhouorigins:enchant_efficiency"
+                }
+              }
+            },
+            {
+              "condition": {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                  "type": "apoli:and",
+                  "conditions": [
+                    {
+                      "type": "apoli:ingredient",
+                      "ingredient": {
+                        "tag": "touhouorigins:enchantable_from_anvil"
+                      }
+                    },
+                    {
+                      "type": "apoli:ingredient",
+                      "ingredient": {
+                        "item": "minecraft:book"
+                      },
+                      "inverted": true
+                    },
+                    {
+                      "type": "apoli:ingredient",
+                      "ingredient": {
+                        "item": "minecraft:compass"
+                      },
+                      "inverted": true
+                    }
+                  ]
+                }
+              },
+              "action": {
+                "type": "apoli:modify_inventory",
+                "slot": "weapon.mainhand",
+                "item_action": {
+                  "type": "apoli:modify",
+                  "modifier": "touhouorigins:enchant_unbreaking"
+                }
+              }
+            },
+            {
+              "condition": {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                  "type": "apoli:ingredient",
+                  "ingredient":
+                  [
+                    {
+                      "item": "minecraft:leather_horse_armor"
+                    },
+                    {
+                      "item": "minecraft:iron_horse_armor"
+                    },
+                    {
+                      "item": "minecraft:golden_horse_armor"
+                    },
+                    {
+                      "item": "minecraft:diamond_horse_armor"
+                    }
+                  ]
+                }
+              },
+              "action": {
+                "type": "apoli:modify_inventory",
+                "slot": "weapon.mainhand",
+                "item_action": {
+                  "type": "apoli:modify",
+                  "modifier": "touhouorigins:enchant_horse_armor"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "apoli:play_sound",
+          "sound": "minecraft:block.smithing_table.use"
+        },
+        {
+          "type": "apoli:modify_inventory",
+          "slot": "weapon.offhand",
+          "item_action": {
+            "type": "apoli:consume",
+            "amount": 4
+          }
+        },
+        {
+          "type": "apoli:modify_inventory",
+          "slot": "weapon.mainhand",
+          "item_action": {
+            "type": "apoli:modify",
+            "modifier": "touhouorigins:enchant_vanishing_curse"
+          }
+        }
+      ]
     }
   }
 }

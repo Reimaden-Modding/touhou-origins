@@ -1,0 +1,7 @@
+{
+  "function": "minecraft:enchant_randomly",
+  "enchantments": [
+    "thorns",
+    "feather_falling"
+  ]
+}
