@@ -659,9 +659,7 @@
               "element": {
                 "type": "apoli:damage",
                 "amount": 1,
-                "source": {
-                  "name": "thorns"
-                }
+                "damage_type": "minecraft:thorns"
               },
               "weight": 4
             },
@@ -669,9 +667,7 @@
               "element": {
                 "type": "apoli:damage",
                 "amount": 2,
-                "source": {
-                  "name": "thorns"
-                }
+                "damage_type": "minecraft:thorns"
               },
               "weight": 2
             },
@@ -679,9 +675,7 @@
               "element": {
                 "type": "apoli:damage",
                 "amount": 3,
-                "source": {
-                  "name": "thorns"
-                }
+                "damage_type": "minecraft:thorns"
               },
               "weight": 1
             },
@@ -689,9 +683,7 @@
               "element": {
                 "type": "apoli:damage",
                 "amount": 4,
-                "source": {
-                  "name": "thorns"
-                }
+                "damage_type": "minecraft:thorns"
               },
               "weight": 1
             }

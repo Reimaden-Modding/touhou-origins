@@ -177,11 +177,7 @@
     "interval": 20,
     "onset_delay": 1,
     "damage": 1,
-    "damage_source": {
-      "name": "flyIntoWall",
-      "unblockable": true,
-      "bypasses_armor": true
-    },
+    "damage_type": "minecraft:fly_into_wall",
     "condition": {
       "type": "apoli:and",
       "conditions":

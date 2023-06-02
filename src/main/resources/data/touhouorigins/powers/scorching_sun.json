@@ -3,11 +3,7 @@
   "interval": 20,
   "damage": 1,
   "damage_easy": 0.5,
-  "damage_source": {
-    "name": "sun",
-    "unblockable": true,
-    "bypasses_armor": true
-  },
+  "damage_type": "touhouorigins:sun",
   "condition": {
     "type": "apoli:and",
     "conditions": [

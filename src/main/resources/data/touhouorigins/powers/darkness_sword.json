@@ -77,9 +77,7 @@
                 {
                   "type": "apoli:damage",
                   "amount": 4,
-                  "source": {
-                    "name": "erase"
-                  }
+                  "damage_type": "touhouorigins:erase"
                 },
                 {
                   "type": "apoli:explode",

@@ -45,10 +45,7 @@
             "action": {
               "type": "apoli:damage",
               "amount": 2,
-              "source": {
-                "name": "fireThorns",
-                "fire": true
-              }
+              "damage_type": "touhouorigins:fire_thorns"
             }
           },
           {

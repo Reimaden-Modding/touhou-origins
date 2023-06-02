@@ -27,11 +27,7 @@
                 {
                   "type": "apoli:damage",
                   "amount": 200,
-                  "source": {
-                    "name": "erase",
-                    "bypasses_armor": true,
-                    "unblockable": true
-                  }
+                  "damage_type": "touhouorigins:erase"
                 },
                 {
                   "type": "apoli:explode",
@@ -78,11 +74,7 @@
                 {
                   "type": "apoli:damage",
                   "amount": 200,
-                  "source": {
-                    "name": "erase",
-                    "bypasses_armor": true,
-                    "unblockable": true
-                  }
+                  "damage_type": "touhouorigins:erase"
                 },
                 {
                   "type": "apoli:explode",
@@ -129,11 +121,7 @@
                 {
                   "type": "apoli:damage",
                   "amount": 200,
-                  "source": {
-                    "name": "erase",
-                    "bypasses_armor": true,
-                    "unblockable": true
-                  }
+                  "damage_type": "touhouorigins:erase"
                 },
                 {
                   "type": "apoli:explode",

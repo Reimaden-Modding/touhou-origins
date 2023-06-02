@@ -46,11 +46,7 @@
             {
               "type": "apoli:damage",
               "amount": 4,
-              "source": {
-                "name": "chomp",
-                "bypasses_armor": true,
-                "unblockable": true
-              }
+              "damage_type": "touhouorigins:chomp"
             },
             {
               "type": "apoli:actor_action",
@@ -134,11 +130,7 @@
             {
               "type": "apoli:damage",
               "amount": 4,
-              "source": {
-                "name": "chomp",
-                "bypasses_armor": true,
-                "unblockable": true
-              }
+              "damage_type": "touhouorigins:chomp"
             },
             {
               "type": "apoli:actor_action",

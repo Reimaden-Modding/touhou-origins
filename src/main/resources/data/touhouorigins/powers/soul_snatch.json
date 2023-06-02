@@ -26,10 +26,7 @@
         {
           "type": "apoli:damage",
           "amount": 11,
-          "source": {
-            "name": "probe",
-            "bypasses_armor": true
-          }
+          "damage_type": "touhouorigins:probe"
         },
         {
           "type": "apoli:actor_action",
@@ -53,10 +50,7 @@
     "else_action": {
       "type": "apoli:damage",
       "amount": 11,
-      "source": {
-        "name": "probe",
-        "bypasses_armor": true
-      }
+      "damage_type": "touhouorigins:probe"
     }
   },
   "bientity_condition": {

@@ -86,11 +86,7 @@
     "interval": 40,
     "damage": 1,
     "damage_easy": 0.5,
-    "damage_source": {
-      "name": "hurt_by_water",
-      "unblockable": true,
-      "bypasses_armor": true
-    },
+    "damage_type": "origins:hurt_by_water",
     "protection_enchantment": "origins:water_protection",
     "protection_effectiveness": 1.0,
     "condition": {

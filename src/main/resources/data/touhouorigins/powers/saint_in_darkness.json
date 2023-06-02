@@ -191,10 +191,7 @@
     "interval": 20,
     "onset_delay": 1,
     "damage": 1,
-    "damage_source": {
-      "name": "flyIntoWall",
-      "unblockable": true
-    },
+    "damage_type": "minecraft:fly_into_wall",
     "condition": {
       "type": "apoli:and",
       "conditions":
@@ -418,11 +415,7 @@
               {
                 "type": "apoli:damage",
                 "amount": 8,
-                "source": {
-                  "name": "chomp",
-                  "bypasses_armor": true,
-                  "unblockable": true
-                }
+                "damage_type": "chomp"
               },
               {
                 "type": "apoli:actor_action",
@@ -506,11 +499,7 @@
               {
                 "type": "apoli:damage",
                 "amount": 8,
-                "source": {
-                  "name": "chomp",
-                  "bypasses_armor": true,
-                  "unblockable": true
-                }
+                "damage_type": "chomp"
               },
               {
                 "type": "apoli:actor_action",
