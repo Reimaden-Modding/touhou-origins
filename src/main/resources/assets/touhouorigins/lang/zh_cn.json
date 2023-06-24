@@ -237,7 +237,7 @@
   "power.touhouorigins.chomp.name": "让我尝尝!",
   "power.touhouorigins.chomp.description": "你可以在启用 \"是——这样的吗~?\"的情况下空手吃任何怪物或玩家。 受害者将会失去两颗心的血量同时你将被给予四心的伤害吸收. 如果被攻击者死亡，你的血量和饱食度将完全恢复.",
   "power.touhouorigins.light_absorption.name": "厌光",
-  "power.touhouorigins.light_absorption.description": "你讨厌阳光和热量，会用黑暗包裹自己。当你处于阳光下或下界，你会被黑暗所包裹。其他玩家只会看到一个黑球。",
+  "power.touhouorigins.light_absorption.description": "你讨厌阳光和热量，会用黑暗包裹自己。当你处于阳光下或下界，你会被黑暗所包裹。其他玩家只会看到一个黑球。在下界，可通过抗火药水或火焰保护盔甲移除黑暗效果",
   "power.touhouorigins.crude_appetite.name": "原始欲望",
   "power.touhouorigins.crude_appetite.description": "你喜爱生肉的味道，像是吃人一样！生肉会额外回复75%的饥饿值，其他食物回复的饥饿值减少50%。",
   "power.touhouorigins.mysterious_seal.name": "神秘封印",
@@ -264,7 +264,7 @@
   "power.touhouorigins.choose_your_tool.name": "你是工具",
   "power.touhouorigins.choose_your_tool.description": "从字面上讲，你是一个工具，即使看起来不像。选择此起源后，将提示您选择您的本体。此本体将具有特殊的属性，与您绑定，并且无法抛弃。你必须随时携带它。",
   "power.touhouorigins.artisan_of_animacy.name": "匠人精神",
-  "power.touhouorigins.artisan_of_animacy.description": "你致力于你的手艺，可以给平凡的物体注入附魔，让它们变得更强大，代价是牺牲活力。在潜行时使用锻造台会给你副手的物品一个伴随消失诅咒的随机附魔。",
+  "power.touhouorigins.artisan_of_animacy.description": "你致力于你的手艺，可以给平凡的物体注入附魔，让它们变得更强大，代价是牺牲活力。你可以在潜行时对着锻造台使用道具以为其附上带有消失诅咒的附魔，此行为需要消耗副手的材料，对着锻造台使用书可获取指南。",
   "power.touhouorigins.little_smithy.name": "小小铁匠",
   "power.touhouorigins.little_smithy.description": "工具和铁匠是共生的，你就是铁匠。你有能力制作各种通常无法制作的物品。",
 
@@ -334,6 +334,14 @@
   "item.touhouorigins.tsukumogami_bound_one": "这个东西成为了你的一部分,",
   "item.touhouorigins.tsukumogami_bound_two": "你不能丢掉或存储它",
   "item.touhouorigins.tsukumogami_bound_three": "在任何外部物品栏中.",
+
+  "item.touhouorigins.artisan_of_animacy_book_title": "活力的艺术",
+  "item.touhouorigins.artisan_of_animacy_book_author": "愉快的被遗忘之伞",
+  "item.touhouorigins.artisan_of_animacy_book_text_one": "欢迎来到活力的艺术！",
+  "item.touhouorigins.artisan_of_animacy_book_text_two": "\n一个不那么全面的、迷人的指南，教你如何艺术般的为普通的工具带来蜕变，让它们变的非凡无比！\n\n让我们开始吧!",
+  "item.touhouorigins.artisan_of_animacy_book_text_three": "混沌的附魔:",
+  "item.touhouorigins.artisan_of_animacy_book_text_four": "\n让我们学会拥抱生活的不可预测性。只要有这些简单的原料，所有的秩序都会让位于完全的随机性。欢迎来到混乱的王国！\n",
+  "item.touhouorigins.artisan_of_animacy_book_text_five": "\n4块煤炭或四根羽毛将带来:\n小杯附魔\n\n四个下界石英或发光墨囊将带来:\n大杯附魔\n\n4个紫水晶碎片或幻翼膜将带来:\n超大杯附魔",
 
   "touhouorigins.gui.badge.upgrade": "升级分支",
 
