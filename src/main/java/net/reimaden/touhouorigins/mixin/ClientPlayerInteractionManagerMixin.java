@@ -40,9 +40,9 @@ public class ClientPlayerInteractionManagerMixin {
         if (stack.hasNbt()) {
             NbtCompound nbt = stack.getNbt();
             if (nbt.contains("tsukumogami_bound")) {
-                if (player.world.getBlockEntity(hitResult.getBlockPos()) == null) return; //Stops a crash
-                BlockEntityType<?> targetBlockEntityType = player.world.getBlockEntity(hitResult.getBlockPos()).getType();
-                BlockEntity targetBlockEntity = player.world.getBlockEntity(hitResult.getBlockPos());
+                if (player.getWorld().getBlockEntity(hitResult.getBlockPos()) == null) return; //Stops a crash
+                BlockEntityType<?> targetBlockEntityType = player.getWorld().getBlockEntity(hitResult.getBlockPos()).getType();
+                BlockEntity targetBlockEntity = player.getWorld().getBlockEntity(hitResult.getBlockPos());
                 if (!(BLOCK_WHITELIST.contains(targetBlockEntityType)) && !(targetBlockEntity instanceof LockableContainerBlockEntity)) { //Anything that is not a LockableContainerBlockEntity (inventory with GUIs) and not part of the trusted whitelist cannot be interacted with, this prevents onUse actions from inserting the NBT tagged hand item into the block
                     cir.setReturnValue(ActionResult.FAIL);
                 }

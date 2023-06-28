@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.0-SNAPSHOT'
+	id 'fabric-loom' version '1.2-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -16,34 +16,38 @@ remapJar {
 
 repositories {
 	maven {
-		name = "Ladysnake Libs"
-		url = "https://ladysnake.jfrog.io/artifactory/mods"
+		name = "Pug's Maven"
+		url = 'https://maven.merchantpug.net/releases/'
 	}
 	maven {
+		name = "Ladysnake Libs"
+		url = 'https://ladysnake.jfrog.io/artifactory/mods'
+	}
+	maven {
+		name = "JitPack"
+		url = 'https://jitpack.io'
+	}
+	maven {
+		name = "Cafeteria"
 		url = 'https://maven.cafeteria.dev'
 		content {
-			includeGroup "net.adriantodt.fabricmc"
+			includeGroup 'net.adriantodt.fabricmc'
 		}
 	}
 	maven {
+		name = "Jamie's White Shirt"
 		url "https://maven.jamieswhiteshirt.com/libs-release"
 		content {
 			includeGroup "com.jamieswhiteshirt"
 		}
 	}
 	maven {
-		name = "JitPack"
-		url = "https://jitpack.io"
-	}
-	maven {
+		name = "Shedaniel"
 		url "https://maven.shedaniel.me/"
 	}
 	maven {
+		name = "TerraformersMC"
 		url "https://maven.terraformersmc.com/"
-	}
-	maven {
-		name = "Pug's Maven"
-		url = "https://maven.merchantpug.net/releases/"
 	}
 	maven {
 		name = "Modrinth"
@@ -52,6 +56,9 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
+	// Workaround until Origins' dependencies update
+	// https://discord.com/channels/734127708488859831/838871885709705237/1122763121925300265
+	mavenLocal()
 }
 
 dependencies {
@@ -64,7 +71,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Origins & Apugli
-	modImplementation "com.github.MerchantPug:origins-fabric:${project.origins_version}"
+	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
 	modImplementation "net.merchantpug:Apugli:${project.apugli_version}-fabric"
 	include "net.merchantpug:Apugli:${project.apugli_version}-fabric"
 
@@ -84,6 +91,7 @@ processResources {
 
 tasks.withType(JavaCompile).configureEach {
 	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
+	//noinspection GroovyAssignabilityCheck, GroovyAccessibility
 	it.options.release = 17
 }
 
@@ -107,7 +115,9 @@ jar {
 // configure the maven publication
 publishing {
 	publications {
+		//noinspection GroovyAssignabilityCheck
 		mavenJava(MavenPublication) {
+			//noinspection GroovyAssignabilityCheck
 			from components.java
 		}
 	}
