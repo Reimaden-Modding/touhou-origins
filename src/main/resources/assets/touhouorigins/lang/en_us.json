@@ -217,16 +217,6 @@
   "power.touhouorigins.my_apocalypse.name": "My Apocalypse",
   "power.touhouorigins.my_apocalypse.description": "As long as your Decay meter is not half full, you can activate your special ability and go into a total core meltdown. Firing flames in all directions and ending with a massive explosion around you. Afterwards, your Decay meter will fill itself entirely.",
 
-  "origin.touhouorigins.amanojaku.name": "Amanojaku",
-  "origin.touhouorigins.amanojaku.description": "Amanojaku are a particularly twisted type of youkai. They're the spirits of contradiction and perversity.",
-
-  "power.touhouorigins.turnabout.name": "Turnabout",
-  "power.touhouorigins.turnabout.description": "",
-  "power.touhouorigins.this_side_down.name": "This Side Down",
-  "power.touhouorigins.this_side_down.description": "",
-  "power.touhouorigins.mirror_movement.name": "Mirror Movement",
-  "power.touhouorigins.mirror_movement.description": "",
-
   "origin.touhouorigins.kurayami.name": "Kurayami",
   "origin.touhouorigins.kurayami.description": "A category of wicked youkai capable of manipulating darkness. Although known for devouring humans, most are susceptible to their own powers and lack the complexity to carry out such acts. It is thought that these youkai were once formidable foes whose true powers vanished long ago.",
 
@@ -286,9 +276,6 @@
   "touhouorigins.subtitles.entity.hell_raven.decay": "Decay fills",
   "touhouorigins.subtitles.entity.hell_raven.alert": "Alarm blares",
   "touhouorigins.subtitles.entity.hell_raven.shoot": "Hell Raven shoots",
-  "touhouorigins.subtitles.entity.generic.flip": "Something flips",
-  "touhouorigins.subtitles.entity.amanojaku.flip": "Amanojaku flips",
-  "touhouorigins.subtitles.entity.generic.reverse": "Something reverses",
   "touhouorigins.subtitles.entity.kurayami.flight": "Kurayami whooshes",
   "touhouorigins.subtitles.entity.kurayami.darkness": "Darkness gathers",
   "touhouorigins.subtitles.entity.kurayami.chomp": "Kurayami chomps",

@@ -37,9 +37,6 @@ public class ModSounds {
     public static final SoundEvent ENTITY_HELL_RAVEN_DECAY = registerSound("entity.hell_raven.decay");
     public static final SoundEvent ENTITY_HELL_RAVEN_ALERT = registerSound("entity.hell_raven.alert");
     public static final SoundEvent ENTITY_HELL_RAVEN_SHOOT = registerSound("entity.hell_raven.shoot");
-    public static final SoundEvent ENTITY_GENERIC_FLIP = registerSound("entity.generic.flip");
-    public static final SoundEvent ENTITY_AMANOJAKU_FLIP = registerSound("entity.amanojaku.flip");
-    public static final SoundEvent ENTITY_GENERIC_REVERSE = registerSound("entity.generic.reverse");
     public static final SoundEvent ENTITY_KURAYAMI_FLIGHT = registerSound("entity.kurayami.flight");
     public static final SoundEvent ENTITY_KURAYAMI_DARKNESS = registerSound("entity.kurayami.darkness");
     public static final SoundEvent ENTITY_KURAYAMI_CHOMP = registerSound("entity.kurayami.chomp");

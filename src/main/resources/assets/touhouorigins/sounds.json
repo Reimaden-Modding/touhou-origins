@@ -350,24 +350,6 @@
     ],
     "subtitle": "touhouorigins.subtitles.entity.hell_raven.shoot"
   },
-  "entity.generic.flip": {
-    "sounds": [
-      "touhouorigins:flip"
-    ],
-    "subtitle": "touhouorigins.subtitles.entity.generic.flip"
-  },
-  "entity.amanojaku.flip": {
-    "sounds": [
-      "touhouorigins:flip"
-    ],
-    "subtitle": "touhouorigins.subtitles.entity.amanojaku.flip"
-  },
-  "entity.generic.reverse": {
-    "sounds": [
-      "touhouorigins:reverse"
-    ],
-    "subtitle": "touhouorigins.subtitles.entity.generic.reverse"
-  },
   "entity.kurayami.flight": {
     "sounds": [
       "mob/phantom/flap3"

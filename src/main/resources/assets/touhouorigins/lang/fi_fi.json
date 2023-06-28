@@ -217,16 +217,6 @@
   "power.touhouorigins.my_apocalypse.name": "Maailmanloppuni",
   "power.touhouorigins.my_apocalypse.description": "Niin kauan kuin hajoamismittarisi ei ole puoliksi täynnä, voit aktivoida erikoiskykysi ja aloittaa totaalisen ytimen sulamisen. Ammut liekkejä joka suuntaan ja lopuksi ympärilläsi tapahtuu valtava räjähdys. Sen jälkeen hajoamismittarisi täyttyy kokonaan.",
 
-  "origin.touhouorigins.amanojaku.name": "Amanojaku",
-  "origin.touhouorigins.amanojaku.description": "Amanojakut ovat erityisen kieroutunut youkai-tyyppi. Ne ovat ristiriitaisuuden ja kierouden henkiä.",
-
-  "power.touhouorigins.turnabout.name": "Täyskäännös",
-  "power.touhouorigins.turnabout.description": "",
-  "power.touhouorigins.this_side_down.name": "Tämä puoli alaspäin",
-  "power.touhouorigins.this_side_down.description": "",
-  "power.touhouorigins.mirror_movement.name": "Peililiike",
-  "power.touhouorigins.mirror_movement.description": "",
-
   "origin.touhouorigins.kurayami.name": "Kurayami",
   "origin.touhouorigins.kurayami.description": "Kurayamit ovat pahoja youkaita, jotka kykenevät hallitsemaan pimeyttä. Vaikka niiden tunnetaankin syövän ihmisiä, useimmat kurayamit ovat alttiita omille voimilleen ja liian yksinkertaisia tehdäkseen moisia tekoja. Uskotaan, että nämä youkai olivat aikoinaan hyvin vahvoja olentoja, joiden todelliset voimat katosivat kauan sitten.",
 
@@ -286,9 +276,6 @@
   "touhouorigins.subtitles.entity.hell_raven.decay": "Hajoaminen täyttyy",
   "touhouorigins.subtitles.entity.hell_raven.alert": "Hälytys soi",
   "touhouorigins.subtitles.entity.hell_raven.shoot": "Helvetin korppi ampuu",
-  "touhouorigins.subtitles.entity.generic.flip": "Jokin kääntyy",
-  "touhouorigins.subtitles.entity.amanojaku.flip": "Amanojaku kääntyy",
-  "touhouorigins.subtitles.entity.generic.reverse": "Jokin kääntyy päinvastaiseksi",
   "touhouorigins.subtitles.entity.kurayami.flight": "Kurayami humahtaa",
   "touhouorigins.subtitles.entity.kurayami.darkness": "Pimeys kerääntyy",
   "touhouorigins.subtitles.entity.kurayami.chomp": "Kurayami puree",

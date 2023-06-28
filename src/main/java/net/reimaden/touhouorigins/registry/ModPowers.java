@@ -8,12 +8,11 @@ import io.github.apace100.apoli.registry.ApoliRegistries;
 import io.github.apace100.calio.data.SerializableData;
 import io.github.apace100.calio.data.SerializableDataType;
 import io.github.apace100.calio.data.SerializableDataTypes;
-import net.minecraft.registry.Registry;
-import net.reimaden.touhouorigins.TouhouOrigins;
-import net.reimaden.touhouorigins.power.FlipModelPower;
-import net.reimaden.touhouorigins.power.ModifyBehaviorPower;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.reimaden.touhouorigins.TouhouOrigins;
+import net.reimaden.touhouorigins.power.ModifyBehaviorPower;
 
 import java.util.Collections;
 
@@ -30,11 +29,7 @@ public class ModPowers {
                     Collections.emptyList()).add("inverted", SerializableDataTypes.BOOLEAN, false),
             data -> (type, entity) -> new ModifyBehaviorPower(type, (PlayerEntity) entity, data.get("behavior"), data.get("entities"), data.getBoolean("inverted"))).allowCondition();
 
-    public static final PowerFactory<Power> FLIP_MODEL = new PowerFactory<>(new Identifier(TouhouOrigins.MOD_ID, "flip_model"), new SerializableData(),
-            data -> (type, entity) -> new FlipModelPower(type, entity)).allowCondition();
-
     public static void register() {
         Registry.register(ApoliRegistries.POWER_FACTORY, MODIFY_BEHAVIOR.getSerializerId(), MODIFY_BEHAVIOR);
-        Registry.register(ApoliRegistries.POWER_FACTORY, FLIP_MODEL.getSerializerId(), FLIP_MODEL);
     }
 }

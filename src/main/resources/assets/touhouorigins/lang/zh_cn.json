@@ -217,16 +217,6 @@
   "power.touhouorigins.my_apocalypse.name": "地底的人造太阳",
   "power.touhouorigins.my_apocalypse.description": "只要你的衰变计没有达到百分之五十，你就可以启动你的特殊能力，进入地底太阳状态。向所有方向发射火焰，并以你周围的巨大爆炸结束。之后，你的衰变计将完全填满。",
 
-  "origin.touhouorigins.amanojaku.name": "鬼邪天",
-  "origin.touhouorigins.amanojaku.description": "天邪鬼是一种叛逆的妖怪，它们是叛逆与混乱的象征",
-
-  "power.touhouorigins.turnabout.name": "天下翻覆",
-  "power.touhouorigins.turnabout.description": "",
-  "power.touhouorigins.this_side_down.name": "此面向下",
-  "power.touhouorigins.this_side_down.description": "",
-  "power.touhouorigins.mirror_movement.name": "镜像移动",
-  "power.touhouorigins.mirror_movement.description": "",
-
   "origin.touhouorigins.kurayami.name": "宵暗妖怪",
   "origin.touhouorigins.kurayami.description": "宵暗妖怪能够操纵黑暗。虽然它们会吃人，但它们很容易受到它们自己力量的影响，而且是笨蛋，不会做出这样的行为。据说它曾经非常强大，但那种力量已经消失了很久。",
 
@@ -286,9 +276,6 @@
   "touhouorigins.subtitles.entity.hell_raven.decay": "裂变值已满",
   "touhouorigins.subtitles.entity.hell_raven.alert": "警铃大作",
   "touhouorigins.subtitles.entity.hell_raven.shoot": "地狱鸦射击",
-  "touhouorigins.subtitles.entity.generic.flip": "有什么东西在逆转",
-  "touhouorigins.subtitles.entity.amanojaku.flip": "逆转的天邪鬼",
-  "touhouorigins.subtitles.entity.generic.reverse": "有东西逆转了",
   "touhouorigins.subtitles.entity.kurayami.flight": "宵暗妖怪来了",
   "touhouorigins.subtitles.entity.kurayami.darkness": "黑暗在聚集",
   "touhouorigins.subtitles.entity.kurayami.chomp": "妖怪要吃人了！",

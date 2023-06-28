@@ -33,7 +33,6 @@
   "client": [
     "ClientPlayerEntityMixin",
     "ClientPlayerInteractionManagerMixin",
-    "LivingEntityRendererMixin",
     "PlayerHandMixin"
   ],
   "injectors": {
