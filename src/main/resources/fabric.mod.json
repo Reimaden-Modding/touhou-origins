@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "touhouorigins",
   "version": "${version}",
-
   "name": "Touhou Origins",
   "description": "Adds more origins to the Origins mod inspired by the Touhou Project series.",
   "authors": [
@@ -18,10 +17,8 @@
     "issues": "https://github.com/Maxmani/touhou-origins/issues",
     "sources": "https://github.com/Maxmani/touhou-origins"
   },
-
   "license": "GPL-3.0-or-later",
   "icon": "assets/touhouorigins/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -31,7 +28,6 @@
   "mixins": [
     "touhouorigins.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.14.21",
     "fabric-api": "*",
@@ -39,5 +35,12 @@
     "java": ">=17",
     "origins": ">=1.10.0",
     "pehkui": ">=3.7.6"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/WESu6XEcF7"
+      }
+    }
   }
 }
