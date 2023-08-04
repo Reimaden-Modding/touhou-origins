@@ -20,25 +20,17 @@ repositories {
 		url = 'https://maven.merchantpug.net/releases/'
 	}
 	maven {
-		name = "Ladysnake Libs"
-		url = 'https://ladysnake.jfrog.io/artifactory/mods'
+		name = 'Ladysnake Mods'
+		url = 'https://maven.ladysnake.org/releases'
 	}
 	maven {
 		name = "JitPack"
 		url = 'https://jitpack.io'
 	}
 	maven {
-		name = "Cafeteria"
 		url = 'https://maven.cafeteria.dev'
 		content {
 			includeGroup 'net.adriantodt.fabricmc'
-		}
-	}
-	maven {
-		name = "Jamie's White Shirt"
-		url "https://maven.jamieswhiteshirt.com/libs-release"
-		content {
-			includeGroup "com.jamieswhiteshirt"
 		}
 	}
 	maven {
@@ -56,6 +48,9 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
+	maven {
+		url "https://maven.jamieswhiteshirt.com/libs-release/"
+	}
 	// Workaround until Origins' dependencies update
 	// https://discord.com/channels/734127708488859831/838871885709705237/1122763121925300265
 	mavenLocal()
@@ -72,8 +67,7 @@ dependencies {
 
 	// Origins & Apugli
 	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
-	modImplementation "net.merchantpug:Apugli:${project.apugli_version}-fabric"
-	include "net.merchantpug:Apugli:${project.apugli_version}-fabric"
+	modImplementation(include("net.merchantpug:Apugli:${project.apugli_version}-fabric"))
 
 	// Pehkui
 	modApi("com.github.Virtuoel:Pehkui:${pehkui_version}", {
