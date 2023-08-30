@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#c:axes",
+    "#minecraft:axes",
     "#c:spears",
-    "#c:swords",
+    "#minecraft:swords",
     {
       "id": "#c:hammers",
       "required": false
