@@ -49,11 +49,11 @@ repositories {
 		}
 	}
 	maven {
-		url "https://maven.jamieswhiteshirt.com/libs-release/"
+		url "https://maven.jamieswhiteshirt.com/libs-release"
+		content {
+			includeGroup "com.jamieswhiteshirt"
+		}
 	}
-	// Workaround until Origins' dependencies update
-	// https://discord.com/channels/734127708488859831/838871885709705237/1122763121925300265
-	mavenLocal()
 }
 
 dependencies {
