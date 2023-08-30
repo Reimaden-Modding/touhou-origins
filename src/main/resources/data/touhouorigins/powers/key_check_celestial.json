@@ -35,7 +35,7 @@
       "should_render": false
     },
     "key": {
-      "key": "key.use",
+      "key": "key.origins.primary_active",
       "continuous": true
     },
     "condition": {
