@@ -43,6 +43,18 @@
     {
       "id": "arcadiandream:lamprey",
       "required": false
+    },
+    {
+      "id": "culturaldelights:raw_calamari",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:squid",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:glow_squid",
+      "required": false
     }
   ]
 }

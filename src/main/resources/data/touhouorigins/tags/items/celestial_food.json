@@ -211,6 +211,98 @@
     {
       "id": "arcadiandream:heavenly_peach",
       "required": false
+    },
+    {
+      "id": "culturaldelights:tortilla_chips",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:elote",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:hearty_salad",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:beef_burrito",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:mutton_sandwich",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:fried_eggplant_pasta",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:eggplant_burger",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:avocado_toast",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:creamed_corn",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:chicken_taco",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:spicy_curry",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:pork_wrap",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:fish_taco",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:midori_roll",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:midori_roll_slice",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:egg_roll",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:chicken_roll",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:chicken_roll_slice",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:pufferfish_roll",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:tropical_roll",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:rice_ball",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:calamari_roll",
+      "required": false
+    },
+    {
+      "id": "culturaldelights:chicken_roll_slice",
+      "required": false
     }
   ]
 }
