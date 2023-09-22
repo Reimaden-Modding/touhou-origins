@@ -55,6 +55,10 @@
     {
       "id": "culturaldelights:glow_squid",
       "required": false
+    },
+    {
+      "id": "c:raw_meat",
+      "required": false
     }
   ]
 }
