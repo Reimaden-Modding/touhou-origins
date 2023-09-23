@@ -13,6 +13,22 @@
     {
       "id": "arcadiandream:ordinary_hat",
       "required": false
+    },
+    {
+      "id": "mutantmonsters:mutant_skeleton_skull",
+      "required": false
+    },
+    {
+      "id": "mutantmonsters:mutant_skeleton_chestplate",
+      "required": false
+    },
+    {
+      "id": "mutantmonsters:mutant_skeleton_leggings",
+      "required": false
+    },
+    {
+      "id": "mutantmonsters:mutant_skeleton_boots",
+      "required": false
     }
   ]
 }
