@@ -1,9 +1,0 @@
-{
-  "type": "apoli:modify_food",
-  "food_modifier": {
-    "name": "Lavish Lifestyle food bonus",
-    "operation": "addition",
-    "value": 4
-  },
-  "hidden": true
-}

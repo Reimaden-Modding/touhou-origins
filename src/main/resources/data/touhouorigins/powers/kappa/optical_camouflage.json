@@ -1,0 +1,121 @@
+{
+  "type": "apoli:multiple",
+  "toggle": {
+    "type": "apoli:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+    },
+    "retain_state": false,
+    "condition": {
+      "type": "apoli:resource",
+      "resource": "*:*_resource",
+      "comparison": "!=",
+      "compare_to": 0
+    }
+  },
+  "resource": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 150,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 2
+    },
+    "start_value": 150,
+    "min_action": {
+      "type": "apoli:play_sound",
+      "sound": "touhouorigins:origin.kappa.camouflage_deactivate",
+      "volume": 2
+    }
+  },
+  "main": {
+    "type": "apoli:invisibility",
+    "render_armor": false,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:resource",
+          "resource": "*:*_resource",
+          "comparison": "!=",
+          "compare_to": 0
+        },
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        }
+      ]
+    }
+  },
+  "resource_drain": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:if_else",
+      "condition": {
+        "type": "apoli:power_active",
+        "power": "*:*_toggle"
+      },
+      "if_action": {
+        "type": "apoli:change_resource",
+        "resource": "*:*_resource",
+        "change": -5
+      },
+      "else_action": {
+        "type": "apoli:change_resource",
+        "resource": "*:*_resource",
+        "change": 1
+      }
+    },
+    "interval": 20
+  },
+  "sound": {
+    "type": "apoli:active_self",
+    "entity_action": {
+      "type": "apoli:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "apoli:power_active",
+            "power": "*:*_toggle"
+          },
+          "action": {
+            "type": "apoli:play_sound",
+            "sound": "touhouorigins:origin.kappa.camouflage_deactivate",
+            "volume": 2
+          }
+        },
+        {
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:power_active",
+                "power": "*:*_toggle",
+                "inverted": true
+              },
+              {
+                "type": "apoli:resource",
+                "resource": "*:*_resource",
+                "comparison": "!=",
+                "compare_to": 0
+              }
+            ]
+          },
+          "action": {
+            "type": "apoli:play_sound",
+            "sound": "touhouorigins:origin.kappa.camouflage_activate",
+            "volume": 2
+          }
+        }
+      ]
+    },
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "badges": [
+    "origins:toggle"
+  ]
+}

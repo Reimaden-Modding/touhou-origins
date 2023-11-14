@@ -1,8 +1,0 @@
-{
-  "type": "apoli:modify_exhaustion",
-  "modifier": {
-    "name": "No exhaustion",
-    "operation": "multiply_total_multiplicative",
-    "value": -1
-  }
-}

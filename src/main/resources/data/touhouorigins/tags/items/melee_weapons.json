@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "#minecraft:axes",
-    "#c:spears",
     "#minecraft:swords",
+    "#c:spears",
     {
       "id": "#c:hammers",
       "required": false

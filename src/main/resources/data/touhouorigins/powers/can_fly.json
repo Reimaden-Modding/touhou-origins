@@ -1,5 +1,0 @@
-{
-  "type": "apoli:simple",
-  "comment_": "Does not grant flight by itself, but does prevent power holders from being kicked due to flying.",
-  "hidden": true
-}

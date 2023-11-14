@@ -1,0 +1,137 @@
+{
+  "type": "apoli:multiple",
+  "resource": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 750,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 1
+    },
+    "start_value": 750,
+    "min_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:play_sound",
+          "sound": "touhouorigins:origin.kappa.dry"
+        },
+        {
+          "type": "apoli:apply_effect",
+          "effects": [
+            {
+              "effect": "minecraft:weakness",
+              "duration": 200,
+              "is_ambient": true
+            },
+            {
+              "effect": "minecraft:slowness",
+              "duration": 200,
+              "is_ambient": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "resource_change": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:if_else",
+      "condition": {
+        "type": "apoli:or",
+        "conditions": [
+          {
+            "type": "apoli:submerged_in",
+            "fluid": "minecraft:water"
+          },
+          {
+            "type": "apoli:in_block_anywhere",
+            "block_condition": {
+              "type": "apoli:block",
+              "block": "minecraft:water_cauldron"
+            }
+          },
+          {
+            "type": "apoli:in_rain"
+          }
+        ]
+      },
+      "if_action": {
+        "type": "apoli:and",
+        "actions": [
+          {
+            "type": "apoli:change_resource",
+            "resource": "*:*_resource",
+            "change": 20
+          },
+          {
+            "type": "apoli:clear_effect",
+            "effect": "minecraft:weakness"
+          },
+          {
+            "type": "apoli:clear_effect",
+            "effect": "minecraft:slowness"
+          }
+        ]
+      },
+      "else_action": {
+        "type": "apoli:change_resource",
+        "resource": "*:*_resource",
+        "change": -1
+      }
+    },
+    "interval": 20
+  },
+  "effects": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:apply_effect",
+      "effects": [
+        {
+          "effect": "minecraft:weakness",
+          "duration": 200,
+          "is_ambient": true
+        },
+        {
+          "effect": "minecraft:slowness",
+          "duration": 200,
+          "is_ambient": true
+        }
+      ]
+    },
+    "interval": 100,
+    "condition": {
+      "type": "apoli:resource",
+      "resource": "*:*_resource",
+      "comparison": "<=",
+      "compare_to": 0
+    }
+  },
+  "immunity": {
+    "type": "apoli:effect_immunity",
+    "effects": [
+      "minecraft:weakness",
+      "minecraft:slowness"
+    ],
+    "condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:submerged_in",
+          "fluid": "minecraft:water"
+        },
+        {
+          "type": "apoli:in_block_anywhere",
+          "block_condition": {
+            "type": "apoli:block",
+            "block": "minecraft:water_cauldron"
+          }
+        },
+        {
+          "type": "apoli:in_rain"
+        }
+      ]
+    }
+  }
+}

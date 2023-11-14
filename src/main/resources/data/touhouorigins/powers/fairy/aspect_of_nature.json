@@ -1,0 +1,22 @@
+{
+  "type": "apoli:multiple",
+  "disable_exhaustion": {
+    "type": "apoli:modify_exhaustion",
+    "modifier": {
+      "name": "No exhaustion",
+      "operation": "multiply_total_multiplicative",
+      "value": -1
+    }
+  },
+  "hunger_immunity": {
+    "type": "apoli:effect_immunity",
+    "effect": "minecraft:hunger"
+  },
+  "no_starving": {
+    "type": "apoli:invulnerability",
+    "damage_condition": {
+      "type": "apoli:name",
+      "name": "starve"
+    }
+  }
+}

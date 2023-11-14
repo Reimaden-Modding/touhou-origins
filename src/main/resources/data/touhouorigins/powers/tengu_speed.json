@@ -1,9 +1,0 @@
-{
-  "type": "apoli:attribute",
-  "modifier": {
-    "name": "Tengu Speed movement bonus",
-    "attribute": "minecraft:generic.movement_speed",
-    "value": 0.02,
-    "operation": "addition"
-  }
-}

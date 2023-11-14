@@ -1,9 +1,0 @@
-{
-  "powers": [
-    "touhouorigins:gap_bag"
-  ],
-  "icon": "minecraft:ender_chest",
-  "order": 3,
-  "impact": 1,
-  "unchoosable": true
-}

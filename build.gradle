@@ -1,31 +1,23 @@
 plugins {
-	id 'fabric-loom' version '1.2-SNAPSHOT'
+	id 'fabric-loom' version '1.4-SNAPSHOT'
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
-archivesBaseName = project.archives_base_name
-version = project.mod_version
+version = "${project.mod_version}+${minecraft_version}"
 group = project.maven_group
 
-remapJar {
-	archiveAppendix.set("${project.minecraft_version}")
+base {
+	archivesName = project.archives_base_name
 }
 
 repositories {
 	maven {
-		name = "Pug's Maven"
-		url = 'https://maven.merchantpug.net/releases/'
+		name = "QuiltMC"
+		url = "https://maven.quiltmc.org/repository/release"
 	}
 	maven {
-		name = 'Ladysnake Mods'
+		name = "Ladysnake Libs"
 		url = 'https://maven.ladysnake.org/releases'
-	}
-	maven {
-		name = "JitPack"
-		url = 'https://jitpack.io'
 	}
 	maven {
 		url = 'https://maven.cafeteria.dev'
@@ -34,25 +26,25 @@ repositories {
 		}
 	}
 	maven {
-		name = "Shedaniel"
+		url "https://maven.jamieswhiteshirt.com/libs-release"
+		content {
+			includeGroup "com.jamieswhiteshirt"
+		}
+	}
+	maven {
 		url "https://maven.shedaniel.me/"
 	}
 	maven {
-		name = "TerraformersMC"
 		url "https://maven.terraformersmc.com/"
 	}
 	maven {
 		name = "Modrinth"
 		url = "https://api.modrinth.com/maven"
-		content {
-			includeGroup "maven.modrinth"
-		}
 	}
+	// Keep JitPack below other repositories
 	maven {
-		url "https://maven.jamieswhiteshirt.com/libs-release"
-		content {
-			includeGroup "com.jamieswhiteshirt"
-		}
+		name = "JitPack"
+		url = 'https://jitpack.io'
 	}
 }
 
@@ -65,14 +57,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Origins & Apugli
+	// Origins
 	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
-	modImplementation(include("net.merchantpug:Apugli:${project.apugli_version}-fabric"))
 
-	// Pehkui
-	modApi("com.github.Virtuoel:Pehkui:${pehkui_version}", {
-		exclude group: "net.fabricmc.fabric-api"
-	})
+	// Voile
+	modImplementation(include("com.github.Maxmani:voile:${project.voile_version}"))
 }
 
 processResources {
@@ -84,7 +73,6 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
 	//noinspection GroovyAssignabilityCheck, GroovyAccessibility
 	it.options.release = 17
 }
@@ -94,15 +82,14 @@ java {
 	// if it is present.
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
-}
 
-remapSourcesJar {
-	archiveAppendix.set("${project.minecraft_version}")
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
 }
 
 jar {
 	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}"}
+		rename { "${it}_${project.base.archivesName.get()}"}
 	}
 }
 

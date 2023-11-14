@@ -1,0 +1,126 @@
+{
+  "type": "apoli:multiple",
+  "buffs": {
+    "type": "apoli:self_action_on_kill",
+    "entity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:heal",
+          "amount": 2
+        },
+        {
+          "type": "apoli:apply_effect",
+          "effect": {
+            "effect": "minecraft:strength",
+            "duration": 100,
+            "is_ambient": true
+          }
+        }
+      ]
+    },
+    "target_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:entity_group",
+          "group": "undead",
+          "inverted": true
+        },
+        {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:entity_type",
+              "entity_type": "minecraft:player"
+            },
+            {
+              "type": "apoli:or",
+              "conditions" : [
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:ghost"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:vengeful_spirit"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:jiang_shi"
+                }
+              ]
+            }
+          ],
+          "inverted": true
+       }
+     ]
+   }
+  },
+  "particles": {
+    "type": "apoli:particle",
+    "particle": {
+      "type": "minecraft:dust",
+      "params": "1 0 0 1"
+    },
+    "frequency": 15
+  },
+  "blood": {
+    "type": "apoli:target_action_on_hit",
+    "entity_action": {
+      "type": "apoli:spawn_particles",
+      "particle": {
+        "type": "minecraft:block",
+        "params": "minecraft:redstone_block"
+      },
+      "count": 20,
+      "spread": {
+        "x": 0.1,
+        "y": 0.1,
+        "z": 0.1
+      }
+    },
+    "target_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:entity_group",
+          "group": "undead",
+          "inverted": true
+        },
+        {
+          "type": "apoli:and",
+          "conditions": [
+            {
+              "type": "apoli:entity_type",
+              "entity_type": "minecraft:player"
+            },
+            {
+              "type": "apoli:or",
+              "conditions" : [
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:ghost"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:vengeful_spirit"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:jiang_shi"
+                }
+              ]
+            }
+          ],
+          "inverted": true
+        },
+        {
+          "type": "apoli:health",
+          "comparison": "<=",
+          "compare_to": 0
+        }
+      ]
+    }
+  }
+}

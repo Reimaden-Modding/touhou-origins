@@ -1,0 +1,28 @@
+{
+  "type": "apoli:multiple",
+  "resource": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 300
+  },
+  "damage": {
+    "type": "apoli:modify_damage_dealt",
+    "modifier": {
+      "name": "Status effect attack bonus",
+      "value": 0,
+      "resource": "*:*_resource",
+      "operation": "add_base_early"
+    }
+  },
+  "update": {
+    "type": "apoli:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "voile:change_resource_with_status_effects",
+      "resource": "*:*_resource",
+      "category": "harmful",
+      "change": 3,
+      "operation": "set"
+    }
+  }
+}

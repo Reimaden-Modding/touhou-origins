@@ -1,8 +1,0 @@
-{
-  "function": "minecraft:enchant_with_levels",
-  "treasure": false,
-  "levels": {
-    "min": 21,
-    "max": 30
-  }
-}

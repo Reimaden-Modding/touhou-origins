@@ -1,0 +1,16 @@
+{
+  "type": "apoli:multiple",
+  "health": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Fairy health penalty",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -8
+    }
+  },
+  "size": {
+    "type": "voile:modify_scale",
+    "scale": 0.75
+  }
+}

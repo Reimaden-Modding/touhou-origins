@@ -1,10 +1,11 @@
 {
   "powers": [
-    "touhouorigins:optical_camouflage",
-    "touhouorigins:portable_crafting_interface",
-    "touhouorigins:aquabatics",
-    "touhouorigins:kappa_out_of_water",
-    "touhouorigins:soul_snatch"
+    "touhouorigins:kappa/optical_camouflage",
+    "touhouorigins:kappa/portable_crafting_interface",
+    "touhouorigins:kappa/aquabatics",
+    "touhouorigins:kappa/kappa_out_of_water",
+    "touhouorigins:kappa/soul_snatch",
+    "touhouorigins:kappa/short_stature"
   ],
   "icon": "minecraft:seagrass",
   "order": 3,
