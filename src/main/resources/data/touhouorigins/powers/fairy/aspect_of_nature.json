@@ -1,5 +1,8 @@
 {
   "type": "apoli:multiple",
+  "disable_regen": {
+    "type": "apoli:disable_regen"
+  },
   "disable_exhaustion": {
     "type": "apoli:modify_exhaustion",
     "modifier": {

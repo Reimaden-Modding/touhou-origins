@@ -19,9 +19,6 @@
         "show_icon": false
       }
     },
-    "hud_render": {
-      "should_render": false
-    },
     "key": {
       "key": "key.jump",
       "continuous": true
@@ -30,10 +27,13 @@
       "type": "apoli:and",
       "conditions": [
         {
-          "type": "apoli:command",
-          "command": "data get entity @s foodLevel",
+          "type": "apoli:food_level",
           "comparison": ">",
           "compare_to": 0
+        },
+        {
+          "type": "apoli:creative_flying",
+          "inverted": true
         },
         {
           "type": "apoli:power_active",
@@ -49,9 +49,6 @@
       "amount": 4
     },
     "cooldown": 20,
-    "hud_render": {
-      "should_render": false
-    },
     "key": {
       "key": "key.jump",
       "continuous": true
@@ -60,9 +57,14 @@
       "type": "apoli:and",
       "conditions": [
         {
-          "type": "apoli:command",
-          "command": "data get entity @s foodLevel",
+          "type": "apoli:food_level",
           "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "apoli:command",
+          "command": "data get entity @s abilities.mayfly",
+          "comparison": "==",
           "compare_to": 0
         },
         {
@@ -93,22 +95,12 @@
           "inverted": true
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s OnGround",
-          "comparison": "!=",
-          "compare_to": 1
+          "type": "apoli:on_block",
+          "inverted": true
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s RootVehicle",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "apoli:command",
-          "command": "data get entity @s SleepTimer",
-          "comparison": "==",
-          "compare_to": 0
+          "type": "apoli:creative_flying",
+          "inverted": true
         },
         {
           "type": "apoli:power_active",
@@ -118,12 +110,19 @@
     }
   },
   "particles_up": {
-    "type": "apoli:action_over_time",
-    "entity_action": {
-      "type": "apoli:execute_command",
-      "command": "particle minecraft:dust 1 1 0.25 1 ~ ~0.8 ~ 0.2 0.2 0.2 1 15 force"
+    "type": "apoli:particle",
+    "particle": {
+      "type": "minecraft:dust",
+      "params": "1 1 0.25 1"
     },
-    "interval": 4,
+    "frequency": 4,
+    "count": 15,
+    "spread": {
+      "x": 0.2,
+      "y": 0.2,
+      "z": 0.2
+    },
+    "offset_y": 0.8,
     "condition": {
       "type": "apoli:and",
       "conditions": [
@@ -133,22 +132,12 @@
           "min_amplifier": 4
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s OnGround",
-          "comparison": "!=",
-          "compare_to": 1
+          "type": "apoli:on_block",
+          "inverted": true
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s RootVehicle",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "apoli:command",
-          "command": "data get entity @s SleepTimer",
-          "comparison": "==",
-          "compare_to": 0
+          "type": "apoli:creative_flying",
+          "inverted": true
         },
         {
           "type": "apoli:power_active",
@@ -158,12 +147,19 @@
     }
   },
   "particles_down": {
-    "type": "apoli:action_over_time",
-    "entity_action": {
-      "type": "apoli:execute_command",
-      "command": "particle minecraft:dust 1 1 0.25 1 ~ ~0.8 ~ 0.2 0.2 0.2 1 15 force"
+    "type": "apoli:particle",
+    "particle": {
+      "type": "minecraft:dust",
+      "params": "1 1 0.25 1"
     },
-    "interval": 5,
+    "frequency": 5,
+    "count": 15,
+    "spread": {
+      "x": 0.2,
+      "y": 0.2,
+      "z": 0.2
+    },
+    "offset_y": 0.8,
     "condition": {
       "type": "apoli:and",
       "conditions": [
@@ -177,22 +173,12 @@
           "inverted": true
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s OnGround",
-          "comparison": "!=",
-          "compare_to": 1
+          "type": "apoli:on_block",
+          "inverted": true
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s RootVehicle",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "apoli:command",
-          "command": "data get entity @s SleepTimer",
-          "comparison": "==",
-          "compare_to": 0
+          "type": "apoli:creative_flying",
+          "inverted": true
         },
         {
           "type": "apoli:power_active",
@@ -248,22 +234,12 @@
           "min_amplifier": 4
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s OnGround",
-          "comparison": "!=",
-          "compare_to": 1
+          "type": "apoli:on_block",
+          "inverted": true
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s RootVehicle",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "apoli:command",
-          "command": "data get entity @s SleepTimer",
-          "comparison": "==",
-          "compare_to": 0
+          "type": "apoli:creative_flying",
+          "inverted": true
         },
         {
           "type": "apoli:power_active",
@@ -323,22 +299,12 @@
           "inverted": true
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s OnGround",
-          "comparison": "!=",
-          "compare_to": 1
+          "type": "apoli:on_block",
+          "inverted": true
         },
         {
-          "type": "apoli:command",
-          "command": "data get entity @s RootVehicle",
-          "comparison": "==",
-          "compare_to": 0
-        },
-        {
-          "type": "apoli:command",
-          "command": "data get entity @s SleepTimer",
-          "comparison": "==",
-          "compare_to": 0
+          "type": "apoli:creative_flying",
+          "inverted": true
         },
         {
           "type": "apoli:power_active",
