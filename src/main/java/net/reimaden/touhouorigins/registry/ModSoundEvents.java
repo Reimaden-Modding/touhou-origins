@@ -15,6 +15,8 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_KAPPA_CAMOUFLAGE_ACTIVATE = registerSound("origin.kappa.camouflage_activate");
     public static final SoundEvent ORIGIN_KAPPA_CAMOUFLAGE_DEACTIVATE = registerSound("origin.kappa.camouflage_deactivate");
     public static final SoundEvent ORIGIN_KAPPA_DRY = registerSound("origin.kappa.dry");
+    public static final SoundEvent ORIGIN_GHOST_HURT = registerSound("origin.ghost.hurt");
+    public static final SoundEvent ORIGIN_GHOST_DEATH = registerSound("origin.ghost.death");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = TouhouOrigins.id(name);

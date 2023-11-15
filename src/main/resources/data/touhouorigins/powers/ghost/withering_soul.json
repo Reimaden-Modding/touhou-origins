@@ -1,0 +1,38 @@
+{
+  "type": "apoli:action_over_time",
+  "entity_action": {
+    "type": "apoli:apply_effect",
+    "effect": {
+      "effect": "minecraft:wither",
+      "duration": 40,
+      "amplifier": 1
+    }
+  },
+  "interval": 1,
+  "condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:on_block",
+        "block_condition": {
+          "type": "apoli:in_tag",
+          "tag": "minecraft:soul_speed_blocks"
+        }
+      },
+      {
+        "type": "apoli:enchantment",
+        "enchantment": "minecraft:soul_speed",
+        "comparison": ">=",
+        "compare_to": 1,
+        "inverted": true
+      },
+      {
+        "type": "apoli:status_effect",
+        "effect": "minecraft:wither",
+        "min_amplifier": 1,
+        "min_duration": 3,
+        "inverted": true
+      }
+    ]
+  }
+}

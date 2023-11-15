@@ -1,0 +1,57 @@
+{
+  "type": "apoli:multiple",
+  "regen": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:heal",
+      "amount": 1
+    },
+    "interval": 6,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:or",
+          "conditions": [
+            {
+              "type": "apoli:status_effect",
+              "effect": "minecraft:wither",
+              "inverted": true
+            },
+            {
+              "type": "apoli:enchantment",
+              "enchantment": "minecraft:soul_speed",
+              "comparison": ">=",
+              "compare_to": 1
+            }
+          ]
+        },
+        {
+          "type": "apoli:relative_health",
+          "comparison": "<",
+          "compare_to": 1
+        }
+      ]
+    }
+  },
+  "health": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Ghost health penalty",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -10
+    }
+  },
+  "disable_regen": {
+    "type": "apoli:disable_regen"
+  },
+  "hurt_sound": {
+    "type": "voile:modify_hurt_sound",
+    "sound": "touhouorigins:origin.ghost.hurt"
+  },
+  "death_sound": {
+    "type": "voile:modify_death_sound",
+    "sound": "touhouorigins:origin.ghost.death"
+  }
+}

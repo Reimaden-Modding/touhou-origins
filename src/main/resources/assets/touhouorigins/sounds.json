@@ -55,5 +55,35 @@
       }
     ],
     "subtitle": "touhouorigins.subtitles.origin.kappa.dry"
+  },
+  "origin.ghost.hurt": {
+    "sounds": [
+      {
+        "name": "mob/guardian/guardian_hit1",
+        "pitch": 2
+      },
+      {
+        "name": "mob/guardian/guardian_hit2",
+        "pitch": 2
+      },
+      {
+        "name": "mob/guardian/guardian_hit3",
+        "pitch": 2
+      },
+      {
+        "name": "mob/guardian/guardian_hit4",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "subtitles.entity.player.hurt"
+  },
+  "origin.ghost.death": {
+    "sounds": [
+      {
+        "name": "mob/guardian/guardian_death",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "subtitles.entity.player.death"
   }
 }

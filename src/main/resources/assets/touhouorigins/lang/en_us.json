@@ -55,6 +55,20 @@
   "power.touhouorigins.kappa/short_stature.name": "Short Stature",
   "power.touhouorigins.kappa/short_stature.description": "You are 10% smaller.",
 
+  "origin.touhouorigins.ghost.name": "Ghost",
+  "origin.touhouorigins.ghost.description": "Ghosts are the souls of humans who have remained in the physical world. Although they are souls, they have a body temperature and are fully corporeal.",
+
+  "power.touhouorigins.ghost/hardened_soul.name": "Hardened Soul",
+  "power.touhouorigins.ghost/hardened_soul.description": "Your ghost form grants you immunity to poison and nausea.",
+  "power.touhouorigins.ghost/fading_body.name": "Fading Body",
+  "power.touhouorigins.ghost/fading_body.description": "You have 5 less hearts, but regenerate health very quickly.",
+  "power.touhouorigins.common/apparition_appetite.name": "Apparition's Appetite",
+  "power.touhouorigins.common/apparition_appetite.description": "You do not require food to stay alive.",
+  "power.touhouorigins.common/futile_concoctions.name": "Futile Concoctions",
+  "power.touhouorigins.common/futile_concoctions.description": "You are unable to drink potions.",
+  "power.touhouorigins.ghost/withering_soul.name": "Withering Soul",
+  "power.touhouorigins.ghost/withering_soul.description": "Standing on soul sand or soul soil will slowly wither away your spirit, unless wearing boots enchanted with soul speed.",
+
   "touhouorigins.subtitles.origin.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.origin.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.origin.kappa.camouflage_activate": "Camouflage activates",
