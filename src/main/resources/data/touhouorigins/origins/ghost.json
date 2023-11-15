@@ -2,9 +2,9 @@
   "powers": [
     "touhouorigins:ghost/hardened_soul",
     "touhouorigins:ghost/fading_body",
-    "touhouorigins:ghost/withering_soul",
     "touhouorigins:common/apparition_appetite",
-    "touhouorigins:common/futile_concoctions"
+    "touhouorigins:common/futile_concoctions",
+    "touhouorigins:ghost/withering_soul"
   ],
   "icon": "minecraft:nether_star",
   "order": 2,

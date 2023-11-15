@@ -13,7 +13,7 @@
     "type": "apoli:and",
     "conditions": [
       {
-        "type": "apoli:on_block",
+        "type": "voile:precise_on_block",
         "block_condition": {
           "type": "apoli:in_tag",
           "tag": "minecraft:soul_speed_blocks"
