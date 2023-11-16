@@ -43,9 +43,6 @@
       "value": -10
     }
   },
-  "disable_regen": {
-    "type": "apoli:disable_regen"
-  },
   "hurt_sound": {
     "type": "voile:modify_hurt_sound",
     "sound": "touhouorigins:origin.ghost.hurt"

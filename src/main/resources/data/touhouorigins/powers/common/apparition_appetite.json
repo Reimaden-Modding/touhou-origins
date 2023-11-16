@@ -11,5 +11,8 @@
   "hunger_immunity": {
     "type": "apoli:effect_immunity",
     "effect": "minecraft:hunger"
+  },
+  "disable_regen": {
+    "type": "apoli:disable_regen"
   }
 }

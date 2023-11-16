@@ -65,6 +65,14 @@
   "power.touhouorigins.ghost/withering_soul.name": "Withering Soul",
   "power.touhouorigins.ghost/withering_soul.description": "Standing on soul blocks prevents you from regenerating and will slowly wither away your spirit, unless wearing boots enchanted with soul speed.",
 
+  "origin.touhouorigins.vengeful_spirit.name": "Vengeful Spirit",
+  "origin.touhouorigins.vengeful_spirit.description": "A vengeful spirit is a type of ghost created under special circumstances. They often seek revenge for unjust deeds done to them.",
+
+  "power.touhouorigins.vengeful_spirit/vengeful_harvest.name": "Vengeful Harvest",
+  "power.touhouorigins.vengeful_spirit/vengeful_harvest.description": "Killing a mob or another player grants you a stack. Once you have at least 5 stacks, you can activate this power to regenerate health. You can store up to 3 heals.",
+  "power.touhouorigins.vengeful_spirit/searing_rage.name": "Searing Rage",
+  "power.touhouorigins.vengeful_spirit/searing_rage.description": "The lower your health is, the more melee damage you deal. Opponents that strike you with melee will occasionally take fire damage.",
+
   "power.touhouorigins.common/apparition_appetite.name": "Apparition's Appetite",
   "power.touhouorigins.common/apparition_appetite.description": "You do not require food to stay alive.",
   "power.touhouorigins.common/futile_concoctions.name": "Futile Concoctions",

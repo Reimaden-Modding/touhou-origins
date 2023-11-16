@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "touhouorigins:vengeful_spirit/vengeful_harvest",
+    "touhouorigins:vengeful_spirit/searing_rage",
+    "touhouorigins:common/apparition_appetite",
+    "touhouorigins:common/futile_concoctions",
+    "touhouorigins:vengeful_spirit/extra"
+  ],
+  "icon": "minecraft:soul_lantern",
+  "order": 6,
+  "impact": 2
+}
