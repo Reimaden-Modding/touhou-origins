@@ -1,0 +1,14 @@
+{
+  "type": "voile:modify_divergence",
+  "divergence": 10,
+  "condition": {
+    "type": "apoli:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "apoli:ingredient",
+      "ingredient": {
+        "item": "minecraft:bow"
+      }
+    }
+  }
+}

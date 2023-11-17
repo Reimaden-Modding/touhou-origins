@@ -1,0 +1,8 @@
+{
+  "type": "apoli:modify_food",
+  "food_modifier": {
+    "name": "Big Appetite hunger penalty",
+    "operation": "multiply_total",
+    "value": -0.5
+  }
+}

@@ -21,6 +21,8 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_VENGEFUL_SPIRIT_HARVEST = registerSound("origin.vengeful_spirit.harvest");
     public static final SoundEvent ORIGIN_VENGEFUL_SPIRIT_HURT = registerSound("origin.vengeful_spirit.hurt");
     public static final SoundEvent ORIGIN_VENGEFUL_SPIRIT_DEATH = registerSound("origin.vengeful_spirit.death");
+    public static final SoundEvent ORIGIN_GENERIC_GUST = registerSound("origin.generic.gust");
+    public static final SoundEvent ORIGIN_WOLF_TENGU_GROWL = registerSound("origin.wolf_tengu.growl");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = TouhouOrigins.id(name);

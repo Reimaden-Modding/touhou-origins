@@ -1,0 +1,83 @@
+{
+  "type": "apoli:multiple",
+  "health": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Crow Tengu health penalty",
+      "attribute": "minecraft:generic.max_health",
+      "value": -6,
+      "operation": "addition"
+    }
+  },
+  "restrict_armor": {
+    "type": "apoli:restrict_armor",
+    "head": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "tag": "touhouorigins:light_armor"
+          },
+          "inverted": true
+        },
+        {
+          "type": "apoli:armor_value",
+          "comparison": "!=",
+          "compare_to": 0
+        }
+      ]
+    },
+    "chest": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "tag": "touhouorigins:light_armor"
+          },
+          "inverted": true
+        },
+        {
+          "type": "apoli:armor_value",
+          "comparison": "!=",
+          "compare_to": 0
+        }
+      ]
+    },
+    "legs": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "tag": "touhouorigins:light_armor"
+          },
+          "inverted": true
+        },
+        {
+          "type": "apoli:armor_value",
+          "comparison": "!=",
+          "compare_to": 0
+        }
+      ]
+    },
+    "feet": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "tag": "touhouorigins:light_armor"
+          },
+          "inverted": true
+        },
+        {
+          "type": "apoli:armor_value",
+          "comparison": "!=",
+          "compare_to": 0
+        }
+      ]
+    }
+  }
+}

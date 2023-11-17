@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "touhouorigins:crow_tengu/gust_of_wind",
+    "touhouorigins:crow_tengu/youkai_of_the_sky",
+    "touhouorigins:common/tengu_speed",
+    "touhouorigins:crow_tengu/flight_friendly_body",
+    "touhouorigins:crow_tengu/reporting_above_clouds",
+    "touhouorigins:crow_tengu/book_and_quill"
+  ],
+  "icon": "minecraft:feather",
+  "order": 1,
+  "impact": 3
+}

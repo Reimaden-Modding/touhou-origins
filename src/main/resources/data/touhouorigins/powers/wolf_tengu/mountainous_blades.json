@@ -1,0 +1,40 @@
+{
+  "type": "apoli:multiple",
+  "speed": {
+    "type": "apoli:conditioned_attribute",
+    "modifiers": {
+      "name": "Mountainous Blades attack speed penalty",
+      "attribute": "minecraft:generic.attack_speed",
+      "operation": "multiply_total",
+      "value": -0.3
+    },
+    "tick_rate": 1,
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "tag": "minecraft:swords"
+        }
+      }
+    }
+  },
+  "range": {
+    "type": "voile:modify_scale",
+    "scale_types": [
+      "pehkui:reach"
+    ],
+    "scale": 1.33,
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "tag": "minecraft:swords"
+        }
+      }
+    }
+  }
+}

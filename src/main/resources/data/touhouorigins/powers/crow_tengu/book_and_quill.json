@@ -1,0 +1,7 @@
+{
+  "hidden": true,
+  "type": "apoli:starting_equipment",
+  "stack": {
+    "item": "minecraft:writable_book"
+  }
+}

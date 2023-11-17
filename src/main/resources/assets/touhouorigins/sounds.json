@@ -198,5 +198,24 @@
       }
     ],
     "subtitle": "subtitles.entity.player.death"
+  },
+  "origin.generic.gust": {
+    "sounds": [
+      {
+        "name": "mob/wither/shoot",
+        "pitch": 0.8,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.generic.gust"
+  },
+  "origin.wolf_tengu.growl": {
+    "sounds": [
+      "touhouorigins:growl1",
+      "touhouorigins:growl2",
+      "touhouorigins:growl3",
+      "touhouorigins:growl4"
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.wolf_tengu.growl"
   }
 }
