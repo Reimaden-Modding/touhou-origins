@@ -1,0 +1,39 @@
+{
+  "type": "apoli:action_over_time",
+  "interval": 60,
+  "entity_action": {
+    "type": "apoli:area_of_effect",
+    "radius": 10,
+    "bientity_action": {
+      "type": "apoli:target_action",
+      "action": {
+        "type": "apoli:apply_effect",
+        "effect": {
+          "effect": "minecraft:luck",
+          "duration": 100,
+          "amplifier": 4,
+          "is_ambient": true
+        }
+      }
+    },
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        },
+        {
+          "type": "apoli:invert",
+          "condition": {
+            "type": "apoli:attacker",
+            "inverted": true
+          }
+        }
+      ]
+    }
+  }
+}

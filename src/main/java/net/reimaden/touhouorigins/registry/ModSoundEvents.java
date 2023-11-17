@@ -23,6 +23,9 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_VENGEFUL_SPIRIT_DEATH = registerSound("origin.vengeful_spirit.death");
     public static final SoundEvent ORIGIN_GENERIC_GUST = registerSound("origin.generic.gust");
     public static final SoundEvent ORIGIN_WOLF_TENGU_GROWL = registerSound("origin.wolf_tengu.growl");
+    public static final SoundEvent ORIGIN_RABBIT_HOP = registerSound("origin.rabbit.hop");
+    public static final SoundEvent ORIGIN_MOON_RABBIT_ACTIVATE = registerSound("origin.moon_rabbit.activate");
+    public static final SoundEvent ORIGIN_MOON_RABBIT_DEACTIVATE = registerSound("origin.moon_rabbit.deactivate");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = TouhouOrigins.id(name);

@@ -97,12 +97,34 @@
   "power.touhouorigins.wolf_tengu/big_appetite.name": "Big Appetite",
   "power.touhouorigins.wolf_tengu/big_appetite.description": "Food is half as nourishing.",
 
+  "origin.touhouorigins.earth_rabbit.name": "Earth Rabbit",
+  "origin.touhouorigins.earth_rabbit.description": "A rabbit can become a type of youkai after existing for a long period of time, gaining sentience and increased abilities in the process.",
+
+  "power.touhouorigins.earth_rabbit/great_fortune_crest.name": "Great Fortune Crest",
+  "power.touhouorigins.earth_rabbit/great_fortune_crest.description": "Players near you are given Luck V.",
+  "power.touhouorigins.earth_rabbit/misfortune_echo.name": "Misfortune Echo",
+  "power.touhouorigins.earth_rabbit/misfortune_echo.description": "Your attackers are inflicted with Bad Luck X, or Bad Luck L if you are killed instead.",
+  "power.touhouorigins.earth_rabbit/feeble_nature.name": "Feeble Nature",
+  "power.touhouorigins.earth_rabbit/feeble_nature.description": "You have 3 less hearts of health and you're 15% smaller.",
+
+  "origin.touhouorigins.moon_rabbit.name": "Moon Rabbit",
+  "origin.touhouorigins.moon_rabbit.description": "Tools used by the Lunarians who have fled from their previous lives in search of greener pastures. They take with them their training and skills, but always live in fear of being found out and taken back to the lunar surface.",
+
+  "power.touhouorigins.moon_rabbit/military_of_the_moon.name": "Military of the Moon",
+  "power.touhouorigins.moon_rabbit/military_of_the_moon.description": "You start with a crossbow and a handful of arrows. You can activate this power to rapidly reload your crossbow. This only works with regular arrows.",
+  "power.touhouorigins.moon_rabbit/timid_constitution.name": "Timid Constitution",
+  "power.touhouorigins.moon_rabbit/timid_constitution.description": "You have 2 less hearts of health. Melee weapons such as axes, swords, and tridents swing 40% slower.",
+
   "power.touhouorigins.common/apparition_appetite.name": "Apparition's Appetite",
   "power.touhouorigins.common/apparition_appetite.description": "You do not require food to stay alive.",
   "power.touhouorigins.common/futile_concoctions.name": "Futile Concoctions",
   "power.touhouorigins.common/futile_concoctions.description": "You are unable to drink potions.",
   "power.touhouorigins.common/tengu_speed.name": "Tengu's Speed",
   "power.touhouorigins.common/tengu_speed.description": "You are naturally faster than a regular person.",
+  "power.touhouorigins.common/natural_luck.name": "Natural Luck",
+  "power.touhouorigins.common/natural_luck.description": "You have an increased luck attribute.",
+  "power.touhouorigins.common/strong_legs.name": "Strong Legs",
+  "power.touhouorigins.common/strong_legs.description": "You are capable of jumping higher while sneaking, and running longer than a regular person. You take slightly less fall damage.",
 
   "touhouorigins.subtitles.origin.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.origin.fairy.fly": "Fairy flutters",

@@ -1,0 +1,16 @@
+{
+  "type": "apoli:multiple",
+  "health": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Earth Rabbit health penalty",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -6
+    }
+  },
+  "size": {
+    "type": "voile:modify_scale",
+    "scale": 0.85
+  }
+}

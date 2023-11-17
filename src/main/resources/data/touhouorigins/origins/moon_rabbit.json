@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "touhouorigins:moon_rabbit/military_of_the_moon",
+    "touhouorigins:common/strong_legs",
+    "touhouorigins:moon_rabbit/timid_constitution"
+  ],
+  "icon": "minecraft:crossbow",
+  "order": 2,
+  "impact": 1
+}

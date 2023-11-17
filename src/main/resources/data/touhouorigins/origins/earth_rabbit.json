@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "touhouorigins:earth_rabbit/great_fortune_crest",
+    "touhouorigins:earth_rabbit/misfortune_echo",
+    "touhouorigins:common/natural_luck",
+    "touhouorigins:common/strong_legs",
+    "touhouorigins:earth_rabbit/feeble_nature"
+  ],
+  "icon": "minecraft:rabbit_foot",
+  "order": 1,
+  "impact": 1
+}

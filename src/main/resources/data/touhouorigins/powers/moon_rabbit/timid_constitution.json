@@ -1,0 +1,32 @@
+{
+  "type": "apoli:multiple",
+  "health": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Moon Rabbit health penalty",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "addition",
+      "value": -4
+    }
+  },
+  "attack_speed": {
+    "type": "apoli:conditioned_attribute",
+    "modifier": {
+      "name": "Timid Constitution attack speed penalty",
+      "attribute": "minecraft:generic.attack_speed",
+      "value": -0.4,
+      "operation": "multiply_total"
+    },
+    "tick_rate": 1,
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "tag": "touhouorigins:melee_weapons"
+        }
+      }
+    }
+  }
+}

@@ -217,5 +217,43 @@
       "touhouorigins:growl4"
     ],
     "subtitle": "touhouorigins.subtitles.origin.wolf_tengu.growl"
+  },
+  "origin.rabbit.hop": {
+    "sounds": [
+      {
+        "name": "mob/irongolem/throw",
+        "pitch": 1.8
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.rabbit.hop"
+  },
+  "origin.moon_rabbit.activate": {
+    "sounds": [
+      {
+        "name": "block/respawn_anchor/deplete1",
+        "pitch": 2
+      },
+      {
+        "name": "block/respawn_anchor/deplete2",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.moon_rabbit.activate"
+  },
+  "origin.moon_rabbit.deactivate": {
+    "sounds": [
+      {
+        "name": "entity/glow_squid/squirt1",
+        "volume": 0.8
+      },
+      {
+        "name": "entity/glow_squid/squirt2",
+        "volume": 0.8
+      },
+      {
+        "name": "entity/glow_squid/squirt3",
+        "volume": 0.8
+      }
+    ]
   }
 }
