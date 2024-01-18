@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "touhouorigins:jiang_shi/one_of_us",
+    "touhouorigins:jiang_shi/life_drain",
+    "touhouorigins:jiang_shi/pestilence",
+    "touhouorigins:jiang_shi/searing_light",
+    "touhouorigins:jiang_shi/zombie_arms",
+    "touhouorigins:jiang_shi/damage_helmet"
+  ],
+  "icon": "minecraft:rotten_flesh",
+  "order": 2,
+  "impact": 3
+}

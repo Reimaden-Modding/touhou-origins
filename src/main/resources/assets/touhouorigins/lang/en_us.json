@@ -126,6 +126,18 @@
   "power.touhouorigins.common/strong_legs.name": "Strong Legs",
   "power.touhouorigins.common/strong_legs.description": "You are capable of jumping higher while sneaking, and running longer than a regular person. You take slightly less fall damage.",
 
+  "origin.touhouorigins.jiang_shi.name": "Jiang Shi",
+  "origin.touhouorigins.jiang_shi.description": "In Chinese folklore, jiang shi are reanimated corpses that move around by hopping with their arms outstretched. They are often compared to vampires because jiang shi attempt to suck qi, life energy, from the living, though they're actually more similar to zombies.",
+
+  "power.touhouorigins.jiang_shi/one_of_us.name": "One of Us",
+  "power.touhouorigins.jiang_shi/one_of_us.description": "All zombies are neutral towards you. However, villagers fear you and iron golems are hostile towards you.",
+  "power.touhouorigins.jiang_shi/life_drain.name": "Life Drain",
+  "power.touhouorigins.jiang_shi/life_drain.description": "Whenever you deal more than one damage, you drain the life force of your enemy, healing you for half a heart.",
+  "power.touhouorigins.jiang_shi/pestilence.name": "Pestilence",
+  "power.touhouorigins.jiang_shi/pestilence.description": "Your undead body is immune to poison and hunger, but also immune to regeneration. Instant health and instant damage are reversed, and you're weak to smite. You are also capable of zombifying villagers.",
+  "power.touhouorigins.jiang_shi/searing_light.name": "Searing Light",
+  "power.touhouorigins.jiang_shi/searing_light.description": "You burn in daylight if you aren't wearing a helmet, a mob head, or a pumpkin.",
+
   "touhouorigins.subtitles.origin.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.origin.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.origin.kappa.camouflage_activate": "Camouflage activates",
