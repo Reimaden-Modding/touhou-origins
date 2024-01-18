@@ -138,6 +138,18 @@
   "power.touhouorigins.jiang_shi/searing_light.name": "Searing Light",
   "power.touhouorigins.jiang_shi/searing_light.description": "You burn in daylight if you aren't wearing a helmet, a mob head, or a pumpkin.",
 
+  "origin.touhouorigins.haniwa.name": "Haniwa",
+  "origin.touhouorigins.haniwa.description": "Expertly crafted statues in the form of long fallen warriors. Now given a fighting spirit and a will of iron, the haniwa warrior is proficient in many forms of combat while remaining durable thanks to their terracotta construction.",
+
+  "power.touhouorigins.haniwa/warrior_of_an_old_age.name": "Warrior of an Old Age",
+  "power.touhouorigins.haniwa/warrior_of_an_old_age.description": "Your attack speed is increased by 10%.",
+  "power.touhouorigins.haniwa/quick_patch_up_job.name": "Quick Patch-up Job",
+  "power.touhouorigins.haniwa/quick_patch_up_job.description": "You can use clay to quickly heal yourself.",
+  "power.touhouorigins.haniwa/terracotta_skin.name": "Terracotta Skin",
+  "power.touhouorigins.haniwa/terracotta_skin.description": "You are immune to thorns, cacti, berry bushes, fire, freezing, and take 30% less damage from all physical sources not stated in \"Fragile Structure\", but do not regenerate health naturally and are unaffected by healing effects. You also never get exhausted and have no need to eat.",
+  "power.touhouorigins.haniwa/fragile_structure.name": "Fragile Structure",
+  "power.touhouorigins.haniwa/fragile_structure.description": "You take triple damage from kinetic sources, explosions, and pickaxes.",
+
   "touhouorigins.subtitles.origin.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.origin.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.origin.kappa.camouflage_activate": "Camouflage activates",

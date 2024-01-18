@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "touhouorigins:haniwa/warrior_of_an_old_age",
+    "touhouorigins:haniwa/quick_patch_up_job",
+    "touhouorigins:haniwa/terracotta_skin",
+    "touhouorigins:haniwa/fragile_structure"
+  ],
+  "icon": "minecraft:brown_glazed_terracotta",
+  "order": 5,
+  "impact": 3
+}

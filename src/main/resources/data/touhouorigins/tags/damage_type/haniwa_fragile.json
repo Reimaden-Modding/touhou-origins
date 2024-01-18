@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:fall",
+    "minecraft:fly_into_wall",
+    "minecraft:falling_anvil",
+    "minecraft:fireworks",
+    "minecraft:wither_skull",
+    "minecraft:player_explosion",
+    "minecraft:explosion",
+    "minecraft:bad_respawn_point",
+    "minecraft:falling_stalactite",
+    "minecraft:stalagmite",
+    "minecraft:sonic_boom"
+  ]
+}

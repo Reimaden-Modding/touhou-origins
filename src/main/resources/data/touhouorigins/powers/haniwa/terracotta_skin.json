@@ -1,0 +1,82 @@
+{
+  "type": "apoli:multiple",
+  "disable_regen": {
+    "type": "apoli:disable_regen"
+  },
+  "regen_immunity": {
+    "type": "apoli:effect_immunity",
+    "effects": [
+      "minecraft:regeneration",
+      "minecraft:instant_health",
+      "minecraft:hunger"
+    ]
+  },
+  "instant_immunity": {
+    "type": "voile:instant_effect_immunity",
+    "effect": "minecraft:instant_health"
+  },
+  "fire_immunity": {
+    "type": "apoli:fire_immunity",
+    "condition": {
+      "type": "apoli:fluid_height",
+      "fluid": "minecraft:lava",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  },
+  "exhaustion": {
+    "type": "apoli:modify_exhaustion",
+    "modifier": {
+      "name": "No exhaustion",
+      "operation": "multiply_total_multiplicative",
+      "value": -1
+    }
+  },
+  "invulnerability": {
+    "type": "apoli:invulnerability",
+    "damage_condition": {
+      "type": "apoli:in_tag",
+      "tag": "touhouorigins:haniwa_immune"
+    }
+  },
+  "resistance": {
+    "type": "apoli:modify_damage_taken",
+    "damage_condition": {
+      "type": "apoli:or",
+      "conditions": [
+        {
+          "type": "apoli:in_tag",
+          "tag": "touhouorigins:haniwa_neutral"
+        },
+        {
+          "type": "apoli:in_tag",
+          "tag": "touhouorigins:haniwa_fragile"
+        },
+        {
+          "type": "apoli:attacker",
+          "entity_condition": {
+            "type": "apoli:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+              "type": "apoli:ingredient",
+              "ingredient": {
+                "tag": "minecraft:pickaxes"
+              }
+            }
+          }
+        }
+      ],
+      "inverted": true
+    },
+    "modifier": {
+      "name": "Damage reduction",
+      "operation": "multiply_total",
+      "value": -0.3
+    },
+    "self_action": {
+      "type": "apoli:play_sound",
+      "sound": "touhouorigins:origin.haniwa.resist",
+      "volume": 2
+    }
+  }
+}

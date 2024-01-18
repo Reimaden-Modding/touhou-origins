@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:in_fire",
+    "minecraft:on_fire",
+    "minecraft:hot_floor",
+    "minecraft:cactus",
+    "minecraft:sweet_berry_bush",
+    "minecraft:thorns",
+    "touhouorigins:fire_thorns",
+    "minecraft:freeze",
+    "minecraft:starve"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "apoli:modify_damage_taken",
+  "damage_condition": {
+    "type": "apoli:or",
+    "conditions": [
+      {
+        "type": "apoli:in_tag",
+        "tag": "touhouorigins:haniwa_fragile"
+      },
+      {
+        "type": "apoli:attacker",
+        "entity_condition": {
+          "type": "apoli:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+              "tag": "minecraft:pickaxes"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "modifier": {
+    "name": "Triple damage",
+    "operation": "multiply_total",
+    "value": 2
+  },
+  "self_action": {
+    "type": "apoli:play_sound",
+    "sound": "touhouorigins:origin.haniwa.break",
+    "pitch": 0.5
+  }
+}

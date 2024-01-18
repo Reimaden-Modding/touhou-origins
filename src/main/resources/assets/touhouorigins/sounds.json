@@ -255,5 +255,30 @@
         "volume": 0.8
       }
     ]
+  },
+  "origin.haniwa.resist": {
+    "sounds": [
+      "block/decorated_pot/step1",
+      "block/decorated_pot/step2",
+      "block/decorated_pot/step3",
+      "block/decorated_pot/step4",
+      "block/decorated_pot/step5"
+    ]
+  },
+  "origin.haniwa.break": {
+    "sounds": [
+      {
+        "name": "random/glass1",
+        "pitch": 0.5
+      },
+      {
+        "name": "random/glass2",
+        "pitch": 0.5
+      },
+      {
+        "name": "random/glass3",
+        "pitch": 0.5
+      }
+    ]
   }
 }

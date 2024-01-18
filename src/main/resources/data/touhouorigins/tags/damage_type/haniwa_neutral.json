@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:magic",
+    "minecraft:indirect_magic",
+    "minecraft:drown",
+    "minecraft:lava",
+    "minecraft:cramming",
+    "minecraft:in_wall",
+    "minecraft:lightning_bolt",
+    "minecraft:out_of_world",
+    "minecraft:wither",
+    "minecraft:falling_block",
+    "minecraft:outside_border",
+    "minecraft:generic_kill"
+  ]
+}
