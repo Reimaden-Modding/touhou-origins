@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:step",
+    "minecraft:swim",
+    "minecraft:elytra_glide",
+    "minecraft:hit_ground",
+    "minecraft:splash",
+    "minecraft:drink",
+    "minecraft:projectile_shoot",
+    "minecraft:eat",
+    "minecraft:equip",
+    "minecraft:unequip",
+    "minecraft:item_interact_finish",
+    "minecraft:entity_dismount",
+    "minecraft:entity_mount",
+    "minecraft:teleport",
+    {
+      "id": "vcinteraction:voice",
+      "required": false
+    }
+  ]
+}

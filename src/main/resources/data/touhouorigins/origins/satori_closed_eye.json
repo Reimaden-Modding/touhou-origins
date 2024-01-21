@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "touhouorigins:satori_closed_eye/unconscious_manipulation",
+    "touhouorigins:satori_closed_eye/paranoia",
+    "touhouorigins:satori_closed_eye/presence_of_no_merit",
+    "touhouorigins:common/reclusive_physique",
+    "touhouorigins:satori_closed_eye/distracted_state_of_mind"
+  ],
+  "icon": "minecraft:heart_of_the_sea",
+  "order": 4,
+  "impact": 3,
+  "unchoosable": true
+}

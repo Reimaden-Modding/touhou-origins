@@ -1,0 +1,16 @@
+{
+  "parent": "touhouorigins:root",
+  "criteria": {
+    "chose_closed_eye": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "touhouorigins:satori_closed_eye"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chose_closed_eye"
+    ]
+  ]
+}

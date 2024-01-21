@@ -1,0 +1,49 @@
+{
+  "type": "apoli:action_on_entity_use",
+  "bientity_action": {
+    "type": "apoli:if_else_list",
+    "actions": [
+      {
+        "condition": {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:entity_type",
+            "entity_type": "minecraft:villager"
+          }
+        },
+        "action": {
+          "type": "apoli:actor_action",
+          "action": {
+            "type": "apoli:execute_command",
+            "command": "tellraw @s {\"translate\":\"power.touhouorigins.ostracized.trade\",\"with\":[{\"translate\":\"entity.minecraft.villager\"}],\"color\":\"red\"}"
+          }
+        }
+      },
+      {
+        "condition": {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:entity_type",
+            "entity_type": "minecraft:wandering_trader"
+          }
+        },
+        "action": {
+          "type": "apoli:actor_action",
+          "action": {
+            "type": "apoli:execute_command",
+            "command": "tellraw @s {\"translate\":\"power.touhouorigins.ostracized.trade\",\"with\":[{\"translate\":\"entity.minecraft.wandering_trader\"}],\"color\":\"red\"}"
+          }
+        }
+      }
+    ]
+  },
+  "bientity_condition": {
+    "type": "apoli:target_condition",
+    "condition": {
+      "type": "apoli:in_tag",
+      "tag": "touhouorigins:villagers"
+    }
+  },
+  "action_result": "consume_partial",
+  "priority": 10
+}

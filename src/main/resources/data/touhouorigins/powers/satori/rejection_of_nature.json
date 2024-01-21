@@ -1,0 +1,50 @@
+{
+  "type": "apoli:action_on_block_use",
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:revoke_advancement",
+        "advancement": "touhouorigins:close_eye",
+        "selection": "only"
+      },
+      {
+        "type": "apoli:grant_advancement",
+        "advancement": "touhouorigins:close_eye",
+        "selection": "only"
+      },
+      {
+        "type": "apoli:play_sound",
+        "sound": "touhouorigins:origin.satori.close_eye"
+      },
+      {
+        "type": "apoli:apply_effect",
+        "effect": {
+          "effect": "minecraft:blindness",
+          "duration": 200,
+          "show_particles": false,
+          "show_icon": false
+        }
+      }
+    ]
+  },
+  "condition": {
+    "type": "apoli:status_effect",
+    "effect": "minecraft:blindness"
+  },
+  "block_condition": {
+    "type": "apoli:block",
+    "block": "minecraft:crying_obsidian"
+  },
+  "item_condition": {
+    "type": "apoli:ingredient",
+    "ingredient": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "held_item_action": {
+    "type": "apoli:consume",
+    "amount": 1
+  },
+  "action_result": "success"
+}

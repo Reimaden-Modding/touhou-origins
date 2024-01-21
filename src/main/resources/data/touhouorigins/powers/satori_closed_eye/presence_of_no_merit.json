@@ -1,0 +1,5 @@
+{
+  "type": "voile:modify_behavior",
+  "behavior": "neutral",
+  "inverted": true
+}

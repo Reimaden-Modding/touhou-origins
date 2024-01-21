@@ -280,5 +280,28 @@
         "pitch": 0.5
       }
     ]
+  },
+  "origin.satori.recollect": {
+    "sounds": [
+      "block/bell/resonate",
+      {
+        "name": "block/bell/resonate",
+        "pitch": 0.85
+      },
+      {
+        "name": "block/bell/resonate",
+        "pitch": 0.9
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.satori.recollect"
+  },
+  "origin.satori.close_eye": {
+    "sounds": [
+      {
+        "name": "mob/wither/spawn",
+        "pitch": 0.5
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.satori.close_eye"
   }
 }

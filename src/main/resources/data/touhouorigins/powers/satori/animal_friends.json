@@ -1,0 +1,307 @@
+{
+  "type": "apoli:multiple",
+  "taming": {
+    "type": "apoli:action_on_entity_use",
+    "bientity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:tame"
+        },
+        {
+          "type": "apoli:target_action",
+          "action": {
+            "type": "apoli:spawn_particles",
+            "particle": "minecraft:heart",
+            "count": 7,
+            "spread": {
+              "x": 0.5,
+              "y": 0.3,
+              "z": 0.5
+            },
+            "offset_y": 1
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:in_tag",
+                "tag": "touhouorigins:tameable"
+              },
+              {
+                "type": "apoli:tamed",
+                "inverted": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:owner",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "horse_taming": {
+    "type": "apoli:action_on_entity_use",
+    "bientity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:actor_action",
+          "action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:execute_command",
+                "command": "tag @s add playerPassenger"
+              },
+              {
+                "type": "apoli:delay",
+                "ticks": 1,
+                "action": {
+                  "type": "apoli:riding_action",
+                  "action": {
+                    "type": "apoli:execute_command",
+                    "command": "function touhouorigins:tame"
+                  }
+                }
+              },
+              {
+                "type": "apoli:delay",
+                "ticks": 2,
+                "action": {
+                  "type": "apoli:execute_command",
+                  "command": "tag @s remove playerPassenger"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:target_action",
+          "action": {
+            "type": "apoli:spawn_particles",
+            "particle": "minecraft:heart",
+            "count": 7,
+            "spread": {
+              "x": 0.5,
+              "y": 0.3,
+              "z": 0.5
+            },
+            "offset_y": 1
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:in_tag",
+                "tag": "touhouorigins:rideable"
+              },
+              {
+                "type": "apoli:command",
+                "command": "data get entity @s Tame",
+                "comparison": "==",
+                "compare_to": 0
+              },
+              {
+                "type": "apoli:command",
+                "command": "data get entity @s Age",
+                "comparison": ">=",
+                "compare_to": 0
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:actor_condition",
+          "condition": {
+            "type": "apoli:sneaking",
+            "inverted": true
+          }
+        }
+      ]
+    },
+    "item_condition": {
+      "type": "apoli:empty"
+    }
+  },
+  "pet_healing": {
+    "type": "apoli:action_on_entity_use",
+    "bientity_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:if_else",
+          "condition": {
+            "type": "apoli:target_condition",
+            "condition": {
+              "type": "apoli:relative_health",
+              "comparison": "<",
+              "compare_to": 1
+            }
+          },
+          "if_action": {
+            "type": "apoli:and",
+            "actions": [
+              {
+                "type": "apoli:target_action",
+                "action": {
+                  "type": "apoli:and",
+                  "actions": [
+                    {
+                      "type": "apoli:heal",
+                      "amount": 4
+                    },
+                    {
+                      "type": "apoli:spawn_particles",
+                      "particle": "minecraft:heart",
+                      "count": 2,
+                      "spread": {
+                        "x": 0.5,
+                        "y": 0.3,
+                        "z": 0.5
+                      },
+                      "offset_y": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "apoli:actor_action",
+                "action": {
+                  "type": "apoli:trigger_cooldown",
+                  "power": "*:*_cooldown"
+                }
+              }
+            ]
+          },
+          "else_action": {
+            "type": "apoli:nothing"
+          }
+        },
+        {
+          "type": "apoli:if_else",
+          "condition": {
+            "type": "apoli:actor_condition",
+            "condition": {
+              "type": "apoli:relative_health",
+              "comparison": "<",
+              "compare_to": 1
+            }
+          },
+          "if_action": {
+            "type": "apoli:actor_action",
+            "action": {
+              "type": "apoli:and",
+              "actions": [
+                {
+                  "type": "apoli:heal",
+                  "amount": 6
+                },
+                {
+                  "type": "apoli:spawn_particles",
+                  "particle": "minecraft:heart",
+                  "count": 3,
+                  "spread": {
+                    "x": 0.5,
+                    "y": 0.3,
+                    "z": 0.5
+                  },
+                  "offset_y": 1
+                },
+                {
+                  "type": "apoli:trigger_cooldown",
+                  "power": "*:*_cooldown"
+                }
+              ]
+            }
+          },
+          "else_action": {
+            "type": "apoli:nothing"
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:owner"
+        },
+        {
+          "type": "apoli:actor_condition",
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:resource",
+                "resource": "*:*_cooldown",
+                "comparison": "==",
+                "compare_to": 0
+              },
+              {
+                "type": "apoli:sneaking",
+                "inverted": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "apoli:or",
+          "conditions": [
+            {
+              "type": "apoli:actor_condition",
+              "condition": {
+                "type": "apoli:relative_health",
+                "comparison": "<",
+                "compare_to": 1
+              }
+            },
+            {
+              "type": "apoli:target_condition",
+              "condition": {
+                "type": "apoli:relative_health",
+                "comparison": "<",
+                "compare_to": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "priority": 10
+  },
+  "cooldown": {
+    "type": "apoli:cooldown",
+    "cooldown": 300,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 4
+    }
+  },
+  "pacify_animals": {
+    "type": "voile:modify_behavior",
+    "behavior": "passive",
+    "entity_condition": {
+      "type": "apoli:in_tag",
+      "tag": "touhouorigins:fleeing_animals"
+    }
+  }
+}

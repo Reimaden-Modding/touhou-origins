@@ -1,0 +1,14 @@
+{
+  "type": "apoli:prevent_item_use",
+  "item_condition": {
+    "type": "apoli:ingredient",
+    "ingredient": [
+      {
+        "tag": "c:bows"
+      },
+      {
+        "tag": "c:shields"
+      }
+    ]
+  }
+}

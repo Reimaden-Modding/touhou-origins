@@ -28,6 +28,8 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_MOON_RABBIT_DEACTIVATE = registerSound("origin.moon_rabbit.deactivate");
     public static final SoundEvent ORIGIN_HANIWA_RESIST = registerSound("origin.haniwa.resist");
     public static final SoundEvent ORIGIN_HANIWA_BREAK = registerSound("origin.haniwa.break");
+    public static final SoundEvent ORIGIN_SATORI_RECOLLECT = registerSound("origin.satori.recollect");
+    public static final SoundEvent ORIGIN_SATORI_CLOSE_EYE = registerSound("origin.satori.close_eye");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = TouhouOrigins.id(name);

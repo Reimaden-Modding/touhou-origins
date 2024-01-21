@@ -150,6 +150,44 @@
   "power.touhouorigins.haniwa/fragile_structure.name": "Fragile Structure",
   "power.touhouorigins.haniwa/fragile_structure.description": "You take triple damage from kinetic sources, explosions, and pickaxes.",
 
+  "origin.touhouorigins.satori.name": "Satori",
+  "origin.touhouorigins.satori.description": "Satori are a type of mountain-dwelling youkai in Japanese folklore. They are famous for being the youkai that are able to read human thoughts.",
+  "origin.touhouorigins.satori.announcement": "Your soul screams in horror as your mind begins slipping away, swiftly replaced by utter silence.",
+
+  "power.touhouorigins.satori/mind_reading.name": "Mind Reading",
+  "power.touhouorigins.satori/mind_reading.description": "You can see living creatures through walls and also have a 25% chance to dodge melee attacks.",
+  "power.touhouorigins.mind_reading.dodge": "You managed to sense your opponent's intent and dodge their attack",
+  "power.touhouorigins.satori/recollection.name": "Recollection",
+  "power.touhouorigins.satori/recollection.description": "While looking at another player, you can bring forth and tap into their memories, revealing certain information about them.",
+  "power.touhouorigins.recollection.player": "%1$s has the following memories...",
+  "power.touhouorigins.recollection.spawnXYZ": "Spawn XYZ",
+  "power.touhouorigins.recollection.spawnDimension": "Spawn Dimension",
+  "power.touhouorigins.recollection.lastDeathLocation": "Last Death Location",
+  "power.touhouorigins.recollection.fail": "Unable to read %1$s's memories!",
+  "power.touhouorigins.recollection.alert": "You have a feeling like someone read your memories",
+  "power.touhouorigins.recollection.alert_fail": "You have a feeling like someone attempted to read your memories",
+  "power.touhouorigins.satori/animal_friends.name": "Animal Friends",
+  "power.touhouorigins.satori/animal_friends.description": "You tame animals by simply interacting with them. Additionally, you can pet your tamed animals to heal both them and yourself. Animals that typically flee from strangers do not mind your presence.",
+  "power.touhouorigins.common/reclusive_physique.name": "Reclusive Physique",
+  "power.touhouorigins.common/reclusive_physique.description": "You move slower than most people and deal 15% less melee damage.",
+  "power.touhouorigins.satori/ostracized.name": "Ostracized",
+  "power.touhouorigins.satori/ostracized.description": "Villagers refuse to trade with you.",
+  "power.touhouorigins.ostracized.trade": "The %1$s refuses to trade with you",
+  "power.touhouorigins.satori/rejection_of_nature.name": "Rejection of Nature",
+  "power.touhouorigins.satori/rejection_of_nature.description": "While affected by blindness, using an eye of ender on some crying obsidian will permanently close your third eye.",
+
+  "origin.touhouorigins.satori_closed_eye.name": "Satori",
+  "origin.touhouorigins.satori_closed_eye.description": "If a satori closes their third eye, they will be unable to read the minds of others, and their consciousness is sealed away.",
+
+  "power.touhouorigins.satori_closed_eye/unconscious_manipulation.name": "Unconscious Manipulation",
+  "power.touhouorigins.satori_closed_eye/unconscious_manipulation.description": "You're able to appear invisible and silent to others at will. Combat will briefly disable this power.",
+  "power.touhouorigins.satori_closed_eye/paranoia.name": "Paranoia",
+  "power.touhouorigins.satori_closed_eye/paranoia.description": "You can play random sounds to nearby players.",
+  "power.touhouorigins.satori_closed_eye/presence_of_no_merit.name": "Presence of No Merit",
+  "power.touhouorigins.satori_closed_eye/presence_of_no_merit.description": "All mobs are unaware of your presence around them, making every hostile mob neutral towards you.",
+  "power.touhouorigins.satori_closed_eye/distracted_state_of_mind.name": "Distracted State of Mind",
+  "power.touhouorigins.satori_closed_eye/distracted_state_of_mind.description": "You are unable to use bows, crossbows, and shields.",
+
   "touhouorigins.subtitles.origin.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.origin.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.origin.kappa.camouflage_activate": "Camouflage activates",
@@ -168,7 +206,5 @@
   "death.attack.probe": "%1$s was probed by %2$s",
   "death.attack.probe.item": "%1$s was probed by %2$s using %3$s",
   "death.attack.fireThorns": "%1$s burned their hand fighting %2$s",
-  "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s",
-
-  "touhouorigins.gui.badge.upgrade": "Upgrade path"
+  "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s"
 }

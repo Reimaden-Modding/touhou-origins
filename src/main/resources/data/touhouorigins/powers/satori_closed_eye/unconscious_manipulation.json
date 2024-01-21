@@ -1,0 +1,96 @@
+{
+  "type": "apoli:multiple",
+  "toggle": {
+    "type": "apoli:toggle"
+  },
+  "invisibility": {
+    "type": "apoli:invisibility",
+    "render_armor": false,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        },
+        {
+          "type": "apoli:resource",
+          "resource": "*:*_timer",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "game_event": {
+    "type": "apoli:prevent_game_event",
+    "tag": "touhouorigins:satori",
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        },
+        {
+          "type": "apoli:resource",
+          "resource": "*:*_timer",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "silence": {
+    "type": "voile:modify_footstep_sound",
+    "silent": true,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        },
+        {
+          "type": "apoli:resource",
+          "resource": "*:*_timer",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "timer": {
+    "type": "apoli:cooldown",
+    "cooldown": 20
+  },
+  "timer_trigger": {
+    "type": "apoli:action_on_hit",
+    "bientity_action": {
+      "type": "apoli:actor_action",
+      "action": {
+        "type": "apoli:trigger_cooldown",
+        "power": "*:*_timer"
+      }
+    },
+    "bientity_condition": {
+      "type": "apoli:target_condition",
+      "condition": {
+        "type": "apoli:living"
+      }
+    }
+  },
+  "timer_trigger_attacked": {
+    "type": "apoli:self_action_when_hit",
+    "entity_action": {
+      "type": "apoli:trigger_cooldown",
+      "power": "*:*_timer"
+    },
+    "damage_condition": {
+      "type": "apoli:attacker",
+      "entity_condition": {
+        "type": "apoli:living"
+      }
+    }
+  }
+}

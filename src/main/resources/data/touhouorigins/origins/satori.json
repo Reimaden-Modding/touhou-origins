@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "touhouorigins:satori/mind_reading",
+    "touhouorigins:satori/recollection",
+    "touhouorigins:satori/animal_friends",
+    "touhouorigins:common/reclusive_physique",
+    "touhouorigins:satori/ostracized",
+    "touhouorigins:satori/rejection_of_nature"
+  ],
+  "icon": "minecraft:ender_eye",
+  "order": 4,
+  "impact": 2,
+  "upgrades": [
+    {
+      "condition": "touhouorigins:close_eye",
+      "origin": "touhouorigins:satori_closed_eye",
+      "announcement": "origin.touhouorigins.satori.announcement"
+    }
+  ]
+}
