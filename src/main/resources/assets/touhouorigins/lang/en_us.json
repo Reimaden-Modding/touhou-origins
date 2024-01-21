@@ -160,6 +160,7 @@
   "power.touhouorigins.satori/recollection.name": "Recollection",
   "power.touhouorigins.satori/recollection.description": "While looking at another player, you can bring forth and tap into their memories, revealing certain information about them.",
   "power.touhouorigins.recollection.player": "%1$s has the following memories...",
+  "power.touhouorigins.recollection.level": "Level",
   "power.touhouorigins.recollection.spawnXYZ": "Spawn XYZ",
   "power.touhouorigins.recollection.spawnDimension": "Spawn Dimension",
   "power.touhouorigins.recollection.lastDeathLocation": "Last Death Location",
