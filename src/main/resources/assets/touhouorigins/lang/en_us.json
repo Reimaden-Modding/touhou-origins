@@ -1,4 +1,17 @@
 {
+  "power.touhouorigins.common/apparition_appetite.name": "Apparition's Appetite",
+  "power.touhouorigins.common/apparition_appetite.description": "You do not require food to stay alive.",
+  "power.touhouorigins.common/futile_concoctions.name": "Futile Concoctions",
+  "power.touhouorigins.common/futile_concoctions.description": "You are unable to drink potions.",
+  "power.touhouorigins.common/tengu_speed.name": "Tengu's Speed",
+  "power.touhouorigins.common/tengu_speed.description": "You are naturally faster than a regular person.",
+  "power.touhouorigins.common/natural_luck.name": "Natural Luck",
+  "power.touhouorigins.common/natural_luck.description": "You have an increased luck attribute.",
+  "power.touhouorigins.common/strong_legs.name": "Strong Legs",
+  "power.touhouorigins.common/strong_legs.description": "You are capable of jumping higher while sneaking, and running longer than a regular person. You take slightly less fall damage.",
+  "power.touhouorigins.common/reclusive_physique.name": "Reclusive Physique",
+  "power.touhouorigins.common/reclusive_physique.description": "You move slower than most people and deal 15% less melee damage.",
+
   "origin.touhouorigins.vampire.name": "Vampire",
   "origin.touhouorigins.vampire.description": "A young but powerful species of youkai, considered to be a type of devil. They possess a far broader range of abilities than most youkai.",
 
@@ -115,17 +128,6 @@
   "power.touhouorigins.moon_rabbit/timid_constitution.name": "Timid Constitution",
   "power.touhouorigins.moon_rabbit/timid_constitution.description": "You have 2 less hearts of health. Melee weapons such as axes, swords, and tridents swing 40% slower.",
 
-  "power.touhouorigins.common/apparition_appetite.name": "Apparition's Appetite",
-  "power.touhouorigins.common/apparition_appetite.description": "You do not require food to stay alive.",
-  "power.touhouorigins.common/futile_concoctions.name": "Futile Concoctions",
-  "power.touhouorigins.common/futile_concoctions.description": "You are unable to drink potions.",
-  "power.touhouorigins.common/tengu_speed.name": "Tengu's Speed",
-  "power.touhouorigins.common/tengu_speed.description": "You are naturally faster than a regular person.",
-  "power.touhouorigins.common/natural_luck.name": "Natural Luck",
-  "power.touhouorigins.common/natural_luck.description": "You have an increased luck attribute.",
-  "power.touhouorigins.common/strong_legs.name": "Strong Legs",
-  "power.touhouorigins.common/strong_legs.description": "You are capable of jumping higher while sneaking, and running longer than a regular person. You take slightly less fall damage.",
-
   "origin.touhouorigins.jiang_shi.name": "Jiang Shi",
   "origin.touhouorigins.jiang_shi.description": "In Chinese folklore, jiang shi are reanimated corpses that move around by hopping with their arms outstretched. They are often compared to vampires because jiang shi attempt to suck qi, life energy, from the living, though they're actually more similar to zombies.",
 
@@ -169,8 +171,6 @@
   "power.touhouorigins.recollection.alert_fail": "You have a feeling like someone attempted to read your memories",
   "power.touhouorigins.satori/animal_friends.name": "Animal Friends",
   "power.touhouorigins.satori/animal_friends.description": "You tame animals by simply interacting with them. Additionally, you can pet your tamed animals to heal both them and yourself. Animals that typically flee from strangers do not mind your presence.",
-  "power.touhouorigins.common/reclusive_physique.name": "Reclusive Physique",
-  "power.touhouorigins.common/reclusive_physique.description": "You move slower than most people and deal 15% less melee damage.",
   "power.touhouorigins.satori/ostracized.name": "Ostracized",
   "power.touhouorigins.satori/ostracized.description": "Villagers refuse to trade with you.",
   "power.touhouorigins.ostracized.trade": "The %1$s refuses to trade with you",

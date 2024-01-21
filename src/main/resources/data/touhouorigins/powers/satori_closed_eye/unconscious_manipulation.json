@@ -80,7 +80,7 @@
   },
   "timer": {
     "type": "apoli:cooldown",
-    "cooldown": 20
+    "cooldown": 60
   },
   "timer_trigger": {
     "type": "apoli:action_on_hit",
