@@ -22,6 +22,24 @@
       ]
     }
   },
+  "no_particles": {
+    "type": "voile:prevent_sprinting_particles",
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        },
+        {
+          "type": "apoli:resource",
+          "resource": "*:*_timer",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
   "game_event": {
     "type": "apoli:prevent_game_event",
     "tag": "touhouorigins:satori",
