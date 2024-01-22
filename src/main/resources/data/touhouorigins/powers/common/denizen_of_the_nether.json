@@ -1,0 +1,5 @@
+{
+  "type": "apoli:modify_player_spawn",
+  "dimension": "minecraft:the_nether",
+  "dimension_distance_multiplier": 0.125
+}

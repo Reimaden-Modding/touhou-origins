@@ -11,6 +11,8 @@
   "power.touhouorigins.common/strong_legs.description": "You are capable of jumping higher while sneaking, and running longer than a regular person. You take slightly less fall damage.",
   "power.touhouorigins.common/reclusive_physique.name": "Reclusive Physique",
   "power.touhouorigins.common/reclusive_physique.description": "You move slower than most people and deal 15% less melee damage.",
+  "power.touhouorigins.common/denizen_of_the_nether.name": "Denizen of the Nether",
+  "power.touhouorigins.common/denizen_of_the_nether.description": "You spawn in the Nether.",
 
   "origin.touhouorigins.vampire.name": "Vampire",
   "origin.touhouorigins.vampire.description": "A young but powerful species of youkai, considered to be a type of devil. They possess a far broader range of abilities than most youkai.",
@@ -32,7 +34,7 @@
   "power.touhouorigins.oni/brawn_of_the_oni.name": "Brawn of the Oni",
   "power.touhouorigins.oni/brawn_of_the_oni.description": "You have 5 more hearts of health, deal 6 more damage, and are 10% taller.",
   "power.touhouorigins.oni/drunken_stupor.name": "Drunken Stupor",
-  "power.touhouorigins.oni/drunken_stupor.description": "For every negative status effect active on you, gain 3 melee damage.",
+  "power.touhouorigins.oni/drunken_stupor.description": "For every negative status effect active on you, you gain 3 melee damage.",
   "power.touhouorigins.oni/heavy_drinker.name": "Heavy Drinker",
   "power.touhouorigins.oni/heavy_drinker.description": "You are sustained significantly less by food, but gain 8 hunger points when drinking any potion.",
   "power.touhouorigins.oni/brute_force.name": "Brute Force",
