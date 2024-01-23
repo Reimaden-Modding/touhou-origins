@@ -3,7 +3,7 @@
   "item_condition": {
     "type": "apoli:ingredient",
     "ingredient": {
-      "tag": "apoli:meat"
+      "tag": "origins:meat"
     }
   }
 }
