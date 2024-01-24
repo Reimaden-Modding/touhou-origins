@@ -1,0 +1,27 @@
+{
+  "type": "apoli:prevent_item_use",
+  "item_condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "item": "minecraft:suspicious_stew"
+        },
+        "inverted": true
+      },
+      {
+        "type": "apoli:and",
+        "conditions": [
+          {
+            "type": "apoli:food"
+          },
+          {
+            "type": "voile:craftable",
+            "inverted": true
+          }
+        ]
+      }
+    ]
+  }
+}

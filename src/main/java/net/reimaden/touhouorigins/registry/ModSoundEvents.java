@@ -30,6 +30,8 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_HANIWA_BREAK = registerSound("origin.haniwa.break");
     public static final SoundEvent ORIGIN_SATORI_RECOLLECT = registerSound("origin.satori.recollect");
     public static final SoundEvent ORIGIN_SATORI_CLOSE_EYE = registerSound("origin.satori.close_eye");
+    public static final SoundEvent ORIGIN_CELESTIAL_ENLIGHTENMENT = registerSound("origin.celestial.enlightenment");
+    public static final SoundEvent ORIGIN_CELESTIAL_TEMPER = registerSound("origin.celestial.temper");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = TouhouOrigins.id(name);

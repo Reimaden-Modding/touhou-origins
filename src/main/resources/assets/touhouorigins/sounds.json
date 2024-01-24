@@ -303,5 +303,33 @@
       }
     ],
     "subtitle": "touhouorigins.subtitles.origin.satori.close_eye"
+  },
+  "origin.celestial.enlightenment": {
+    "sounds": [
+      "touhouorigins:enlightenment1",
+      "touhouorigins:enlightenment2",
+      "touhouorigins:enlightenment3",
+      "touhouorigins:enlightenment4",
+      "touhouorigins:enlightenment5",
+      "touhouorigins:enlightenment6"
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.celestial.enlightenment"
+  },
+  "origin.celestial.temper": {
+    "sounds": [
+      {
+        "name": "mob/illusion_illager/prepare_blind",
+        "pitch": 1.1
+      },
+      {
+        "name": "mob/illusion_illager/prepare_blind",
+        "pitch": 1.2
+      },
+      {
+        "name": "mob/illusion_illager/prepare_blind",
+        "pitch": 1.3
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.celestial.temper"
   }
 }

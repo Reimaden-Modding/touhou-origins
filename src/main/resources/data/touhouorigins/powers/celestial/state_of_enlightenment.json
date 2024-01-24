@@ -1,0 +1,36 @@
+{
+	"type": "apoli:active_self",
+	"entity_action": {
+		"type": "apoli:and",
+		"actions": [
+			{
+				"type": "apoli:apply_effect",
+				"effect": {
+					"effect": "minecraft:resistance",
+					"duration": 100,
+					"amplifier": 4
+				}
+			},
+			{
+				"type": "apoli:spawn_particles",
+				"particle": "minecraft:witch",
+				"count": 100,
+				"speed": 0.05,
+				"spread": {
+					"x": 0.1,
+					"y": 0.1,
+					"z": 0.1
+				}
+			},
+			{
+				"type": "apoli:play_sound",
+				"sound": "touhouorigins:origin.celestial.enlightenment"
+			}
+		]
+	},
+	"cooldown": 1300,
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 0
+	}
+}

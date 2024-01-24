@@ -6,7 +6,7 @@
   "power.touhouorigins.common/tengu_speed.name": "Tengu's Speed",
   "power.touhouorigins.common/tengu_speed.description": "You are naturally faster than a regular person.",
   "power.touhouorigins.common/natural_luck.name": "Natural Luck",
-  "power.touhouorigins.common/natural_luck.description": "You have an increased luck attribute.",
+  "power.touhouorigins.common/natural_luck.description": "Your luck attribute is increased by 5.",
   "power.touhouorigins.common/strong_legs.name": "Strong Legs",
   "power.touhouorigins.common/strong_legs.description": "You are capable of jumping higher while sneaking, and running longer than a regular person. You take slightly less fall damage.",
   "power.touhouorigins.common/reclusive_physique.name": "Reclusive Physique",
@@ -191,6 +191,18 @@
   "power.touhouorigins.satori_closed_eye/distracted_state_of_mind.name": "Distracted State of Mind",
   "power.touhouorigins.satori_closed_eye/distracted_state_of_mind.description": "You are unable to use bows, crossbows, and shields.",
 
+  "origin.touhouorigins.celestial.name": "Celestial",
+  "origin.touhouorigins.celestial.description": "Celestials are former humans, a type of hermit that live in Heaven. They usually descend to earth to say absurd things that trouble normal humans and then return to heaven.",
+
+  "power.touhouorigins.celestial/state_of_enlightenment.name": "State of Enlightenment",
+  "power.touhouorigins.celestial/state_of_enlightenment.description": "For 5 seconds, you can grant yourself Resistance V to become invincible to nearly all damage.",
+  "power.touhouorigins.celestial/temper.name": "Temper",
+  "power.touhouorigins.celestial/temper.description": "You can activate this power to empower your melee attacks for 10 seconds, making them disable shields and apply Weakness for 5 seconds.",
+  "power.touhouorigins.celestial/heavenly_descendant.name": "Heavenly Descendant",
+  "power.touhouorigins.celestial/heavenly_descendant.description": "Your elevation in the Overworld affects your melee and ranged damage. Above sea level, your damage is increased by up to 7.5 melee and 4.5 ranged damage. Close to or below sea level, your damage is reduced by up to 7.5 melee and 4.5 ranged damage. In the End and the Nether, there is a flat increase of 8 melee and 5 ranged damage, as well as a reduction of 8 melee and 5 ranged damage, respectively.",
+  "power.touhouorigins.celestial/lavish_lifestyle.name": "Lavish Lifestyle",
+  "power.touhouorigins.celestial/lavish_lifestyle.description": "You refuse to eat food that is not craftable.",
+
   "touhouorigins.subtitles.origin.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.origin.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.origin.kappa.camouflage_activate": "Camouflage activates",
@@ -203,6 +215,8 @@
   "touhouorigins.subtitles.origin.vengeful_spirit.heal": "Vengeful Spirit regenerates",
   "touhouorigins.subtitles.origin.rabbit.hop": "Rabbit hops",
   "touhouorigins.subtitles.origin.moon_rabbit.activate": "Moon Rabbit prepares to fire",
+  "touhouorigins.subtitles.origin.celestial.enlightenment": "Celestial strengthens",
+  "touhouorigins.subtitles.origin.celestial.temper": "Celestial empowers",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
