@@ -1,111 +1,27 @@
 {
   "type": "apoli:multiple",
-  "scoreboard": {
-    "type": "origins:action_on_callback",
-    "entity_action_gained": {
-      "type": "apoli:execute_command",
-      "command": "function touhouorigins:celestial_scores"
-    },
-    "entity_action_lost": {
-      "type": "apoli:execute_command",
-      "command": "function touhouorigins:celestial_reset"
-    }
-  },
-  "resource": {
-    "type": "apoli:resource",
-    "min": -150,
-    "max": 150
-  },
-  "calculate": {
-    "type": "apoli:action_over_time",
-    "interval": 10,
-    "entity_action": {
-      "type": "apoli:execute_command",
-      "command": "function touhouorigins:celestial_calculate"
-    }
-  },
-  "damage_overworld": {
+  "melee_damage": {
     "type": "apoli:modify_damage_dealt",
     "modifier": {
-      "name": "Heavenly Descendant melee damage",
-      "operation": "add_base_early",
-      "value": 0,
-      "resource": "*:*_resource",
-      "modifier": {
-        "operation": "multiply_total_multiplicative",
-        "value": -0.95
-      }
-    },
-    "condition": {
-      "type": "apoli:dimension",
-      "dimension": "minecraft:overworld"
-    }
-  },
-  "damage_nether": {
-    "type": "apoli:modify_damage_dealt",
-    "modifier": {
-      "name": "Heavenly Descendant melee damage",
-      "operation": "add_base_early",
-      "value": -8
+      "name": "Heavenly Descendant melee damage penalty",
+      "operation": "multiply_total_multiplicative",
+      "value": -0.8
     },
     "condition": {
       "type": "apoli:dimension",
       "dimension": "minecraft:the_nether"
     }
   },
-  "damage_end": {
-    "type": "apoli:modify_damage_dealt",
-    "modifier": {
-      "name": "Heavenly Descendant melee damage",
-      "operation": "add_base_early",
-      "value": 8
-    },
-    "condition": {
-      "type": "apoli:dimension",
-      "dimension": "minecraft:the_end"
-    }
-  },
-  "ranged_damage_overworld": {
+  "ranged_damage": {
     "type": "apoli:modify_projectile_damage",
     "modifier": {
-      "name": "Heavenly Descendant ranged damage",
-      "operation": "add_base_early",
-      "value": 0,
-      "resource": "*:*_resource",
-      "modifiers": [
-        {
-          "operation": "multiply_total_multiplicative",
-          "value": -0.97
-        }
-      ]
+      "name": "Heavenly Descendant ranged damage penalty",
+      "operation": "multiply_total_multiplicative",
+      "value": -0.8
     },
     "condition": {
       "type": "apoli:dimension",
-      "dimension": "minecraft:overworld"
-    }
-  },
-  "ranged_damage_nether": {
-    "type": "apoli:modify_projectile_damage",
-    "modifier": {
-      "name": "Heavenly Descendant ranged damage",
-      "operation": "add_base_early",
-      "value": -5
-    },
-    "condition": {
-      "type": "apoli:dimension",
-      "dimension": "minecraft:the_end"
-    }
-  },
-  "ranged_damage_end": {
-    "type": "apoli:modify_projectile_damage",
-    "modifier": {
-      "name": "Heavenly Descendant ranged damage",
-      "operation": "add_base_early",
-      "value": 5
-    },
-    "condition": {
-      "type": "apoli:dimension",
-      "dimension": "minecraft:the_end"
+      "dimension": "minecraft:the_nether"
     }
   }
 }

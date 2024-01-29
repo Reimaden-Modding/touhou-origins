@@ -199,7 +199,7 @@
   "power.touhouorigins.celestial/temper.name": "Temper",
   "power.touhouorigins.celestial/temper.description": "You can activate this power to empower your melee attacks for 10 seconds, making them disable shields and apply Weakness for 5 seconds.",
   "power.touhouorigins.celestial/heavenly_descendant.name": "Heavenly Descendant",
-  "power.touhouorigins.celestial/heavenly_descendant.description": "Your elevation in the Overworld affects your melee and ranged damage. Above sea level, your damage is increased by up to 7.5 melee and 4.5 ranged damage. Close to or below sea level, your damage is reduced by up to 7.5 melee and 4.5 ranged damage. In the End and the Nether, there is a flat increase of 8 melee and 5 ranged damage, as well as a reduction of 8 melee and 5 ranged damage, respectively.",
+  "power.touhouorigins.celestial/heavenly_descendant.description": "Your damage in the Nether is reduced by 80%.",
   "power.touhouorigins.celestial/lavish_lifestyle.name": "Lavish Lifestyle",
   "power.touhouorigins.celestial/lavish_lifestyle.description": "You refuse to eat food that is not craftable.",
 
