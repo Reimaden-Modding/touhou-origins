@@ -17,7 +17,9 @@
     "issues": "https://github.com/Maxmani/touhou-origins/issues",
     "sources": "https://github.com/Maxmani/touhou-origins"
   },
-  "license": "GPL-3.0-or-later",
+  "license": [
+    "GPL-3.0-or-later"
+  ],
   "icon": "assets/touhouorigins/icon.png",
   "environment": "*",
   "entrypoints": {

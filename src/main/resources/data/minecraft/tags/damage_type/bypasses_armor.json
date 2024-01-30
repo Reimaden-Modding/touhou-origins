@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "touhouorigins:sun",
-    "touhouorigins:probe"
+    "touhouorigins:probe",
+    "touhouorigins:parry"
   ]
 }

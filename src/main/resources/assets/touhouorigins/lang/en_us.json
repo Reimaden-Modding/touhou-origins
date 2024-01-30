@@ -107,6 +107,8 @@
   "power.touhouorigins.wolf_tengu/warrior_spirit.description": "You can activate this power to gain Strength III for 10 seconds.",
   "power.touhouorigins.wolf_tengu/mountainous_blades.name": "Mountainous Blades",
   "power.touhouorigins.wolf_tengu/mountainous_blades.description": "All swords swing 30% slower, but your reach when using them is increased by 1 block.",
+  "power.touhouorigins.wolf_tengu/steadfast_defense.name": "Steadfast Defense",
+  "power.touhouorigins.wolf_tengu/steadfast_defense.description": "You are not slowed down while using a shield. Blocking with a shield deals 2 damage to your attacker and inflicts them with Mining Fatigue VII for 2.5 seconds. This has a cooldown of 5 seconds.",
   "power.touhouorigins.wolf_tengu/clumsy_archer.name": "Clumsy Archer",
   "power.touhouorigins.wolf_tengu/clumsy_archer.description": "You are less accurate with a bow.",
   "power.touhouorigins.wolf_tengu/big_appetite.name": "Big Appetite",
@@ -223,5 +225,7 @@
   "death.attack.probe": "%1$s was probed by %2$s",
   "death.attack.probe.item": "%1$s was probed by %2$s using %3$s",
   "death.attack.fireThorns": "%1$s burned their hand fighting %2$s",
-  "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s"
+  "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s",
+  "death.attack.parry": "%1$s was parried to death by %2$s",
+  "death.attack.parry.item": "%1$s was killed by a riposte from %2$s using %3$s"
 }
