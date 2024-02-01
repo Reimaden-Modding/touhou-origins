@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "touhouorigins:oarfish/healing_torrent",
+    "touhouorigins:oarfish/thunder_lungs",
+    "touhouorigins:oarfish/dragon_gods_wrath",
+    "touhouorigins:oarfish/match_made_in_heaven",
+    "touhouorigins:common/heavenly_descendant",
+    "touhouorigins:oarfish/veils_like_water"
+  ],
+  "icon": "minecraft:fire_coral_fan",
+  "order": 2,
+  "impact": 2
+}

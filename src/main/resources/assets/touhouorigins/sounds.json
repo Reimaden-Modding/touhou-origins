@@ -331,5 +331,27 @@
       }
     ],
     "subtitle": "touhouorigins.subtitles.origin.celestial.temper"
+  },
+  "origin.oarfish.dry": {
+    "sounds": [
+      {
+        "name": "item/bottle/empty1",
+        "pitch": 0.8
+      },
+      {
+        "name": "item/bottle/empty2",
+        "pitch": 0.8
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.oarfish.dry"
+  },
+  "origin.oarfish.prepare_lightning": {
+    "sounds": [
+      {
+        "name": "mob/illusion_illager/prepare_mirror",
+        "pitch": 2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.oarfish.prepare_lightning"
   }
 }

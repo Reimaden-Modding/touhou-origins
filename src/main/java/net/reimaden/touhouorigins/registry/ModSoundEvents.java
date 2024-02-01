@@ -32,6 +32,8 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_SATORI_CLOSE_EYE = registerSound("origin.satori.close_eye");
     public static final SoundEvent ORIGIN_CELESTIAL_ENLIGHTENMENT = registerSound("origin.celestial.enlightenment");
     public static final SoundEvent ORIGIN_CELESTIAL_TEMPER = registerSound("origin.celestial.temper");
+    public static final SoundEvent ORIGIN_OARFISH_DRY = registerSound("origin.oarfish.dry");
+    public static final SoundEvent ORIGIN_OARFISH_PREPARE_LIGHTNING = registerSound("origin.oarfish.prepare_lightning");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = TouhouOrigins.id(name);

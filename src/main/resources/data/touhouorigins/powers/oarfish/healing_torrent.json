@@ -1,0 +1,26 @@
+{
+  "type": "apoli:multiple",
+  "regeneration": {
+    "type": "apoli:action_over_time",
+    "interval": 50,
+    "entity_action": {
+      "type": "apoli:heal",
+      "amount": 1
+    },
+    "condition": {
+      "type": "apoli:in_rain"
+    }
+  },
+  "speed": {
+    "type": "apoli:conditioned_attribute",
+    "modifier": {
+      "name": "Healing Torrent movement speed bonus",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_total",
+      "value": 0.2
+    },
+    "condition": {
+      "type": "apoli:in_rain"
+    }
+  }
+}

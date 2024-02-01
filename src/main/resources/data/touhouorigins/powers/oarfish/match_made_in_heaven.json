@@ -1,0 +1,185 @@
+{
+  "type": "apoli:multiple",
+  "luck": {
+    "type": "apoli:conditioned_attribute",
+    "modifier": {
+      "name": "Match Made in Heaven luck bonus",
+      "attribute": "minecraft:generic.luck",
+      "operation": "addition",
+      "value": 5
+    },
+    "condition": {
+      "type": "voile:nearby_entities",
+      "entity_condition": {
+        "type": "origins:origin",
+        "origin": "touhouorigins:celestial"
+      },
+      "distance": 24
+    }
+  },
+  "resource": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 300,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 8,
+      "condition": {
+        "type": "apoli:resource",
+        "resource": "*:*_resource",
+        "comparison": "!=",
+        "compare_to": 0
+      }
+    },
+    "max_action": {
+      "type": "apoli:apply_effect",
+      "effect": {
+        "effect": "minecraft:slowness",
+        "duration": 200,
+        "is_ambient": true
+      }
+    }
+  },
+  "resource_change": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:dimension",
+                "dimension": "minecraft:the_nether"
+              },
+              {
+                "type": "voile:nearby_entities",
+                "entity_condition": {
+                  "type": "apoli:or",
+                  "conditions": [
+                    {
+                      "type": "origins:origin",
+                      "origin": "touhouorigins:celestial"
+                    },
+                    {
+                      "type": "origins:origin",
+                      "origin": "touhouorigins:oarfish"
+                    }
+                  ]
+                },
+                "distance": 24
+              }
+            ]
+          },
+          "action": {
+            "type": "apoli:change_resource",
+            "resource": "*:*_resource",
+            "change": 2
+          }
+        },
+        {
+          "condition": {
+            "type": "voile:nearby_entities",
+            "entity_condition": {
+              "type": "apoli:or",
+              "conditions": [
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:celestial"
+                },
+                {
+                  "type": "origins:origin",
+                  "origin": "touhouorigins:oarfish"
+                }
+              ]
+            },
+            "distance": 24
+          },
+          "action": {
+            "type": "apoli:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+          }
+        },
+        {
+          "condition": {
+            "type": "apoli:and",
+            "conditions": [
+              {
+                "type": "apoli:dimension",
+                "dimension": "minecraft:overworld"
+              },
+              {
+                "type": "apoli:exposed_to_sky"
+              },
+              {
+                "type": "apoli:on_block",
+                "block_condition": {
+                  "type": "apoli:height",
+                  "comparison": ">=",
+                  "compare_to": 199
+                }
+              },
+              {
+                "type": "voile:nearby_entities",
+                "entity_condition": {
+                  "type": "apoli:or",
+                  "conditions": [
+                    {
+                      "type": "origins:origin",
+                      "origin": "touhouorigins:celestial"
+                    },
+                    {
+                      "type": "origins:origin",
+                      "origin": "touhouorigins:oarfish"
+                    }
+                  ]
+                },
+                "distance": 24,
+                "inverted": true
+              }
+            ]
+          },
+          "action": {
+            "type": "apoli:change_resource",
+            "resource": "*:*_resource",
+            "change": -5
+          }
+        }
+      ]
+    }
+  },
+  "effect": {
+    "type": "apoli:action_over_time",
+    "entity_action": {
+      "type": "apoli:apply_effect",
+      "effect": {
+        "effect": "minecraft:slowness",
+        "duration": 200,
+        "is_ambient": true
+      }
+    },
+    "interval": 100,
+    "condition": {
+      "type": "apoli:resource",
+      "resource": "*:*_resource",
+      "comparison": "==",
+      "compare_to": 300
+    }
+  },
+  "damage": {
+    "type": "apoli:modify_damage_dealt",
+    "condition": {
+      "type": "apoli:resource",
+      "resource": "*:*_resource",
+      "comparison": "==",
+      "compare_to": 300
+    },
+    "modifier": {
+      "name": "Match Made in Heaven damage penalty",
+      "operation": "multiply_total_multiplicative",
+      "value": -0.2
+    }
+  }
+}
