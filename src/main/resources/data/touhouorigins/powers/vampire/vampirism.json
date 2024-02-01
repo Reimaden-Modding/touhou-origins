@@ -28,34 +28,25 @@
           "inverted": true
         },
         {
-          "type": "apoli:and",
-          "conditions": [
+          "type": "apoli:or",
+          "conditions" : [
             {
-              "type": "apoli:entity_type",
-              "entity_type": "minecraft:player"
+              "type": "origins:origin",
+              "origin": "touhouorigins:ghost"
             },
             {
-              "type": "apoli:or",
-              "conditions" : [
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:ghost"
-                },
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:vengeful_spirit"
-                },
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:jiang_shi"
-                }
-              ]
+              "type": "origins:origin",
+              "origin": "touhouorigins:vengeful_spirit"
+            },
+            {
+              "type": "origins:origin",
+              "origin": "touhouorigins:jiang_shi"
             }
           ],
           "inverted": true
-       }
-     ]
-   }
+        }
+      ]
+    }
   },
   "particles": {
     "type": "apoli:particle",
@@ -89,28 +80,19 @@
           "inverted": true
         },
         {
-          "type": "apoli:and",
-          "conditions": [
+          "type": "apoli:or",
+          "conditions" : [
             {
-              "type": "apoli:entity_type",
-              "entity_type": "minecraft:player"
+              "type": "origins:origin",
+              "origin": "touhouorigins:ghost"
             },
             {
-              "type": "apoli:or",
-              "conditions" : [
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:ghost"
-                },
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:vengeful_spirit"
-                },
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:jiang_shi"
-                }
-              ]
+              "type": "origins:origin",
+              "origin": "touhouorigins:vengeful_spirit"
+            },
+            {
+              "type": "origins:origin",
+              "origin": "touhouorigins:jiang_shi"
             }
           ],
           "inverted": true
