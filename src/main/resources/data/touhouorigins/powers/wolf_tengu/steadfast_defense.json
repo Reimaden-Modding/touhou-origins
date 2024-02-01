@@ -30,6 +30,13 @@
               "is_ambient": true
             }
           }
+        },
+        {
+          "type": "apoli:actor_action",
+          "action": {
+            "type": "apoli:play_sound",
+            "sound": "touhouorigins:origin.wolf_tengu.parry"
+          }
         }
       ]
     },

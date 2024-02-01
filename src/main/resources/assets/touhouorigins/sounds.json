@@ -218,6 +218,23 @@
     ],
     "subtitle": "touhouorigins.subtitles.origin.wolf_tengu.growl"
   },
+  "origin.wolf_tengu.parry": {
+    "sounds": [
+      {
+        "name": "mob/zombie/metal1",
+        "pitch": 1.5
+      },
+      {
+        "name": "mob/zombie/metal2",
+        "pitch": 1.5
+      },
+      {
+        "name": "mob/zombie/metal3",
+        "pitch": 1.5
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.wolf_tengu.parry"
+  },
   "origin.rabbit.hop": {
     "sounds": [
       {
