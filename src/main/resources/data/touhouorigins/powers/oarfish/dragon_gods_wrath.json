@@ -29,8 +29,8 @@
     },
     "cooldown": 2400,
     "hud_render": {
-      "sprite_location": "origins:textures/gui/resource_bar.png",
-      "bar_index": 2
+      "sprite_location": "touhouorigins:/gui/thbars.png",
+      "bar_index": 1
     },
     "condition": {
       "type": "apoli:and",

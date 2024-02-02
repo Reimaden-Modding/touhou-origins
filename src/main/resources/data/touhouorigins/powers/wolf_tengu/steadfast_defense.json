@@ -46,7 +46,7 @@
     },
     "cooldown": 100,
     "hud_render": {
-      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "sprite_location": "touhouorigins:/gui/thbars.png",
       "bar_index": 0
     }
   }
