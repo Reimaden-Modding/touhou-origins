@@ -41,7 +41,8 @@
             "x": 0.0,
             "y": 0.0,
             "z": 0.0
-          }
+          },
+          "offset_y": 1
         }
       ]
     },
@@ -142,6 +143,7 @@
       "y": 0.0,
       "z": 0.0
     },
+    "offset_y": 1,
     "condition": {
       "type": "apoli:resource",
       "resource": "*:*_timer",

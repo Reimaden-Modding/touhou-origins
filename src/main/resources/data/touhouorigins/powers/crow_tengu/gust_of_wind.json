@@ -18,7 +18,8 @@
           "x": 0.1,
           "y": 0.1,
           "z": 0.1
-        }
+        },
+        "offset_y": 1
       },
       {
         "type": "apoli:play_sound",

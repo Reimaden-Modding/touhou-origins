@@ -54,6 +54,7 @@
       "type": "minecraft:dust",
       "params": "1 0 0 1"
     },
+    "offset_y": 1,
     "frequency": 15
   },
   "blood": {
@@ -69,7 +70,8 @@
         "x": 0.1,
         "y": 0.1,
         "z": 0.1
-      }
+      },
+      "offset_y": 1
     },
     "target_condition": {
       "type": "apoli:and",
