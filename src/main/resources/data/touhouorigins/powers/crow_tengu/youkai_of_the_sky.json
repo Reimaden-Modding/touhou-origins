@@ -9,6 +9,7 @@
   "elytra_visible": {
     "type": "apoli:elytra_flight",
     "render_elytra": true,
+    "texture_location": "touhouorigins:textures/entity/crow_wings.png",
     "condition": {
       "type": "apoli:power_active",
       "power": "*:*_toggle"
