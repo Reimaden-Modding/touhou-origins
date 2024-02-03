@@ -1,5 +1,27 @@
 {
-  "type": "apoli:elytra_flight",
-  "render_elytra": true,
-  "texture_location": "touhouorigins:textures/entity/crow_wings.png"
+  "type": "apoli:multiple",
+  "toggle": {
+    "type": "apoli:toggle",
+    "key": {
+      "key": "key.origins.secondary_active"
+    }
+  },
+  "elytra_visible": {
+    "type": "apoli:elytra_flight",
+    "render_elytra": true,
+    "texture_location": "touhouorigins:textures/entity/crow_wings.png",
+    "condition": {
+      "type": "apoli:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "elytra_hidden": {
+    "type": "apoli:elytra_flight",
+    "render_elytra": false,
+    "condition": {
+      "type": "apoli:power_active",
+      "power": "*:*_toggle",
+      "inverted": true
+    }
+  }
 }
