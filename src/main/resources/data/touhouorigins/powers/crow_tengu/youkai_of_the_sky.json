@@ -1,4 +1,5 @@
 {
   "type": "apoli:elytra_flight",
-  "render_elytra": true
+  "render_elytra": true,
+  "texture_location": "touhouorigins:textures/entity/crow_wings.png"
 }
