@@ -21,7 +21,6 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_VENGEFUL_SPIRIT_HARVEST = registerSound("origin.vengeful_spirit.harvest");
     public static final SoundEvent ORIGIN_VENGEFUL_SPIRIT_HURT = registerSound("origin.vengeful_spirit.hurt");
     public static final SoundEvent ORIGIN_VENGEFUL_SPIRIT_DEATH = registerSound("origin.vengeful_spirit.death");
-    public static final SoundEvent ORIGIN_GENERIC_GUST = registerSound("origin.generic.gust");
     public static final SoundEvent ORIGIN_WOLF_TENGU_GROWL = registerSound("origin.wolf_tengu.growl");
     public static final SoundEvent ORIGIN_WOLF_TENGU_PARRY = registerSound("origin.wolf_tengu.parry");
     public static final SoundEvent ORIGIN_RABBIT_HOP = registerSound("origin.rabbit.hop");
@@ -35,6 +34,12 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_CELESTIAL_TEMPER = registerSound("origin.celestial.temper");
     public static final SoundEvent ORIGIN_OARFISH_DRY = registerSound("origin.oarfish.dry");
     public static final SoundEvent ORIGIN_OARFISH_PREPARE_LIGHTNING = registerSound("origin.oarfish.prepare_lightning");
+    public static final SoundEvent ORIGIN_AMANOJAKU_FLIP = registerSound("origin.amanojaku.flip");
+
+    // Generic
+    public static final SoundEvent ENTITY_GENERIC_GUST = registerSound("entity.generic.gust");
+    public static final SoundEvent ENTITY_GENERIC_FLIP = registerSound("entity.generic.flip");
+    public static final SoundEvent ENTITY_GENERIC_REVERSE = registerSound("entity.generic.reverse");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = TouhouOrigins.id(name);

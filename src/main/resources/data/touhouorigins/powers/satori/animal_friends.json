@@ -298,7 +298,7 @@
   },
   "pacify_animals": {
     "type": "voile:modify_behavior",
-    "behavior": "passive",
+    "behavior": "neutral",
     "entity_condition": {
       "type": "apoli:in_tag",
       "tag": "touhouorigins:fleeing_animals"

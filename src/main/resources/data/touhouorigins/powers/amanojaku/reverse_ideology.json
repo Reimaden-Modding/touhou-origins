@@ -1,0 +1,49 @@
+{
+  "type": "apoli:multiple",
+  "resource": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 40
+  },
+  "damage": {
+    "type": "apoli:modify_damage_dealt",
+    "self_action": {
+      "type": "apoli:execute_command",
+      "command": "tag @s add amanojaku"
+    },
+    "target_action": {
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:execute_command",
+          "command": "execute store result score @s amanojakuArmor run attribute @s minecraft:generic.armor get"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "resource operation @p[tag=amanojaku] touhouorigins:amanojaku/reverse_ideology_resource = @s amanojakuArmor"
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "tag @p[tag=amanojaku] remove amanojaku"
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "name": "Reverse Ideology base damage",
+        "operation": "multiply_base_multiplicative",
+        "value": -0.5
+      },
+      {
+        "name": "Reverse Ideology damage from armor",
+        "operation": "add_base_late",
+        "value": 0,
+        "resource": "*:*_resource",
+        "modifier": {
+          "operation": "multiply_total_multiplicative",
+          "value": -0.5
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "type": "apoli:active_self",
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:raycast",
+        "distance": 16,
+        "block": true,
+        "entity": true,
+        "shape_type": "outline",
+        "fluid_handling": "none",
+        "bientity_action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:target_action",
+              "action": {
+                "type": "apoli:and",
+                "actions": [
+                  {
+                    "type": "apoli:grant_power",
+                    "power": "*:common/reverse_entity",
+                    "source": "touhouorigins:amanojaku"
+                  },
+                  {
+                    "type": "apoli:play_sound",
+                    "sound": "touhouorigins:entity.generic.reverse"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "apoli:actor_action",
+              "action": {
+                "type": "apoli:change_resource",
+                "resource": "*:amanojaku/cost_of_misfortune_resource",
+                "change": -1
+              }
+            }
+          ]
+        },
+        "bientity_condition": {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:living"
+          }
+        }
+      },
+      {
+        "type": "apoli:swing_hand"
+      }
+    ]
+  },
+  "cooldown": 20,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 17
+  },
+  "key": {
+    "key": "key.origins.secondary_active"
+  },
+  "condition": {
+    "type": "apoli:resource",
+    "resource": "*:amanojaku/cost_of_misfortune_resource",
+    "comparison": ">=",
+    "compare_to": 1
+  }
+}

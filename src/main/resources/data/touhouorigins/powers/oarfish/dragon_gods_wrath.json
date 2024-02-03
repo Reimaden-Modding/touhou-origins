@@ -126,6 +126,7 @@
       "y": 0.05,
       "z": 0.05
     },
+    "offset_y": 1,
     "frequency": 4,
     "visible_in_first_person": true,
     "condition": {

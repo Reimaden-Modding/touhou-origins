@@ -32,12 +32,21 @@
       }
     },
     "max_action": {
-      "type": "apoli:apply_effect",
-      "effect": {
-        "effect": "minecraft:slowness",
-        "duration": 200,
-        "is_ambient": true
-      }
+      "type": "apoli:and",
+      "actions": [
+        {
+          "type": "apoli:apply_effect",
+          "effect": {
+            "effect": "minecraft:slowness",
+            "duration": 200,
+            "is_ambient": true
+          }
+        },
+        {
+          "type": "apoli:execute_command",
+          "command": "title @s actionbar {\"translate\":\"power.touhouorigins.match_made_in_heaven.alert\"}"
+        }
+      ]
     }
   },
   "resource_change": {
