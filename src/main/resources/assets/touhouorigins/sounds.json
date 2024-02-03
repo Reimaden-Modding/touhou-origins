@@ -199,7 +199,7 @@
     ],
     "subtitle": "subtitles.entity.player.death"
   },
-  "origin.generic.gust": {
+  "entity.generic.gust": {
     "sounds": [
       {
         "name": "mob/wither/shoot",
@@ -207,7 +207,7 @@
         "volume": 0.8
       }
     ],
-    "subtitle": "touhouorigins.subtitles.origin.generic.gust"
+    "subtitle": "touhouorigins.subtitles.entity.generic.gust"
   },
   "origin.wolf_tengu.growl": {
     "sounds": [
@@ -370,5 +370,23 @@
       }
     ],
     "subtitle": "touhouorigins.subtitles.origin.oarfish.prepare_lightning"
+  },
+  "entity.generic.flip": {
+    "sounds": [
+      "touhouorigins:flip"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.generic.flip"
+  },
+  "origin.amanojaku.flip": {
+    "sounds": [
+      "touhouorigins:flip"
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.amanojaku.flip"
+  },
+  "entity.generic.reverse": {
+    "sounds": [
+      "touhouorigins:reverse"
+    ],
+    "subtitle": "touhouorigins.subtitles.entity.generic.reverse"
   }
 }

@@ -1,0 +1,72 @@
+{
+  "type": "apoli:multiple",
+  "resource": {
+    "type": "apoli:resource",
+    "min": 0,
+    "max": 15,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 22,
+      "order": -1
+    }
+  },
+  "gain": {
+    "type": "apoli:self_action_when_hit",
+    "entity_action": {
+      "type": "apoli:change_resource",
+      "resource": "*:*_resource",
+      "change": 1
+    },
+    "damage_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:attacker"
+        },
+        {
+          "type": "apoli:amount",
+          "comparison": "<",
+          "compare_to": 10
+        },
+        {
+          "type": "apoli:amount",
+          "comparison": ">=",
+          "compare_to": 1
+        }
+      ]
+    }
+  },
+  "gain_big": {
+    "type": "apoli:self_action_when_hit",
+    "entity_action": {
+      "type": "apoli:change_resource",
+      "resource": "*:*_resource",
+      "change": 2
+    },
+    "damage_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:attacker"
+        },
+        {
+          "type": "apoli:amount",
+          "comparison": ">=",
+          "compare_to": 10
+        }
+      ]
+    }
+  },
+  "reset": {
+    "type": "apoli:action_on_death",
+    "bientity_action": {
+      "type": "apoli:target_action",
+      "action": {
+        "type": "apoli:change_resource",
+        "resource": "*:*_resource",
+        "change": 0,
+        "operation": "set"
+      }
+    }
+  }
+}

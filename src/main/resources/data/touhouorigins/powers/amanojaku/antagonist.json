@@ -1,0 +1,10 @@
+{
+  "type": "apoli:multiple",
+  "hostile": {
+    "type": "voile:modify_behavior",
+    "behavior": "hostile"
+  },
+  "taming": {
+    "type": "voile:prevent_taming"
+  }
+}
