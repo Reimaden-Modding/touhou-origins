@@ -1,4 +1,4 @@
-package net.reimaden.touhouorigins.registry;
+package net.reimaden.touhouorigins.sound;
 
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

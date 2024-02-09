@@ -25,6 +25,9 @@
       "net.reimaden.touhouorigins.TouhouOrigins"
     ]
   },
+  "mixins": [
+    "touhouorigins.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.15",
     "fabric-api": "*",

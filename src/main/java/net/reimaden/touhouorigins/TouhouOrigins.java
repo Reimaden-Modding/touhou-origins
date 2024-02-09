@@ -2,7 +2,8 @@ package net.reimaden.touhouorigins;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
-import net.reimaden.touhouorigins.registry.ModSoundEvents;
+import net.reimaden.touhouorigins.power.ModPowers;
+import net.reimaden.touhouorigins.sound.ModSoundEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +18,7 @@ public class TouhouOrigins implements ModInitializer {
 		LOGGER.info(MOD_NAME + " is initializing. Please watch warmly until it is ready.");
 
 		ModSoundEvents.register();
+		ModPowers.register();
 	}
 
 	public static Identifier id(String path) {
