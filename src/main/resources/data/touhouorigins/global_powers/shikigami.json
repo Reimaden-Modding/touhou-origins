@@ -1,0 +1,12 @@
+{
+  "entity_types": [
+    "minecraft:player"
+  ],
+  "powers": [
+    "touhouorigins:global/boundless_servitude",
+    "touhouorigins:global/linked_by_the_soul",
+    "touhouorigins:global/spiritual_gaze",
+    "touhouorigins:global/by_masters_side",
+    "touhouorigins:global/faithful_protector"
+  ]
+}

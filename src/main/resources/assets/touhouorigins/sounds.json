@@ -388,5 +388,47 @@
       "touhouorigins:reverse"
     ],
     "subtitle": "touhouorigins.subtitles.entity.generic.reverse"
+  },
+  "entity.generic.shikigami_link": {
+    "sounds": [
+      "block/respawn_anchor/deplete1",
+      "block/respawn_anchor/deplete2"
+    ]
+  },
+  "origin.shikigami.locate_fail": {
+    "sounds": [
+      {
+        "name": "note/bassattack",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "origin.shikigami.channel": {
+    "sounds": [
+      {
+        "name": "touhouorigins:portal_trigger_mono",
+        "pitch": 0.9
+      },
+      {
+        "name": "touhouorigins:portal_trigger_mono",
+        "pitch": 0.95
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.shikigami.channel"
+  },
+  "origin.shikigami.teleport_fail": {
+    "sounds": [
+      {
+        "name": "note/didgeridoo",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "origin.shikigami.teleport": {
+    "sounds": [
+      "mob/illusion_illager/mirror_move1",
+      "mob/illusion_illager/mirror_move2"
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.shikigami.teleport"
   }
 }

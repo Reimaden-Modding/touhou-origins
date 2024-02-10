@@ -35,11 +35,16 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_OARFISH_DRY = registerSound("origin.oarfish.dry");
     public static final SoundEvent ORIGIN_OARFISH_PREPARE_LIGHTNING = registerSound("origin.oarfish.prepare_lightning");
     public static final SoundEvent ORIGIN_AMANOJAKU_FLIP = registerSound("origin.amanojaku.flip");
+    public static final SoundEvent ORIGIN_SHIKIGAMI_LOCATE_FAIL = registerSound("origin.shikigami.locate_fail");
+    public static final SoundEvent ORIGIN_SHIKIGAMI_CHANNEL = registerSound("origin.shikigami.channel");
+    public static final SoundEvent ORIGIN_SHIKIGAMI_TELEPORT_FAIL = registerSound("origin.shikigami.teleport_fail");
+    public static final SoundEvent ORIGIN_SHIKIGAMI_TELEPORT = registerSound("origin.shikigami.teleport");
 
     // Generic
     public static final SoundEvent ENTITY_GENERIC_GUST = registerSound("entity.generic.gust");
     public static final SoundEvent ENTITY_GENERIC_FLIP = registerSound("entity.generic.flip");
     public static final SoundEvent ENTITY_GENERIC_REVERSE = registerSound("entity.generic.reverse");
+    public static final SoundEvent ENTITY_GENERIC_SHIKIGAMI_LINK = registerSound("entity.generic.shikigami_link");
 
     private static SoundEvent registerSound(String name) {
         Identifier id = TouhouOrigins.id(name);

@@ -23,6 +23,9 @@
   "entrypoints": {
     "main": [
       "net.reimaden.touhouorigins.TouhouOrigins"
+    ],
+    "client": [
+      "net.reimaden.touhouorigins.TouhouOriginsClient"
     ]
   },
   "mixins": [

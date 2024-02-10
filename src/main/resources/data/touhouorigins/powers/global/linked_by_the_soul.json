@@ -1,0 +1,20 @@
+{
+  "type": "voile:action_on_entity_death",
+  "bientity_action": {
+    "type": "apoli:actor_action",
+    "action": {
+      "type": "voile:kill",
+      "damage_type": "touhouorigins:master_death"
+    }
+  },
+  "bientity_condition": {
+    "type": "apoli:in_set",
+    "set": "*:global/boundless_servitude_set"
+  },
+  "condition": {
+    "type": "apoli:resource",
+    "resource": "*:global/boundless_servitude_boolean",
+    "comparison": "==",
+    "compare_to": 1
+  }
+}

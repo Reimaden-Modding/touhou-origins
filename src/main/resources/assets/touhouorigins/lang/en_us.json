@@ -16,6 +16,11 @@
   "power.touhouorigins.common/heavenly_descendant.name": "Heavenly Descendant",
   "power.touhouorigins.common/heavenly_descendant.description": "Damage you deal in the Nether is reduced by 80%.",
   "power.touhouorigins.match_made_in_heaven.alert": "You feel homesick",
+  "power.touhouorigins.boundless_servitude.linked_shikigami": "You have linked with a master",
+  "power.touhouorigins.boundless_servitude.linked_master": "You have linked with a shikigami",
+  "power.touhouorigins.by_masters_side.no_xp": "You do not have enough experience",
+  "power.touhouorigins.by_masters_side.locate_fail": "You are unable to locate your master",
+  "power.touhouorigins.by_masters_side.teleport_fail": "Teleportation failed",
 
   "origin.touhouorigins.vampire.name": "Vampire",
   "origin.touhouorigins.vampire.description": "A young but powerful species of youkai, considered to be a type of devil. They possess a far broader range of abilities than most youkai.",
@@ -258,6 +263,8 @@
   "touhouorigins.subtitles.entity.generic.flip": "Something flips",
   "touhouorigins.subtitles.origin.amanojaku.flip": "Amanojaku flips",
   "touhouorigins.subtitles.entity.generic.reverse": "Something reverses",
+  "touhouorigins.subtitles.origin.shikigami.channel": "Shikigami channels",
+  "touhouorigins.subtitles.origin.shikigami.teleport": "Shikigami teleports",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",
@@ -266,5 +273,11 @@
   "death.attack.fireThorns": "%1$s burned their hand fighting %2$s",
   "death.attack.fireThorns.item": "%1$s burned their hand on %3$s fighting %2$s",
   "death.attack.parry": "%1$s was parried to death by %2$s",
-  "death.attack.parry.item": "%1$s was killed by a riposte from %2$s using %3$s"
+  "death.attack.parry.item": "%1$s was killed by a riposte from %2$s using %3$s",
+  "death.attack.masterDeath": "%1$s failed to protect their master",
+  "death.attack.masterDeath.player": "%1$s failed to protect their master from %2$s",
+
+  "category.touhouorigins": "Touhou Origins",
+  "key.touhouorigins.primary_extra": "Primary Extra",
+  "key.touhouorigins.secondary_extra": "Secondary Extra"
 }

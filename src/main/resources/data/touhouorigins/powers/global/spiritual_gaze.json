@@ -1,0 +1,213 @@
+{
+  "type": "apoli:multiple",
+  "toggle": {
+    "type": "apoli:toggle",
+    "key": {
+      "key": "key.touhouorigins.secondary_extra"
+    }
+  },
+  "glow_master_healthy": {
+    "type": "apoli:entity_glow",
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:in_set",
+          "set": "*:global/boundless_servitude_set"
+        },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:relative_health",
+            "comparison": "==",
+            "compare_to": 1.0
+          }
+        }
+      ]
+    },
+    "use_teams": false,
+    "red": 0.33,
+    "green": 1.0,
+    "blue": 0.33,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:resource",
+          "resource": "*:global/boundless_servitude_boolean",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        }
+      ]
+    }
+  },
+  "glow_master_injured": {
+    "type": "apoli:entity_glow",
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:in_set",
+          "set": "*:global/boundless_servitude_set"
+        },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:relative_health",
+            "comparison": "<",
+            "compare_to": 1.0
+          }
+        },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:relative_health",
+            "comparison": ">",
+            "compare_to": 0.5
+          }
+        }
+      ]
+    },
+    "use_teams": false,
+    "red": 1.0,
+    "green": 1.0,
+    "blue": 0.33,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:resource",
+          "resource": "*:global/boundless_servitude_boolean",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        }
+      ]
+    }
+  },
+  "glow_master_low": {
+    "type": "apoli:entity_glow",
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:in_set",
+          "set": "*:global/boundless_servitude_set"
+        },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:relative_health",
+            "comparison": "<=",
+            "compare_to": 0.5
+          }
+        },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:relative_health",
+            "comparison": ">",
+            "compare_to": 0.2
+          }
+        }
+      ]
+    },
+    "use_teams": false,
+    "red": 1.0,
+    "green": 0.67,
+    "blue": 0.0,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:resource",
+          "resource": "*:global/boundless_servitude_boolean",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        }
+      ]
+    }
+  },
+  "glow_master_death_imminent": {
+    "type": "apoli:entity_glow",
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:in_set",
+          "set": "*:global/boundless_servitude_set"
+        },
+        {
+          "type": "apoli:target_condition",
+          "condition": {
+            "type": "apoli:relative_health",
+            "comparison": "<=",
+            "compare_to": 0.2
+          }
+        }
+      ]
+    },
+    "use_teams": false,
+    "red": 1.0,
+    "green": 0.33,
+    "blue": 0.33,
+    "condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:resource",
+          "resource": "*:global/boundless_servitude_boolean",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "apoli:power_active",
+          "power": "*:*_toggle"
+        }
+      ]
+    }
+  },
+  "glow_self": {
+    "type": "apoli:self_glow",
+    "bientity_condition": {
+      "type": "apoli:and",
+      "conditions": [
+        {
+          "type": "apoli:invert",
+          "condition": {
+            "type": "apoli:in_set",
+            "set": "*:global/boundless_servitude_set"
+          }
+        },
+        {
+          "type": "apoli:actor_condition",
+          "condition": {
+            "type": "apoli:power_active",
+            "power": "*:*_toggle"
+          }
+        }
+      ]
+    },
+    "use_teams": false,
+    "red": 0.33,
+    "green": 1.0,
+    "blue": 1.0,
+    "condition": {
+      "type": "apoli:resource",
+      "resource": "*:global/boundless_servitude_boolean",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  }
+}
