@@ -19,6 +19,7 @@
           "bientity_condition": {
             "type": "apoli:target_condition",
             "condition": {
+              "type": "origins:origin",
               "origin": "touhouorigins:oarfish"
             }
           },
