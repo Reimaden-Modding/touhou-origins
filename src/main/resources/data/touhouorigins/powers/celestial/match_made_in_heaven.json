@@ -16,9 +16,11 @@
         },
         {
           "type": "voile:nearby_entities",
-          "entity_condition": {
-            "type": "origins:origin",
-            "origin": "touhouorigins:oarfish"
+          "bientity_condition": {
+            "type": "apoli:target_condition",
+            "condition": {
+              "origin": "touhouorigins:oarfish"
+            }
           },
           "distance": 24
         }
@@ -29,9 +31,12 @@
     "type": "voile:water_breathing",
     "condition": {
       "type": "voile:nearby_entities",
-      "entity_condition": {
-        "type": "origins:origin",
-        "origin": "touhouorigins:oarfish"
+      "bientity_condition": {
+        "type": "apoli:target_condition",
+        "condition": {
+          "type": "origins:origin",
+          "origin": "touhouorigins:oarfish"
+        }
       },
       "distance": 24
     }
@@ -99,18 +104,21 @@
               },
               {
                 "type": "voile:nearby_entities",
-                "entity_condition": {
-                  "type": "apoli:or",
-                  "conditions": [
-                    {
-                      "type": "origins:origin",
-                      "origin": "touhouorigins:oarfish"
-                    },
-                    {
-                      "type": "origins:origin",
-                      "origin": "touhouorigins:celestial"
-                    }
-                  ]
+                "bientity_condition": {
+                  "type": "apoli:target_condition",
+                  "condition": {
+                    "type": "apoli:or",
+                    "conditions": [
+                      {
+                        "type": "origins:origin",
+                        "origin": "touhouorigins:oarfish"
+                      },
+                      {
+                        "type": "origins:origin",
+                        "origin": "touhouorigins:celestial"
+                      }
+                    ]
+                  }
                 },
                 "distance": 24
               }
@@ -125,18 +133,21 @@
         {
           "condition": {
             "type": "voile:nearby_entities",
-            "entity_condition": {
-              "type": "apoli:or",
-              "conditions": [
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:oarfish"
-                },
-                {
-                  "type": "origins:origin",
-                  "origin": "touhouorigins:celestial"
-                }
-              ]
+            "bientity_condition": {
+              "type": "apoli:target_condition",
+              "condition": {
+                "type": "apoli:or",
+                "conditions": [
+                  {
+                    "type": "origins:origin",
+                    "origin": "touhouorigins:oarfish"
+                  },
+                  {
+                    "type": "origins:origin",
+                    "origin": "touhouorigins:celestial"
+                  }
+                ]
+              }
             },
             "distance": 24
           },
@@ -167,18 +178,21 @@
               },
               {
                 "type": "voile:nearby_entities",
-                "entity_condition": {
-                  "type": "apoli:or",
-                  "conditions": [
-                    {
-                      "type": "origins:origin",
-                      "origin": "touhouorigins:oarfish"
-                    },
-                    {
-                      "type": "origins:origin",
-                      "origin": "touhouorigins:celestial"
-                    }
-                  ]
+                "bientity_condition": {
+                  "type": "apoli:target_condition",
+                  "condition": {
+                    "type": "apoli:or",
+                    "conditions": [
+                      {
+                        "type": "origins:origin",
+                        "origin": "touhouorigins:oarfish"
+                      },
+                      {
+                        "type": "origins:origin",
+                        "origin": "touhouorigins:celestial"
+                      }
+                    ]
+                  }
                 },
                 "distance": 24,
                 "inverted": true
