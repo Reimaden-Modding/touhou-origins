@@ -45,8 +45,8 @@
   "fall_damage": {
     "type": "apoli:modify_damage_taken",
     "damage_condition": {
-      "type": "apoli:name",
-      "name": "fall"
+      "type": "apoli:in_tag",
+      "tag": "minecraft:is_fall"
     },
     "modifier": {
       "name": "Less base fall damage",
