@@ -47,8 +47,8 @@
       "tag": "touhouorigins:is_melee"
     },
     "condition": {
-      "type": "apoli:predicate",
-      "predicate": "touhouorigins:mind_reading_dodge"
+      "type": "apoli:chance",
+      "chance": 0.25
     },
     "self_action": {
       "type": "apoli:execute_command",
