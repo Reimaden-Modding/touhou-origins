@@ -1,0 +1,35 @@
+{
+  "type": "apoli:multiple",
+  "melee_damage": {
+    "type": "apoli:modify_damage_dealt",
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "tag": "touhouorigins:tridents"
+        },
+        "inverted": true
+      }
+    },
+    "modifier": {
+      "name": "Bland Weapons melee damage penalty",
+      "operation": "multiply_base_multiplicative",
+      "value": -0.5
+    }
+  },
+  "ranged_damage": {
+    "type": "apoli:modify_projectile_damage",
+    "damage_condition": {
+      "type": "apoli:type",
+      "damage_type": "minecraft:trident",
+      "inverted": true
+    },
+    "modifier": {
+      "name": "Bland Weapons ranged damage penalty",
+      "operation": "multiply_base_multiplicative",
+      "value": -0.5
+    }
+  }
+}

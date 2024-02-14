@@ -3,8 +3,11 @@ package net.reimaden.touhouorigins;
 import io.github.apace100.apoli.ApoliClient;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
+import net.reimaden.touhouorigins.particle.ModParticles;
+import net.reimaden.touhouorigins.particle.OrbParticle;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
@@ -24,5 +27,7 @@ public class TouhouOriginsClient implements ClientModInitializer {
             ApoliClient.registerPowerKeybinding(key, keyBinding);
             KeyBindingHelper.registerKeyBinding(keyBinding);
         }
+
+        ParticleFactoryRegistry.getInstance().register(ModParticles.ORB, OrbParticle.Factory::new);
     }
 }

@@ -21,6 +21,8 @@
   "power.touhouorigins.by_masters_side.no_xp": "You do not have enough experience",
   "power.touhouorigins.by_masters_side.locate_fail": "You are unable to locate your master",
   "power.touhouorigins.by_masters_side.teleport_fail": "Teleportation failed",
+  "power.touhouorigins.common/feared.name": "Feared",
+  "power.touhouorigins.common/feared.description": "Villagers fear you, and iron golems are hostile towards you.",
 
   "origin.touhouorigins.vampire.name": "Vampire",
   "origin.touhouorigins.vampire.description": "A young but powerful species of youkai, considered to be a type of devil. They possess a far broader range of abilities than most youkai.",
@@ -144,7 +146,7 @@
   "origin.touhouorigins.jiang_shi.description": "In Chinese folklore, jiang shi are reanimated corpses that move around by hopping with their arms outstretched. They are often compared to vampires because jiang shi attempt to suck qi, life energy, from the living, though they're actually more similar to zombies.",
 
   "power.touhouorigins.jiang_shi/one_of_us.name": "One of Us",
-  "power.touhouorigins.jiang_shi/one_of_us.description": "All zombies are neutral towards you. However, villagers fear you and iron golems are hostile towards you.",
+  "power.touhouorigins.jiang_shi/one_of_us.description": "All zombies are neutral towards you.",
   "power.touhouorigins.jiang_shi/life_drain.name": "Life Drain",
   "power.touhouorigins.jiang_shi/life_drain.description": "Whenever you deal more than one damage, you drain the life force of your enemy, healing you for half a heart.",
   "power.touhouorigins.jiang_shi/pestilence.name": "Pestilence",
@@ -243,6 +245,18 @@
   "power.touhouorigins.amanojaku/antagonist.name": "Antagonist",
   "power.touhouorigins.amanojaku/antagonist.description": "Every mob capable of attacking is hostile towards you, and you are unable to tame animals.",
 
+  "origin.touhouorigins.nue.name": "Nue",
+  "origin.touhouorigins.nue.description": "Nue are a type of youkai that are said to have the head of a monkey, the body of a tanuki, the legs of a tiger, and the tail of a snake. They are known for their ability to shapeshift.",
+
+  "power.touhouorigins.nue/undefined_flying_youkai.name": "Undefined Flying Youkai",
+  "power.touhouorigins.nue/undefined_flying_youkai.description": "You can hide your true form and appear as a ball of light, allowing you to fly freely for a limited time. Taking damage will decrease the remaining flight time.",
+  "power.touhouorigins.nue/power_of_tridents.name": "Power of Tridents",
+  "power.touhouorigins.nue/power_of_tridents.description": "Tridents you wield deal 4 additional base damage, and Riptide is twice as effective.",
+  "power.touhouorigins.nue/bland_weapons.name": "Bland Weapons",
+  "power.touhouorigins.nue/bland_weapons.description": "Your base damage is reduced by 50% when using weapons other than tridents.",
+  "power.touhouorigins.nue/bow_of_genzanmi_yorimasa.name": "Bow of Genzanmi Yorimasa",
+  "power.touhouorigins.nue/bow_of_genzanmi_yorimasa.description": "You take 50% increased damage from spectral arrows, and your flight time is reduced even further.",
+
   "touhouorigins.subtitles.origin.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.origin.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.origin.kappa.camouflage_activate": "Camouflage activates",
@@ -265,6 +279,7 @@
   "touhouorigins.subtitles.entity.generic.reverse": "Something reverses",
   "touhouorigins.subtitles.origin.shikigami.channel": "Shikigami channels",
   "touhouorigins.subtitles.origin.shikigami.teleport": "Shikigami teleports",
+  "touhouorigins.subtitles.origin.nue.transform": "Nue transforms",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",

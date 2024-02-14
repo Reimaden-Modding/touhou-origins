@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "touhouorigins:nue/undefined_flying_youkai",
+    "touhouorigins:nue/power_of_tridents",
+    "touhouorigins:nue/bland_weapons",
+    "touhouorigins:common/feared",
+    "touhouorigins:nue/bow_of_genzanmi_yorimasa"
+  ],
+  "icon": "minecraft:trident",
+  "order": 1,
+  "impact": 2
+}

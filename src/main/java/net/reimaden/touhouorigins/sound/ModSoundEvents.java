@@ -39,6 +39,7 @@ public class ModSoundEvents {
     public static final SoundEvent ORIGIN_SHIKIGAMI_CHANNEL = registerSound("origin.shikigami.channel");
     public static final SoundEvent ORIGIN_SHIKIGAMI_TELEPORT_FAIL = registerSound("origin.shikigami.teleport_fail");
     public static final SoundEvent ORIGIN_SHIKIGAMI_TELEPORT = registerSound("origin.shikigami.teleport");
+    public static final SoundEvent ORIGIN_NUE_TRANSFORM = registerSound("origin.nue.transform");
 
     // Generic
     public static final SoundEvent ENTITY_GENERIC_GUST = registerSound("entity.generic.gust");

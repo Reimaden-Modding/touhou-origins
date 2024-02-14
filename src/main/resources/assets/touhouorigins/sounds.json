@@ -430,5 +430,25 @@
       "mob/illusion_illager/mirror_move2"
     ],
     "subtitle": "touhouorigins.subtitles.origin.shikigami.teleport"
+  },
+  "origin.nue.transform": {
+    "sounds": [
+      {
+        "name": "mob/wither/idle1",
+        "volume": 0.5,
+        "pitch": 2.0
+      },
+      {
+        "name": "mob/wither/idle2",
+        "volume": 0.5,
+        "pitch": 2.0
+      },
+      {
+        "name": "mob/wither/idle3",
+        "volume": 0.5,
+        "pitch": 2.0
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.nue.transform"
   }
 }

@@ -44,6 +44,10 @@ repositories {
 	maven {
 		url = "https://masa.dy.fi/maven"
 	}
+	maven {
+		name = "Nexus Repository Manager"
+		url = 'https://oss.sonatype.org/content/repositories/snapshots'
+	}
 	// Keep JitPack below other repositories
 	maven {
 		name = "JitPack"

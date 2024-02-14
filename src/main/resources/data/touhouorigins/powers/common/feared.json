@@ -1,8 +1,8 @@
 {
   "type": "voile:modify_behavior",
-  "behavior": "neutral",
+  "behavior": "hostile",
   "entity_condition": {
     "type": "apoli:in_tag",
-    "tag": "touhouorigins:zombies"
+    "tag": "touhouorigins:villager_aligned"
   }
 }

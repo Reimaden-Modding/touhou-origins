@@ -1,0 +1,42 @@
+{
+  "type": "apoli:multiple",
+  "melee_damage": {
+    "type": "apoli:modify_damage_dealt",
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "tag": "touhouorigins:tridents"
+        }
+      }
+    },
+    "modifier": {
+      "name": "Power of Tridents melee damage bonus",
+      "operation": "add_base_early",
+      "value": 4
+    }
+  },
+  "ranged_damage": {
+    "type": "apoli:modify_projectile_damage",
+    "damage_condition": {
+      "type": "apoli:type",
+      "damage_type": "minecraft:trident"
+    },
+    "modifier": {
+      "name": "Power of Tridents ranged damage bonus",
+      "operation": "add_base_early",
+      "value": 4
+    }
+  },
+  "riptide": {
+    "type": "apoli:modify_enchantment_level",
+    "enchantment": "minecraft:riptide",
+    "modifier": {
+      "name": "Power of Tridents Riptide bonus",
+      "operation": "multiply_base_additive",
+      "value": 1
+    }
+  }
+}
