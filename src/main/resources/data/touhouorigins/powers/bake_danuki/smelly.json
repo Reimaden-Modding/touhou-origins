@@ -1,0 +1,7 @@
+{
+  "type": "voile:modify_scale",
+  "scale_types": [
+    "pehkui:visibility"
+  ],
+  "scale": 2
+}

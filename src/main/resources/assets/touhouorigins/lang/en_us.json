@@ -257,6 +257,18 @@
   "power.touhouorigins.nue/bow_of_genzanmi_yorimasa.name": "Bow of Genzanmi Yorimasa",
   "power.touhouorigins.nue/bow_of_genzanmi_yorimasa.description": "You take 50% increased damage from spectral arrows, and your flight time is reduced even further.",
 
+  "origin.touhouorigins.bake_danuki.name": "Bake-Danuki",
+  "origin.touhouorigins.bake_danuki.description": "Bake-danuki is the youkai form of the tanuki. They are cunning and mischievous, and are known for their ability to shapeshift.",
+
+  "power.touhouorigins.bake_danuki/impersonation.name": "Impersonation",
+  "power.touhouorigins.bake_danuki/impersonation.description": "You can disguise yourself as the player you are looking at. If you sustain entity damage that reduces your health to half or below, your disguise is removed.",
+  "power.touhouorigins.bake_danuki/fake_out.name": "Fake Out",
+  "power.touhouorigins.bake_danuki/fake_out.description": "Whenever you are disguised, you can use this power to remove it, gaining invisibility and a speed boost for 5 seconds.",
+  "power.touhouorigins.bake_danuki/smelly.name": "Smelly",
+  "power.touhouorigins.bake_danuki/smelly.description": "Mobs can detect you from twice as far away.",
+  "power.touhouorigins.bake_danuki/tricksters_endurance.name": "Trickster's Endurance",
+  "power.touhouorigins.bake_danuki/tricksters_endurance.description": "You have 2 less hearts of health.",
+
   "touhouorigins.subtitles.origin.fairy.heal": "Fairy regenerates",
   "touhouorigins.subtitles.origin.fairy.fly": "Fairy flutters",
   "touhouorigins.subtitles.origin.kappa.camouflage_activate": "Camouflage activates",
@@ -280,6 +292,8 @@
   "touhouorigins.subtitles.origin.shikigami.channel": "Shikigami channels",
   "touhouorigins.subtitles.origin.shikigami.teleport": "Shikigami teleports",
   "touhouorigins.subtitles.origin.nue.transform": "Nue transforms",
+  "touhouorigins.subtitles.origin.bake_danuki.disguise": "Bake-danuki disguises",
+  "touhouorigins.subtitles.origin.bake_danuki.undisguise": "Bake-danuki undisguises",
 
   "death.attack.sun": "%1$s was vaporized",
   "death.attack.sun.player": "%1$s was vaporized whilst fighting %2$s",

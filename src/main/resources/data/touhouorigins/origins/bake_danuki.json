@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "touhouorigins:bake_danuki/impersonation",
+    "touhouorigins:bake_danuki/fake_out",
+    "touhouorigins:bake_danuki/smelly",
+    "touhouorigins:bake_danuki/tricksters_endurance"
+  ],
+  "icon": "minecraft:oak_leaves",
+  "order": 2,
+  "impact": 2
+}

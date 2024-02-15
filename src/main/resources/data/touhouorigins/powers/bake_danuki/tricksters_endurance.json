@@ -1,0 +1,9 @@
+{
+  "type": "apoli:attribute",
+  "modifier": {
+    "name": "Trickster's Endurance health penalty",
+    "attribute": "minecraft:generic.max_health",
+    "operation": "addition",
+    "value": -4
+  }
+}

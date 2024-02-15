@@ -450,5 +450,47 @@
       }
     ],
     "subtitle": "touhouorigins.subtitles.origin.nue.transform"
+  },
+  "origin.bake_danuki.disguise": {
+    "sounds": [
+      {
+        "name": "entity/shulker_bullet/hit1",
+        "pitch": 1.4
+      },
+      {
+        "name": "entity/shulker_bullet/hit2",
+        "pitch": 1.4
+      },
+      {
+        "name": "entity/shulker_bullet/hit3",
+        "pitch": 1.4
+      },
+      {
+        "name": "entity/shulker_bullet/hit4",
+        "pitch": 1.4
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.bake_danuki.disguise"
+  },
+  "origin.bake_danuki.undisguise": {
+    "sounds": [
+      {
+        "name": "entity/shulker_bullet/hit1",
+        "pitch": 1.2
+      },
+      {
+        "name": "entity/shulker_bullet/hit2",
+        "pitch": 1.2
+      },
+      {
+        "name": "entity/shulker_bullet/hit3",
+        "pitch": 1.2
+      },
+      {
+        "name": "entity/shulker_bullet/hit4",
+        "pitch": 1.2
+      }
+    ],
+    "subtitle": "touhouorigins.subtitles.origin.bake_danuki.undisguise"
   }
 }
