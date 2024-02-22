@@ -11,6 +11,6 @@
     "item": "minecraft:tipped_arrow",
     "tag": "{CustomPotionColor:16262179}"
   },
-  "order": 1,
-  "impact": 2
+  "order": 4,
+  "impact": 3
 }
