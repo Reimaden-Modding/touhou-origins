@@ -10,12 +10,14 @@
     }
   },
   "attack_boost": {
-    "type": "apoli:modify_damage_dealt",
+    "type": "apoli:conditioned_attribute",
     "modifier": {
       "name": "Oni attack bonus",
-      "operation": "add_base_early",
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "addition",
       "value": 6
     },
+    "tick_rate": 1,
     "condition": {
       "type": "apoli:equipped_item",
       "equipment_slot": "mainhand",
