@@ -14,8 +14,8 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/touhou-origins",
-    "issues": "https://github.com/Maxmani/touhou-origins/issues",
-    "sources": "https://github.com/Maxmani/touhou-origins"
+    "issues": "https://github.com/Reimaden-Modding/touhou-origins/issues",
+    "sources": "https://github.com/Reimaden-Modding/touhou-origins"
   },
   "license": "MIT",
   "icon": "assets/touhouorigins/icon.png",
