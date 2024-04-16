@@ -44,11 +44,11 @@
   "power.touhouorigins.oni/brawn_of_the_oni.name": "鬼的力量",
   "power.touhouorigins.oni/brawn_of_the_oni.description": "你有额外的五颗心健康值, 造成六点额外伤害, 比正常高10%",
   "power.touhouorigins.oni/drunken_stupor.name": "苦肉计",
-  "power.touhouorigins.oni/drunken_stupor.description": "每获得一种近战效果，你的近战伤害+3",
+  "power.touhouorigins.oni/drunken_stupor.description": "每获得一种负面效果，你的近战伤害+3",
   "power.touhouorigins.oni/heavy_drinker.name": "ZUN",
   "power.touhouorigins.oni/heavy_drinker.description": "你靠食物维持的时间明显减少，但喝任何药水时都会获得8点饥饿值.",
   "power.touhouorigins.oni/brute_force.name": "蛮力",
-  "power.touhouorigins.oni/brute_force.description": "你们喜欢用体术来解决争端，并且不善于使用灵巧的武器。近战武器被削弱.",
+  "power.touhouorigins.oni/brute_force.description": "你们喜欢用体术来解决争端，并且不善于使用灵巧的武器。近战武器攻击力减少70%.",
 
   "origin.touhouorigins.fairy.name": "妖精",
   "origin.touhouorigins.fairy.description": "妖精是小巧、简单的人形魔法生物，是自然的化身。一般头脑简单。",
