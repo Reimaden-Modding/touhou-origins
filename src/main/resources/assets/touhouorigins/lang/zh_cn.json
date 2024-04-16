@@ -223,7 +223,7 @@
   "power.touhouorigins.oarfish/thunder_lungs.name": "雷云之鱼",
   "power.touhouorigins.oarfish/thunder_lungs.description": "你可以在水下呼吸.",
   "power.touhouorigins.oarfish/dragon_gods_wrath.name": "龙神之怒",
-  "power.touhouorigins.oarfish/dragon_gods_wrath.description": "使用能力后，你的下一次攻击将召唤一道闪电击中你的目标。这个力量有很长的冷却时间，但是召唤闪电击打自己可以大幅减少冷却时间，如果在雷雨天气中，冷却时间的减少会更多。同时，你免疫闪电伤害。",
+  "power.touhouorigins.oarfish/dragon_gods_wrath.description": "使用能力后，你的下一次攻击将召唤一道闪电击中你的目标。这个力量有很长的冷却时间，但是如果成功召唤闪电则可以大幅减少冷却时间，如果在雷雨天气中，冷却时间的减少会更多。同时，你免疫闪电伤害。",
   "power.touhouorigins.oarfish/match_made_in_heaven.name": "天生一对",
   "power.touhouorigins.oarfish/match_made_in_heaven.description": "当你靠近天人，你的幸运值增加5点. 但与其他天堂种族接近时会使你逐渐开始想家，这将使你获得缓慢效果并使近战伤害减少20%。你可以站在Y大于等于200的位置治愈你的思乡病。在下界，你的思乡症会以双倍的速度发展。",
   "power.touhouorigins.oarfish/veils_like_water.name": "雨水依赖",
